@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Testing Readability with a Bunch of Text"
-description: "A ton of text to test readability."
+title: "Why don't you try harder LOL"
+description: "This is not my first blog post."
 tags: [sample post, readability, test, intro]
 image:
   feature: abstract-6.jpg
@@ -11,7 +11,20 @@ comments: true
 share: true
 ---
 
+## This is not my first blog post
+This is not my first blog post. I have had at least 3 start/stop blogs in the recent past.
+I think this one will have a longer shelf life though for two reasons - first 
+I know that I need to write in order to get better at writing and second I know that I need
+to get better at writing. 
+The simple goal of writing to write will hopefully help carry this webpage with it.
+
+
+
+
 Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. 
+
+
+
 Pinterest literally occupy Schlitz forage. 
 Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. 
 Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. 
