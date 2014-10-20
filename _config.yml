@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Let's Go Exploring
+description:      This blog allows us to be so awesome.
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
@@ -8,14 +8,14 @@ words_per_minute: 200
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Ian Mouzon
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  bio:            "I am a PhD student studying statistics at Iowa State. I am interested in time-series, machine learning, and myself."
+  email:          imouzon@iastate.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter:        imouzon
   facebook:       
-  github:         
+  github:         imouzon 
   stackexchange:  
   linkedin:       
   instagram:      
@@ -23,7 +23,7 @@ owner:
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  google_plus:    +imouzon
 
 # Background image to be tiled on all pages
 background: 
