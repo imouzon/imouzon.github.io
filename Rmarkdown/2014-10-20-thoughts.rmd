@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ""
+lastedit: Monday, October 20 2014 at 4:43 PM
 description: "This is not my first blog post."
 tags: [thoughts, readability, test, intro]
 image:
