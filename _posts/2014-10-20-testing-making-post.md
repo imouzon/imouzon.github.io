@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why don't you try harder LOL"
+title: "This is not my first blog post."
 description: "This is not my first blog post."
 tags: [sample post, readability, test, intro]
 image:
@@ -11,14 +11,11 @@ comments: true
 share: true
 ---
 
-## This is not my first blog post
 This is not my first blog post. I have had at least 3 start/stop blogs in the recent past.
 I think this one will have a longer shelf life though for two reasons - first 
 I know that I need to write in order to get better at writing and second I know that I need
 to get better at writing. 
 The simple goal of writing to write will hopefully help carry this webpage with it.
-
-
 
 
 Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. 
