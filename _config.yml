@@ -4,10 +4,10 @@ email: imouzon@iastate.edu
 description: "SAS"
 baseurl: "/"
 url: "http://mysite.org"
-twitter_username: user
-github_username: user
+twitter_username: imouzon
+github_username: imouzon
 disqus_username: false
-isso_domain: comments.mysite.org
+isso_domain: isso_domain is given as comments.mysite.org
 
 # Build settings
 markdown: redcarpet
