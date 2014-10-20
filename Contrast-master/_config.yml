@@ -1,7 +1,7 @@
 # Site settings
-title: Ian Mouzon's Blog
-email: imouzon@iastate.edu
-description: "SAS"
+title: blog title
+email: me@mysite.org
+description: "Really cool blog about ... something"
 baseurl: "/"
 url: "http://mysite.org"
 twitter_username: user
