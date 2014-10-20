@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "This is not my first blog post."
+title: ""
 description: "This is not my first blog post."
-tags: [sample post, readability, test, intro]
+tags: [thoughts, readability, test, intro]
 image:
   feature: abstract-6.jpg
   credit: dargadgetz
@@ -10,7 +10,6 @@ image:
 comments: true
 share: true
 ---
-
 This is not my first blog post. 
 I have had at least 3 start/stop blogs in the recent past.
 I think this one will have a longer shelf life though for two reasons: first 
@@ -22,3 +21,5 @@ this webpage with useful material.
 ## The Future
 I intend to get a domain name very soon but for the moment I will be very happy 
 just to keep everything on github.
+
+
