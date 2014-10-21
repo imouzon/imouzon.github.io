@@ -91,7 +91,7 @@ Thus I wrote the following vim function:
       execute "echom(\'A new post has been created in the _posts directory\')"
    endfunction
 
-   "pp for please post
+   "mp for make post
    nnoremap <silent> <Leader>mp :call KnitMD()<CR>
 {% endhighlight %}
 
