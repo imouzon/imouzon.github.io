@@ -68,7 +68,31 @@ function! NewPost(...)
       execute "sp " blogloc
    endfunction
 {% endhighlight %}
+And I created the quick command: 
+{% highlight vim %}
+"make a new blog post quickly
+nmap <Leader>pp :call NewPost()<CR>
+{% endhighlight %}
+
 Additionally, 
 using R and knitr to create the markdown file from the Rmarkdown file
 requires another set of steps that are basically the same.
-Thus I wrote the following vim functions:
+Thus I wrote the following vim function:
+{% highlight vim %}
+   function! KnitMD(...)
+      if a:0 > 0
+         let post_folder = a:1
+      else
+         let post_folder = '~/github/imouzon.github.io/_posts/'
+      end
+      let knit_cmd = 'silent !r --no-save --no-restore -e "require(knitr); knit(\"%\")"'
+      execute knit_cmd
+      execute 'silent !mv %:t:r.md ~/github/imouzon.github.io/_posts/%:t:r.md'
+      execute "echom(\'A new post has been created in the _posts directory\')"
+   endfunction
+
+   "pp for please post
+   nnoremap <silent> <Leader>mp :call KnitMD()<CR>
+{% endhighlight %}
+
+Note: LOL that the jekyll code is vim and not vimscript.
