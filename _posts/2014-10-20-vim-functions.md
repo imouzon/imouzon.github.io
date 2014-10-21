@@ -12,16 +12,19 @@ share: true
 ---
 
 #If I can do it in Vim, I'll be happy
-The issue is that if I can't do it in vim, then I won't, 
-because there are so many other things I need to do that can be done in vim.
+##The issue is that if I can't do it in vim, then I won't
+Because there are so many other things I need to do that can be done in [vim](http://www.youtube.com/watch?v=p6K4iIMlouI).
 This has been at least part of my inability to keep my past blog attempts up-to-date.
 I believed that there was some "best practice" structure that I wasn't using
 that would make blogging the simple and enjoyable hobby that it seems to be 
 for so many people.
 I guess this is not the case. 
-However, I am using an wonderful template now ([HPSTR, by Michael Rose](https://mademistakes.com/articles/hpstr-jekyll-theme/))
-and I "sort of" get the markdown-jekyll-github cycle better 
-(thanks to [Andee Kaplan](http://www.andeekaplan.com) and [Alex Shum](http://www.alshum.com))
+However, I am using a great template that I like
+([HPSTR, by Michael Rose](https://mademistakes.com/articles/hpstr-jekyll-theme/))
+and I am starting to get the markdown-jekyll-github cycle better 
+(thanks to [Andee Kaplan](http://www.andeekaplan.com) 
+and 
+[Alex Shum](http://www.alshum.com))
 so this is getting easier.
 It also helps that I started this time intentionally using vim and building my 
 workflow around vim.
@@ -96,3 +99,4 @@ Thus I wrote the following vim function:
 {% endhighlight %}
 
 Note: LOL that the jekyll highlight tag for code written to be run by vim is vim and not vimscript.
+
