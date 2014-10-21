@@ -16,6 +16,7 @@ share: true
 ##The issue is that if I can't do it in vim, then I won't
 
 Because there are so many other things I need to do that can be done in [vim](http://www.youtube.com/watch?v=p6K4iIMlouI).
+
 This has been at least part of my inability to keep my past blog attempts up-to-date.
 I believed that there was some "best practice" structure that I wasn't using
 that would make blogging the simple and enjoyable hobby that it seems to be 
@@ -29,14 +30,15 @@ and
 [Alex Shum](http://www.alshum.com))
 so this is getting easier.
 It also helps that I started this time intentionally using vim and building my 
-workflow around vim.
+workflow around vim. I wrote the following two functions with the goal of making
+blogging easier.
 
 At the moment, I have my blog on github, which is synched with
-~/github/imouzon.github.io/ on my computer.
-I use R for most of my coding. 
+`~/github/imouzon.github.io/` on my computer.
+I use `R` for most of my coding. 
 For example, instead of directly using TeX, 
-I use .rnw files and compile the code through knitr even when the amount of 
-R code in the document is negligible.
+I use `.rnw` files and compile the code through [`knitr`](http://yihui.name/knitr) 
+even when the amount of `R` code in the document is negligible.
 The main reason I do this is that I wrote a bunch of functions that make
 using rnw files so easy that writing even a plain LaTeX document 
 is much faster if I start with the rnw file.
@@ -46,41 +48,40 @@ with github and thus I have created an folder Rmarkdown in my page folder that
 is include in my .gitignore. 
 
 So starting a new post, which will alway be stored initially 
-in ~/github/imouzon.github.io/Rmarkdown/ requires
+in `~/github/imouzon.github.io/Rmarkdown/` requires
 a few steps which are always basically the same.
 I wrote the following vim function to help me do this:
 {% highlight vim %}
-"New blog post Rmarkdown
 function! NewPost(...)
-   "New blog post Rmarkdown
-   function! NewPost(...)
-      "where is the _posts folder located?
-      let blog_base_folder = "~/github/imouzon.github.io/"
+   "where is the _posts folder located?
+   let blog_base_folder = "~/github/imouzon.github.io/"
 
-      "what is today's date
-      let blogdate = strftime("%Y-%m-%d")
+   "what is today's date
+   let blogdate = strftime("%Y-%m-%d")
 
-      "did a title get submitted
-      if a:0 > 0
-         let blogtitle = a:1
-      else
-         let blogtitle = "thoughts"
-      end
+   "did a title get submitted
+   if a:0 > 0
+      let blogtitle = a:1
+   else
+      let blogtitle = "thoughts"
+   end
 
-      let blogloc = blog_base_folder."Rmarkdown/".blogdate."-".blogtitle.".rmd"
+   let blogloc = blog_base_folder."Rmarkdown/".blogdate."-".blogtitle.".rmd"
 
-      "open the new blog post
-      execute "sp " blogloc
-   endfunction
+   "open the new blog post
+   execute "sp " blogloc
+endfunction
 {% endhighlight %}
+
 And I created the quick command: 
+
 {% highlight vim %}
 "make a new blog post quickly
 nmap <Leader>pp :call NewPost()<CR>
 {% endhighlight %}
 
 Additionally, 
-using R and knitr to create the markdown file from the Rmarkdown file
+using `R` and knitr to create the markdown file from the Rmarkdown file
 requires another set of steps that are basically the same.
 Thus I wrote the following vim function:
 {% highlight vim %}
