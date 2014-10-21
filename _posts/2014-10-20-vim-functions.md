@@ -95,4 +95,4 @@ Thus I wrote the following vim function:
    nnoremap <silent> <Leader>mp :call KnitMD()<CR>
 {% endhighlight %}
 
-Note: LOL that the jekyll code is vim and not vimscript.
+Note: LOL that the jekyll highlight tag for code written to be run by vim is vim and not vimscript.
