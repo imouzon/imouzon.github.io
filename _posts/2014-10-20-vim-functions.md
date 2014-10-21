@@ -4,9 +4,9 @@ title: "Vim as a blogging tool"
 description: "The vim functions I am using at the moment"
 tags: [vim, coding, markdown, blogging]
 image:
-  feature: vim-wallpaper.jpg
-  credit: Michael Sokol
-  creditlink: http://www.flickr.com/photos/\_ms123/
+  feature: vim-as-blog.png
+  credit: Ian Mouzon 
+  creditlink: http://imouzon.github.io
 comments: true
 share: true
 ---
