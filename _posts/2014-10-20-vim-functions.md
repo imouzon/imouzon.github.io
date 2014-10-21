@@ -37,10 +37,10 @@ blogging easier.
  
 At the moment, I have my blog on github, which is synched with
 `~/github/imouzon.github.io/` on my computer.
-I use `R` for most of my coding. 
+I use R for most of my coding. 
 For example, instead of directly using TeX, 
-I use `.rnw` files and compile the code through [`knitr`](http://yihui.name/knitr) 
-even when the amount of `R` code in the document is negligible.
+I use `.rnw` files and compile the code through [knitr](http://yihui.name/knitr) 
+even when the amount of R code in the document is negligible.
 The main reason I do this is that I wrote a bunch of functions that make
 using rnw files so easy that writing even a plain LaTeX document 
 is much faster if I start with the rnw file.
@@ -55,7 +55,7 @@ a few steps which are always basically the same.
 The following vim function helps me do this:
 {% highlight vim %}
 function! NewPost(...)
-   "where is the _posts folder located?
+   "where is the \_posts folder located?
    let blog_base_folder = "~/github/imouzon.github.io/"
 
    "what is today's date
@@ -83,7 +83,7 @@ nmap <Leader>pp :call NewPost()<CR>
 {% endhighlight %}
 
 Additionally, 
-using `R` and knitr to create the markdown file from the Rmarkdown file
+using R and knitr to create the markdown file from the Rmarkdown file
 requires another set of steps that are basically the same.
 Thus I wrote the following vim function:
 {% highlight vim %}
