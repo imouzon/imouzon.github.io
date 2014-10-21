@@ -12,7 +12,9 @@ share: true
 ---
 
 #If I can do it in Vim, I'll be happy
+
 ##The issue is that if I can't do it in vim, then I won't
+
 Because there are so many other things I need to do that can be done in [vim](http://www.youtube.com/watch?v=p6K4iIMlouI).
 This has been at least part of my inability to keep my past blog attempts up-to-date.
 I believed that there was some "best practice" structure that I wasn't using
