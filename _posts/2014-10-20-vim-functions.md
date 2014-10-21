@@ -40,23 +40,35 @@ markdown files from them. This can (I have been told) cause problems
 with github and thus I have created an folder Rmarkdown in my page folder that
 is include in my .gitignore. 
 
-takes a few steps, but they are always the same. 
-So starting a new post, which will alway be stored initially in ~/github/imouzon.github.io/Rmarkdown/ requires
+So starting a new post, which will alway be stored initially 
+in ~/github/imouzon.github.io/Rmarkdown/ requires
 a few steps which are always basically the same.
+I wrote the following vim function to help me do this:
+{% highlight vim %}
+"New blog post Rmarkdown
+function! NewPost(...)
+   "New blog post Rmarkdown
+   function! NewPost(...)
+      "where is the _posts folder located?
+      let blog_base_folder = "~/github/imouzon.github.io/"
+
+      "what is today's date
+      let blogdate = strftime("%Y-%m-%d")
+
+      "did a title get submitted
+      if a:0 > 0
+         let blogtitle = a:1
+      else
+         let blogtitle = "thoughts"
+      end
+
+      let blogloc = blog_base_folder."Rmarkdown/".blogdate."-".blogtitle.".rmd"
+
+      "open the new blog post
+      execute "sp " blogloc
+   endfunction
+{% endhighlight %}
 Additionally, 
 using R and knitr to create the markdown file from the Rmarkdown file
 requires another set of steps that are basically the same.
 Thus I wrote the following vim functions:
-{% highlight vim %}
-"New blog post Rmarkdown
-function! NewPost(...)
-   if a:0 > 0
-      let blogtitle = a:1
-   else
-      let blogtitle = "thoughts"
-   end
-   let blogdate = strftime("%Y-%m-%d")
-   let blogloc = "~/github/imouzon.github.io/Rmarkdown/".blogdate."-".blogtitle.".rmd"
-   execute "sp " blogloc
-endfunction
-{% endhighlight %}
