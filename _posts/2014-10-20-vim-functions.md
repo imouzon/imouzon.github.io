@@ -33,6 +33,8 @@ It also helps that I started this time intentionally using vim and building my
 workflow around vim. I wrote the following two functions with the goal of making
 blogging easier.
 
+##The functions
+ 
 At the moment, I have my blog on github, which is synched with
 `~/github/imouzon.github.io/` on my computer.
 I use `R` for most of my coding. 
@@ -50,7 +52,7 @@ is include in my .gitignore.
 So starting a new post, which will alway be stored initially 
 in `~/github/imouzon.github.io/Rmarkdown/` requires
 a few steps which are always basically the same.
-I wrote the following vim function to help me do this:
+The following vim function helps me do this:
 {% highlight vim %}
 function! NewPost(...)
    "where is the _posts folder located?
