@@ -47,16 +47,16 @@ Additionally,
 using R and knitr to create the markdown file from the Rmarkdown file
 requires another set of steps that are basically the same.
 Thus I wrote the following vim functions:
-
-   
-	"New blog post Rmarkdown
-	function! NewPost(...)
-	   if a:0 > 0
-	      let blogtitle = a:1
-	   else
-	      let blogtitle = "thoughts"
-	   end
-	   let blogdate = strftime("%Y-%m-%d")
-	   let blogloc = "~/github/imouzon.github.io/Rmarkdown/".blogdate."-".blogtitle.".rmd"
-	   execute "sp " blogloc
-	endfunction
+{% highlight vim %}
+"New blog post Rmarkdown
+function! NewPost(...)
+   if a:0 > 0
+      let blogtitle = a:1
+   else
+      let blogtitle = "thoughts"
+   end
+   let blogdate = strftime("%Y-%m-%d")
+   let blogloc = "~/github/imouzon.github.io/Rmarkdown/".blogdate."-".blogtitle.".rmd"
+   execute "sp " blogloc
+endfunction
+{% endhighlight %}
