@@ -9,7 +9,7 @@ words_per_minute: 200
 # Owner/author information
 owner:
   name:           Ian Mouzon
-  avatar:         avatar.jpg
+  avatar:         ian_avatar.jpg
   bio:            "I am a PhD student studying statistics at Iowa State. I am interested in time-series, machine learning, and myself."
   email:          imouzon@iastate.com
   # Social networking links used in footer. Update and remove as you like.
