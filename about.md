@@ -4,7 +4,7 @@ permalink: /about/
 title: About Me
 tags: [Ian, Mykal, ISU, Data Mining, Machine Learning]
 image:
-  feature: abstract-5.jpg
+  feature: IMG_0467.jpg
   credit: dargadgetz
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 share: true
