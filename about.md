@@ -23,4 +23,4 @@ me to think of unique ways to build models.
   helps to develop.
 * Film: I love classic and independent films, which may be a byproduct of how I grew up.
   At the moment, I look forward to films by [Joe Swanberg](http://en.wikipedia.org/wiki/Drinking_Buddies), [Ti West](https://twitter.com/Ti_West), and [Whit Stillman](http://www.firstthings.com/article/2010/12/whit-stillman-is-running-late).
-  I also love a good [pop](http://vimeo.com/105540136) [movie](http://www.youtube.com/watch?v=MVt32qoyhi0)
+  I also love a good [popcorn](http://vimeo.com/105540136) [movie](http://www.youtube.com/watch?v=MVt32qoyhi0)
