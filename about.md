@@ -5,8 +5,8 @@ title: About Me
 tags: [Ian, Mykal, ISU, Data Mining, Machine Learning]
 image:
   feature: IMG_0467.JPG
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  credit: Ian Mouzon
+  creditlink: http://www.imouzon.github.io
 share: true
 ---
 
