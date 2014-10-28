@@ -63,9 +63,8 @@ the results of the submission to my computer.
 As a side note, this whole process is only possible because I set up my computer
 so that I wouldn't have to enter my password every time I log on to the server.
 
-A function to retrieve the output of the R code:
+A function to copy the current file to the impact server:
 {% highlight vim %}
-   "copy current file to smb folder
    function! CopyImpactR(...)
       "username
       let user = "imouzon"
