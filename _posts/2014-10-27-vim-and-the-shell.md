@@ -4,8 +4,8 @@ title: "Running R code in secure shell using Vim"
 description: "Running R code in ssh using Vim"
 tags: [R, ssh, vim, code]
 image:
-  feature: beverlyhills\_1984.jpg
-  credit: Anthony Hernandez
+  feature: beverlyhills-1984.jpg
+  credit: Anthony Hernan6dez
   creditlink: http://www.cgrimes.com/exhibitions/2006/beverly-hills-broadway/
 comments: true
 share: true
