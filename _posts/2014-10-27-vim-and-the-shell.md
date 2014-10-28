@@ -63,41 +63,6 @@ the results of the submission to my computer.
 As a side note, this whole process is only possible because I set up my computer
 so that I wouldn't have to enter my password every time I log on to the server.
 
-First a function to open up the impact terminal on the command line:
-{% highlight vim %}
-   "impact server log in
-   function! Impact(...)
-      "impact server user name
-      let user = "imouzon"
-   
-      "port
-      let portNo = 323
-   
-      "which impact do I want to use
-      if a:0 > 0
-         let serverNo = a:1
-      else
-         let serverNo = 3
-      end
-   
-      "shell command
-      let ssh_cmd = "!ssh -p ".portNo." impact".serverNo.".stat.iastate.edu -l ".user
-   
-      "open the new blog post
-      execute ssh_cmd
-   endfunction
-{% endhighlight %}
-
-and some bindings to do this using the leader key:
-
-{% highlight vim %}
-   "do it from shell instead
-   nmap <Leader>ssh :call Impact()<CR>
-   nmap <Leader>ssh2 :call Impact(2)<CR>
-   nmap <Leader>ssh3 :call Impact(3)<CR>
-   nmap <Leader>ssh4 :call Impact(4)<CR>
-{% endhighlight %}
-
 A function to retrieve the output of the R code:
 {% highlight vim %}
    "copy current file to smb folder
@@ -218,6 +183,7 @@ the local folder the R code is stored in:
    endfunction
 {% endhighlight %}
 
+and an easy to remember key binding that does all of this automatically:
 {% highlight vim %}
 nmap <Leader>sshR :call RtoSSH()<CR>
 {% endhighlight %}
