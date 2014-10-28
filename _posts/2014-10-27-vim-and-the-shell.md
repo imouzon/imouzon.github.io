@@ -4,9 +4,9 @@ title: "Running R code in secure shell using Vim"
 description: "Running R code in ssh using Vim"
 tags: [R, ssh, vim, code]
 image:
-  feature: abstract-6.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: beverlyhills\_1984.jpg
+  credit: Anthony Hernandez
+  creditlink: http://www.cgrimes.com/exhibitions/2006/beverly-hills-broadway/
 comments: true
 share: true
 ---
