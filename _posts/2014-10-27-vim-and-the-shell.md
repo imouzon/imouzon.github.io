@@ -5,7 +5,7 @@ description: "Running R code in ssh using Vim"
 tags: [R, ssh, vim, code]
 image:
   feature: beverlyhills-1984.jpg
-  credit: Anthony Hernan6dez
+  credit: Anthony Hernandez
   creditlink: http://www.cgrimes.com/exhibitions/2006/beverly-hills-broadway/
 comments: true
 share: true
@@ -13,17 +13,17 @@ share: true
 
 ##My computer :(
 
-I have been using the same computer (a 2011 MacBook Air) for just over three years now.
-It has been a great computer but occasionally I have some issues, 
-most of which revolve around memory issues.
+I have been using the same MacBook Air for just over three years now.
+It has been a great computer and I think that it has a lot of life left in it, 
+but occasionally it has some issues, most of which revolve around memory.
 When I am using R to work with large data sets and have more
 non-essential files stored on my computer than usual, I encounter 
-kernal panics, runaway processes, and extreme sluggishness
-with everything about the computer, including mouse movement.
+kernal panics, runaway processes, and extreme sluggishness in every aspect
+of the computer include mouse movement and changing window focus.
 The whole computer becomes essentially unusable, the code 
 usually never finishes running and I have to start over.
 I would happily trade almost any other problem in my life (which
-is essentially "I can't watch youtube and code") for these computer
+is essentially "I can't watch youtube and code") for more of these computer
 issues, but it has been especially galling during the last year.
 
 ##I've been doing a lot of data mining
