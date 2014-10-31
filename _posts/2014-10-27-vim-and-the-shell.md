@@ -22,9 +22,9 @@ kernal panics, runaway processes, and extreme sluggishness in every aspect
 of the computer include mouse movement and changing window focus.
 The whole computer becomes essentially unusable, the code 
 usually never finishes running and I have to start over.
-I would happily trade almost any other problem in my life (which
-is essentially "I can't watch youtube and code") for more of these computer
-issues, but it has been especially galling during the last year.
+I would happily trade almost any other problem in my life for more of these computer
+issues (which is essentially "I can't listen to spotify and code"),
+but it has been especially galling during the last year.
 
 ##I've been doing a lot of data mining
 
@@ -35,7 +35,7 @@ to learn how to use our department's computing resources.
 Specifically, I took advantage of an opportunity to learn how to batch submit my code to the linux machines the department keeps for us.
 
 ##Submit R code to the terminal servers
-The basic commands that I needed were commands log in to the terminal
+The basic things that I needed were commands log in to the terminal
 (which prompts me for my password):
 {% highlight bash %}
 ssh -p 323 impact3.stat.iastate.edu -l imouzon
