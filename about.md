@@ -14,6 +14,7 @@ My name is Ian Mouzon. I am a graduate student studying statistics at Iowa State
 I am interested in many facets of statistics, 
 but I am happiest when I can work with complex and preferably large data sets which allow 
 me to think of unique ways to build models.
+My CV can be found [here](http://github.com/imouzon/imouzon.github.io/mouzon_cv-2014.pdf).
 
 # I have other interests too
 * Statistical programming: SAS, R - I wrote [SASnatch](https://github.com/imouzon/SASnatch), 
