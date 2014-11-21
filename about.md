@@ -15,7 +15,7 @@ I am interested in many facets of statistics,
 but I am happiest when I can work with complex and preferably large data sets which allow 
 me to think of unique ways to build models. This is my CV: 
 
-<object data="mouzon_cv-2014.pdf" type="application/pdf" width="100%" height="100%">
+<object data="../mouzon_cv-2014.pdf" type="application/pdf" width="100%" height="100%">
 </object>
 
 # I have other interests too
