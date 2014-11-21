@@ -11,7 +11,7 @@ comments: true
 share: true
 ---
 
-##My computer :(
+##My computer 
 
 I have been using the same MacBook Air for just over three years now.
 It has been a great computer and I think that it has a lot of life left in it, 
