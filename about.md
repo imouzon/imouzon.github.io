@@ -17,7 +17,6 @@ me to think of unique ways to build models. This is my CV:
 
 <object data="../mouzon_cv-2015.pdf" type="application/pdf" width="100%" height="100%">
 
-
 # I have other interests too
 * Statistical programming: SAS, R - I wrote [SASnatch](https://github.com/imouzon/SASnatch), 
   a package that allows the two languages to work together through knitr.
