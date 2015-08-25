@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /eng105/
+permalink: /stat105/
 title: Statistics 105
 tags: [teaching]
 image:
-  feature: course_cover_image.JPG
+  feature: course_cover_image
 share: true
 ---
 
