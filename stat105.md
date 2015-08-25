@@ -21,6 +21,7 @@ I will be very careful to draw your attention here if and when we make use of th
 
 -  Syllabus: [link](./syllabus_stat105_F15.pdf)
 <object data="./syllabus_stat105_F15.pdf" type="application/pdf" width="100%" height="100%">
+</object>
 
 ### Homework Assignments
 
