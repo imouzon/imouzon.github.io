@@ -23,7 +23,7 @@ I will be very careful to draw your attention here if and when we make use of th
 
 ### Lecture handouts
 
--  *Watch this space for note templates*
+-  [Lecture 1](./lectures/lecture1.html) 
 
 ### Homework Assignments
 
