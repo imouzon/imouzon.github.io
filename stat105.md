@@ -23,8 +23,8 @@ I will be very careful to draw your attention here if and when we make use of th
 
 ### Homework Assignments
 
--  **Coming soon**
+-  *Watch this space for assignments and solutions*
 
 ### Applications
 
--  **Coming soon**
+-  *Watch this space for interactive demonstrations and learning tools*
