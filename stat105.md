@@ -23,4 +23,8 @@ I will be very careful to draw your attention here if and when we make use of th
 
 ### Homework Assignments
 
+-  **Coming soon**
+
 ### Applications
+
+-  **Coming soon**
