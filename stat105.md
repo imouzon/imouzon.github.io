@@ -17,6 +17,10 @@ While the course will generally be run through [blackboard](https://bb.its.iasta
 I will be very careful to draw your attention here if and when we make use of this page.
 
 
-### Content
+### Course Information
 
 -  Syllabus: [link](syllabus_stat105_F15.pdf)
+
+### Homework Assignments
+
+### Applications
