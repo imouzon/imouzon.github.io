@@ -4,9 +4,10 @@ permalink: /stat105/
 title: Statistics 105
 tags: [teaching]
 image:
-  feature: course_cover_image.jpg
+  feature: https://i.kinja-img.com/gawker-media/image/upload/s--eInLflH0--/c_fill,fl_progressive,g_north,h_358,q_80,w_636/yzpoa7jxbeysrjsdqrok.gif" alt="dmc logo" height="125"> 
 share: true
 ---
+
 
 # Welcome to STAT 105
 
