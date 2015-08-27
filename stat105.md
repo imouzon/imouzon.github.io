@@ -27,13 +27,7 @@ I will be very careful to draw your attention here if and when we make use of th
 
 -  [Lecture 1: 08-25](./lectures/lecture1.html) (Covers sections 1.1 and 1.2)
 
-This is what I meant when I said "engineers build robot dogs"
-<center>
-   <h2> Engineers </h2>
-   <img src="https://i.kinja-img.com/gawker-media/image/upload/s--eInLflH0--/c_fill,fl_progressive,g_north,h_358,q_80,w_636/yzpoa7jxbeysrjsdqrok.gif" alt="dmc logo" height="125"> 
-</center>
-
--  [Lecture 2: 08-27](./lectures/lecture2.html) (Covers section 1.3, 1.4, 
+-  [Lecture 2: 08-27](./lectures/lecture2.html) (Covers section 1.3, 1.4, 1.5)
 
 ### Homework Assignments
 
