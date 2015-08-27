@@ -29,7 +29,7 @@ I will be very careful to draw your attention here if and when we make use of th
 
 ### Homework Assignments
 
--  [Homework 1: 08-27](./lectures/stat105_hw1.pdf) (Covers sections 1.1 - 2.2)
+-  [Homework 1](./lectures/stat105_hw1.pdf) (Due Thursday, Sept. 3 at the start of class. Covers sections 1.1 - 2.2)
 
 ### Applications
 
