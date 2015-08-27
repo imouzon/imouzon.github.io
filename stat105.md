@@ -29,7 +29,7 @@ I will be very careful to draw your attention here if and when we make use of th
 
 This is what I meant when I said "engineers build robot dogs"
 <center>
-   <h2> Factorial Studies Example, cont </h2>
+   <h2> Engineers </h2>
    <img src="https://i.kinja-img.com/gawker-media/image/upload/s--eInLflH0--/c_fill,fl_progressive,g_north,h_358,q_80,w_636/yzpoa7jxbeysrjsdqrok.gif" alt="dmc logo" height="125"> 
 </center>
 
