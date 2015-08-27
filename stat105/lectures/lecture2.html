@@ -233,7 +233,7 @@ layout:false
 .left-column[
 ## What and Why
 ## Terms
-## Measurements
+## Measure
 ### Key Words
 ]
 .right-column[
@@ -262,24 +262,68 @@ layout:false
 .left-column[
 ## What and Why
 ## Terms
-## Measurements
-### Key Words
+## Measure
+## Math Models
 ]
 .right-column[
 
-## If You Can't Measure, You Can't Do Statistics
-### Or Engineering For That Matter
+## Mathematical Models and Data Analysis
 
--  **Validity**: faithfully representing the aspect of interest
--  **Precision**: the amount of variation in repeated measures
--  **Accuracy**: aka "unbiasedness"; how close a measurement is to the true value "on average"
+>  **Mathematical Model**: A description of a physical system using mathematical concepts and language.
 
-We **calibrate** to improve accuracy
+Identifying mathematical relationships between parts of a system allows us to describe complexity in simple terms.  
+
+**Example**: Height of an Object in Projectile Motion
+
+We can describe the relationship between height of a projectile \\(y\\) and time \\(t\\) as
+\\[
+y  = h_0 + v_h \cdot t - \frac{1}{2} g t^2, \text{ } t \ge 0,
+\\]
+where 
+- \\(h_0\\) is the initial height,
+- \\(v_h\\) is the initial vertical velocity,
+and
+- \\(g\\) is the (constant) acceleration due to gravity
 ]
 
 ???
 
 ---
+layout:false
+.left-column[
+## What and Why
+## Terms
+## Measure
+## Math Models
+]
+.right-column[
+
+**Example**: Height of an Object in Projectile Motion, cont.
+
+\\[
+y  = h_0 + v_h \cdot t - \frac{1}{2} g t^2, \text{   } t \ge 0,
+\\]
+
+However, this is not what we see in real life for a variety of reasons. This model assumes
+
+1. \\(g\\) is constant, while \\(g\\) is actually a function of distance between the objects which changes,
+
+2. \\(g\\) is known, while it is actually estimated and approximated,
+
+3. Gravity is the only force acting on the object, ignoring drag force, electrical attractions, etc.
+
+4. There are no other changes in the system (for instance, changes in air pressure)
+
+We can fix these by writing a better relationship *or* we can accept that some things won't be known and use a **stochastic model** - a mathematical model that specifically allows for variation (or "randomness").
+Understanding how these **stochastic models** work is a major focus of this course.
+]
+
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+# Chapter 2: Date Collection
 
 
 
