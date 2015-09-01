@@ -27,7 +27,7 @@ I will be very careful to draw your attention here if and when we make use of th
 
 -  [Lecture 2: 08-27](./lectures/lecture2.html) (Covers section 1.3, 1.4, 1.5, 2.1, 2.2)
 
--  [Lecture 2: 09-01](./lectures/lecture3.html) (Covers section 2.3 - 2.5)
+-  [Lecture 3: 09-01](./lectures/lecture3.html) (Covers section 2.3 - 2.5)
 
 ### Homework Assignments
 
