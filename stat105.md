@@ -21,7 +21,7 @@ Grades and a few other important parts of the course will be run through [blackb
 -  Tuesday 9:30 - 10:30 am, Snedecor 3220
 -  Wednesday 9:00 - 10:00 am, Snedecor 3220
 -  Thursday 9:30 - 10:30 am, Snedecor 3220
--  *None of these work? E-mail me (imouzon@iastate.edu) and we can find a time that fits both our schedules.*
+-  *Additional hours can be arranged by email*: imouzon@iastate.edu
 
 **Qianqian's Office Hours**
 
