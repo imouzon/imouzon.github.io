@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generating a Random Number Table
+title: "Generating a Random Number Table"
 description: "Making and saving your own Random Number Tables"
 tags: [teaching]
 image:
