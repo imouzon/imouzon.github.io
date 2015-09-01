@@ -1,7 +1,7 @@
 ---
-layout: coursepage
-permalink: /stat105/examples/
+layout: post
 title: Generating a Random Number Table
+description: "Making and saving your own Random Number Tables"
 tags: [teaching]
 image:
   feature: course_cover_image.jpg
