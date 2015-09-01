@@ -1,6 +1,6 @@
 ---
 layout: coursepage
-permalink: /stat105/
+permalink: /stat105/examples/
 title: Generating a Random Number Table
 tags: [teaching]
 image:
