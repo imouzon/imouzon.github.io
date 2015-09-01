@@ -44,7 +44,7 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Lecture 3: 09-01](./lectures/lecture3.html) (Covers section 2.3 - 2.5)
 
-   -  [Generating A Random Table with `RANDOM.org`](./examples/random_number_table.html)
+   -  [Generating A Random Table with `RANDOM.org`](./_posts/random_number_table.html)
 
 ### Homework Assignments
 

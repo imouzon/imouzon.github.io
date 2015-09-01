@@ -1,6 +1,6 @@
 ---
 layout: coursepage
-permalink: /stat105/examples/
+permalink: /stat105/
 title: Generating a Random Number Table
 tags: [teaching]
 image:
@@ -21,7 +21,6 @@ We can generate a random table and share it by giving the table an ID:
 4. We want "decimal (base 10)" integers
 5. The format is up to you - "nicely formatted HTML" displays the numbers on the page for you though
 6. For Part 4, I chose to name my table so that I could keep a record of it. I named it `stat105_RT1`. If you give the table that name, you will get the same one I got. Here are my results:
-
 ```
 89767	17740	50259	90413	5485	54214	42088	52180	13706	4053
 35120	74584	48423	55755	18069	11644	87145	23043	65272	69458
@@ -36,53 +35,5 @@ We can generate a random table and share it by giving the table an ID:
 ```
 I even got a timestamp: `Timestamp: 2015-09-01 16:47:45 UTC` 
 
-It's not perfect - we should change `1302` to `01302` and `9191` to `09191` since the leading blanks are really just 0.
+It's not perfect - we should change `1302` to `01302` and `9191` to `09191` since the leading blanks are really just 0, for instance.
 However, we now have a new random table that we can use whenever we want and we can document how we generated it in the first place (the table was created using `RANDOM.org` on 2015-09-01 at 16:47:45 UTC and is stored as `stat105_RT1`)
-
-
-# Welcome to STAT 105
-
-Welcome to the course page for Fall 2015 STAT 105 section B.
-
-Grades and a few other important parts of the course will be run through [blackboard](https://bb.its.iastate.edu/), but most content can be better shared here (for instance, lecture demonstrations).
-
-## Course Information
-
-**Ian's Office Hours**
-
--  Tuesday 9:30 - 10:30 am, Snedecor 3220
--  Wednesday 9:00 - 10:00 am, Snedecor 3220
--  Thursday 9:30 - 10:30 am, Snedecor 3220
-
-*None of these work? E-mail me (imouzon@iastate.edu) and we can find a time that works for both of our schedules.*
-
-**Qianqian's Office Hours**
-
--  Monday 1:00 - 2:00 pm, Snedecor 2406
--  Wednesday 1:00 - 2:00 pm, Snedecor 2406
-
-**Syllabus**
-
-You can view the syllabus below or download it at this [link](./syllabus_stat105_F15.pdf).
-<object data="./syllabus_stat105_F15.pdf" type="application/pdf" width="100%" height="100%">
-
-## Course Materials
-
-### Lecture handouts
-
--  [Lecture 1: 08-25](./lectures/lecture1.html) (Covers sections 1.1 and 1.2)
-
--  [Lecture 2: 08-27](./lectures/lecture2.html) (Covers section 1.3, 1.4, 1.5, 2.1, 2.2)
-
--  [Lecture 3: 09-01](./lectures/lecture3.html) (Covers section 2.3 - 2.5)
-
-   -  [Generating A Random Table with `RANDOM.org`](./examples/random_number_table.html)
-
-### Homework Assignments
-
--  [Homework 1](./lectures/stat105_hw1.pdf) (Due Thursday, Sept. 3 at the start of class. Covers sections 1.1 - 2.2)
-
-### Applications
-
--  *Watch this space for interactive demonstrations and learning tools*
-
