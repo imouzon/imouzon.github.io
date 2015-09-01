@@ -18,6 +18,15 @@ Grades and a few other important parts of the course will be run through [blackb
 
 ### Course Information
 
+**Ian's Office Hours**
+-  Tuesday 9:30 - 10:30 am, Snedecor 3220
+-  Wednesday 9:00 - 10:00 am, Snedecor 3220
+-  Thursday 9:30 - 10:30 am, Snedecor 3220
+
+**Qianqian's Office Hours**
+-  Monday 1:00 - 2:00 pm, Snedecor 2406
+-  Wednesday 1:00 - 2:00 pm, Snedecor 2406
+
 -  Syllabus: [link](./syllabus_stat105_F15.pdf)
 <object data="./syllabus_stat105_F15.pdf" type="application/pdf" width="100%" height="100%">
 
