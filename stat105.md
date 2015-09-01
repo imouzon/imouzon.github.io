@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: coursepage
 permalink: /stat105/
 title: Statistics 105
 tags: [teaching]
@@ -10,6 +10,7 @@ share: true
 
 # Welcome to STAT 105
 
+*Testing*
 Welcome to the course page for Fall 2015 STAT 105 section B.
 
 Grades and a few other important parts of the course will be run through [blackboard](https://bb.its.iastate.edu/), but most content can be better shared here (for instance, lecture demonstrations).
