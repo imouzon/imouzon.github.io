@@ -30,7 +30,7 @@ Grades and a few other important parts of the course will be run through [blackb
 -  Wednesday 1:00 - 2:00 pm, Snedecor 2406
 
 **Syllabus**
-You can view the syllabus below or download it at this [link](./syllabus_stat105_F15.pdf)
+You can view the syllabus below or download it at this [link](./syllabus_stat105_F15.pdf).
 <object data="./syllabus_stat105_F15.pdf" type="application/pdf" width="100%" height="100%">
 
 ### Lecture handouts
