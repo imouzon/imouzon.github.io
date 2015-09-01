@@ -5,6 +5,7 @@ description: "Making and saving your own Random Number Tables"
 tags: [teaching]
 image:
   feature: course_cover_image.jpg
+comments: true
 share: true
 ---
 
