@@ -1,5 +1,5 @@
 ---
-layout: course-page
+layout: page
 permalink: /stat105/
 title: Statistics 105
 tags: [teaching]
