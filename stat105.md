@@ -14,9 +14,7 @@ Welcome to the course page for Fall 2015 STAT 105 section B.
 
 Grades and a few other important parts of the course will be run through [blackboard](https://bb.its.iastate.edu/), but most content can be better shared here (for instance, lecture demonstrations).
 
-## Course Materials
-
-### Course Information
+## Course Information
 
 **Ian's Office Hours**
 
@@ -33,6 +31,8 @@ Grades and a few other important parts of the course will be run through [blackb
 
 You can view the syllabus below or download it at this [link](./syllabus_stat105_F15.pdf).
 <object data="./syllabus_stat105_F15.pdf" type="application/pdf" width="100%" height="100%">
+
+## Course Materials
 
 ### Lecture handouts
 
