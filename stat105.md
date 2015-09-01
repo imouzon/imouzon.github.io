@@ -44,6 +44,8 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Lecture 3: 09-01](./lectures/lecture3.html) (Covers section 2.3 - 2.5)
 
+   -  [Generating A Random Table with `RANDOM.org`](./examples/random_number_table.html)
+
 ### Homework Assignments
 
 -  [Homework 1](./lectures/stat105_hw1.pdf) (Due Thursday, Sept. 3 at the start of class. Covers sections 1.1 - 2.2)
