@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: coursepost
 title: "Generating a Random Number Table"
 description: "Making and saving your own Random Number Tables"
 tags: [teaching]
