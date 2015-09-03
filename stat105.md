@@ -44,6 +44,8 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Lecture 3: 09-01](./lectures/lecture3.html) (Covers section 2.3 - 2.5)
 
+-  [Lecture 4: 09-03](./lectures/lecture4.html) (Covers section 2.4 - 3.1)
+
 ### Homework Assignments
 
 -  [Homework 1](./lectures/stat105_hw1.pdf) (Due Thursday, Sept. 3 at the start of class. Covers sections 1.1 - 2.2)
