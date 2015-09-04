@@ -48,9 +48,11 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 ### Homework Assignments
 
--  [Homework 1](./lectures/stat105_hw1.pdf) (Due Thursday, Sept. 3 at the start of class. Covers sections 1.1 - 2.2)
+-  [Homework 1](./hw/stat105_hw1.pdf) (Due Thursday, Sept. 3 at the start of class. Covers sections 1.1 - 2.2)
 
--  [Homework 2](./lectures/stat105_hw2.pdf) (Due Thursday, Sept. 10 at the start of class. Covers all of Chapter 2)
+   -  [Solutions for Homework 1](./hw/stat105_hw1_soln.pdf) 
+
+-  [Homework 2](./hw/stat105_hw2.pdf) (Due Thursday, Sept. 10 at the start of class. Covers all of Chapter 2)
 
 ### Applications
 
