@@ -58,6 +58,7 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Homework 2](./hw/stat105_hw2.pdf) (Due Thursday, Sept. 10 at the start of class. Covers all of Chapter 2)
 
+-  [Homework 3](./hw/stat105_hw3.pdf) (Due Thursday, Sept. 17 at the start of class. Covers all of Chapter 3)
 ### Applications
 
 -  *Watch this space for interactive demonstrations and learning tools*
