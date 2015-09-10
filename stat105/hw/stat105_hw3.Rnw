@@ -17,7 +17,7 @@
 
 \lhead{Stat 105} 
 \chead{Homework Assignment 3} 
-\rhead{Due Thursday, September 18} 
+\rhead{Due Thursday, September 17} 
 \lfoot{Fall 2015} 
 \cfoot{\thepage} 
 \rfoot{} 
