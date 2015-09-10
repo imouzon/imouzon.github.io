@@ -1,0 +1,199 @@
+body { 
+   font-family: 'Droid Serif'; 
+}
+
+h1, h2, h3, h4 {
+   font-family: 'Yanone Kaffeesatz';
+   font-weight: 400;
+   margin-bottom: 0;
+}
+
+.remark-slide-content h1 { font-size: 3em; }
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.remark-slide-content h4 { font-size: 4em; }
+.remark-slide-content h5 { font-size: 1.3em; }
+
+.footnote {
+   position: absolute;
+   bottom: 3em;
+}
+
+li p { line-height: 1.25em; }
+
+.red { color: #fa0000; }
+.bgcol { color: #333333; }
+.large { font-size: 2em; }
+
+a, a > code {
+   color: rgb(249, 38, 114);
+   text-decoration: none;
+}
+
+/* Styling for Template:Quote */
+blockquote.templatequote {
+  margin-top: 0;
+}
+
+blockquote.templatequote div.templatequotecite {
+    line-height: 1.5em;
+     /* @noflip */
+     text-align: left;
+     /* @noflip */
+     padding-left: 1.6em;
+     margin-top: 0;
+}
+
+table {
+   width: 70%;
+   border-collapse: collapse;
+   border-color: #333333;
+   padding: 0px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+th {
+   background-color: #333333;
+   color: #777872;
+   font-size: .8em;
+}
+
+td {
+   text-align: center;
+   font-size: .8em;
+}
+
+table
+code {
+   -moz-border-radius: 5px;
+   -web-border-radius: 5px;
+   background: #e7e8e2;
+   border-radius: 5px;
+}
+.remark-container {
+   background-color: bgcol;
+}
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.remark-code-line-highlighted     { background-color: #373832; }
+.pull-left {
+   float: left;
+   width: 47%;
+}
+.pull-right {
+   float: right;
+   width: 47%;
+}
+.pull-right ~ p {
+   clear: both;
+}
+#slideshow .slide .content code {
+   font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+   font-size: 0.9em;
+   padding: 15px;
+}
+.lossfunc {
+   background: #333333;
+   color: #f3f3f3;
+   padding-left: 1.6em;
+}
+.lossfunc h1, .lossfunc h2 {
+   color: #f3f3f3;
+   line-height: 0.8em;
+}
+/*inverse slide*/
+.inverse {
+   background: #333333;
+   color: #777872;
+   text-shadow: 0 0 20px #333;
+}
+.inverse h1, .inverse h2 {
+   color: #f3f3f3;
+   line-height: 0.8em;
+}
+/*inverse light*/
+.inverselight {
+   background: #ffffcc;
+   color: #cc0000;
+   text-shadow: 0 0 20px #777872;
+}
+.inverselight h1, .inverselight h2 {
+   color: #f3f3f3;
+   line-height: 0.8em;
+}
+/*iastate slide*/
+/* ISU colors:
+   red = 333333
+   red2 = CC0033
+   yellow = ffcc66
+*/
+.iastatered {
+   background: #CC0033;
+   color: #ffcc66;
+   text-shadow: 0 0 20px #777872;
+}
+.iastatered h1, .iastatered h2 {
+   color: #ffcc66;
+   line-height: 0.8em;
+}
+.iastateyel {
+   background: #ffcc66;
+   color: #CC0033;
+   text-shadow: 0 0 20px #777872;
+}
+.iastateyel h1, .iastateyel h2 {
+   color: #CC0033;
+   line-height: 0.8em;
+}
+/* Slide-specific styling */
+#slide-inverse .footnote {
+   bottom: 12px;
+   left: 20px;
+}
+#slide-how .slides {
+   font-size: 0.9em;
+   position: absolute;
+   top:  151px;
+   right: 140px;
+}
+#slide-how .slides h3 {
+   margin-top: 0.2em;
+}
+#slide-how .slides .first, #slide-how .slides .second {
+   padding: 1px 20px;
+   height: 90px;
+   width: 120px;
+   -moz-box-shadow: 0 0 10px #777;
+   -webkit-box-shadow: 0 0 10px #777;
+   box-shadow: 0 0 10px #777;
+}
+#slide-how .slides .first {
+   background: #fff;
+   position: absolute;
+   top: 20%;
+   left: 20%;
+   z-index: 1;
+}
+#slide-how .slides .second {
+   position: relative;
+   background: #fff;
+   z-index: 0;
+}
+
+/* Two-column layout */
+.left-column {
+   color: #777;
+   width: 20%;
+   height: 92%;
+   float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+   color: #000;
+}
+.right-column {
+   width: 75%;
+   float: right;
+   padding-top: 1em;
+}

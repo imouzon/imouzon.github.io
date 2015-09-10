@@ -38,15 +38,17 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 ### Lecture handouts
 
--  [Lecture 1: 08-25](./lectures/lecture1.html) (Covers sections 1.1 and 1.2)
+-  [Lecture 1: 08-25](./lectures/lecture1/lecture1.html) (Covers sections 1.1 and 1.2)
 
--  [Lecture 2: 08-27](./lectures/lecture2.html) (Covers section 1.3, 1.4, 1.5, 2.1, 2.2)
+-  [Lecture 2: 08-27](./lectures/lecture2/lecture2.html) (Covers section 1.3, 1.4, 1.5, 2.1, 2.2)
 
--  [Lecture 3: 09-01](./lectures/lecture3.html) (Covers section 2.3 - 2.5)
+-  [Lecture 3: 09-01](./lectures/lecture3/lecture3.html) (Covers section 2.3 - 2.5)
 
--  [Lecture 4: 09-03](./lectures/lecture4.html) (Covers section 2.4 - 3.1)
+-  [Lecture 4: 09-03](./lectures/lecture4/lecture4.html) (Covers section 2.4 - 3.1)
 
--  [Lecture 5: 09-09](./lectures/lecture5.html) (Covers section 3.1 - 3.2)
+-  [Lecture 5: 09-08](./lectures/lecture5/lecture5.html) (Covers section 3.1 - 3.2)
+
+-  [Lecture 6: 09-10](./lectures/lecture6/lecture6.html) (Covers section 3.2 - 3.4)
 
 ### Homework Assignments
 
