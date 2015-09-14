@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <link href ="../global/www/css/stat105.css" type="text/css" rel = "stylesheet">
-      <style type="text/css">
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-      </style>
+<head>
+   <link href ='../global/www/css/stat105.css' type='text/css' rel = 'stylesheet'>
+   <style type='text/css'>
+   @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+   @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+   @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+   </style>
 
-      <title>STAT 105: Lecture 6</title>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta name="keywords" content="statistics,engineering,stat105,iastate"/>
-      <meta name="description" content="Lecture 6: Graphs, etc."/>
-   </head>
+   <title>STAT 105: Lecture 7</title>
+   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+   <meta name='keywords' content='statistics,engineering,stat105,iastate'/>
+   <meta name='description' content='Lecture 7: Linear Models'/>
+</head>
 
-   <body>
-   <textarea id="source">
+    ```{r cache=FALSE, echo=FALSE, include = FALSE}
+      library(usefulR)
+      library(ggplot2)
+      library(knitr)
 
-```{r cache=FALSE, echo=FALSE, include = FALSE}
-library(usefulR)
-library(ggplot2)
-library(knitr)
+      knitrSetup(flavor = "html", fig.folder = "www/lecture6", cache.folder = "www/lecture6")
 
-knitrSetup(flavor = "html", fig.folder = "www/lecture6", cache.folder = "www/lecture6")
-
-if(FALSE) 
-   rmd2html("lecture6.Rmd")
-```
-
-```{r echo=FALSE, cache=FALSE, include = FALSE}
-   mode_values <- function(x){
-      tbl <- table(x)
-      names(which(tbl == max(tbl)))
-   }
-
-   print_multiple <- function(x){
-      if(length(x) == 1){
-         x
-      }else{
-         xfirst <- x[1:(length(x)-1)]
-         paste(paste0(xfirst,collapse = ", "),"and",x[length(x)])
+      if(FALSE) 
+         rmd2html("lecture6.Rmd")
+   ```
+   ```{r echo=FALSE, cache=FALSE, include = FALSE}
+      mode_values <- function(x){
+         tbl <- table(x)
+         names(which(tbl == max(tbl)))
       }
-   }
 
-   my_quantile <- function(p,x){
-      x <- x[order(x)]
-      
-      n <- length(x)
-
-      raw.i <- n*p + .5
-      floor.i <- floor(raw.i)
-      if(floor.i == raw.i){
-         x[floor.i]
-      }else{
-         x[floor.i] + (n*p - floor.i + .5)*(x[floor.i+1] - x[floor.i])
+      print_multiple <- function(x){
+         if(length(x) == 1){
+            x
+         }else{
+            xfirst <- x[1:(length(x)-1)]
+            paste(paste0(xfirst,collapse = ", "),"and",x[length(x)])
+         }
       }
-   }
 
-```
+      my_quantile <- function(p,x){
+         x <- x[order(x)]
+         
+         n <- length(x)
+
+         raw.i <- n*p + .5
+         floor.i <- floor(raw.i)
+         if(floor.i == raw.i){
+            x[floor.i]
+         }else{
+            x[floor.i] + (n*p - floor.i + .5)*(x[floor.i+1] - x[floor.i])
+         }
+      }
+
+   ```
+   ```{r eval = TRUE, echo = FALSE, tidy = TRUE, fig.height = 1.5, fig.width = 3, dpi = 150}
+      des1 <- c(74, 79, 77, 81, 68, 79, 81, 76, 81, 80, 80, 78, 88, 83, 79, 91, 79, 75, 74, 73)
+      des2 <- c(65, 77, 78, 74, 76, 73, 71, 71, 86, 81, 76, 89, 79, 78, 77, 76, 72, 76, 75, 79)
+      dotplots <- data.frame(values = c(grp1,grp2), groups = rep(c("Group 1","Group 2"), each = length(grp1)))
+   ```
+
+<body>
+<textarea id='source'> 
+
+---
 name: inverse
 layout: true
 class: center, middle, inverse
----
-# STAT 105: Lecture 6
-## Chapter 3: Elementary Descriptive Statistics
+# STAT 105: Lecture 7
+## Chapter 4: Describing Relationships Between Variables
 .footnote[Course page: [imouzon.github.io/stat105](https://imouzon.github.io/stat105)]
 ---
 # Recap
 ## Summarizing Data
-### 
-## Using Graphical and Numerical Methods
 ---
 layout:false
 .left-column[
 ## Recap
-### Location
+### Quantile
 ]
 .right-column[
 ## Summarizing Data Numerically
@@ -86,22 +89,6 @@ Motivated by asking what is *normal/common/expected* for this data
 **Mode**: The most commonly occurring value in set
 
 **Median**: The value dividing the set in half (the middle of the values).
-```
-              Group 1             Group 2
-            74 79 77 81         65 77 78 74
-            68 79 81 76         76 73 71 71
-            81 80 80 78         86 81 76 89
-            88 83 79 91         79 78 77 76
-            79 75 74 73         72 76 75 79    
-```
-
-```{r eval = TRUE, echo = FALSE, tidy = TRUE, fig.height = 1.5, fig.width = 3, dpi = 150}
-   grp1 <- c(74, 79, 77, 81, 68, 79, 81, 76, 81, 80, 80, 78, 88, 83, 79, 91, 79, 75, 74, 73)
-   grp2 <- c(65, 77, 78, 74, 76, 73, 71, 71, 86, 81, 76, 89, 79, 78, 77, 76, 72, 76, 75, 79)
-   dotplots <- data.frame(values = c(grp1,grp2), groups = rep(c("Group 1","Group 2"), each = length(grp1)))
-
-   #ggplot(data=dotplots, aes(x = values, fill = factor(groups))) + geom_dotplot(binwidth = 1) + facet_grid(groups~.)
-```
 
 For group 1, the mean is `r mean(grp1)`, the median is `r median(grp1)`, and the mode is `r print_multiple(mode_values(grp1))`.
 
@@ -144,11 +131,6 @@ layout:false
 ## Summarizing Data Numerically
 **Example**: Taking a sample of size 5 from a population we record the following values:
 
-```{r echo = FALSE}
-   samp <- sample(50:70,5)
-   samp_bar <- round(mean(samp),2)
-```
-
 <center>
 `r samp`
 </center>
@@ -185,7 +167,6 @@ With `\(s^2\)` known, finding `\(s\)` is simple:
      &= `r sqrt(((samp[1] -  samp_bar)^2 +  (samp[2] -  samp_bar)^2 +  (samp[3] -  samp_bar)^2 +  (samp[4] -  samp_bar)^2 +  (samp[5] -  samp_bar)^2)/(length(samp) -1))` \\\\
 \end{align}
 \]`
-
 ---
 layout:false
 .left-column[
@@ -244,10 +225,6 @@ We define the **quantile** `\(Q(p)\)` as:
 ]
 ---
 layout:false
-```{r include = FALSE}
-newsamp <- c(58, 76, 66, 61, 50, 77, 67, 64, 41, 61)
-newsamp_ord <- newsamp[order(newsamp)]
-```
 .left-column[
 ## Recap
 ### Location
@@ -515,9 +492,6 @@ The resulting plot shows some kind of linear pattern - this means that the quant
 ```
 ]
 ---
-
-
-
 
 </textarea>
 <!-- load remark -->
