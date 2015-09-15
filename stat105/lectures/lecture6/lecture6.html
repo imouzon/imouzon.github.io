@@ -103,7 +103,7 @@ layout:false
 
 
 <center>
-63, 57, 64, 60, 52
+61, 63, 58, 51, 69
 </center>
 
 Find the variance and standard deviation of this sample.
@@ -114,15 +114,15 @@ layout:false
 ## Example: Finding the Variance
 
 Since we are told it is a sample, we need to use **sample variance**.
-The mean of 63, 57, 64, 60, 52 is 59.2
+The mean of 61, 63, 58, 51, 69 is 60.4
 `\[
 \begin{align}
 s^2 &= \frac{1}{n-1}\sum_{i=1}^5 (x_i - \bar{x})^2 \\\\
     &= \frac{1}{n-1}\left( (x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + (x_3 - \bar{x})^2 + (x_4 - \bar{x})^2 + (x_5 - \bar{x})^2 \right) \\\\
-    &= \frac{1}{5-1} \left((63 - 59.2)^2 + (57 - 59.2)^2 + (64 - 59.2)^2 + (60 - 59.2)^2 + (52 - 59.2)^2 \right) \\\\
-    &= \frac{1}{4} \left( (3.8)^2 + (-2.2)^2 + (4.8)^2 + (0.8)^2 + (-7.2)^2 \right) \\\\
-    &= \frac{1}{4} \left( 14.44 + 4.84 + 23.04 + 0.64 + 51.84 \right) \\\\
-    &=  23.7 \\\\
+    &= \frac{1}{5-1} \left((61 - 60.4)^2 + (63 - 60.4)^2 + (58 - 60.4)^2 + (51 - 60.4)^2 + (69 - 60.4)^2 \right) \\\\
+    &= \frac{1}{4} \left( (0.6)^2 + (2.6)^2 + (-2.4)^2 + (-9.4)^2 + (8.6)^2 \right) \\\\
+    &= \frac{1}{4} \left( 0.36 + 6.76 + 5.76 + 88.36 + 73.96 \right) \\\\
+    &=  43.8 \\\\
 \end{align}
 \]`
 
@@ -134,8 +134,8 @@ With `\(s^2\)` known, finding `\(s\)` is simple:
 `\[
 \begin{align}
    s &= \sqrt{s^2} \\\\
-     &= \sqrt{23.7} \\\\
-     &= 4.8682646 \\\\
+     &= \sqrt{43.8} \\\\
+     &= 6.6181568 \\\\
 \end{align}
 \]`
 
@@ -486,18 +486,3 @@ The resulting plot shows some kind of linear pattern - this means that the quant
 
    MathJax.Hub.Configured();
 </script>
-
-<!--
-<script type="text/javascript">
-   var hljs = remark.highlighter.engine;
-</script>
-<script src="./remark.language.js" type="text/javascript"></script>
-<script type="text/javascript">
-   var slideshow = remark.create({
-      highlightStyle: 'monokai',
-      highlightLanguage: 'remark'
-   }) ;
-   </script>
-   </body>
-</html>
--->
