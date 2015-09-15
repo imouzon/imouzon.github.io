@@ -50,6 +50,8 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Lecture 6: 09-10](./lectures/lecture6/lecture6.html) (Covers section 3.2 - 3.4)
 
+-  [Lecture 7: 09-15](./lectures/lecture7/lecture7.html) (Covers section 4.1 - 4.2)
+
 ### Homework Assignments
 
 -  [Homework 1](./hw/stat105_hw1.pdf) (Due Thursday, Sept. 3 at the start of class. Covers sections 1.1 - 2.2)
