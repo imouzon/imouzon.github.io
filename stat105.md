@@ -52,15 +52,22 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Lecture 7: 09-15](./lectures/lecture7/lecture7.html) (Covers section 4.1 - 4.2)
 
+-  Lecture 8: 09-17 (Covers section 4.1 - 4.2, done on overhead/board)
+
 ### Homework Assignments
 
--  [Homework 1](./hw/stat105_hw1.pdf) (Due Thursday, Sept. 3 at the start of class. Covers sections 1.1 - 2.2)
+-  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Thursday, Sept. 3 at the start of class. Covers sections 1.1 - 2.2)
 
-   -  [Solutions for Homework 1](./hw/stat105_hw1_soln.pdf) 
+   -  [Solutions for Homework 1](./hw/hw1/stat105_hw1_soln.pdf) 
 
--  [Homework 2](./hw/stat105_hw2.pdf) (Due Thursday, Sept. 10 at the start of class. Covers all of Chapter 2)
+-  [Homework 2](./hw/hw2/stat105_hw2.pdf) (Due Thursday, Sept. 10 at the start of class. Covers all of Chapter 2)
 
--  [Homework 3](./hw/stat105_hw3.pdf) (Due Thursday, Sept. 17 at the start of class. Covers all of Chapter 3)
+-  [Homework 3](./hw/hw3/stat105_hw3.pdf) (Due Thursday, Sept. 17 at the start of class. Covers all of Chapter 3)
+
+-  [Homework 4](./hw/hw4/stat105_hw4.pdf) (Due Thursday, Sept. 17 at the start of class. Covers all of Chapter 3)
+
+   -  [tools.jmp](./hw/hw4/tools.jmp)
+
 ### Applications
 
 -  *Watch this space for interactive demonstrations and learning tools*

@@ -86,6 +86,8 @@ layout:false
 For a data set consisting of `\(n\)` values that when ordered are `\(x_1 \le x_2 \le \ldots \le x_n\)` and `\( 0 \le p \le 1\)`.
 Let `\(i = \lfloor n \cdot p + .5 \rfloor \)`.
 We define the **quantile** `\(Q(p)\)` as:
+
+<span style = "font-size: 70%">
 `\[
    Q(p) = 
    \begin{cases}
@@ -93,6 +95,7 @@ We define the **quantile** `\(Q(p)\)` as:
    x_i  + \left( n p - i + .5 \right) \left( x_{i+1} - x_i \right) &  \lfloor n \cdot p + .5 \rfloor \ne n \cdot p + .5 \\
    \end{cases}
 \]`
+</span>
 
 Basically
 -  if `\(n \cdot p + .5\)` is an integer, we are going to use an `\(x_i\)` from our sample.
@@ -387,6 +390,11 @@ layout: false
       tex2jax: {
          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
       }
+   });
+   MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+         return(elem.SourceElement());
+      }).parent().addClass('has-jax');
    });
    MathJax.Hub.Queue(function() {
       $(MathJax.Hub.getAllJax()).map(function(index, elem) {
