@@ -14,6 +14,16 @@ Welcome to the course page for Fall 2015 STAT 105 section B.
 
 Grades and a few other important parts of the course will be run through [blackboard](https://bb.its.iastate.edu/), but most content can be better shared here (for instance, lecture demonstrations).
 
+## Announcements
+
+### Exam 1 - October 1st
+
+I will have extended office hours before the first exam. 
+If you are interested in attending, please fill out the survey linked below so that I can schedule them effectively.
+Of course, we can still arrange office hours that work for your schedule personally by contacting me at imouzon@iastate.edu.
+
+[Extended Office Hours](http://whenisgood.net/stat105exam1)
+
 ## Course Information
 
 **Ian's Office Hours**
