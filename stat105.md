@@ -74,7 +74,9 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Homework 3](./hw/hw3/stat105_hw3.pdf) (Due Thursday, Sept. 17 at the start of class. Covers all of Chapter 3)
 
--  [Homework 4](./hw/hw4/stat105_hw4.pdf) (Due Thursday, Sept. 24 at the start of class. Covers all of Chapter 3)
+   -  [Solutions for Homework 3](./hw/hw3/stat105_hw3_soln.pdf) 
+
+-  [Homework 4](./hw/hw4/stat105_hw4.pdf) (Due Thursday, Sept. 24 at the start of class. Covers sections 4.1 - 4.2)
 
    -  [tools.jmp](./hw/hw4/tools.jmp)
 
