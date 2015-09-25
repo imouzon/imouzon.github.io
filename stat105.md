@@ -16,6 +16,10 @@ Grades and a few other important parts of the course will be run through [blackb
 
 ## Announcements
 
+### Practice Exam
+
+Here is the promised [Practice Exam](./practice_exams/exam1A/stat105_F15_exam1B.pdf)
+
 ### Exam 1 - October 1st
 
 I will have extended office hours before the first exam. 
@@ -23,6 +27,8 @@ If you are interested in attending, please fill out the survey linked below so t
 Of course, we can still arrange office hours that work for your schedule personally by contacting me at imouzon@iastate.edu.
 
 [Extended Office Hours](http://whenisgood.net/stat105exam1)
+
+I have currently scheduled bonus office hours for September 30th from 1:00 pm - 3:00 pm.
 
 ## Course Information
 

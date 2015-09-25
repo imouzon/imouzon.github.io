@@ -1,0 +1,128 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Thu Sep 24 15:20:42 2015
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[addpoints]{examsetup}
+
+\usepackage{etoolbox}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 105}{STAT 105, Section #1}}
+\newcommand{\sectionNumber}{B}
+\newcommand{\examDate}{October 1, 2015}
+\newcommand{\semester}{FALL 2015}
+\newcommand{\examNumber}{II}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% \examCoverPage
+
+\begin{questions}
+
+\question[2] 
+
+Circle the \textbf{bold face} term that makes the following statement true: \\
+
+A measurement device that reports the true measurement of the item on which the device is being used is (\textbf{precise} or \textbf{accurate}).
+
+\vspace{1cm}
+
+\question 
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=TRUE, include=TRUE>>=
+   q1 <- c(12,15,18,19,26) 
+@
+
+A sample of size 5 was drawn from a population and the resulting observations are reported below. 
+\begin{center}
+\Sexpr{paste(q1,collapse=", ")}
+\end{center}
+Using these observed values, report the following:
+\vspace{1cm}
+
+\begin{parts}
+
+   \part[2] the mean  
+   \vspace{2cm}
+
+   \part[2] the median 
+   \vspace{2cm}
+
+   \part[2] the variance 
+   \vspace{2cm}
+
+   \part[2] the standard deviation 
+   \vspace{2cm}
+
+   \part[2] the value of $Q(.25)$
+   \vspace{2cm}
+
+   \part[2] the Interquartile Range
+   \vspace{2cm}
+
+\end{parts}
+
+
+\question 
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include=TRUE>>=
+   Qfun <- function(x,p = NULL){
+      x <- x[order(x)]
+
+      n <- length(x)
+
+      qs <- ((1:n) - .5)/n
+
+      if(is.null(p)) return(qs)
+
+      i <- floor(n*p + .5)
+
+      Qp <- x[i] + (n*p + 0.5 - i)*(x[i+1] - x[i])
+
+      return(Qp)
+   }
+
+   IQRange <- function(x) Qfun(x,.75) - Qfun(x,.25)
+
+   set.seed(1999)
+
+   samp <- round(3*runif(30)+3,1)
+
+   samp <- samp[order(samp)]
+
+   samp[29:30] = round(max(Qfun(samp,.75) + 1.5*IQRange(samp),samp[28]) + runif(2),1)
+
+   samp[1:3] = 
+   (
+    Qfun(samp,.25) - 1.5*IQRange(samp)
+    )
+
+   stem(samp)
+
+
+
+   Qfun(samp)
+   
+   IQR <- 12
+   runif(15,0,IQR)
+
+   
+   
+
+
+
+@
+
+
+\end{questions}
+
+\end{document}
