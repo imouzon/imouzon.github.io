@@ -6,7 +6,7 @@
 \newcommand{\examTitle}{Exam \examNumber}
 
 \runningheader{\course{\sectionNumber}}{Exam \examNumber}{\examDate}
-\runningfooter{}{}{Page \thepage of \numpages}
+\runningfooter{}{}{Page\ \thepage of \numpages}
 
 \newcommand{\examCoverPage}{
    \begin{coverpages}
