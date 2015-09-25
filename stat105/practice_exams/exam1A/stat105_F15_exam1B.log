@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  24 SEP 2015 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  24 SEP 2015 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -662,21 +662,6 @@ LaTeX Warning: Label `part@4@3' multiply defined.
 
 LaTeX Warning: Label `part@6@1' multiply defined.
 
-
-LaTeX Warning: Label `part@6@1' multiply defined.
-
-
-LaTeX Warning: Label `part@6@1' multiply defined.
-
-
-LaTeX Warning: Label `part@6@2' multiply defined.
-
-
-LaTeX Warning: Label `part@6@2' multiply defined.
-
-
-LaTeX Warning: Label `part@6@2' multiply defined.
-
 )
 \openout1 = `stat105_F15_exam1B.aux'.
 
@@ -759,14 +744,26 @@ your preamble.
  on input line 73.
 
 
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 79.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 79.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 79.
+ [1
+
+{/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 117.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 117.
 
 Underfull \hbox (badness 10000) in paragraph at lines 127--137
 
@@ -774,7 +771,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--137
 
 [1
 
-{/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+]
 
 ! Class exam Error: I found a part where I expected to find a subpart
 (exam)              .
@@ -818,14 +815,6 @@ Both part and subpart can be used only inside the correct
 
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 189.
-
- (/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 189.
-
 
 ! Class exam Error: I found a part where I expected to find a subpart
 (exam)              .
@@ -904,16 +893,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
-[4]
-Overfull \hbox (32.29407pt too wide) in paragraph at lines 308--313
- [][] 
- []
-
-[5]
+[4] [5]
 
 Package xcolor Warning: Incompatible color definition on input line 335.
 
-<figure/unnamed-chunk-7-1.pdf, id=26, 361.35pt x 361.35pt>
+<figure/unnamed-chunk-7-1.pdf, id=30, 361.35pt x 361.35pt>
 File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-7-1.pdf>
@@ -965,7 +949,7 @@ Both part and subpart can be used only inside the correct
 
 
 [6 <./figure/unnamed-chunk-7-1.pdf>]
-<FitModel.jpg, id=39, 1208.515pt x 973.6375pt>
+<FitModel.jpg, id=44, 1208.515pt x 973.6375pt>
 File: FitModel.jpg Graphic file (type jpg)
  <use FitModel.jpg>
 Package pdftex.def Info: FitModel.jpg used on input line 368.
@@ -1017,32 +1001,40 @@ Both part and subpart can be used only inside the correct
 
 [7 <./FitModel.jpg>]
 This exam contains 6 questions with 31 parts, 0 subparts, and 0 subsubparts.
+
+Class exam Warning: Point totals have changed. Rerun to get point totals right.
+
+
 (./stat105_F15_exam1B.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21664 strings out of 494522
- 549755 string characters out of 6167205
+ 21670 strings out of 494522
+ 549846 string characters out of 6167205
  737678 words of memory out of 5000000
- 24559 multiletter control sequences out of 15000+600000
- 4116 words of font info for 16 fonts, out of 8000000 for 9000
+ 24564 multiletter control sequences out of 15000+600000
+ 5037 words of font info for 19 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  55i,10n,77p,944b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mex10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt10.pfb>
-Output written on stat105_F15_exam1B.pdf (7 pages, 359888 bytes).
+mbx12.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmtt10.pfb>
+Output written on stat105_F15_exam1B.pdf (8 pages, 373961 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

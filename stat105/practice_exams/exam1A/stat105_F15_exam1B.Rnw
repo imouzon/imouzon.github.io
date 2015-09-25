@@ -4,7 +4,7 @@
 %  Purpose:
 %
 %  Creation Date: 24-09-2015
-%  Last Modified: Thu Sep 24 20:17:49 2015
+%  Last Modified: Thu Sep 24 20:27:10 2015
 %  Created By:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[addpoints]{examsetup}
@@ -17,7 +17,7 @@
 \newcommand{\sectionNumber}{B}
 \newcommand{\examDate}{October 1, 2015}
 \newcommand{\semester}{FALL 2015}
-\newcommand{\examNumber}{II}
+\newcommand{\examNumber}{I}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -30,7 +30,7 @@
 @
 
 
-% \examCoverPage
+\examCoverPage
 
 \begin{questions}
 
@@ -267,7 +267,7 @@ Note that \verb!0 | 9! represents 0.9. In this case, the first quartile is $Q(.2
 <<echo=FALSE, cache=TRUE, include = TRUE>>=
    upload <- rnorm(8,6,1)
    p <- (1:8 - .5)/8
-   Qps <- qnorm(p)
+   Qps <- round(qnorm(p),2)
 @
 
 \begin{center}
