@@ -18,7 +18,7 @@ Grades and a few other important parts of the course will be run through [blackb
 
 ### Practice Exam
 
-Here is the promised [Practice Exam](./practice_exams/exam1A/stat105_F15_exam1B.pdf)
+Here is the promised [Practice Exam](./practice_exams/exam1A/stat105_F15_exam1B.pdf) (and the [reference sheet](./practice_exams/stat105_note_sheet_exam1.pdf)).
 
 ### Exam 1 - October 1st
 
