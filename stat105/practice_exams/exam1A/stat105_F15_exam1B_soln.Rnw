@@ -4,7 +4,7 @@
 %  Purpose:
 %
 %  Creation Date: 24-09-2015
-%  Last Modified: Tue Sep 29 21:27:07 2015
+%  Last Modified: Wed Sep 30 15:37:41 2015
 %  Created By:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{examsetup}
@@ -142,7 +142,6 @@ Using these observed values, report the following:
 <<echo=FALSE, cache=TRUE, include = TRUE>>=
    pval <- 0.75
    ival2 <- floor(length(q1) * pval + 0.5)
-
 @
 
    \part[2] the Interquartile Range
@@ -154,14 +153,14 @@ Using these observed values, report the following:
 
       \begin{align*}
          Q(.75) &= x_i + (n p - i + 0.5) \cdot (x_{i+1} - x_i) \\
-                &= x_{\Sexpr{ival2}} + (5 \cdot .75 - 1 + 0.5) \cdot (x_{\Sexpr{ival2 + 1}} - x_{\Sexpr{ival2}}) \\
-                &= \Sexpr{q1[ival2]} + (\Sexpr{5 * .75 - 1 + 0.5}) \cdot (\Sexpr{q1[ival2 + 1]} - \Sexpr{q1[ival2]}) \\
-                &= \Sexpr{q1[ival2]} + (\Sexpr{5 * .75 - 1 + 0.5}) \cdot (\Sexpr{q1[ival2 + 1] - q1[ival2]}) \\
-                &= \Sexpr{q1[ival2]} + \Sexpr{(5 * .75 - 1 + 0.5) * (q1[ival2 + 1] - q1[ival2])} \\
-                &= \Sexpr{q1[ival2] + (5 * .75 - 1 + 0.5) * (q1[ival2 + 1] - q1[ival2])} \\
+                &= x_{\Sexpr{ival2}} + (5 \cdot .75 - \Sexpr{ival2} + 0.5) \cdot (x_{\Sexpr{ival2 + 1}} - x_{\Sexpr{ival2}}) \\
+                &= \Sexpr{q1[ival2]} + (\Sexpr{5 * .75 - ival2+ 0.5}) \cdot (\Sexpr{q1[ival2 + 1]} - \Sexpr{q1[ival2]}) \\
+                &= \Sexpr{q1[ival2]} + (\Sexpr{5 * .75 - ival2 + 0.5}) \cdot (\Sexpr{q1[ival2 + 1] - q1[ival2]}) \\
+                &= \Sexpr{q1[ival2]} + \Sexpr{(5 * .75 - ival2 + 0.5) * (q1[ival2 + 1] - q1[ival2])} \\
+                &= \Sexpr{q1[ival2] + (5 * .75 - ival2 + 0.5) * (q1[ival2 + 1] - q1[ival2])} \\
       \end{align*} 
 
-      So we get $\text{IQR} = Q(.75) - Q(.25) = \Sexpr{q1[ival2] + (5 * .75 - 1 + 0.5) * (q1[ival2 + 1] - q1[ival2])} - \Sexpr{q1[ival] + (5 * .25 - 1 + 0.5) * (q1[ival + 1] - q1[ival])} = \Sexpr{(q1[ival2] + (5 * .75 - 1 + 0.5) * (q1[ival2 + 1] - q1[ival2])) - (q1[ival] + (5 * .25 - 1 + 0.5) * (q1[ival + 1] - q1[ival]))}$
+      So we get $\text{IQR} = Q(.75) - Q(.25) = \Sexpr{q1[ival2] + (5 * .75 - ival2 + 0.5) * (q1[ival2 + 1] - q1[ival2])} - \Sexpr{q1[ival] + (5 * .25 - 1 + 0.5) * (q1[ival + 1] - q1[ival])} = \Sexpr{(q1[ival2] + (5 * .75 - ival2 + 0.5) * (q1[ival2 + 1] - q1[ival2])) - (q1[ival] + (5 * .25 - 1 + 0.5) * (q1[ival + 1] - q1[ival]))}$
    \end{solution}
 
 \end{parts}
