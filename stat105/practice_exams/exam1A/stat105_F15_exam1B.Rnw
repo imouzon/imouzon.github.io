@@ -4,7 +4,7 @@
 %  Purpose:
 %
 %  Creation Date: 24-09-2015
-%  Last Modified: Fri Sep 25 00:25:01 2015
+%  Last Modified: Tue Sep 29 10:45:36 2015
 %  Created By:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[addpoints]{examsetup}
@@ -304,6 +304,7 @@ The data consists of two columns, \textbf{excessive weight (in tonnes)} is the a
 
 %-- : R code (Code in Document)
 <<echo=FALSE, cache=FALSE, include = TRUE>>=
+   options(scipen=999)
 
    #weight = 2*(.025*1:50)
    
@@ -312,7 +313,10 @@ The data consists of two columns, \textbf{excessive weight (in tonnes)} is the a
    #write.csv(file = "./axel_break.csv",data.frame(weight,failure_time), row.names=FALSE,quote=FALSE)
    dw <- read.csv("axel_break.csv")
 
+   dw$failure_time <- dw$failure_time + abs(min(dw$failure_time)) + 1
+
    weight <- dw$weight
+
    failure_time <- dw$failure_time
 
 @
@@ -326,11 +330,11 @@ The data consists of two columns, \textbf{excessive weight (in tonnes)} is the a
 Here are some summaries of the data:
 
 $$
-\sum_{i=1}^{50} x_i = \Sexpr{round(sum(weight))} \hspace{3cm} \sum_{i=1}^{50} x_i^2 = \Sexpr{round(sum(weight)^2)} \\
+\sum_{i=1}^{50} x_i = \Sexpr{round(sum(weight))} \hspace{3cm} \sum_{i=1}^{50} x_i^2 = \Sexpr{round(sum(weight^2))} \\
 $$
 
 $$
-\sum_{i=1}^{50} y_i = \Sexpr{round(sum(failure_time))} \hspace{3cm} \sum_{i=1}^{50} y_i^2 = \Sexpr{round(sum(failure_time)^2)} \\
+\sum_{i=1}^{50} y_i = \Sexpr{round(sum(failure_time))} \hspace{3cm} \sum_{i=1}^{50} y_i^2 = \Sexpr{round(sum(failure_time^2))} \\
 $$
 
 $$

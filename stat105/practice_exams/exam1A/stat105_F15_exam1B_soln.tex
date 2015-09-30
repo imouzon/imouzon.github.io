@@ -4,10 +4,10 @@
 %  Purpose:
 %
 %  Creation Date: 24-09-2015
-%  Last Modified: Tue Sep 29 10:42:14 2015
+%  Last Modified: Tue Sep 29 21:25:31 2015
 %  Created By:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[addpoints]{examsetup}\usepackage[]{graphicx}\usepackage[]{color}
+\documentclass{examsetup}\usepackage[]{graphicx}\usepackage[]{color}
 %% maxwidth is the original width if it is less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -60,6 +60,7 @@
 
 \usepackage{etoolbox}
 \usepackage{tikz,pgfplots}
+\usepackage{amsmath}
 
 %\input{stat105_exam1_info.tex}
 \newcommand{\course}[1]{\ifstrempty{#1}{STAT 105}{STAT 105, Section #1}}
@@ -67,6 +68,8 @@
 \newcommand{\examDate}{October 1, 2015}
 \newcommand{\semester}{FALL 2015}
 \newcommand{\examNumber}{I}
+
+\printanswers
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -86,7 +89,9 @@ Circle the \textbf{bold face} term that makes the following statement true: \\
 
 A measurement device that reports the true measurement of the item on which the device is being used is (\textbf{precise} or \textbf{accurate}).
 
-\vspace{1cm}
+\begin{solution}
+   Accurate.
+\end{solution}
 
 \question 
 
@@ -103,22 +108,97 @@ Using these observed values, report the following:
 \begin{parts}
 
    \part[2] the mean  
-   \vspace{2cm}
+   \begin{solution}
+      \begin{align*}
+      \bar{x} = \frac{1}{n} \sum_{i=1}^n x_i &= \frac{1}{5} (x_1 + x_2 + x_3 + x_4 + x_5)  \\
+                                             &= \frac{1}{5} (12 + 15 + 18 + 19 + 26) \\
+                                             &= \frac{1}{5} (90) \\
+                                             &= 18 
+      \end{align*}
+   \end{solution}
 
    \part[2] the median 
-   \vspace{2cm}
+   \begin{solution}
+      The median is $Q(0.5)$. \\
+
+      Since $n p + 0.5 = 5 \cdot 0.5 + 0.5 = 3$ 
+      then $Q(.5) = x_{3} = 18$ is the median. \\
+
+      Alternatively, since $n = 5$ is odd, we know that the median is the middle of the ordered values.
+
+   \end{solution}
+
 
    \part[2] the variance 
-   \vspace{2cm}
+   \begin{solution}
+      Since this is a sample, we must $s^2$:\\
+
+      \begin{align*}
+         s^2 &= \frac{1}{n-1} \sum_{i = 1}^{n} (x_i - \bar{x})^2 \\
+             &= \frac{1}{5-1} \sum_{i = 1}^{5} (x_i - \bar{x})^2 \\
+             &= \frac{1}{4} \left( (x_1 - \bar{x})^2+ (x_2 - \bar{x})^2 + (x_3 - \bar{x})^2 + (x_4 - \bar{x})^2 + (x_5 - \bar{x})^2 \right) \\
+             &= \frac{1}{4} \left( (12 - 18)^2+ (15 - 18)^2 + (18 - 18)^2 + (19 - 18)^2 + (26 - 18)^2 \right) \\
+             &= \frac{1}{4} \left( (\ensuremath{-6})^2 + (\ensuremath{-3})^2 + (0)^2 + (1)^2 + (8)^2 \right) \\
+             &= \frac{1}{4} \left( 36 + 9 + 0 + 1 + 64 \right) \\
+             &= \frac{1}{4} \left( 110 \right) \\
+             &= 27.5 \\
+      \end{align*}
+
+   \end{solution}
 
    \part[2] the standard deviation 
-   \vspace{2cm}
+   \begin{solution}
+      We must use the sample standard deviation, $s$:\\
+
+      \begin{align*}
+         s &= \sqrt{s^2} = \sqrt{27.5} = 5.2440442 \\
+      \end{align*}
+
+   \end{solution}
 
    \part[2] the value of $Q(.25)$
-   \vspace{2cm}
+
+%-- : R code (Code in Document)
+
+   
+   \begin{solution} 
+      We will need to use the quantile function.\\
+
+      In this case, $i = \lfloor n p + 0.5 \rfloor = \lfloor 5 \cdot 0.25 + 0.5 \rfloor = \lfloor 1.75 \rfloor = 1$.
+      Since $i \ne n p + 0.5$, we must use the second form of the function:
+
+      \begin{align*}
+         Q(.25) &= x_i + (n p - i + 0.5) \cdot (x_{i+1} - x_i) \\
+                &= x_{1} + (5 \cdot .25 - 1 + 0.5) \cdot (x_{2} - x_{1}) \\
+                &= 12 + (0.75) \cdot (15 - 12) \\
+                &= 12 + (0.75) \cdot (3) \\
+                &= 12 + 2.25 \\
+                &= 14.25 \\
+      \end{align*} 
+      
+   \end{solution}
+
+%-- : R code (Code in Document)
+
 
    \part[2] the Interquartile Range
-   \vspace{2cm}
+   \begin{solution} 
+      Since $\text{IQR} = Q(.75) - Q(.25)$, we will need to use the quantile function to find $Q(.75)$.\\
+
+      In this case, $i = \lfloor n p + 0.5 \rfloor = \lfloor 5 \cdot 0.75 + 0.5 \rfloor = \lfloor 4.25 \rfloor = 4$.
+      Since $i \ne n p + 0.5$, we must use the second form of the function:
+
+      \begin{align*}
+         Q(.75) &= x_i + (n p - i + 0.5) \cdot (x_{i+1} - x_i) \\
+                &= x_{4} + (5 \cdot .75 - 1 + 0.5) \cdot (x_{5} - x_{4}) \\
+                &= 19 + (3.25) \cdot (26 - 19) \\
+                &= 19 + (3.25) \cdot (7) \\
+                &= 19 + 22.75 \\
+                &= 41.75 \\
+      \end{align*} 
+
+      So we get $\text{IQR} = Q(.75) - Q(.25) = 41.75 - 14.25 = 27.5$
+   \end{solution}
 
 \end{parts}
 
@@ -137,8 +217,9 @@ After the methods had been applied, he measured the change in concentration. \\
 
 \begin{parts}
    \part[2] Is this an experiment or an observational study? Explain.
-
-  \vspace{2cm}
+   \begin{solution}
+      This is an experiment. The methods are being applied by the engineer and which method is used is decided by the engineer. 
+   \end{solution}
 
    \part Identify the following (if there was not one, simply put "not used").
 
@@ -146,22 +227,28 @@ After the methods had been applied, he measured the change in concentration. \\
 
    \begin{subparts}
       \subpart[2] Response variable(s):
-
-      \vspace{2cm}
+      \begin{solution}
+         The change in concentration.
+      \end{solution}
 
       \subpart[2] Experimental variable(s):
+      \begin{solution}
+         The method used.
+      \end{solution}
 
-      \vspace{2cm}
 
       \subpart[2] Blocking variable(s):
-
-      \vspace{2cm}
+      \begin{solution}
+         The lake the sample was taken from is a treated as a block in this example.
+      \end{solution}
 
    \end{subparts}
 
    \part[2] Was replication used in this experiment? If so, where was it applied? If not, how could we have applied it?
-
-  \vspace{2cm}
+   \begin{solution}
+      Replication was only used in the sense that each method was used more than once.
+      However, inside the blocks (the sample from the lakes) each treatment is only applied once. 
+   \end{solution}
 
 \end{parts}
 
@@ -178,11 +265,15 @@ using three descriptions: the interviewee was classified as overly critical, app
 
 \begin{parts}
    \part[2] Is this an experiment or an observational study?
+   \begin{solution}
+      This is an observational study. My niece takes no active role in change anything about the individuals she interviews or their phones.
+   \end{solution}
 
-   \vspace{2cm}
    \part[2] Identify the response variable(s).
-
-   \vspace{2cm}
+   \begin{solution}
+   There are two responses being gathered about each interviewee: (1) whether or not they would prefer the other phone and (2) how satisfied they are with their current phone. variables
+   \end{solution}
+   
    \part For each of the following variables, 
 
    \begin{itemize}
@@ -197,17 +288,27 @@ using three descriptions: the interviewee was classified as overly critical, app
 
       \subpart the individual's reported phone satisfaction percentage.
 
-      \vspace{2cm}
+      \begin{solution}
+      This is quantitative and continuous.
+      \end{solution}
 
       \subpart my niece's appraisal of the interviewee's negativity.
 
-      \vspace{2cm}
+      \begin{solution}
+      This is qualitative. The levels are overly critical, appropriately critical, or not critical enough. 
+      \end{solution}
 
       \subpart whether or not the interviewee would prefer to have the other phone.
 
-      \vspace{2cm}
+      \begin{solution}
+      This is qualitative. The levels are ``yes`` and ``no``.
+      \end{solution}
 
       \subpart the type of phone the interviewee currently owns.
+
+      \begin{solution}
+      This is qualitative. The levels are ``phone 1`` and ``phone 2``.
+      \end{solution}
 
    \end{subparts}
 
@@ -249,6 +350,9 @@ Every 2 minutes for an hour, she recorded the network speed at that moment and c
 
 Note that \verb!0 | 9! represents 0.9. In this case, the first quartile is $Q(.25) = 5.7$, the median is 6.85, and the IQR is 2.7.
 
+%-- : R code (Code in Document)
+
+
 \begin{parts}
   \part[10] Complete the following frequency table: \\
 
@@ -259,25 +363,25 @@ Note that \verb!0 | 9! represents 0.9. In this case, the first quartile is $Q(.2
                              & \textbf{Frequency} & \textbf{Relative} & \textbf{Cumulative}  \\
         \textbf{Value Range} &                    & \textbf{Frequency} & \textbf{Relative Frequency} \\\hline \hline
                     &  &  &  \\
-      0.00 - 2.00   &  &  &  \\
+      0.00 - 2.00   &  2 & 0.07 & 0.07 \\
                     &  &  &  \\ \hline
                     &  &  &  \\
-      2.01 - 4.00   &  &  &  \\
+      2.01 - 4.00   &  2 & 0.07 & 0.14 \\
                     &  &  &  \\ \hline
                     &  &  &  \\
-      4.01 - 6.00   &  &  &  \\
+      4.01 - 6.00   &  4 & 0.13 & 0.27 \\
                     &  &  &  \\ \hline
                     &  &  &  \\
-      6.01 - 8.00   &  &  &  \\
+      6.01 - 8.00   &  12 & 0.4 & 0.67 \\
                     &  &  &  \\ \hline
                     &  &  &  \\
-      8.01 - 10.00  &  &  &  \\
+      8.01 - 10.00  &  6 & 0.2 & 0.87 \\
                     &  &  &  \\ \hline
                     &  &  &  \\
-      10.01 - 12.00 &  &  &  \\
+      10.01 - 12.00 &  2 & 0.07 & 0.94 \\
                     &  &  &  \\ \hline
                     &  &  &  \\
-      12.01 - 14.00 &  &  &  \\
+      12.01 - 14.00 &  2 & 0.07 & 1.01 \\
                     &  &  &  \\  \hline
      \end{tabular}
   \end{table}
@@ -286,9 +390,23 @@ Note that \verb!0 | 9! represents 0.9. In this case, the first quartile is $Q(.2
 
   \part[10] Create a box plot to summarize the data. Carefully label the axes.
 
+  \begin{solution}
+     The boxplot is below: \\
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.8\linewidth]{figure/unnamed-chunk-8-1} 
+
+\end{knitrout}
+  \end{solution}
+
+
   \vspace{7cm}
 
   \part[4] Are there any unusually low observations? If so What were the speeds at those points?
+  \begin{solution}
+     Yes, there are two unusually low observations as indicated by the box plot. They are 0.9 and 1.8.
+  \end{solution}
 
   \vspace{3cm}
 
@@ -313,6 +431,21 @@ What does this graph tell us about the upload speeds?
    \end{tabular}
 \end{table}
 
+%-- : R plot (results in document)
+\begin{solution}
+   We get the QQ-plot by plotting the ordered values of our sample against the ordered quantiles from the normal distribution (as given above): \\
+
+\begin{centering}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.8\linewidth]{figure/unnamed-chunk-10-1} 
+
+\end{knitrout}
+\end{centering}
+
+The points do seem to somewhat linear - an argument could be made that because of this the upload speed is normally distributed.
+
+\end{solution}
 
 \end{parts}
 \pagebreak
@@ -334,7 +467,7 @@ The data consists of two columns, \textbf{excessive weight (in tonnes)} is the a
 \begin{center}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=.5\linewidth]{figure/unnamed-chunk-7-1} 
+\includegraphics[width=.5\linewidth]{figure/unnamed-chunk-12-1} 
 
 \end{knitrout}
 \end{center}
@@ -350,18 +483,89 @@ $$
 $$
 
 $$
-\sum_{i=1}^{50} x_i y_i = 1999
+\sum_{i=1}^{50} x_i y_i = 
+1999
 $$
 
 \begin{parts}
    \part Using the summaries above, fit a linear relationship between \textbf{weight exceeding guidelines} (x) and \textbf{travel distance to failure} (y). 
    \begin{subparts}
       \subpart[5] Write the equation of the fitted linear relationship. 
-      \vspace{2cm}
+      \begin{solution}
+         We need to get the estimates of $b_0$ and $b_1$ to write the equation of the fitted line: \\
+
+         \begin{align*}
+            b_1 &= \frac{\sum_{i=1}^{50} x_i y_i - 50 \bar{x} \bar{y}}{\sum_{i=1}^{50} x_i^2 - 50 \bar{x}^2} \\
+                &=  \frac{ 1999 - 50 \left(\frac{64}{50}\right) \left(\frac{2008}{50}\right) }{ 107- 50 \left(\frac{64}{50}\right)^2 } \\
+                &=  \frac{ 1999 - 50 (1.27) (40.16) }{ 107- 50 (1.27)^2 } \\
+                &=  \frac{ 1999 - 2550.16 }{ 107- 80.645 } \\
+             &= \frac{ \ensuremath{-551.16} }{ 26.355 } \\
+             &= \ensuremath{-20.91} \\
+         \end{align*}
+         and thus 
+         \begin{align*}
+            b_0 &= \bar{y} - b_1 \bar{x} \\
+                &= \left(\frac{2008}{50}\right) - (\ensuremath{-20.91} ) \left(\frac{64}{50}\right) \\
+                &= \left(40.16\right) - (\ensuremath{-20.91} ) \left(1.28\right) \\
+                &= 66.9248 \\
+         \end{align*}
+         So the equation of the fitted line is:
+
+         $$
+         \hat{y} = 66.9248 - 20.91 x 
+         $$
+
+      \end{solution} 
       \subpart[5] Find and interpret the value of $R^2$ for the fitted linear relationship.
-      \vspace{2cm}
+      \begin{solution}
+         Since this is a linear model, we can first find the correlation coeffecient and then find the value of $R^2$:
+         \begin{align*}
+         r 
+         &= 
+         \frac{
+            \sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}
+         }{
+            \sqrt{\left(\sum_{i=1}^n x_i^2 - \bar{x}^2 \right) \left(y_i - n \bar{y}^2 \right)}
+         }\\
+         &= 
+         \frac{
+            1999 - 50 (1.27)(40.16)
+         }{
+            \sqrt{\left(107 - (50)( 1.27)^2 \right)
+            \left(95182 - (50)( 40.16)^2 \right)}
+         }\\
+         &= 
+         \frac{
+            \ensuremath{-551.16}
+         }{
+            \sqrt{\left(25.5 \right)
+            \left(14540.5 \right)}
+         }\\
+         &= 
+         \frac{
+            \ensuremath{-551.16}
+         }{
+            608.9193296
+         }
+         \\
+         &= \ensuremath{-0.91}
+         \end{align*}
+
+         So $R^2 = 
+          (\ensuremath{-0.91})^2
+            = 
+          0.8281
+     $ 
+     meaning that 82.8\% of the variability in failure time can be explained by the linear relationship of failure time with weight.
+      \end{solution}
+
       \subpart[5] Using the fitted line, provide a predicted value of travel distance to failure when the weight exceeding the guidelines is 3.4 tonnes.
-      \vspace{2cm}
+      \begin{solution}
+        \begin{align*}
+         \hat{y} &= 66.9248 - 20.91 ( 3.4 )\\
+                 &= \ensuremath{-4.1692}\\
+        \end{align*} 
+      \end{solution}
    \end{subparts}
 
    \part The JMP output below comes from fitting a quadratic model using $x$ and $x^2$. 
@@ -370,10 +574,26 @@ $$
 
    \begin{subparts}
       \subpart[5] Write the equation of the fitted quadratic relationship. 
-      \vspace{2cm}
+      \begin{solution}
+         From the JMP output: \\
+
+         $$\hat{y} = 16.27 + 4.66 x - 10.2 x^2$$
+      \end{solution} 
       \subpart[5] Find and interpret the value of $R^2$ for the fitted quadratic relationship.
-      \vspace{2cm}
+      \begin{solution}
+         $$
+         R^2 = \frac{\text{SSTO} - \text{SSE}}{\text{SSTO}} = \frac{13229.647 - 1311.073}{13229.647} = 0.9008989
+         $$
+         Using the quadratic relationship, approximately 90.09\% of the variability in failure time can be explained.
+      \end{solution}
       \subpart[5] Using the fitted quadratic relationship, provide a predicted value of travel distance to failure when the weight exceeding the guidelines is 3.4 tonnes.
+      \begin{solution}
+         \begin{align*}
+         \hat{y} &= 16.27 + 4.66 x - 10.2 x^2 \\
+                 &= 16.27 + 4.66 (3.4) - 10.2 (3.4)^2 \\
+                 &= \ensuremath{-85.798} \\
+         \end{align*}
+      \end{solution}
    \end{subparts}
 \end{parts}
 

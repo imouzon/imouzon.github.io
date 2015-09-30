@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesClass{examsetup}[2015/09/24]
 \RequirePackage{etoolbox}
-\LoadClass{exam}
+\LoadClass[answers,addpoints]{exam}
 
 \newcommand{\examTitle}{Exam \examNumber}
 

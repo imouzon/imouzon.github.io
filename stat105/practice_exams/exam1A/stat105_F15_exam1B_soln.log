@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  29 SEP 2015 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  29 SEP 2015 21:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **/Users/user/proj/imouzon.github.io/stat105/practice_exams/exam1A/stat105_F15_
-exam1B.tex
+exam1B_soln.tex
 
 (/Users/user/proj/imouzon.github.io/stat105/practice_exams/exam1A/stat105_F15_e
-xam1B.tex
+xam1B_soln.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 21 languages loaded.
 (./examsetup.cls
@@ -633,39 +633,97 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 otmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2013/07/20 v3.0.0 (rcs-revision 1.13)
 )))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip69
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks36
+\ex@=\dimen170
+))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen171
+)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count152
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count153
+\leftroot@=\count154
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count155
+\DOTSCASE@=\count156
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box39
+\strutbox@=\box40
+\big@size=\dimen172
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count157
+\c@MaxMatrixCols=\count158
+\dotsspace@=\muskip10
+\c@parentequation=\count159
+\dspbrk@lvl=\count160
+\tag@help=\toks37
+\row@=\count161
+\column@=\count162
+\maxfields@=\count163
+\andhelp@=\toks38
+\eqnshift@=\dimen173
+\alignsep@=\dimen174
+\tagshift@=\dimen175
+\tagwidth@=\dimen176
+\totwidth@=\dimen177
+\lineht@=\dimen178
+\@envbody=\toks39
+\multlinegap=\skip70
+\multlinetaggap=\skip71
+\mathdisplay@stack=\toks40
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(./stat105_F15_exam1B.aux)
-\openout1 = `stat105_F15_exam1B.aux'.
+(./stat105_F15_exam1B_soln.aux)
+\openout1 = `stat105_F15_exam1B_soln.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 (/usr/local/texlive/2014basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count152
-\scratchdimen=\dimen170
-\scratchbox=\box39
-\nofMPsegments=\count153
-\nofMParguments=\count154
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count155
-\MPscratchDim=\dimen171
-\MPnumerator=\count156
-\makeMPintoPDFobject=\count157
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count164
+\scratchdimen=\dimen179
+\scratchbox=\box41
+\nofMPsegments=\count165
+\nofMParguments=\count166
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count167
+\MPscratchDim=\dimen180
+\MPnumerator=\count168
+\makeMPintoPDFobject=\count169
+\everyMPtoPDFconversion=\toks42
 ) (/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -717,76 +775,146 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.12} into 
 your preamble.
- on input line 73.
+ on input line 76.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 79.
+(Font)              using `OT1/cmr/bx/n' instead on input line 82.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 79.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 79.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
  [1
 
 {/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--137
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+
+Underfull \vbox (badness 6825) detected at line 147
  []
 
 [1
 
-] [2] [3]
-
-Package xcolor Warning: Incompatible color definition on input line 228.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-[4] [5]
 
-Package xcolor Warning: Incompatible color definition on input line 336.
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
-<figure/unnamed-chunk-7-1.pdf, id=30, 361.35pt x 361.35pt>
-File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
+ []
 
-<use figure/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-7-1.pdf used on input line 337.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--217
+
+ []
+
+[3] [4] [5]
+
+Package xcolor Warning: Incompatible color definition on input line 329.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 397.
+
+<figure/unnamed-chunk-8-1.pdf, id=37, 578.16pt x 289.08pt>
+File: figure/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-8-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-8-1.pdf used on input line 398.
+(pdftex.def)             Requested size: 344.69412pt x 172.34657pt.
+ [7 <./figure/unnamed-chunk-8-1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 440.
+
+<figure/unnamed-chunk-10-1.pdf, id=47, 578.16pt x 578.16pt>
+File: figure/unnamed-chunk-10-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-10-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-10-1.pdf used on input line 441.
+(pdftex.def)             Requested size: 344.69412pt x 344.69318pt.
+ [8 <./figure/unnamed-chunk-10-1.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 469.
+
+<figure/unnamed-chunk-12-1.pdf, id=56, 361.35pt x 361.35pt>
+File: figure/unnamed-chunk-12-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-12-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-12-1.pdf used on input line 470.
 (pdftex.def)             Requested size: 225.98859pt x 225.98656pt.
- [6 <./figure/unnamed-chunk-7-1.pdf>]
-<FitModel.jpg, id=44, 1276.77pt x 1023.825pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+
+ []
+
+[9 <./figure/unnamed-chunk-12-1.pdf>] [10]
+<FitModel.jpg, id=69, 1276.77pt x 1023.825pt>
 File: FitModel.jpg Graphic file (type jpg)
  <use FitModel.jpg>
-Package pdftex.def Info: FitModel.jpg used on input line 369.
+Package pdftex.def Info: FitModel.jpg used on input line 573.
 (pdftex.def)             Requested size: 255.34947pt x 204.76137pt.
- [7 <./FitModel.jpg>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+
+ []
+
+[11 <./FitModel.jpg>]
 This exam contains 6 questions with 18 parts, 13 subparts, and 0 subsubparts.
-(./stat105_F15_exam1B.aux)
+This exam has a total of 92 points.
+This exam has a total of 0 bonus points.
+(./stat105_F15_exam1B_soln.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21696 strings out of 494522
- 550248 string characters out of 6167205
- 737678 words of memory out of 5000000
- 24590 multiletter control sequences out of 15000+600000
- 5037 words of font info for 19 fonts, out of 8000000 for 9000
+ 22329 strings out of 494522
+ 557884 string characters out of 6167205
+ 738679 words of memory out of 5000000
+ 25204 multiletter control sequences out of 15000+600000
+ 5491 words of font info for 21 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 55i,10n,77p,944b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,77p,957b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/
@@ -797,10 +925,10 @@ c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on stat105_F15_exam1B.pdf (8 pages, 399640 bytes).
+Output written on stat105_F15_exam1B_soln.pdf (12 pages, 422069 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
