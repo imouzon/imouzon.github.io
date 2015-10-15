@@ -4,7 +4,7 @@
 %  Purpose:
 %
 %  Creation Date: 24-09-2015
-%  Last Modified: Wed Sep 30 15:37:41 2015
+%  Last Modified: Wed Sep 30 17:12:39 2015
 %  Created By:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{examsetup}
@@ -118,7 +118,6 @@ Using these observed values, report the following:
 <<echo=FALSE, cache=TRUE, include = TRUE>>=
    pval <- 0.25
    ival <- floor(length(q1) * pval + 0.5)
-
 @
    
    \begin{solution} 
@@ -314,6 +313,7 @@ using three descriptions: the interviewee was classified as overly critical, app
 
 @
 
+Miley Cyrus is a 
 The strength of an internet connection is often described in terms of its download speed, measured in megabits per second (or Mbps).
 A systems administrator is concerned that recent changes in her company's main server framework may be having a negative impact on the local network's download speed.
 Every 2 minutes for an hour, she recorded the network speed at that moment and collected her results into the following stem-and-leaf plot:

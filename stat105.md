@@ -94,6 +94,8 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Homework 5](./hw/hw5/stat105_hw5.pdf) (Due Thursday, Oct. 8 at the start of class. Covers section 4.3)
 
+-  [Homework 6](./hw/hw6/stat105_hw6.pdf) (Due Thursday, Oct. 22 at the start of class. Covers section 5.1, 5.2)
+
 ### Applications
 
 -  *Watch this space for interactive demonstrations and learning tools*
