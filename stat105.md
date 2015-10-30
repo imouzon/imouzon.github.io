@@ -28,7 +28,7 @@ As I did last time, I will have extended office hours before the second exam.
 If you are interested in attending, please fill out the survey linked below so that I can schedule them effectively.
 Of course, we can still arrange office hours that work for your schedule personally by contacting me at imouzon@iastate.edu.
 
-[Extended Office Hours](http://whenisgood.net/stat105exam1)
+[Extended Office Hours](http://whenisgood.net/bpm2gct)
 
 I have currently scheduled bonus office hours for Monday, November 2nd from 1:00 pm - 3:00 pm.
 
