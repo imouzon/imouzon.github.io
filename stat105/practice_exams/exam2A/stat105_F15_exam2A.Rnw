@@ -1,0 +1,343 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Thu Oct 29 20:36:11 2015
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[addpoints]{examsetup}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 105}{STAT 105, Section #1}}
+\newcommand{\sectionNumber}{B}
+\newcommand{\examDate}{November 5, 2015}
+\newcommand{\semester}{FALL 2015}
+\newcommand{\examNumber}{II}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = FALSE>>=
+   library(ggplot2)
+   theme_bw()
+@
+
+
+\examCoverPage
+
+\begin{questions}
+
+\question[15] 
+
+\textbf{High pressure fracking} is the process of drilling down into the earth and then injecting a high-pressure mixture called "fracking fluid" into the wellbore, the resulting pressure of which forces the release of petroleum from the sediment below.
+A company specializing in the production of the fracking fluid, which is primarily water and sand, is interested in determining the how the rate of flow of the gas (in liters per second) relates to the amount of sand in the fracking fluid and the type of rock from which the petroleum is being extracted.
+The have performed this process using three different mixtures of fracking fluid (high sand, medium sand, and low sand) and two types of sediment (high petroleum and low petroleum). 
+They tested each combination of fracking fluid type and sediment type three times, with the results recorded in the table below:
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = FALSE>>=
+set.seed(1999)
+frack <- data.frame(rbind(expand.grid(c("Low","Med","High"),c("High","Low")), expand.grid(c("Low","Med","High"),c("High","Low")), expand.grid(c("Low","Med","High"),c("High","Low"))))
+names(frack) <- c("fluid","sediment")
+frack$fluid <- factor(frack$fluid, c("Low","Med","High"))
+frack$sediment <- factor(frack$sediment, c("Low","High"))
+frack$rate <- round(1.5*(frack$fluid == "High") + 2.5*(frack$fluid == "Med") + 1.5*(frack$fluid == "Low") + 8*(frack$sediment == "High") + 2*(frack$sediment == "Low") + rnorm(18,0,.5),2)
+
+frack <- frack[with(frack,order(fluid,sediment)),]
+@
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrr}
+ & \multicolumn{2}{c}{Sediment} \\
+\cline{2-3}
+Fluid & Low Petroleum & High Petroleum \\ \hline \hline
+Low Sand & \Sexpr{frack$rate[1]} & \Sexpr{frack$rate[4]} \\
+          & \Sexpr{frack$rate[2]} & \Sexpr{frack$rate[5]} \\
+          & \Sexpr{frack$rate[3]} & \Sexpr{frack$rate[6]} \\
+Medium Sand & \Sexpr{frack$rate[7]} & \Sexpr{frack$rate[10]} \\
+            & \Sexpr{frack$rate[8]} & \Sexpr{frack$rate[11]} \\
+            & \Sexpr{frack$rate[9]} & \Sexpr{frack$rate[12]} \\
+High Sand & \Sexpr{frack$rate[13]} & \Sexpr{frack$rate[16]} \\
+         & \Sexpr{frack$rate[14]} & \Sexpr{frack$rate[17]} \\
+         & \Sexpr{frack$rate[15]} & \Sexpr{frack$rate[18]} \\
+\hline
+\end{tabular}
+\end{table}
+
+The engineer tasked with analyzing this data assigns the fluid to Factor A and assigns the levels to integers: Low = 1, Medium = 2, High = 3.
+She also assigns the sediment to "Factor B" and the sediment types to integers: Low = 1, High = 2.
+
+The following summaries may help in this problem:
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = FALSE>>=
+   y11 = round(mean(frack$rate[which(frack$fluid == "Low" & frack$sediment == "Low")]),2)
+   y12 = round(mean(frack$rate[which(frack$fluid == "Low" & frack$sediment == "High")]),2)
+   y21 = round(mean(frack$rate[which(frack$fluid == "Med" & frack$sediment == "Low")]),2)
+   y22 = round(mean(frack$rate[which(frack$fluid == "Med" & frack$sediment == "High")]),2)
+   y31 = round(mean(frack$rate[which(frack$fluid == "High" & frack$sediment == "Low")]),2)
+   y32 = round(mean(frack$rate[which(frack$fluid == "High" & frack$sediment == "High")]),2)
+
+   y1dot = round(mean(c(y11,y12)),2)
+   y2dot = round(mean(c(y21,y22)),2)
+   y3dot = round(mean(c(y31,y32)),2)
+   ydot1 = round(mean(c(y11,y21,y31)),2)
+   ydot2 = round(mean(c(y12,y22,y32)),2)
+
+   ydotdot = round(mean(frack$rate),2)
+
+   y2dot
+@
+
+% \begin{table}[h]
+% \centering
+% \begin{tabular}{lrrr}
+%  & \multicolumn{2}{c}{Sediment} \\
+% \cline{2-3}
+% Fluid & Low Petroleum & High Petroleum \\ \cline{1-3} \cline{1-3}
+% Low Sand & $\bar{y}_{11} = \Sexpr{y11}$ & $\bar{y}_{12} = \Sexpr{y12}$  & $\bar{y}_{1.} = \Sexpr{y1dot}$ \\
+% Medium Sand & $\bar{y}_{21} = \Sexpr{y21}$ & $\bar{y}_{22} = \Sexpr{y22}$  & $\bar{y}_{2.} = \Sexpr{y2dot}$ \\
+% High Sand & $\bar{y}_{31} = \Sexpr{y31}$ & $\bar{y}_{32} = \Sexpr{y32}$  & $\bar{y}_{3.} = \Sexpr{y3dot}$ \\ \cline{1-3}
+% & $\bar{y}_{.1} = \Sexpr{ydot1}$ & $\bar{y}_{.2} = \Sexpr{ydot2}$  & $\bar{y}_{..} = \Sexpr{ydotdot}$ \\
+% \end{tabular}
+% \end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrr}
+ & \multicolumn{2}{c}{Sediment} \\
+\cline{2-3}
+Fluid & Low Petroleum & High Petroleum \\ \cline{1-3} \cline{1-3}
+Low Sand &                              & $\bar{y}_{12} = \Sexpr{y12}$  &  \\
+Medium Sand & $\bar{y}_{21} = \Sexpr{y21}$ & $\bar{y}_{22} = \Sexpr{y22}$  & $\bar{y}_{2.} = \Sexpr{y2dot}$ \\
+High Sand & $\bar{y}_{31} = \Sexpr{y31}$ & $\bar{y}_{32} = \Sexpr{y32}$  &  \\ \cline{1-3}
+& $\bar{y}_{.1} = \Sexpr{ydot1}$ &   & $\bar{y}_{..} = \Sexpr{ydotdot}$ \\
+\end{tabular}
+\end{table}
+
+
+\vspace{1cm}
+
+\begin{parts}
+
+   \part[2] Report the value of $\bar{y}_{1.}$.
+   \vspace{2cm}
+
+   \part[2] Report the value of $\bar{y}_{3.}$.
+   \vspace{2cm}
+
+   \part[2] Report the value of $\bar{y}_{.2}$.
+   \vspace{2cm}
+
+   \newpage
+
+   \part[5] Using the template below, create a profile plot for this data:
+
+%-- : R plot (results in document)
+<<fig.width=8, fig.height=6, out.width='.9\\linewidth', echo=FALSE>>=
+   p <- ggplot(data = frack,aes(x=fluid,y=rate))
+   p + geom_blank() + theme_bw()
+@
+
+   \part[2] Using the plot does it appear that there is an  interaction between fluid type and sediment type? Justify your answer.
+   \vspace{2cm}
+
+
+   \part[2] Ignoring possible interactions, find the fitted main effect of using the fluid with a low sand level, $a_1$.
+   \vspace{2cm}
+
+   \part[2] Ignoring possible interactions and fitting a factorial model without interaction effects, find the best estimate of the response when fluid is at level 1 and sediment is at level 2.
+   \vspace{2cm}
+
+\end{parts}
+
+\newpage
+
+\question 
+
+Danny Ocean has a rigged pair of die (one red and one blue) that he plans to sneak into a casino game in which large payouts are given when either a roll 7 or 11 is observed and the player loses the bet for any other outcome. 
+Since Mr. Ocean is knowledgable on statistics, he knows that we can consider the number of dots facing up on each die as random variables.
+He calls the number of dots on the red die $X$ and the number of dots on the blue die $Y$.
+The probability functions for the two are partially recorded below:
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = TRUE>>=
+   fx = function(x) paste0(x,"/",sum(1:6))
+   fy = function(y) paste0(7 - y,"/",sum(1:6))
+@
+
+
+%  \begin{table}[h]
+%     \centering
+%     \begin{tabular}{cccccccc}
+%        & 1 & 2 & 3 & 4 & 5 & 6 \\
+%        $f_{X}(x)$ & \Sexpr{fx(1)} & \Sexpr{fx(2)} & \Sexpr{fx(3)} & \Sexpr{fx(4)} & \Sexpr{fx(5)} & \Sexpr{fx(6)} \\
+%        $f_{Y}(y)$ & \Sexpr{fy(1)} & \Sexpr{fy(2)} & \Sexpr{fy(3)} & \Sexpr{fy(4)} & \Sexpr{fy(5)} & \Sexpr{fy(6)} \\
+%     \end{tabular}
+%  \end{table}
+
+
+\begin{table}[h]
+   \centering
+   \begin{tabular}{cccccccc}
+      & 1 & 2 & 3 & 4 & 5 & 6 \\
+      $f_{X}(x)$ &               & \Sexpr{fx(2)} & \Sexpr{fx(3)} & \Sexpr{fx(4)} & \Sexpr{fx(5)} & \Sexpr{fx(6)} \\
+      $f_{Y}(y)$ & \Sexpr{fy(1)} & \Sexpr{fy(2)} & \Sexpr{fy(3)} & \Sexpr{fy(4)} & \Sexpr{fy(5)} &               \\
+   \end{tabular}
+\end{table}
+
+He further defines a new random variable, $W = X + Y$, the total facing up. Again, if $W = 7$ or $W = 11$ Danny wins - otherwise, he loses.
+
+\begin{parts}
+
+   \part[2] Find $P\left[Y = 1\right]$. 
+   \vspace{1.5cm}
+
+   \part[2] Find $f_X(1)$. 
+   \vspace{1.5cm}
+
+   \part[2] Find $P\left[Y = 6\right]$. 
+   \vspace{1.5cm}
+
+   \part[2] Find $\mathbb{E}(X)$. 
+   \vspace{1.5cm}
+
+   \part[4] Find the probability that an individual roll is a is a win for Danny. %(i.e., find $P(W = 7) + P(W = 11)$).
+
+   \vspace{2cm}
+
+   \part[4] Danny sneaks the die into the game but knows his ruse will be discovered if the die are rolled more than three times. Each roll is independent of the others, and he knows that the chance that he wins a single roll does not change at any point. What is the probability Danny wins two of the three bets he can make?
+
+   \vspace{2cm}
+
+\end{parts}
+
+\newpage
+
+\question
+
+Let $X$ be a normal random variable with a mean of 10 and a varaince of 3 (i.e., $X \sim N(10,3)$) and let $Z$ be a random variable following a standard normal distribution.
+
+\begin{parts}
+ \part Find the following probabilities (note: Table B-3 may be helpful):
+  \begin{subparts}
+     \subpart[2] $P(Z \le 1)$
+
+     \vspace{2cm}
+
+     \subpart[2] $P(|Z| \le 1.5)$
+
+     \vspace{2cm}
+
+     \subpart[2] $P(-1 \le Z < 1.5)$
+
+     \vspace{2cm}
+
+     \subpart[2] $P(X > 13)$
+
+     \vspace{2cm}
+
+     \subpart[2] $P(|X| \le 16)$
+
+     \vspace{2cm}
+
+     \subpart[2] $P(|X| > 16)$
+
+     \vspace{2cm}
+
+  \end{subparts}
+
+  \part[5] Find the value $a$ so that $P(- a + 10 < X < a + 10) = .6$ (approximate as needed).
+
+\end{parts}
+
+\newpage
+
+\question 
+
+Suppose that $X$ is a continuous random variable with cumulative density function (cdf).
+$$
+F(x) = 
+\begin{cases}
+   0 & x < 0 \\
+   1 - e^{-3x} & x \ge 0
+\end{cases}
+$$
+
+We refer to such a random variable as an exponential random variable.
+
+\begin{parts}
+\part What is the probability that $X$ takes a value greater than 3?
+
+     \vspace{2cm}
+
+
+\part What is the probability that $X$ takes a value between 1 and 3?
+
+     \vspace{2cm}
+
+
+\part Derive the probability density function, $f(x)$. 
+
+     \vspace{2cm}
+
+
+\part Find the value $f(0)$ and $f(1)$.
+
+     \vspace{2cm}
+
+
+\part Sketch the probability density function using the grid below (including the points $(0, f(0))$ and $(1, f(1))$.
+
+\end{parts}
+
+\newpage
+
+\question
+
+Consider two discrete random variables, $X$ and $Y$, where $X$ can take the value 1 or 2 with equal probability and $Y$ depends on which of the two values $X$ takes.
+Suppose that the conditional distribution of $Y$ can be described using the conditional probability function $f(y|X=x)$, where
+$$
+f(y|X = 1) = 
+\begin{cases}
+   1/3 & y = 1, 2, \text{ or } 3 \\
+   0 &  \text{ otherwise }
+\end{cases}
+$$
+and
+$$
+f(y|X = 2) = 
+\begin{cases}
+   1/3 & y = 3, 4, \text{ or } 5 \\
+   0 &  \text{ otherwise }
+\end{cases}
+$$
+In this problem, $f(x,y) = P(X = x, Y = y)$ defines the joint probability function.
+
+\begin{parts}
+   \part Find $f_{Y}(3)$.
+   \vspace{2cm}
+   \part Find the joint probability $f(1,3)$.
+   \vspace{2cm}
+   \part Find the joint probability $f(2,5)$.
+   \vspace{2cm}
+   \part Find $f_X(2|Y = 3)$.
+   \vspace{2cm}
+   \part Find $P(X = 2|Y = 1)$.
+   \vspace{2cm}
+\end{parts}
+
+\end{questions}
+
+\end{document}

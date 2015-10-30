@@ -16,21 +16,21 @@ Grades and a few other important parts of the course will be run through [blackb
 
 ## Announcements
 
-### Practice Exam
+### Practice Exam 2
 
-Here is the promised [Practice Exam](./practice_exams/exam1A/stat105_F15_exam1B.pdf) (and the [reference sheet](./practice_exams/stat105_note_sheet_exam1.pdf)).
+The second [Practice Exam](./practice_exams/exam2A/stat105_F15_exam2A.pdf)
 
-Here are the [solutions](./practice_exams/exam1A/stat105_F15_exam1B_soln.pdf) (and the [reference sheet](./practice_exams/stat105_note_sheet_exam1.pdf)).
+### Exam 2 - November 5th 2015
 
-### Exam 1 - October 1st
+We have a second exam coming up!
 
-I will have extended office hours before the first exam. 
+As I did last time, I will have extended office hours before the second exam. 
 If you are interested in attending, please fill out the survey linked below so that I can schedule them effectively.
 Of course, we can still arrange office hours that work for your schedule personally by contacting me at imouzon@iastate.edu.
 
 [Extended Office Hours](http://whenisgood.net/stat105exam1)
 
-I have currently scheduled bonus office hours for September 30th from 1:00 pm - 3:00 pm.
+I have currently scheduled bonus office hours for Monday, November 2nd from 1:00 pm - 3:00 pm.
 
 ## Course Information
 
