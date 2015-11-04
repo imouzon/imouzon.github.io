@@ -20,6 +20,8 @@ Grades and a few other important parts of the course will be run through [blackb
 
 The second [Practice Exam](./practice_exams/exam2A/stat105_F15_exam2A.pdf)
 
+[Solutions](./practice_exams/exam2A/practice_solutions_stat105_F15_exam2.pdf)
+
 ### Exam 2 - November 5th 2015
 
 We have a second exam coming up!
