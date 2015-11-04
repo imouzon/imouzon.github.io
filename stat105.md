@@ -18,7 +18,7 @@ Grades and a few other important parts of the course will be run through [blackb
 
 ### Practice Exam 2
 
-The second [Practice Exam](./practice_exams/exam2A/stat105_F15_exam2A.pdf)
+The second [Practice Exam](./practice_exams/exam2A/stat105_F15_exam2A.pdf) and the [notesheet](./practice_exams/stat105_note_sheet_exam2.pdf)
 
 [Solutions](./practice_exams/exam2A/practice_solutions_stat105_F15_exam2.pdf)
 
