@@ -106,6 +106,8 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
    -  [Solutions for Homework 7](./hw/hw7/solutions_hw7.pdf) 
 
+-  [Homework 8](./hw/hw8/stat105_hw8.pdf) (Due Friday, Nov. 20 at 5:00 pm. Covers all of Chapter 5)
+
 ### Applications
 
 -  *Watch this space for interactive demonstrations and learning tools*
