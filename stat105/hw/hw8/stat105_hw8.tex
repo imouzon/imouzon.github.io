@@ -4,7 +4,7 @@
 %  Purpose:
 %
 %  Creation Date: 03-09-2015
-%  Last Modified: Tue Nov 17 10:07:01 2015
+%  Last Modified: Wed Nov 18 14:04:00 2015
 %  Created By:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -50,17 +50,36 @@ Show \textbf{all} of your work on this assignment and answer each question fully
 \ben
 
 
-\item \textbf{Chapter 5, Exercise 35 (page 330)}
+\item \textbf{Chapter 5, Exercise 35 (page 330)}:
+
+   \textit{Hints}:
+
+   \begin{enumerate}
+      \item if $a$ and $b$ are two constants, $x^a \cdot x^b = x^{(a + b)}$.
+      \item if $a$ and $b$ are two constants, $a^x \cdot b^x = (a \cdot b)^x$.
+      \item if $a$ and $b$ are two constants, $a^x \cdot b^{-x} = (a / b)^x$.
+      \item if you are taking a sum that depends on $x$ then you can factor out terms that don't depend on $x$. For example,
+         \begin{align*}
+            \sum_{x = 0}^{\infty} \frac{x!}{(x-y)!y!} (.8)^y (.2)^{x-y} \frac{e^{-3} 3^x}{x!} &= \sum_{x = 0}^{\infty} \frac{x!}{1}\frac{1}{(x-y)!}\frac{1}{y!} (.8)^y (.2)^{x} (.2)^{-y} \frac{e^{-3}}{1} \frac{3^x}{1} \frac{1}{x!}  \\
+                                                                                              &= \frac{1}{y!} (.8)^y (.2)^{-y} \frac{e^{-3}}{1} \sum_{x = 0}^{\infty} \frac{x!}{1}\frac{1}{(x-y)!}(.2)^{x} \frac{3^x}{1} \frac{1}{x!}  \\
+         \end{align*}
+         since each term that was factored out in the second line had nothing to do with $x$.
+      \item For any value $c$, $\sum_{x=0}^{\infty} \frac{e^{-c} c^x}{x!} = 1$ and $\sum_{x=0}^{\infty} \frac{c^x}{x!} = e^{c}$ 
+         (notice that the function $f_X(x)$ used in this problem is a probability function and thus $\sum_{x=0}^{\infty} f_X(x) = 1$).
+   \end{enumerate}
 
 \item \textbf{Chapter 5, Exercise 37 (page 331)}
 
+   \textit{Hint}: the limits over which you integrate in this problem matter - notice that if $y < x$ then $f(x,y) = 0$.
+
  
-\item 
+\item (\textit{This problem is now a bonus problem worth 15 points})\\
+
    Suppose that $X$ and $Y$ are two independent random variables with probability density functions given by:
    $$
    f_X(x) = 
    \begin{cases}
-      5 e^{5x} & x > 0 \\
+      5 e^{-5x} & x > 0 \\
       0 & \text{otherwise}
    \end{cases}
    $$
@@ -68,7 +87,7 @@ Show \textbf{all} of your work on this assignment and answer each question fully
    $$
    f_Y(y) = 
    \begin{cases}
-      2 e^{2y} & y > 0 \\
+      2 e^{-2y} & y > 0 \\
       0 & \text{otherwise}
    \end{cases}
    $$
@@ -109,5 +128,7 @@ Show \textbf{all} of your work on this assignment and answer each question fully
    \item 
       Find the expected value and variance of $W$ where $W = \sum_{i=1}^n \frac{i}{n} \left(Z_i + \frac{i}{n}\right)$.
    \end{enumerate}
+
+\end{enumerate}
 
 \end{document}
