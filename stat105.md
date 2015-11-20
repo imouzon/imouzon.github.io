@@ -108,6 +108,8 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Homework 8](./hw/hw8/stat105_hw8.pdf) (Due Friday, Nov. 20 at 5:00 pm. Covers all of Chapter 5)
 
+-  [Homework 9](./hw/hw9/stat105_hw9.pdf) (Due Thursday, Dec. 3 at the start of class. Covers confidence intervals and related topics.)
+
 ### Applications
 
 -  *Watch this space for interactive demonstrations and learning tools*
