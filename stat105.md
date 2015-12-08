@@ -75,8 +75,6 @@ I have currently scheduled bonus office hours for Monday, November 2nd from 1:00
 -  Lecture 9: 09-22 (Covers section 4.1 - 4.2, done on overhead/board)
 
 -  Lecture 10: 09-24 (Covers section 4.1 - 4.2, done on overhead/board)
-You can view the syllabus below or download it at this [link](./syllabus_stat105_F15.pdf).
-<object data="./syllabus_stat105_F15.pdf" type="application/pdf" width="100%" height="100%">
 
 ### Homework Assignments
 
@@ -110,3 +108,6 @@ You can view the syllabus below or download it at this [link](./syllabus_stat105
 
 -  [Homework 9](./hw/hw9/stat105_hw9.pdf) (Due Thursday, Dec. 3 at the start of class. Covers confidence intervals and related topics.)
 
+
+You can view the syllabus below or download it at this [link](./syllabus_stat105_F15.pdf).
+<object data="./syllabus_stat105_F15.pdf" type="application/pdf" width="100%" height="100%">
