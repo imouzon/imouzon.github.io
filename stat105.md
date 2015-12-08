@@ -51,8 +51,10 @@ I have currently scheduled bonus office hours for Monday, November 2nd from 1:00
 
 **Syllabus**
 
-You can view the syllabus below or download it at this [link](./syllabus_stat105_F15.pdf).
+You can view or download the syllabus at this [link](./syllabus_stat105_F15.pdf).
+<!---
 <object data="./syllabus_stat105_F15.pdf" type="application/pdf" width="100%" height="100%">
+-->
 
 ## Course Materials
 
