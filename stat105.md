@@ -16,6 +16,14 @@ Grades and a few other important parts of the course will be run through [blackb
 
 ## Announcements
 
+### Final Exam Study Materials
+
+### Exam 1
+
+The first [Practice Exam](./practice_exams/exam1A/stat105_F15_exam1B.pdf) and the [notesheet](./practice_exams/stat105_note_sheet_exam1.pdf)
+
+The first practice exam [solutions](./practice_exams/exam1A/stat105_F15_exam1B_soln.pdf)
+
 ### Exam 2
 
 The second [Practice Exam](./practice_exams/exam2A/stat105_F15_exam2A.pdf) and the [notesheet](./practice_exams/stat105_note_sheet_exam2.pdf)
