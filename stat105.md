@@ -16,23 +16,13 @@ Grades and a few other important parts of the course will be run through [blackb
 
 ## Announcements
 
-### Practice Exam 2
+### Exam 2
 
 The second [Practice Exam](./practice_exams/exam2A/stat105_F15_exam2A.pdf) and the [notesheet](./practice_exams/stat105_note_sheet_exam2.pdf)
 
-[Solutions](./practice_exams/exam2A/practice_solutions_stat105_F15_exam2.pdf)
+[Solutions for Practice Exam](./practice_exams/exam2A/practice_solutions_stat105_F15_exam2.pdf)
 
-### Exam 2 - November 5th 2015
-
-We have a second exam coming up!
-
-As I did last time, I will have extended office hours before the second exam. 
-If you are interested in attending, please fill out the survey linked below so that I can schedule them effectively.
-Of course, we can still arrange office hours that work for your schedule personally by contacting me at imouzon@iastate.edu.
-
-[Extended Office Hours](http://whenisgood.net/bpm2gct)
-
-I have currently scheduled bonus office hours for Monday, November 2nd from 1:00 pm - 3:00 pm.
+[Solutions for Exam II](./practice_exams/solutions_exam2.pdf)
 
 ## Course Information
 
@@ -107,7 +97,11 @@ You can view or download the syllabus at this [link](./syllabus_stat105_F15.pdf)
 
 -  [Homework 8](./hw/hw8/stat105_hw8.pdf) (Due Friday, Nov. 20 at 5:00 pm. Covers all of Chapter 5)
 
+   -  [Solutions for Homework 8](./hw/hw8/solutions_hw8.pdf) 
+
 -  [Homework 9](./hw/hw9/stat105_hw9.pdf) (Due Thursday, Dec. 3 at the start of class. Covers confidence intervals and related topics.)
+
+   -  [Solutions for Homework 9](./hw/hw9/solutions_hw9.pdf) 
 
 -  [Bonus Homework 10](./hw/hw10/stat105_hw10.pdf) (Due Tuesday, Dec. 15 at 7:30 AM before the final).
 
