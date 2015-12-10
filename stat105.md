@@ -97,7 +97,7 @@ You can view or download the syllabus at this [link](./syllabus_stat105_F15.pdf)
 
 -  [Homework 6](./hw/hw6/stat105_hw6.pdf) (Due Thursday, Oct. 22 at the start of class. Covers section 5.1, 5.2)
 
-   -  [Solutions for Homework 7](./hw/hw6/solutions_hw6.pdf) 
+   -  [Solutions for Homework 6](./hw/hw6/solutions_hw6.pdf) 
 
 -  [Homework 7](./hw/hw7/stat105_hw7.pdf) (Due Thursday, Oct. 29 at the start of class. Covers section 5.1, 5.2)
 
