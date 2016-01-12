@@ -10,7 +10,8 @@ image:
 share: true
 ---
 
-# Welcome to Spring 2016 STAT 105: Introduction to Statistical Engineering
+# STAT 105: Introduction to Statistical Engineering
+# Spring 2016
 
 This is the course Welcome to the course page for Fall 2015 STAT 105 section B.
 
