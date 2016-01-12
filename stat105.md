@@ -1,7 +1,7 @@
 ---
 layout: coursepage
 permalink: /stat105/
-title: Course Page: https://imouzon.github.io/stat105/
+title: "Course Page: https://imouzon.github.io/stat105/"
 tags: [teaching]
 image:
   feature: course_cover_image_S16.jpg
