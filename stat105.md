@@ -10,30 +10,15 @@ image:
 share: true
 ---
 
-# STAT 105: Introduction to Statistical Engineering
-# Spring 2016
+# STAT 105: Introduction to Statistical Engineering _ Spring 2016
 
-This is the course Welcome to the course page for Fall 2015 STAT 105 section B.
-
-Grades and a few other important parts of the course will be run through [blackboard](https://bb.its.iastate.edu/), but most content can be better shared here (for instance, lecture demonstrations).
+Welcome to the course page for STAT 105: Intro to Stat Engineering. 
+Grades and a few other important parts of the course will be run through [blackboard](https://bb.its.iastate.edu/), but most content can be better shared here (for instance, lecture notes and illustrations).
+The page will be updated frequently (though I will make a more clear announcement if there are any changes which you would want to be aware of immediately).
 
 ## Announcements
 
-### Final Exam Study Materials
-
-### Exam 1
-
-The first [Practice Exam](./practice_exams/exam1A/stat105_F15_exam1B.pdf) and the [notesheet](./practice_exams/stat105_note_sheet_exam1.pdf)
-
-The first practice exam [solutions](./practice_exams/exam1A/stat105_F15_exam1B_soln.pdf)
-
-### Exam 2
-
-The second [Practice Exam](./practice_exams/exam2A/stat105_F15_exam2A.pdf) and the [notesheet](./practice_exams/stat105_note_sheet_exam2.pdf)
-
-[Solutions for Practice Exam](./practice_exams/exam2A/practice_solutions_stat105_F15_exam2.pdf)
-
-[Solutions for Exam II](./practice_exams/solutions_exam2.pdf)
+Welcome to class.
 
 ## Course Information
 
