@@ -1,16 +1,16 @@
 ---
 layout: coursepage
 permalink: /stat105/
-title: Welcome to Statistics 105
+title: Course Page: https://imouzon.github.io/stat105/
 tags: [teaching]
 image:
   feature: course_cover_image_S16.jpg
 share: true
 ---
 
-# Welcome to STAT 105
+# Welcome to Spring 2016 STAT 105: Introduction to Statistical Engineering
 
-Welcome to the course page for Fall 2015 STAT 105 section B.
+This is the course Welcome to the course page for Fall 2015 STAT 105 section B.
 
 Grades and a few other important parts of the course will be run through [blackboard](https://bb.its.iastate.edu/), but most content can be better shared here (for instance, lecture demonstrations).
 
