@@ -19,6 +19,7 @@ The page will be updated frequently (though I will make a more clear announcemen
 
 ## Current Announcements
 
+*January 12, 2016*
 Welcome to class.
 
 [Previous Announcements](https://imouzon.github.io/stat105/announcements/)
