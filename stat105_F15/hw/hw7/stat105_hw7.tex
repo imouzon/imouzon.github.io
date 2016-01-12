@@ -1,0 +1,95 @@
+% For LaTeX-Box: root = stat105_hw2.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_hw2.tex
+%  Purpose:
+%
+%  Creation Date: 03-09-2015
+%  Last Modified: Mon Oct 26 11:17:22 2015
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\setlength{\topmargin}{-.5 in} 
+\setlength{\textheight}{9 in}
+\setlength{\textwidth}{6.5 in} 
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{0 in} 
+\setlength{\parindent}{0 in}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+
+
+\lhead{STAT 105, Section B} 
+\chead{Homework Assignment 7} 
+\rhead{Due Thursday, October 29} 
+\lfoot{Fall 2015} 
+\cfoot{\thepage} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+\newcommand{\ans}[1]{{\color{blue} \textbf{Answer: } #1}}
+\renewcommand{\ans}[1]{}
+
+\def\Exp#1#2{\ensuremath{#1\times 10^{#2}}}
+\def\Case#1#2#3#4{\left\{ \begin{tabular}{cc} #1 & #2 \phantom
+{\Big|} \\ #3 & #4 \phantom{\Big|} \end{tabular} \right.}
+
+\begin{document}
+\pagestyle{fancy} 
+
+Show \textbf{all} of your work on this assignment and answer each question fully in the given context. \\
+
+\emph{Please} staple your assignment! \\
+
+\ben
+
+
+\item \textbf{Chapter 5, Section 2, Exercise 2 (page 263)}
+
+\item \textbf{Chapter 5, Section 2, Exercise 3 (page 263)}
+
+\item \textbf{Chapter 5, Section 2, Exercise 4 (page 263)}
+
+ 
+\item Suppose that the cumulative probability function (cdf)
+of the the magnitude, $X$, of a dynamic load on a bridge (in newtons) is given by
+$$
+F(x) = \begin{cases}
+     0 & x < 0 \\
+     \dfrac{x}{8} + \dfrac{3}{16}x^2 & 0 \leq x \leq 2\\
+     1 & 2 < x
+\end{cases}
+$$
+\ben
+\item What is the probability that the load exceeds 1 newton?
+
+\item What is the probability that the load is at most .5 newtons?
+
+\item What is the probability that the load is between 1 and 1.5 newtons.
+
+\item Sketch the cdf.
+
+\item Derive the pdf.
+
+\item Sketch the pdf.
+\een 
+
+ \item (\textit{This problem is worth 5 bonus points})
+    We know that the probability density function of a normal random variable with $\mathbb{E}(X) = \mu$ and variance $\sigma^2$ can be written as
+    $$
+    f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{1}{2 \sigma^2 } (x - \mu)^2}, -\infty < x < \infty
+    $$
+    and we also know that, as with any random variable, 
+    $$
+    \int_{-\infty}^{\infty} f(x) dx  = \int_{-\infty}^{\infty} \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{1}{2 \sigma^2 } (x - \mu)^2} dx  = 1
+    $$
+
+    Using the last fact, to find the value of $ \int_{-\infty}^{\infty} e^{3x -x^2} dx $
+\een
+\end{document}

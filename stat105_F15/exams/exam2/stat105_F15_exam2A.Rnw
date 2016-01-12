@@ -1,0 +1,331 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Fri Nov  6 09:12:28 2015
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[addpoints]{examsetup}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 105}{STAT 105, Section #1}}
+\newcommand{\sectionNumber}{B}
+\newcommand{\examDate}{November 5, 2015}
+\newcommand{\semester}{FALL 2015}
+\newcommand{\examNumber}{II}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = FALSE>>=
+   library(ggplot2)
+   library(dplyr)
+   library(tidyr)
+
+   theme_bw()
+@
+
+
+\examCoverPage
+
+\begin{questions}
+
+\question
+
+An engineer for City Bikes, a rent-and-return bike company, is working on decreasing the time it takes to bring a bicycle to a complete halt.
+The company is interested in fitting bikes with brake that is has consistently short brake times. 
+Bike mechanisms are durable and rarely wear out, but the rubber brake pads often do and may be replaced locally (i.e., the type of brake pad used is out of the company's control, but the brand of brake mechanism is within their control).
+His goal is to recommend a brake mechanism that has low stopping times regardless of the brake pads used.
+He is looking at three different brands of brake mechanism and three common types of rubber brake pads and has decided to use a factorial study to determine which brake mechanism is best.
+The engineer assigns the brake mechanism brand to Factor A and the rubber pads to Factor B. 
+Stopping speeds for each combination of brake mechanism and brake pads were tested four times under similar condtions.
+
+The results are recorded below.
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = FALSE>>=
+set.seed(1999)
+bike_grid <- expand.grid(c("Brand 1", "Brand 2", "Brand 3"),c("Rubber 1","Rubber 2","Rubber 3"))
+bike <- data.frame(rbind(bike_grid,bike_grid,bike_grid,bike_grid))
+names(bike) <- c("brake","rubber")
+
+bike$brake <- factor(bike$brake, c("Brand 1","Brand 2","Brand 3"))
+bike$rubber <- factor(bike$rubber, c("Rubber 1","Rubber 2","Rubber 3"))
+
+bike$time <- round(4.5*(bike$brake == "Brand 1")   + 1.9*(bike$brake == "Brand 2")   + 4.5*(bike$brake == "Brand 3") 
+                 + 3.5*(bike$rubber == "Rubber 1") + 2.5*(bike$rubber == "Rubber 2") + 5.8*(bike$rubber == "Rubber 3") 
+                 + 8.5*(bike$brake == "Brand 2" & bike$rubber == "Rubber 3") + rnorm(36),2)
+
+bike <- bike[with(bike,order(brake,rubber)),]
+
+bike_sum <- bike %>% group_by(brake,rubber) %>% summarise(time = mean(time))
+@
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrr}
+   & \multicolumn{3}{c}{Brake Pads} \\
+\cline{2-4}
+Brand & Type 1 & Type 2 & Type 3\\ \hline \hline
+Brand 1 & \Sexpr{bike$time[1 + 0]} & \Sexpr{bike$time[1 + 4]} & \Sexpr{bike$time[1 + 8]} \\
+        & \Sexpr{bike$time[1 + 1]} & \Sexpr{bike$time[1 + 5]} & \Sexpr{bike$time[1 + 9]} \\
+        & \Sexpr{bike$time[1 + 2]} & \Sexpr{bike$time[1 + 6]} & \Sexpr{bike$time[1 + 10]} \\
+        & \Sexpr{bike$time[1 + 3]} & \Sexpr{bike$time[1 + 7]} & \Sexpr{bike$time[1 + 11]} \\
+Brand 2 & \Sexpr{bike$time[13 + 0]} & \Sexpr{bike$time[13 + 4]} & \Sexpr{bike$time[13 + 8]} \\
+        & \Sexpr{bike$time[13 + 1]} & \Sexpr{bike$time[13 + 5]} & \Sexpr{bike$time[13 + 9]} \\
+        & \Sexpr{bike$time[13 + 2]} & \Sexpr{bike$time[13 + 6]} & \Sexpr{bike$time[13 + 10]} \\
+        & \Sexpr{bike$time[13 + 3]} & \Sexpr{bike$time[13 + 7]} & \Sexpr{bike$time[13 + 11]} \\
+Brand 3 & \Sexpr{bike$time[25 + 0]} & \Sexpr{bike$time[25 + 4]} & \Sexpr{bike$time[25 + 8]} \\
+        & \Sexpr{bike$time[25 + 1]} & \Sexpr{bike$time[25 + 5]} & \Sexpr{bike$time[25 + 9]} \\
+        & \Sexpr{bike$time[25 + 2]} & \Sexpr{bike$time[25 + 6]} & \Sexpr{bike$time[25 + 10]} \\
+        & \Sexpr{bike$time[25 + 3]} & \Sexpr{bike$time[25 + 7]} & \Sexpr{bike$time[25 + 11]} \\
+\hline
+\end{tabular}
+\end{table}
+
+The following summaries may help in this problem:
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = FALSE>>=
+   y11 = round(mean(bike$time[which(bike$brake == "Brand 1" & bike$rubber == "Rubber 1")]),2)
+   y12 = round(mean(bike$time[which(bike$brake == "Brand 1" & bike$rubber == "Rubber 2")]),2)
+   y13 = round(mean(bike$time[which(bike$brake == "Brand 1" & bike$rubber == "Rubber 3")]),2)
+   y21 = round(mean(bike$time[which(bike$brake == "Brand 2" & bike$rubber == "Rubber 1")]),2)
+   y22 = round(mean(bike$time[which(bike$brake == "Brand 2" & bike$rubber == "Rubber 2")]),2)
+   y23 = round(mean(bike$time[which(bike$brake == "Brand 2" & bike$rubber == "Rubber 3")]),2)
+   y31 = round(mean(bike$time[which(bike$brake == "Brand 3" & bike$rubber == "Rubber 1")]),2)
+   y32 = round(mean(bike$time[which(bike$brake == "Brand 3" & bike$rubber == "Rubber 2")]),2)
+   y33 = round(mean(bike$time[which(bike$brake == "Brand 3" & bike$rubber == "Rubber 3")]),2)
+
+   y1dot = round(mean(c(y11,y12,y13)),2)
+   y2dot = round(mean(c(y21,y22,y23)),2)
+   y3dot = round(mean(c(y31,y32,y33)),2)
+   ydot1 = round(mean(c(y11,y21,y31)),2)
+   ydot2 = round(mean(c(y12,y22,y32)),2)
+   ydot3 = round(mean(c(y13,y23,y33)),2)
+
+   ydotdot = round(mean(bike$time),2)
+@
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrrr}
+ & \multicolumn{3}{c}{Brake Pad} \\
+\cline{2-4}
+Brand   & Type 1                     & Type 2                      & Type 3                       &  \\
+\cline{1-4} \cline{1-4}
+Brand 1 &                                & $\bar{y}_{12} = \Sexpr{y12}$    & $\bar{y}_{13} = \Sexpr{y13}$   &                                \\
+Brand 2 & $\bar{y}_{21} = \Sexpr{y21}$   &                                 & $\bar{y}_{23} = \Sexpr{y23}$   & $\bar{y}_{2 \cdot} = \Sexpr{y2dot}$ \\
+Brand 3 & $\bar{y}_{31} = \Sexpr{y31}$   & $\bar{y}_{32} = \Sexpr{y32}$    & $\bar{y}_{33} = \Sexpr{y33}$   & $\bar{y}_{3 \cdot} = \Sexpr{y3dot}$ \\
+\cline{1-4} 
+        & $\bar{y}_{\cdot 1} = \Sexpr{ydot1}$ &                                 & $\bar{y}_{\cdot 3} = \Sexpr{ydot3}$   & $\bar{y}_{\cdot \cdot} = \Sexpr{ydotdot}$ \\
+\end{tabular}
+\end{table}
+
+\begin{parts}
+
+   \part[2] Report the value of $\bar{y}_{1 \cdot}$
+   \vspace{2cm}
+
+   \part[2] Report the value of $\bar{y}_{\cdot 2}$
+   \vspace{2cm}
+
+   \newpage
+
+   \part[3] Find the fitted main effect of braking using each brand, $a_1$, $a_2$, and $a_3$, that you would get from factorial model that ignores interactions.
+   \vspace{3cm}
+
+   \part[3] Ignoring possible interactions, give the estimated values $\hat{y}_{22}$ and $\hat{y}_{23}$.
+   \vspace{3cm}
+
+   \part[2] How do the estimated values computed above compare to the average for the same combinations seen in the data? 
+            Does it appear that ignoring interactions was a good choice?
+   \vspace{2cm}
+
+   \part[5] Using the template below, create a profile plot for this data:
+
+%-- : R plot (results in document)
+<<fig.width=8, fig.height=6, out.width='.7\\linewidth', fig.align="center",echo=FALSE>>=
+   p <- ggplot(data = bike,aes(x=brake,y=time,xlab="Brake Mechanism",ylab="Stopping Time"))
+   p + geom_blank() + theme_bw()
+@
+
+   \part[2] Using the plot does it appear that there is an interaction between brake mechanism and rubber type? 
+   If you had to recommend a brake mechanism and had to consider low stopping times and consistency across brake pads which would you suggest?
+   \vspace{2cm}
+\end{parts}
+
+\newpage
+
+\question 
+
+
+After winning an enormous sum on a (rigged) casino dice game Danny Ocean moves on to another game.
+In roullette, a ball bounces on a spinning wheel with 38 pockets numbered 0, 00, 1, 2, ..., 36, and bets are made on which pocket the ball will eventually come to rest. 
+In a fair game, the ball has the same chance of coming to a rest in every pocket, but Mr. Ocean has rigged the game (using metallic dust and magnets).
+In this rigged version, the ball will come to rest in 00 with probability 0.14, 0 with probability 0.14, and any other of the 36 pockets with probability 0.02.
+Mr. Ocean will win his bet if the ball lands in either 00 or 0. 
+
+He defines two random variables: $X$ (which takes the value 1 if he wins the first spin and 0 if he loses), and $T$, the number of attempts needed to win for the first time. \\
+
+\begin{parts}
+
+   \part[2] Provide the probability function for $X$.
+   \vspace{2cm} 
+
+   \part[2] Find the variance and expected value of $X$.
+   \vspace{2cm} 
+
+   \part[2] Find $\mathbb{E}(T)$. 
+   \vspace{2cm}
+
+   \part[2] What is the probability that Danny will win for the first time on his 5th attempt?
+   \vspace{3cm}
+
+   \part[4] What is the probability that it will take more than 2 games for Danny to win his first bet?
+   \vspace{3cm}
+
+   \part[4] Danny wins, but decides to play five more games - what is the probability that he wins at least one of them?
+
+   \vspace{4cm}
+
+\end{parts}
+
+\newpage
+
+\question
+
+Let $X$ be a normal random variable with a mean of 2 and a varaince of 9 (i.e., $X \sim N(2,9)$) and let $Z$ be a random variable following a standard normal distribution.
+
+\begin{parts}
+ \part Find the following probabilities (note: Table B-3 may be helpful):
+  \begin{subparts}
+     \subpart[2] $P(Z \le 2)$
+
+     \vspace{2cm}
+
+     \subpart[2] $P(|Z| \ge 1)$
+
+     \vspace{2cm}
+
+     \subpart[2] $P(0 \le Z < 3)$
+
+     \vspace{2cm}
+
+     \subpart[2] $P(X < 3)$
+
+     \vspace{2cm}
+
+     \subpart[2] $P(|X| \le 4.5)$
+
+     \vspace{2cm}
+
+  \end{subparts}
+
+  \part[5] Find the value $a$ so that $P(- a + 2 < X < a + 2) = .95$ (approximate as needed).
+
+\end{parts}
+
+\newpage
+
+\question 
+
+Suppose that $X$ is a continuous random variable with probability density function (pdf):
+$$
+f(x) = 
+\begin{cases}
+    0 &  x < 0 \\
+    c x^2 &  -2  < x < 2 \\
+    0 & x \ge 2
+\end{cases}
+$$
+where $c$ is a constant.
+
+\begin{parts}
+
+\part[2] What is the value of $c$ if $f(x)$ is a valid probability density function?
+
+     \vspace{2cm}
+
+
+\part[5] Sketch the probability density function using the grid below (including the points $(-2, f(2))$ and $(2, f(2))$).
+
+%-- : R plot (results in document)
+<<fig.width=8, fig.height=6, out.width='.6\\linewidth', fig.align="center",echo=FALSE>>=
+   x <- seq(-2.5,2.5,.1)
+   y <- (3/16)*x^2
+   d <- data.frame(x = x, y = y)
+   p <- ggplot(data = d,aes(x=x,y=y))
+   p + geom_blank(xlab="x",ylab="f(y)") + theme_bw()
+@
+
+\part[4] What is the cumulative density function, $F(x)$?
+
+     \vspace{3cm}
+
+\part[2] What is the probability that $X$ takes a value greater than 1?
+
+     \vspace{2cm}
+
+\part[2] What is the probability that $X$ takes a value between 0 and 1?
+
+     \vspace{2cm}
+
+
+\end{parts}
+
+\newpage
+
+\question
+
+Suppose we know that $W$ is a binomial random variable with $n = 5$ trials, 
+each with the same probability of success $p$, but that the value of $p$ is depends on another random variable $X$.
+$X$ will take one of three values, $\frac{1}{4}$, $\frac{2}{4}$, or $\frac{3}{4}$, each with the same probability.
+The value $X$ takes will then serve as the value for the probability of success, $p$, for $W$, i.e., if $X = \frac{1}{4}$ then $W$ is a Binomial(5,$\frac{1}{4}$). 
+Two of the conditional probability functions that result from this arrangement are below:
+$$
+f(w|X = \frac{1}{4}) = 
+\begin{cases}
+   \frac{5!}{(5-w)! w!} (\frac{1}{4})^w (1 - \frac{1}{4})^{5 - w} & w = 0, 1, 2, 3, 4 \text{ or } 5 \\
+   0 &  \text{ otherwise }
+\end{cases}
+f(w|X = \frac{2}{4}) = 
+\begin{cases}
+   \frac{5!}{(5-w)! w!} (\frac{2}{4})^w (1 - \frac{2}{4})^{5 - w} & w = 0, 1, 2, 3, 4 \text{ or } 5 \\
+   0 &  \text{ otherwise }
+\end{cases}
+$$
+
+In this problem, $f(x,w) = P(X = x, Y = y)$ defines the joint probability function.
+\begin{parts}
+   \part[2] Find the conditional probability function $f(w | X = \frac{3}{4})$.
+   \vspace{2cm}
+   \part[2] Find the joint probability $f(\frac{1}{4},0)$.
+   \vspace{2cm}
+   \part[2] Find the joint probability $f(\frac{2}{4},0)$.
+   \vspace{2cm}
+   \part[3] Find $f_{W}(0)$.
+   \vspace{2cm}
+   \part[2] Find $f_{X|W}(\frac{1}{4}|W = 0)$.
+   \vspace{2cm}
+   \part[2] Find $P(X = \frac{2}{4}|W = 0)$.
+   \vspace{2cm}
+   \part[2] Find $P(X = \frac{3}{4}|W = 0)$.
+   \vspace{2cm}
+   \part (\textit{5 bonus points}) If we don't know what value $X$ has taken, but we can observe the value of $W$, what values can $W$ take that would make us believe it is more likely that $X = \frac{2}{4}$ than either of the other two values of $X$?
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,599 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Wed Sep 30 15:58:16 2015
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{examsetup}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+\usepackage{amsmath}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 105}{STAT 105, Section #1}}
+\newcommand{\sectionNumber}{B}
+\newcommand{\examDate}{October 1, 2015}
+\newcommand{\semester}{FALL 2015}
+\newcommand{\examNumber}{I}
+
+\printanswers
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+%-- : R code (Code in Document)
+
+
+
+\examCoverPage
+
+\begin{questions}
+
+\question[2] 
+
+Circle the \textbf{bold face} term that makes the following statement true: \\
+
+A measurement device that reports the true measurement of the item on which the device is being used is (\textbf{precise} or \textbf{accurate}).
+
+\begin{solution}
+   Accurate.
+\end{solution}
+
+\question 
+
+%-- : R code (Code in Document)
+
+
+A sample of size 5 was drawn from a population and the resulting observations are reported below. 
+\begin{center}
+12, 15, 18, 19, 26
+\end{center}
+Using these observed values, report the following:
+\vspace{1cm}
+
+\begin{parts}
+
+   \part[2] the mean  
+   \begin{solution}
+      \begin{align*}
+      \bar{x} = \frac{1}{n} \sum_{i=1}^n x_i &= \frac{1}{5} (x_1 + x_2 + x_3 + x_4 + x_5)  \\
+                                             &= \frac{1}{5} (12 + 15 + 18 + 19 + 26) \\
+                                             &= \frac{1}{5} (90) \\
+                                             &= 18 
+      \end{align*}
+   \end{solution}
+
+   \part[2] the median 
+   \begin{solution}
+      The median is $Q(0.5)$. \\
+
+      Since $n p + 0.5 = 5 \cdot 0.5 + 0.5 = 3$ 
+      then $Q(.5) = x_{3} = 18$ is the median. \\
+
+      Alternatively, since $n = 5$ is odd, we know that the median is the middle of the ordered values.
+
+   \end{solution}
+
+
+   \part[2] the variance 
+   \begin{solution}
+      Since this is a sample, we must $s^2$:\\
+
+      \begin{align*}
+         s^2 &= \frac{1}{n-1} \sum_{i = 1}^{n} (x_i - \bar{x})^2 \\
+             &= \frac{1}{5-1} \sum_{i = 1}^{5} (x_i - \bar{x})^2 \\
+             &= \frac{1}{4} \left( (x_1 - \bar{x})^2+ (x_2 - \bar{x})^2 + (x_3 - \bar{x})^2 + (x_4 - \bar{x})^2 + (x_5 - \bar{x})^2 \right) \\
+             &= \frac{1}{4} \left( (12 - 18)^2+ (15 - 18)^2 + (18 - 18)^2 + (19 - 18)^2 + (26 - 18)^2 \right) \\
+             &= \frac{1}{4} \left( (\ensuremath{-6})^2 + (\ensuremath{-3})^2 + (0)^2 + (1)^2 + (8)^2 \right) \\
+             &= \frac{1}{4} \left( 36 + 9 + 0 + 1 + 64 \right) \\
+             &= \frac{1}{4} \left( 110 \right) \\
+             &= 27.5 \\
+      \end{align*}
+
+   \end{solution}
+
+   \part[2] the standard deviation 
+   \begin{solution}
+      We must use the sample standard deviation, $s$:\\
+
+      \begin{align*}
+         s &= \sqrt{s^2} = \sqrt{27.5} = 5.2440442 \\
+      \end{align*}
+
+   \end{solution}
+
+   \part[2] the value of $Q(.25)$
+
+%-- : R code (Code in Document)
+
+   
+   \begin{solution} 
+      We will need to use the quantile function.\\
+
+      In this case, $i = \lfloor n p + 0.5 \rfloor = \lfloor 5 \cdot 0.25 + 0.5 \rfloor = \lfloor 1.75 \rfloor = 1$.
+      Since $i \ne n p + 0.5$, we must use the second form of the function:
+
+      \begin{align*}
+         Q(.25) &= x_i + (n p - i + 0.5) \cdot (x_{i+1} - x_i) \\
+                &= x_{1} + (5 \cdot .25 - 1 + 0.5) \cdot (x_{2} - x_{1}) \\
+                &= 12 + (0.75) \cdot (15 - 12) \\
+                &= 12 + (0.75) \cdot (3) \\
+                &= 12 + 2.25 \\
+                &= 14.25 \\
+      \end{align*} 
+      
+   \end{solution}
+
+%-- : R code (Code in Document)
+
+
+   \part[2] the Interquartile Range
+   \begin{solution} 
+      Since $\text{IQR} = Q(.75) - Q(.25)$, we will need to use the quantile function to find $Q(.75)$.\\
+
+      In this case, $i = \lfloor n p + 0.5 \rfloor = \lfloor 5 \cdot 0.75 + 0.5 \rfloor = \lfloor 4.25 \rfloor = 4$.
+      Since $i \ne n p + 0.5$, we must use the second form of the function:
+
+      \begin{align*}
+         Q(.75) &= x_i + (n p - i + 0.5) \cdot (x_{i+1} - x_i) \\
+                &= x_{4} + (5 \cdot .75 - 4 + 0.5) \cdot (x_{5} - x_{4}) \\
+                &= 19 + (0.25) \cdot (26 - 19) \\
+                &= 19 + (0.25) \cdot (7) \\
+                &= 19 + 1.75 \\
+                &= 20.75 \\
+      \end{align*} 
+
+      So we get $\text{IQR} = Q(.75) - Q(.25) = 20.75 - 14.25 = 6.5$
+   \end{solution}
+
+\end{parts}
+
+\question
+
+An environmental engineer is testing four methods for reducing the concentration of a certain lake pollutant found in Iowa lakes.
+To do this he first randomly selected 20 Iowa lakes from which he took water samples,
+then split each of the 20 samples into 4 portions, 
+and randomly labeled the four portions 1, 2, 3, and 4. 
+Finally, he attempted to reduce the concentration of each 
+of the portions labeled 1 using the the first method, 
+of each of the portions labeled 2 using the second method, 
+of each of the portions labeled 3 using the third method, 
+and of each of the portions labeled portion 4 using the fourth method. 
+After the methods had been applied, he measured the change in concentration. \\
+
+\begin{parts}
+   \part[2] Is this an experiment or an observational study? Explain.
+   \begin{solution}
+      This is an experiment. The methods are being applied by the engineer and which method is used is decided by the engineer. 
+   \end{solution}
+
+   \part Identify the following (if there was not one, simply put "not used").
+
+  \vspace{1cm}
+
+   \begin{subparts}
+      \subpart[2] Response variable(s):
+      \begin{solution}
+         The change in concentration.
+      \end{solution}
+
+      \subpart[2] Experimental variable(s):
+      \begin{solution}
+         The method used.
+      \end{solution}
+
+
+      \subpart[2] Blocking variable(s):
+      \begin{solution}
+         The lake the sample was taken from is a treated as a block in this example.
+      \end{solution}
+
+   \end{subparts}
+
+   \part[2] Was replication used in this experiment? If so, where was it applied? If not, how could we have applied it?
+   \begin{solution}
+      Replication was only used in the sense that each method was used more than once.
+      However, inside the blocks (the sample from the lakes) each treatment is only applied once. 
+   \end{solution}
+
+\end{parts}
+
+\pagebreak
+
+\question
+
+Recently my teenage niece had an opportunity to upgrade her smart phone. 
+She narrowed her choices down to two phones (phone A and phone B) but had a hard time making her final decision.
+She decided to ask people she knew who had one of the phones to rate their satisfaction from 0\% to 100\%.
+She also asked them if they would prefer to have the other phone.
+In order to help put their feelings in perspective, she also made note of how negative she thought they were in general, 
+using three descriptions: the interviewee was classified as overly critical, appropriately critical, or not critical enough. 
+
+\begin{parts}
+   \part[2] Is this an experiment or an observational study?
+   \begin{solution}
+      This is an observational study. My niece takes no active role in change anything about the individuals she interviews or their phones.
+   \end{solution}
+
+   \part[2] Identify the response variable(s).
+   \begin{solution}
+   There are two responses being gathered about each interviewee: (1) whether or not they would prefer the other phone and (2) how satisfied they are with their current phone. variables
+   \end{solution}
+   
+   \part For each of the following variables, 
+
+   \begin{itemize}
+
+      \item Identify whether it is qualitative or quantitative variable, and 
+
+      \item If it is qualitative, what are the possible values it can take? If it is quantitative, is it continuous or discrete?
+
+   \end{itemize}
+
+   \begin{subparts}
+
+      \subpart the individual's reported phone satisfaction percentage.
+
+      \begin{solution}
+      This is quantitative and continuous.
+      \end{solution}
+
+      \subpart my niece's appraisal of the interviewee's negativity.
+
+      \begin{solution}
+      This is qualitative. The levels are overly critical, appropriately critical, or not critical enough. 
+      \end{solution}
+
+      \subpart whether or not the interviewee would prefer to have the other phone.
+
+      \begin{solution}
+      This is qualitative. The levels are ``yes`` and ``no``.
+      \end{solution}
+
+      \subpart the type of phone the interviewee currently owns.
+
+      \begin{solution}
+      This is qualitative. The levels are ``phone 1`` and ``phone 2``.
+      \end{solution}
+
+   \end{subparts}
+
+\end{parts}
+\pagebreak
+
+\question 
+
+%-- : R code (Code in Document)
+
+
+The strength of an internet connection is often described in terms of its download speed, measured in megabits per second (or Mbps).
+A systems administrator is concerned that recent changes in her company's main server framework may be having a negative impact on the local network's download speed.
+Every 2 minutes for an hour, she recorded the network speed at that moment and collected her results into the following stem-and-leaf plot:
+
+%-- : R code (Code in Document)
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{verbatim}
+
+  The decimal point is at the |
+
+   0 | 9
+   1 | 8
+   2 | 7
+   3 | 6
+   4 | 134
+   5 | 7
+   6 | 1145677
+   7 | 01338
+   8 | 2346
+   9 | 79
+  10 | 45
+  11 | 
+  12 | 17
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+Note that \verb!0 | 9! represents 0.9. In this case, the first quartile is $Q(.25) = 5.7$, the median is 6.85, and the IQR is 2.7.
+
+%-- : R code (Code in Document)
+
+
+\begin{parts}
+  \part[10] Complete the following frequency table: \\
+
+  \begin{table}[h!]
+     \centering
+     \begin{tabular}{|l|p{3cm}|p{3cm}|p{4cm}|}
+        \hline
+                             & \textbf{Frequency} & \textbf{Relative} & \textbf{Cumulative}  \\
+        \textbf{Value Range} &                    & \textbf{Frequency} & \textbf{Relative Frequency} \\\hline \hline
+                    &  &  &  \\
+      0.00 - 2.00   &  2 & 0.07 & 0.07 \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      2.01 - 4.00   &  2 & 0.07 & 0.14 \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      4.01 - 6.00   &  4 & 0.13 & 0.27 \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      6.01 - 8.00   &  12 & 0.4 & 0.67 \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      8.01 - 10.00  &  6 & 0.2 & 0.87 \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      10.01 - 12.00 &  2 & 0.07 & 0.94 \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      12.01 - 14.00 &  2 & 0.07 & 1.01 \\
+                    &  &  &  \\  \hline
+     \end{tabular}
+  \end{table}
+
+  \pagebreak
+
+  \part[10] Create a box plot to summarize the data. Carefully label the axes.
+
+  \begin{solution}
+     The boxplot is below: \\
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.8\linewidth]{figure/unnamed-chunk-8-1} 
+
+\end{knitrout}
+  \end{solution}
+
+
+  \part[4] Are there any unusually low observations? If so What were the speeds at those points?
+  \begin{solution}
+     Yes, there are two unusually low observations as indicated by the box plot. They are 0.9 and 1.8.
+  \end{solution}
+
+
+  \part[10] She also measured upload speed, obtaining the following 8 values.
+
+%-- : R code (Code in Document)
+
+
+\begin{center}
+   7.45, 4.22, 7.7, 6.04, 7.68, 5.71, 4.71, 8.44
+\end{center}
+
+Create a theoretical Q-Q plot using the following quantiles from the normal distribution as the theoretical quantiles. Carefully label your axes.
+What does this graph tell us about the upload speeds?
+
+\begin{table}[h!]
+   \centering
+   \begin{tabular}{ccccccccc}
+             & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
+      $p$    & 0.0625 & 0.1875 & 0.3125 & 0.4375 & 0.5625 & 0.6875 & 0.8125 & 0.9375 \\
+      $Q(p)$ & \ensuremath{-1.53} & \ensuremath{-0.89} & \ensuremath{-0.49} & \ensuremath{-0.16} & 0.16 & 0.49 & 0.89 & 1.53 \\ \hline
+   \end{tabular}
+\end{table}
+
+%-- : R plot (results in document)
+\begin{solution}
+   We get the QQ-plot by plotting the ordered values of our sample against the ordered quantiles from the normal distribution (as given above): \\
+
+\begin{centering}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.8\linewidth]{figure/unnamed-chunk-10-1} 
+
+\end{knitrout}
+\end{centering}
+
+The points do seem to somewhat linear - an argument could be made that because of this the upload speed is normally distributed.
+
+\end{solution}
+
+\end{parts}
+\pagebreak
+
+\question
+
+The major cause of axel failure in freight trucks is when shippers exceed the recommended weight limits that can be handled by the axels. 
+Issues resulting from these failures have been becoming more frequent as shippers try to cut corners, 
+leading members of the state's Department of Transportation to ask one of their civil engineers 
+to look into the available data and better advise them on the relationship between excessive weight and axel failure.
+
+A company manufacturing axels provides the engineer with data gathered from conducting experiments loading axels with excessive weight and simulating traveling conditions.
+The data consists of two columns, \textbf{excessive weight (in tonnes)} is the amount of weight over the limit that was placed on the axel, and 
+\textbf{distance to failure (in tens of thousands of miles)} is the simulated distance to the axel's failure. 
+
+%-- : R code (Code in Document)
+
+
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.5\linewidth]{figure/unnamed-chunk-12-1} 
+
+\end{knitrout}
+\end{center}
+
+Here are some summaries of the data:
+
+$$
+\sum_{i=1}^{50} x_i = 64 \hspace{3cm} \sum_{i=1}^{50} x_i^2 = 107 \\
+$$
+
+$$
+\sum_{i=1}^{50} y_i = 2008 \hspace{3cm} \sum_{i=1}^{50} y_i^2 = 95182 \\
+$$
+
+$$
+\sum_{i=1}^{50} x_i y_i = 
+1999
+$$
+
+\begin{parts}
+   \part Using the summaries above, fit a linear relationship between \textbf{weight exceeding guidelines} (x) and \textbf{travel distance to failure} (y). 
+   \begin{subparts}
+      \subpart[5] Write the equation of the fitted linear relationship. 
+      \begin{solution}
+         We need to get the estimates of $b_0$ and $b_1$ to write the equation of the fitted line: \\
+
+         \begin{align*}
+            b_1 &= \frac{\sum_{i=1}^{50} x_i y_i - 50 \bar{x} \bar{y}}{\sum_{i=1}^{50} x_i^2 - 50 \bar{x}^2} \\
+                &=  \frac{ 1999 - 50 \left(\frac{64}{50}\right) \left(\frac{2008}{50}\right) }{ 107- 50 \left(\frac{64}{50}\right)^2 } \\
+                &=  \frac{ 1999 - 50 (1.27) (40.16) }{ 107- 50 (1.27)^2 } \\
+                &=  \frac{ 1999 - 2550.16 }{ 107- 80.645 } \\
+             &= \frac{ \ensuremath{-551.16} }{ 26.355 } \\
+             &= \ensuremath{-20.91} \\
+         \end{align*}
+         and thus 
+         \begin{align*}
+            b_0 &= \bar{y} - b_1 \bar{x} \\
+                &= \left(\frac{2008}{50}\right) - (\ensuremath{-20.91} ) \left(\frac{64}{50}\right) \\
+                &= \left(40.16\right) - (\ensuremath{-20.91} ) \left(1.28\right) \\
+                &= 66.9248 \\
+         \end{align*}
+         So the equation of the fitted line is:
+
+         $$
+         \hat{y} = 66.9248 - 20.91 x 
+         $$
+
+      \end{solution} 
+      \subpart[5] Find and interpret the value of $R^2$ for the fitted linear relationship.
+      \begin{solution}
+         Since this is a linear model, we can first find the correlation coeffecient and then find the value of $R^2$:
+         \begin{align*}
+         r 
+         &= 
+         \frac{
+            \sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}
+         }{
+            \sqrt{\left(\sum_{i=1}^n x_i^2 - \bar{x}^2 \right) \left(y_i - n \bar{y}^2 \right)}
+         }\\
+         &= 
+         \frac{
+            1999 - 50 (1.27)(40.16)
+         }{
+            \sqrt{\left(107 - (50)( 1.27)^2 \right)
+            \left(95182 - (50)( 40.16)^2 \right)}
+         }\\
+         &= 
+         \frac{
+            \ensuremath{-551.16}
+         }{
+            \sqrt{\left(25.5 \right)
+            \left(14540.5 \right)}
+         }\\
+         &= 
+         \frac{
+            \ensuremath{-551.16}
+         }{
+            608.9193296
+         }
+         \\
+         &= \ensuremath{-0.91}
+         \end{align*}
+
+         So $R^2 = 
+          (\ensuremath{-0.91})^2
+            = 
+          0.8281
+     $ 
+     meaning that 82.8\% of the variability in failure time can be explained by the linear relationship of failure time with weight.
+      \end{solution}
+
+      \subpart[5] Using the fitted line, provide a predicted value of travel distance to failure when the weight exceeding the guidelines is 3.4 tonnes.
+      \begin{solution}
+        \begin{align*}
+         \hat{y} &= 66.9248 - 20.91 ( 3.4 )\\
+                 &= \ensuremath{-4.1692}\\
+        \end{align*} 
+      \end{solution}
+   \end{subparts}
+
+   \part The JMP output below comes from fitting a quadratic model using $x$ and $x^2$. 
+
+   \centerline{\includegraphics[scale=.2]{FitModel}}
+
+   \begin{subparts}
+      \subpart[5] Write the equation of the fitted quadratic relationship. 
+      \begin{solution}
+         From the JMP output: \\
+
+         $$\hat{y} = 16.27 + 4.66 x - 10.2 x^2$$
+      \end{solution} 
+      \subpart[5] Find and interpret the value of $R^2$ for the fitted quadratic relationship.
+      \begin{solution}
+         $$
+         R^2 = \frac{\text{SSTO} - \text{SSE}}{\text{SSTO}} = \frac{13229.647 - 1311.073}{13229.647} = 0.9008989
+         $$
+         Using the quadratic relationship, approximately 90.09\% of the variability in failure time can be explained.
+      \end{solution}
+      \subpart[5] Using the fitted quadratic relationship, provide a predicted value of travel distance to failure when the weight exceeding the guidelines is 3.4 tonnes.
+      \begin{solution}
+         \begin{align*}
+         \hat{y} &= 16.27 + 4.66 x - 10.2 x^2 \\
+                 &= 16.27 + 4.66 (3.4) - 10.2 (3.4)^2 \\
+                 &= \ensuremath{-85.798} \\
+         \end{align*}
+      \end{solution}
+   \end{subparts}
+\end{parts}
+
+\end{questions}
+
+\end{document}

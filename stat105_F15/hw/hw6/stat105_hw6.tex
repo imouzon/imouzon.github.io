@@ -1,0 +1,123 @@
+% For LaTeX-Box: root = stat105_hw2.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_hw2.tex
+%  Purpose:
+%
+%  Creation Date: 03-09-2015
+%  Last Modified: Thu Oct 15 11:23:21 2015
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\setlength{\topmargin}{-.5 in} 
+\setlength{\textheight}{9 in}
+\setlength{\textwidth}{6.5 in} 
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{0 in} 
+\setlength{\parindent}{0 in}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+
+
+\lhead{STAT 105, Section B} 
+\chead{Homework Assignment 6} 
+\rhead{Due Thursday, October 22} 
+\lfoot{Fall 2015} 
+\cfoot{\thepage} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+\newcommand{\ans}[1]{{\color{blue} \textbf{Answer: } #1}}
+\renewcommand{\ans}[1]{}
+
+\def\Exp#1#2{\ensuremath{#1\times 10^{#2}}}
+\def\Case#1#2#3#4{\left\{ \begin{tabular}{cc} #1 & #2 \phantom
+{\Big|} \\ #3 & #4 \phantom{\Big|} \end{tabular} \right.}
+
+\begin{document}
+\pagestyle{fancy} 
+
+Show \textbf{all} of your work on this assignment and answer each question fully in the given context. \\
+
+\emph{Please} staple your assignment! \\
+
+\ben
+
+
+\item \textbf{Chapter 5, Section 1, Exercise 1 (page 243)}
+
+\item \textbf{Chapter 5, Section 1, Exercise 2 (page 243)}
+
+\item \textbf{Chapter 5, Section 1, Exercise 5 (page 244)}
+
+\item 
+   Suppose that you have two fair six-sided die (meaning each side has the same chance of facing up), one red and one blue, and suppose that each roll of the pair is independent.
+   Define $X$ to be the sum of the number of dots facing up on a single roll of the pair of die, and define $T$ to be the first roll of the pair of die where the sum of the dots facing up is 7.
+   \begin{enumerate}
+      \item Complete the following table for the random variable $X$:
+         \begin{table}[h]
+            \centering
+            \begin{tabular}{c|c}
+               $x$ & $f(x)$ \\ \hline
+               1 & \\
+               2 & \\
+               3 & \\
+               4 & \\
+               5 & \\
+               6 & \\
+               7 & \\
+               8 & \\
+               9 & \\
+               10 & \\
+               11 & \\
+               12 & \\
+               13 & \\ \hline
+            \end{tabular}
+         \end{table}
+
+      \item If I roll the pair of die 4 times, how many times should I expect the sum of the dots facing up on the two die to be 7? What is the probability that I roll a 7 on three of those 
+
+      \item If I roll the pair of die 6 times, what is the probability that the sum of the dots facing up on the two die will be a 7 on three of those rolls?
+
+      \item Find $P(T \le 5)$.
+
+      \item Find $P(T \ge 2)$.
+
+      \item How many times should I expect to roll the die before I see my first roll of 7.
+
+   \end{enumerate}
+   
+\newpage
+
+\item Consider a continuously distributed random variable, $W$, with a probability density function given by
+   $$
+   f(w) = \begin{cases}
+      \frac{1}{5(1 - e^{-2})} e^{-w/5} & 0 \le w \le 10 \\
+
+      0 & \text{otherwise}
+   \end{cases}
+   $$
+   \begin{enumerate}
+
+      \item Graph the probability density function (carefully labeling important features).
+
+      \item Show that the function $f(w)$ is a valid probability density function (i.e., show that (i) $f(w)$ is non-negative and (ii) $\int_{-\infty}^{\infty} f(w) dw = 1$).
+         
+      \item Find $P(W \le 2)$
+         
+      \item Find $P(2 \le W \le 5)$
+
+      \item Find $P(5 \le W \le 10)$
+
+      \item Find $P(2 \le W \le 10)$
+      
+   \end{enumerate}
+
+\een
+\end{document}

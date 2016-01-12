@@ -1,0 +1,189 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color, hyperref}
+
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\setlength{\topmargin}{-.375 in} 
+\setlength{\textheight}{8.75 in}
+\setlength{\textwidth}{6.5 in} 
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{0 in} 
+\setlength{\parindent}{0 in}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+\newcommand{\dsum} {\displaystyle\sum}
+
+\lhead{Stat 105} 
+\chead{Homework Assignment 3} 
+\rhead{Due Thursday, September 17} 
+\lfoot{Fall 2015} 
+\cfoot{\thepage} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+
+\def\Exp#1#2{\ensuremath{#1\times 10^{#2}}}
+\def\Case#1#2#3#4{\left\{ \begin{tabular}{cc} #1 & #2 \phantom
+{\Big|} \\ #3 & #4 \phantom{\Big|} \end{tabular} \right.}
+
+\begin{document}
+\pagestyle{fancy} 
+
+Show \textbf{all} of your work on this assignment and answer each 
+question fully in the given context.
+
+Remember to staple your assignment! Failure to do so will result in 
+a five point deduction from your total score.
+
+\ben
+\item
+The 1997 season for NCAA football saw a split national title---the final AP poll gave the title to the U. of Michigan Wolverines while the final Coaches' Poll awarded their title to the U. of Nebraska Cornhuskers. 
+This split championship was the tenth such occurrence in the previous 25 years, sparking a discussion about the effectiveness of the Bowl Alliance. 
+In June 1998, the football conferences announced their solution, the Bowl Championship Series (BCS) system (notice: the BCS system created it's own share of controveries was replaced by the College Football Playoff).
+Below are the points scored per game during the 1997 season for the two schools (The first Nebraska game, 59-14 win vs. Akron was omitted. Source: \emph{Wikipedia}).
+
+\begin{center}
+\begin{tabular}{| l c c c c c c c c c c c c|}\hline
+	Wolverines:  & 27 & 38 & 21 & 37 & 23 & 28 & 23 & 24 & 34 & 26 & 20 & 21\\\hline
+	Cornhuskers: & 38 & 27 & 56 & 49 & 29 & 35 & 69 & 45 & 77 & 27 & 54 & 42\\\hline
+\end{tabular}
+\end{center}
+
+\ben
+\item Draw a back-to-back stem-and-leaf display of the two point distributions. Put the Wolverines on the left side of the stem, and the Cornhuskers on the right side. Remember to give a key or legend (e.g., $1|4 = 14$), so the reader can interpret the display. (A back-to-back stem-and-leaf plot is illustrated in Figure 3.5 on page 70 of the course text) 
+
+\item Construct a frequency table for the \textbf{Cornhuskers'} point distribution. Your table should have to following column headings: points, frequency, relative frequency, and cumulative relative frequency. Choose a 10-point interval---large enough so the data are grouped together (there should be few intervals with zero or one data points), but enough intervals to adequately show features of the distribution (there should be more than three intervals).
+
+\item Draw a histogram for the \textbf{Cornhuskers'} point distribution using the frequency table.
+
+\item For \textbf{both} the Cornhuskers and the Wolverines, calculate the first quartile, the median, and the third quartile using the quartile function $Q(p)$.
+
+\item Construct side-by-side boxplots comparing the data for the Wolverines and the Cornhuskers. Make the axis range from 20 to 80 points with tick marks every 10 units. Based on the boxplots, are there \emph{unusual} observations for either school?
+
+\item Construct a quantile-quantile plot to compare the shape of the two distributions. Would you say that the plot appears to be linear? What does that indicate about the shapes of the two distributions? 
+
+\item Construct a theoretical quantile-quantile plot using a normal distribution as the theoretical normal probability plot for the Wolverines.The table below displays the quantiles of the theoretical normal distribution when $n=12$:
+
+\begin{center}
+\begin{tabular}{| l | c c c c c c |}\hline
+	$p$ & 1/24 & 3/24 & 5/24 & 7/24 & 9/24 & 11/24\\
+	$Q(p)$ & -1.73 & -1.15 & -0.81 & -0.55 & -0.32 & -0.10\\ \hline\hline
+	$p$ & 13/24 & 15/24 & 17/24 & 19/24 & 21/24 & 23/24\\
+	$Q(p)$ & 0.10 & 0.32 & 0.55 & 0.81 & 1.15 & 1.73\\\hline
+\end{tabular}
+\end{center}
+
+Would you say that the plot appears to be linear? Does this imply the Wolverines football scores could have come from a normal distribution?
+
+\item Calculate the sample mean, sample variance, and sample standard deviation for each school. Clearly label your answers.\\
+\emph{Hint: for the Wolverines} $\dsum^{12}_{i=1} x_i = 322$, $\dsum^{12}_{i=1} x_i^2 = 9074$, \\ \emph{and for the Cornhuskers} $\dsum^{12}_{i=1} x_i = 548$, $\dsum^{12}_{i=1} x_i^2 = 27900$.
+
+
+\een
+
+\pagebreak
+
+\item 
+   The NBA uses a salary cap in the hopes to keep the league competitive - the amount each team can spend on player salaries is limited so that no team can acquire all the best players. While this sounds simple in concept, the execution is often complicated and statistical evaluation of players' pay is a popular topic in sports journalism.
+   
+   The ten highest paying contracts in the 2015-2016 season are:
+%-- Name: R code (Code in Document)
+<<echo=FALSE, messages = FALSE, cache=TRUE, include = TRUE, results = 'asis'>>=
+   options(scipen=999)
+   library(ggplot2)
+   library(dplyr)
+   library(xtable)
+   nba <- read.csv("nba_salary.csv")
+   nba <- nba[!is.na(nba$salary2015),]
+   nba <- nba[,2:5]
+   nba %>% arrange(-salary2015) %>% head(10) %>% select(player, team, salary2015) %>% xtable
+@
+
+
+   
+   Below are three histogram's summarizing the salary of each player. \\
+
+%-- Name: R code (Code in Document)
+<<echo=FALSE, cache=TRUE, fig.width = 8, fig.height = 3, include = TRUE>>=
+   options(scipen=999)
+   qplot(salary2015, data = nba,binwidth = 200000, xlab = "salary in 2015", ylab = "Count", main = "Plot with $200,000 base widths")
+@
+
+%-- Name: R code (Code in Document)
+<<echo=FALSE, cache=TRUE, fig.width = 8, fig.height = 3, include = TRUE>>=
+   options(scipen=999)
+   qplot(salary2015, data = nba,binwidth = 500000, xlab = "salary in 2015", ylab = "Count", main = "Plot with $500,000 base widths")
+@
+
+Note that the width of the intervals is the only important feature thing that changes between the two plots
+
+\ben
+   \item Which of the two histograms do you thing does a better job of summarizing the data (meaning which plot helps you get a better picture of what is happening with salaries in the NBA)?
+   \item Using the terminalogy from class and discussed in section 3.1.2, describe the distribution of yards per game. Be sure to comment on the number of modes and symmetry.
+	\item Does the sample mean or sample median provide a more appropriate measure of center (location) of the distribution of 2015 NBA salaries? Explain briefly.
+	\item Does the sample standard deviation or sample IQR provide a more appropriate measure of spread (variability) of the distribution of 2015 NBA salaries? Explain briefly.
+
+There is also information on the anticipated salary for players next season who are under contract at that point. Here are the top ten salaries for next year's players:
+%-- Name: R code (Code in Document)
+<<echo=FALSE, messages = FALSE, cache=TRUE, include = TRUE, results = 'asis'>>=
+   options(scipen=999)
+   nba <- nba[!is.na(nba$salary2016),]
+   nba %>% arrange(-salary2016) %>% head(10) %>% select(player, team, salary2016) %>% xtable
+@
+We can create a scatter plot of the current salary and next seasons salary:
+
+%-- Name: R code (Code in Document)
+<<echo=FALSE, cache=TRUE, fig.width = 10, fig.height = 5, include = TRUE>>=
+   options(scipen=999)
+   qplot(salary2015, salary2016, data = nba, xlab = "Salary in 2015", ylab = "Salary in 2016", main = "Scatter plot of 2015 season salaries and 2016 season salaries") + coord_fixed()
+@
+
+We can also look at each team's salary information: 
+
+<<echo=FALSE, cache=TRUE, fig.width = 10, fig.height = 5, include = TRUE>>=
+   options(scipen=999)
+   qplot(salary2015, salary2016, data = nba, xlab = "Salary in 2015", ylab = "Salary in 2016", main = "Scatter plot of 2015 season salaries and 2016 season salaries") + facet_wrap(~team)
+@
+
+   \item Describe the relationship between the 2015 season salary and the 2016 season salary.
+   \item What sort of structural features/curiosities are present in this data set? Explain.
+\een
+
+
+\clearpage
+
+\item \textbf{JMP Assignment.} 
+
+   Without laboring the point, computing is one of the most important parts of modern data analysis. A large part of data science simply wouldn't exist without the tools developed by scientists working at the intersections of computer science, mathematics, and statistics. 
+   Because of that, there will inevitably be parts of this course where a statistical computing tools are needed. SAS and R are the two main languages used by statisticians, with Python, Julia, F\#, C++ and others making important contributions as well.
+   SAS has a software called JMP ("Jump") that makes doing statistical analyses simpler - it is more powerful than Excel or your calculator but requires little in the sense of coding making the learning curve much lower. 
+   We will be using it this semester. There are labs in Snedecor Hall with the software pre-installed, but it is free for students and I encourage you to download a copy for yourself using the link below.
+
+   Download: \href{http://www.stat.iastate.edu/resources-2/software-sasjmpr/statistical-software-jmp/}{http://www.stat.iastate.edu/resources-2/software-sasjmpr/statistical-software-jmp/}
+
+   Additionally, you may want to consider the following tutorials (they are very helpful):
+   
+   Tutorials: \href{http://web.utk.edu/~cwiek/201Tutorials/}{http://web.utk.edu/~cwiek/201Tutorials/} 
+
+   The tutorials cover the following topics:
+   \begin{itemize}
+     \item Histogram and Box Plot
+     \item Stem and Leaf Plot
+     \item Normal Probability Plot and Goodness of Fit Test
+     \item Calculating Summary Statistics of Quantitative Data
+     \item Getting JMP Graphics into Microsoft Word
+   \end{itemize}
+
+   For this problem I am asking you to:
+
+   \begin{enumerate}
+      \item Download and install \texttt{JMP} or find a computer with it already installed.
+      \item Take a screen shot once you have it open.
+   \end{enumerate}
+
+\een
+
+
+\end{document}

@@ -1,0 +1,132 @@
+% For LaTeX-Box: root = stat105_hw2.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_hw2.tex
+%  Purpose:
+%
+%  Creation Date: 03-09-2015
+%  Last Modified: Wed Nov 18 14:16:51 2015
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\setlength{\topmargin}{-.5 in} 
+\setlength{\textheight}{9 in}
+\setlength{\textwidth}{6.5 in} 
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{0 in} 
+\setlength{\parindent}{0 in}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+
+
+\lhead{STAT 105, Section B} 
+\chead{Homework Assignment 8} 
+\rhead{Due Friday, November 20 at 5:00 pm} 
+\lfoot{Fall 2015} 
+\cfoot{\thepage} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+\newcommand{\ans}[1]{{\color{blue} \textbf{Answer: } #1}}
+\renewcommand{\ans}[1]{}
+
+\def\Exp#1#2{\ensuremath{#1\times 10^{#2}}}
+\def\Case#1#2#3#4{\left\{ \begin{tabular}{cc} #1 & #2 \phantom
+{\Big|} \\ #3 & #4 \phantom{\Big|} \end{tabular} \right.}
+
+\begin{document}
+\pagestyle{fancy} 
+
+Show \textbf{all} of your work on this assignment and answer each question fully in the given context. \\
+
+\emph{Please} staple your assignment! \\
+
+\ben
+
+
+\item \textbf{Chapter 5, Exercise 35 (page 330)}:
+
+   \textit{Hints}:
+   \begin{itemize}
+      \item[i.] if $a$ and $b$ are two constants, $x^a \cdot x^b = x^{(a + b)}$.
+      \item[ii.] if $a$ and $b$ are two constants, $a^x \cdot b^x = (a \cdot b)^x$.
+      \item[iii.] if $a$ and $b$ are two constants, $a^x \cdot b^{-x} = (a / b)^x$.
+      \item[iv.] if you are taking a sum that depends on $x$ then you can factor out terms that don't depend on $x$. For example,
+         \begin{align*}
+            \sum_{x = 0}^{\infty} \frac{x!}{(x-y)!y!} (.8)^y (.2)^{x-y} \frac{e^{-3} 3^x}{x!} &= \sum_{x = 0}^{\infty} \frac{x!}{1}\frac{1}{(x-y)!}\frac{1}{y!} (.8)^y (.2)^{x} (.2)^{-y} \frac{e^{-3}}{1} \frac{3^x}{1} \frac{1}{x!}  \\
+                                                                                              &= \frac{1}{y!} (.8)^y (.2)^{-y} \frac{e^{-3}}{1} \sum_{x = 0}^{\infty} \frac{x!}{1}\frac{1}{(x-y)!}(.2)^{x} \frac{3^x}{1} \frac{1}{x!}  \\
+         \end{align*}
+         since each term that was factored out in the second line had nothing to do with $x$.
+      \item[v.] For any value $c$, $\sum_{x=0}^{\infty} \frac{e^{-c} c^x}{x!} = 1$ and $\sum_{x=0}^{\infty} \frac{c^x}{x!} = e^{c}$ 
+         (notice that the function $f_X(x)$ used in this problem is a probability function and thus $\sum_{x=0}^{\infty} f_X(x) = 1$).
+   \end{itemize}
+
+\item \textbf{Chapter 5, Exercise 37 (page 331)}
+
+   \textit{Hint}: the limits over which you integrate in this problem matter - notice that if $y < x$ then $f(x,y) = 0$.
+
+ 
+\item (\textit{This problem is now a bonus problem worth 15 points})\\
+   Suppose that $X$ and $Y$ are two independent random variables with probability density functions given by:
+   $$
+   f_X(x) = 
+   \begin{cases}
+      5 e^{-5x} & x > 0 \\
+      0 & \text{otherwise}
+   \end{cases}
+   $$
+   and
+   $$
+   f_Y(y) = 
+   \begin{cases}
+      2 e^{-2y} & y > 0 \\
+      0 & \text{otherwise}
+   \end{cases}
+   $$
+   respectively.
+
+   Further, define random variable $U$ as
+   $$
+   U = 
+   \begin{cases}
+      1 & Y > X \\
+      0 & \text{otherwise}
+   \end{cases}
+   $$
+   Meaning that if the observed value of the random variable $Y$ is larger than the observed value of the random variable $X$ then $U = 1$ and if the observed value of the random variable $X$ is larger than the observed value of the random variable $Y$ then $U = 0$.
+
+   \begin{enumerate}
+      \item Sketch the pdf of $X$ and $Y$ on the same plot. Include the points when the input is 0, 5, and 10 for each function.
+      \item Find the probability that $X$ is greater than 3.
+      \item Find the probability that $Y$ is greater than 3.
+      \item Provide the joint probability of $(X, Y)$.
+      \item Find the probability that $U = 1$.
+   \end{enumerate}
+
+\item 
+   Suppose that $Z_1, Z_2, \ldots, Z_n$ are $n$ independent standard normal random variables.
+   It may be helpful to recall that $\mathbb{E}(a Z_i + b) = a \mathbb{E}(Z_i) + b$ and that $\text{Var}(a Z_i + b) = a^2 \text{Var}(Z_i)$ for any constants $a, b$ in addition to knowing that $\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$ and $\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}$.
+
+   \begin{enumerate}
+   \item 
+      Find the expected value and variance of $X$ where $X = 3 Z_1 + 5$
+
+   \item 
+      Find the expected value and variance of $Y$ where $Y = Z_1 - Z_2$
+
+   \item 
+      Find the expected value and variance of $U$ where $U = Z_1 - Z_1$
+
+   \item 
+      Find the expected value and variance of $W$ where $W = \sum_{i=1}^n \frac{i}{n} \left(Z_i + \frac{i}{n}\right)$.
+   \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
