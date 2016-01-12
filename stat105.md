@@ -11,7 +11,8 @@ share: true
 ---
 
 # STAT 105: Introduction to Statistical Engineering 
-# Spring 2016
+
+# Spring 2016, Section A
 
 Welcome to the course page for STAT 105: Intro to Stat Engineering. 
 Grades and a few other important parts of the course will be run through [blackboard](https://bb.its.iastate.edu/), but most content can be better shared here (for instance, lecture notes and illustrations).
