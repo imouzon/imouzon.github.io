@@ -55,9 +55,9 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 ### Lecture Notes
 
 -  [Lecture 1: 08-25](./lectures/lecture1/lecture1.html) (Introduction, covers sections 1.1 and 1.2)
-   -  The study of chaos in Jurassic Park (link)[https://www.youtube.com/watch?v=5cVLUPwrSmU]
-   -  A video illustrating chaos (link)[https://www.youtube.com/watch?v=brs8l-Jzbl4]
-   -  The double pendulum symphony (link)[https://www.youtube.com/watch?v=MtJLhb9yaPc]
+   -  The description of chaos theory in Jurassic Park [link](https://www.youtube.com/watch?v=5cVLUPwrSmU)
+   -  The double pendulum symphony [link](https://www.youtube.com/watch?v=MtJLhb9yaPc)
+   -  Correlation and causation: [third causes](https://en.wikipedia.org/wiki/Third-cause_fallacy) and [wrong directions](https://en.wikipedia.org/wiki/Wrong_direction)
 
 ### Homework Assignments
 
