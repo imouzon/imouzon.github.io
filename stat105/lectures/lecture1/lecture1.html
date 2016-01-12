@@ -26,6 +26,170 @@ class: center, middle, inverse
 ### Chapter 1: Introduction
 .footnote[Course page: [imouzon.github.io/stat105](https://imouzon.github.io/stat105)]
 ---
+# A Little Background
+---
+layout: false
+.left-column[
+  ## Determinism
+  ]
+.right-column[
+   <center>
+      <h2>
+      Deterministic Relationships
+      </h2>
+   </center>
+
+   Most of the mathematical concepts that you have encountered in your education can (very broadly) be considered **determinisitic** meaning that there is an exact mathematical relationship between variables.
+   
+   For example, Newton's 2nd Law of Motion, 
+   \\[F = m \cdot a\\] 
+   is a deterministic relationship. 
+
+   If we know all the values on one side (for instance \(m = 2\) kg and \(a = 5 m/s^2\)) then we know the force (10 N).
+]
+---
+layout: false
+.left-column[
+  ## Determinism
+  ### Finding \\(g\\)
+  ]
+.right-column[
+   <center>
+      <h2>
+      My Version of a Lab Experiment
+      </h2>
+   </center>
+
+   **Materials**:
+
+   -  One Penn brand racquetball (slightly used).
+   -  Two students with stop watches.
+   -  An instructor of roughly 71 inches (1.80 m) in height.
+
+
+   **Procedure**: 
+
+   1.  Position the racquetball just over the top of the instructors head
+   2.  Count 1-2-3-Drop.
+   3.  (careful) On "drop" simultaneously release the ball and begin the stop watch.
+   4.  When the ball strikes the ground, stop the stop watch.
+
+
+   **Results**:
+
+   -  \\(h(t) = h(0) - g \cdot t^2 \\) 
+   
+   or 
+   -  \\(g = \frac{1.80 \text{ m}}{t^2}\\)
+   
+]
+---
+layout: false
+.left-column[
+  ## Determinism
+  ### Finding \\(g\\)
+  ### Issues
+  ]
+.right-column[
+   <center>
+      <h2>
+      Why this experiment didn't work
+      </h2>
+   </center>
+
+   **Very obvious issues**:
+
+   -  I am not exactly 1.80 meters tall.
+   -  The stopwatch timing is problematic.
+
+
+   **Less (?) obvious issues**:
+
+   -  Gravity is not the only force acting on the racquetball
+   -  ???
+
+
+   **Conclusion**:
+
+   -  Our experiment is fraught with error
+
+
+   **Suggested Improvements**:
+
+   -  Control more parts of the experimental environment and we will get a more accurate result.
+]
+---
+layout: false
+.left-column[
+  ## Determinism
+  ### Finding \\(g\\)
+  ### Issues
+  ### Control Issues
+  ]
+.right-column[
+   <center>
+      <h2>
+      How much can we really control though?
+      </h2>
+   </center>
+
+   -  How accurately can we really measure the time? Can we be accurate to 10 decimals?
+      Are we actually measuring the true time if we are accurate up to 10 decimals? 100 decimals?
+
+   -  How accurately can we really measure a height? Again, 10 decimals? 100 decimals?
+
+
+   **My hunch**: 
+   
+   The relationship between distance, travel time, and acceleration is pretty simple - if we are accurate to 10 decimal places, we should be pretty accurate for \\(g\\) as well.
+
+
+   But what if the relationship is even a little more complicated?
+
+]
+---
+layout: false
+.left-column[
+  ## Determinism
+  ### Finding \\(g\\)
+  ### Issues
+  ### Control Issues
+  ## Chaos
+  ]
+.right-column[
+   <center>
+      <h2>
+      Chaos Theory and Determinism
+      </h2>
+   </center>
+
+   A **Chaotic System** is one for which minuscule differences in the system's conditions (possibly even below our ability to detect) can result in wildly different (essentially random) results.
+   Even though the laws governing the system are deterministic, our inability to truly *know* the initial conditions can lead to unexpected outcomes.
+   
+
+   **Example**: a double pendulum (credit to Bassam Jalgha)
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/brs8l-Jzbl4" frameborder="0" allowfullscreen></iframe>
+
+]
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+# What's My Point
+
+## Deterministic laws may govern the results of an experiment 
+## but...
+
+### 1. You can not know all the laws
+### 2. You can not control everything in the system
+### 3. What you don't control may be altering your results in chaotic ways
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
 # Section 1.1
 ## Engineering Statistics: What and Why
 ---
@@ -82,7 +246,7 @@ Data is **essentially just information** we can record.
 Examples are incredibly easy to come up with:
 
 -  Students with majors and courses they enrolled in
-```
+```text
 student   major         course
 John      Philosophy    EASY 101
 Kate      Engineering   SMRT 500
@@ -90,14 +254,14 @@ Mike      Mathematics   MATH 000
 ```
 
 -  Amount I can bench over time
-```
+```text
 Date     Weight
-06/01    55 lbs.
-06/02    56 lbs.
-06/03    57 lbs.
-06/04    59 lbs.
+08/01    55 lbs.
+08/02    56 lbs.
+08/03    57 lbs.
+08/04    59 lbs.
 ...      ...
-08/21    345 lbs.
+12/21    345 lbs.
 ```
 
 Really trivial to come up with examples
@@ -132,7 +296,7 @@ layout: false
 -  **Complications**: No two gears exactly the same - if we test it how do we decide what was the effect of the gear and what was the effect of the loading method?
 
 -  **Smart engineer**: tried it both ways and collected the distortion measures from multiple attempts
-```
+```text
 Method    Distortion measure (.0001 in.)
 Laid      5, 8, 8,  9,  9,  9,  9, 10, 10, ..., 19, 27
 Hung      7, 8, 8, 10, 10, 10, 10, 11, 11, ..., 31, 36
@@ -151,7 +315,7 @@ layout: false
 
 ###Goal: minimize distortion 
 
-```
+```text
 Method    Distortion measure (.0001 in.)
 Laid      5, 8, 8,  9,  9,  9,  9, 10, 10, ..., 19, 27
 Hung      7, 8, 8, 10, 10, 10, 10, 11, 11, ..., 31, 36
@@ -163,7 +327,7 @@ Plots and summary values help us see what's going on:
    <img src="www/figs/runout.png" alt="dmc logo" height="185"> 
 </center>
 
-```
+```text
 Mean hung runout:  17.9
 Mean laid runout:  12.6
 ```
@@ -194,7 +358,7 @@ Our text book defines it this way:
 >
 > all while recognizing the reality of variation
 
-Recognizing the "reality of variation" in the distortion example led the engineer to run multiple tests
+Recognizing the "reality of variation" in the distortion example led the engineer to run multiple tests.
 This helped rules out the possibility that hanging gears is better since the chance that the gears were worse so often is pretty low
 
 ]

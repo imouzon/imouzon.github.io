@@ -16,4 +16,6 @@ These are announcements whose usefulness has passed, stored here for completenes
 
 ## January 12, 2016
 
-Welcome to class.
+Welcome to the course page for STAT 105: Intro to Stat Engineering. 
+Grades and a few other important parts of the course will be run through [blackboard](https://bb.its.iastate.edu/), but most content can be better shared here (for instance, lecture notes and illustrations).
+The page will be updated frequently (though I will make a more clear announcement if there are any changes which you would want to be aware of immediately).
