@@ -1,7 +1,7 @@
 ---
 layout: coursepage
 permalink: /stat105/
-title: Statistics 105
+title: Welcome to Statistics 105
 tags: [teaching]
 image:
   feature: course_cover_image_S16.jpg
