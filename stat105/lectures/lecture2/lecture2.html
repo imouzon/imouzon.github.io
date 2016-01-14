@@ -43,6 +43,142 @@ layout:false
 .right-column[
 ## Types of Data Structures
 
+The most basic way to think about data is to imagine how the the raw observations could be organized once collected.
+
+Collected data can be referred to as a **data set**. 
+If the data set is simple enough, we can store it in a **data table** or **flat file**.
+Traditional data tables store values relating to a single observation/unit/individual as a row of the table.
+Each column in the table represents a value for some observed characterstic observed.
+
+**Example**: Failure time of lightbulbs
+
+A single brand and model of lightbulb is being examined for average failure time.
+Five bulbs were run until they burned out and their lifetime was recorded in hours.
+The first bult lasted 521.4 hours, the second bulb lasted 501.2 hours, 
+the third bulb lasted 541.8 hours,
+the fourth bulb lasted 498.1 hours,
+and the fifth bulb lasted 528.2 hours.
+]
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+## Types of Data Structures
+
+**Example**: Failure time of lightbulbs, continued
+
+Assembling the results in a data table could look like this:
+
+```text
+Bulb Number       Failure Time (hours)
+1                 521.4
+2                 501.2
+3                 541.8
+4                 498.1
+5                 528.2
+```
+
+Each bulb tested gets its own row - which row is attached to which bulb is identified by the first column.
+The only feature being observed is failure time - so only one column of observations are recorded for each bulb.
+
+Notice: 
+
+-  Failure Time is a **quantitative continuous** variable. 
+-  This is a **univariate data set**.
+
+]
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+## Types of Data Structures
+
+**Example**: Type of bill, date of payment, and payment amount for Mediacom
+
+```text
+Customer      Type      Date          Amount
+John Doe      Internet  01-05-2015    110.00
+John Doe      Phone     01-15-2015     10.00
+John Doe      Internet  02-05-2015    110.00
+John Doe      Phone     02-15-2015     10.00
+John Doe      Internet  03-05-2015    110.00
+John Doe      Phone     03-15-2015     10.00
+John Doe      Internet  04-05-2015    110.00
+John Doe      Phone     04-15-2015     10.00
+...           ...       ...           ...
+John Doe      Internet  01-05-2016    110.00
+John Doe      Phone     01-15-2016     10.00
+Jane Doe      Internet  04-12-2015     90.00
+Jane Doe      Internet  05-12-2015     90.00
+...           ...       ...           ...
+Jane Doe      Internet  01-12-2016     90.00
+```
+
+Notice: 
+
+-  Type of bill is is a **Qualitative** variable.
+-  Amount paid is **quantitative continuous**.
+-  Date is ...
+]
+
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+## Types of Data Structures
+
+
+
+The number of columns in the table 
+
+The complexity of our data we gather changes based on our objective.  Consider the following scenarios:
+
+**Scenario 1**
+
+-  We have designed a less expensive method for cleaning the byproduct of our production process. What constitutes clean is determined by law.
+
+**Scenario 2**
+
+- Synthesis of a certain chemical can be done in a number of ways. We are considering two sets of substrates, three environments where production can occur, and three chemists to perform the synthesis. Our goal is to get the purest end product.
+]
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+## Types of Data Structures
+
 The complexity of our data we gather changes based on our objective.  Consider the following scenarios:
 
 **Scenario 1**
