@@ -60,9 +60,6 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
    -  Correlation and causation: [third causes](https://en.wikipedia.org/wiki/Third-cause_fallacy) and [wrong directions](https://en.wikipedia.org/wiki/Wrong_direction)
 
 -  [Lecture 2: 01-14](./lectures/lecture2/lecture2.html) (Introduction, covers sections 1.1 and 1.2)
-   -  The description of chaos theory in Jurassic Park [link](https://www.youtube.com/watch?v=5cVLUPwrSmU)
-   -  The double pendulum symphony [link](https://www.youtube.com/watch?v=MtJLhb9yaPc)
-   -  Correlation and causation: [third causes](https://en.wikipedia.org/wiki/Third-cause_fallacy) and [wrong directions](https://en.wikipedia.org/wiki/Wrong_direction)
 
 ### Homework Assignments
 
