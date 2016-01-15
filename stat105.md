@@ -63,9 +63,8 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 ### Homework Assignments
 
-Homework will be posted here as the semester progresses.
+-  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Friday January 22 at 5:00, covers sections 1.1 and 1.2)
 
 ### Tools
 
 Interactive tools and helpful links will be posted here.
-
