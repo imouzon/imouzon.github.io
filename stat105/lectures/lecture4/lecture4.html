@@ -59,11 +59,14 @@ Some aspects of the environment can not be controlled, even though they may effe
 
 Though we can not *control* extraneous variables, we can plan our experiment to minimize their impact (2.3.2, 2.3.4)
 
+**Note**: These techniques are part of how the experiment is *designed* - we decide this before any data is collected.
+
 **blocking** 
 
 -  the process of arranging the experiment so that results from different methods are collected in similar environments
 
 -  with blocking, we can compare methods in multiple environments
+
 ]
 ---
 layout:false
@@ -83,6 +86,7 @@ layout:false
 -  we hope to remove any pattern that the extraneous variables may have
 
 -  Weight lifting example: 50 pound, 40 pound, 30 pound dumb bell, 100 lifts each, determining which is harder to lift by how much you strain
+
 ]
 ---
 layout:false
@@ -105,7 +109,7 @@ layout:false
 
 ### Summary
 
-The main point is this: an effective experiment is designed to account for the environmental conditions that could influence our response.
+The main point is this: an effective experiment is **designed** to account for the environmental conditions that could influence our response.
 Doing this takes a lot of planning.
 
 ]
@@ -242,6 +246,10 @@ The floor manager has given us the following input:
 Fully describe an experiment that could be put into practice. Describe any blocking, randomization, and repetition.
 
 ---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
 # Chapter 3
 ## Elementary Descriptive Statistics
 ---
@@ -249,6 +257,272 @@ Fully describe an experiment that could be put into practice. Describe any block
 ## Elementary Graphical and Tabular Treatment
 ## of 
 ## Quantitative Data
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Purpose
+]
+.right-column[
+## Summarizing Univariate Data
+
+**Exam Scores for Two Groups of Students Following Different Courses**
+
+```
+              Group 1             Group 2
+            74 79 77 81         65 77 78 74
+            68 79 81 76         76 73 71 71
+            81 80 80 78         86 81 76 89
+            88 83 79 91         79 78 77 76
+            79 75 74 73         72 76 75 79    
+```
+
+Consider the data above, taken from two groups of creative writing students who were randomly assigned to one of two different 3-hour courses.
+At the end of the courses, the students were given a standard creative writing test and their score on the test was recorded.
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Purpose
+]
+.right-column[
+
+**Exam Scores for Two Groups of Students Following Different Courses**
+
+```
+              Group 1             Group 2
+            74 79 77 81         65 77 78 74
+            68 79 81 76         76 73 71 71
+            81 80 80 78         86 81 76 89
+            88 83 79 91         79 78 77 76
+            79 75 74 73         72 76 75 79    
+```
+
+**The Use of Summaries**
+
+Some questions are almost universal in analyzing the results of an experiment. 
+For instance, in this specific case, we may ask:
+
+-  Which group did better on average?
+-  Where there any unusually low or high scores in either group?
+-  Which group had the most scores over 80?
+-  Ignoring high performers and low performers, which group is better?
+-  Which group has the most consistent scores?
+-  ...
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Purpose
+]
+.right-column[
+
+**Exam Scores for Two Groups of Students Following Different Courses**
+
+```
+              Group 1             Group 2
+            74 79 77 81         65 77 78 74
+            68 79 81 76         76 73 71 71
+            81 80 80 78         86 81 76 89
+            88 83 79 91         79 78 77 76
+            79 75 74 73         72 76 75 79    
+```
+
+Certain questions can and should be asked across many types of experiments.
+
+But seeing data in this kind of *flat* format presents lots of problems for a person trying to understand the relationship between the two groups.
+
+A set of tools, mainly mathematical and graphical, help researchers answer these questions by summarizing the data in a way that makes the answers to these questions obvious.
+
+Good summaries should be quickly interpreted, provide clear insight into the data, and be widely applicable.
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Purpose
+### Simple Graphs
+]
+.right-column[
+
+**Exam Scores for Two Groups of Students Following Different Courses**
+
+```
+              Group 1             Group 2
+            74 79 77 81         65 77 78 74
+            68 79 81 76         76 73 71 71
+            81 80 80 78         86 81 76 89
+            88 83 79 91         79 78 77 76
+            79 75 74 73         72 76 75 79    
+```
+
+## Simple Graphical Summaries
+
+Simple graphical summaries aim to provide a better view of the entire set of data.
+The best graphs are able to make important points instantly and give valuable insights with closer study.
+Producing good graphs is an [art](http://www.edwardtufte.com/tufte/graphics/poster_OrigMinard.gif).
+
+**Two common graphical summaries**
+
+- Stem and Leaf Diagrams
+
+- Dot Diagrams 
+
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Purpose
+### Simple Graphs
+### Freq Tables
+]
+.right-column[
+##Summarizing Univariate Date
+```
+              Group 1             Group 2
+            74 79 77 81         65 77 78 74
+            68 79 81 76         76 73 71 71
+            81 80 80 78         86 81 76 89
+            88 83 79 91         79 78 77 76
+            79 75 74 73         72 76 75 79    
+```
+
+## Frequency Tables
+
+- **Class**: A grouping of the observations
+
+- **Frequency**: The number of observations in a class
+
+- **Relative Frequency**: The proportion of the observations in the class
+
+- **Cumulative Relative Frequency**: The proportion of observations in the current class or a previous class.
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Purpose
+### Simple Graphs
+### Freq Tables
+### Histograms
+]
+.right-column[
+## Summarizing Univariate Date
+```
+              Group 1             Group 2
+            74 79 77 81         65 77 78 74
+            68 79 81 76         76 73 71 71
+            81 80 80 78         86 81 76 89
+            88 83 79 91         79 78 77 76
+            79 75 74 73         72 76 75 79    
+```
+
+** Histograms **
+
+A graphical representation of a frequency table.
+
+**Tips for useful frequency tables**
+
+1.  Use equal class intervals 
+2.  Use uniform scales on both axes (i.e., keep lengths consistent)
+3.  Show the entire vertical axis (especially for relative frequency histograms)
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Purpose
+### Simple Graphs
+### Freq Tables
+### Histograms
+### Center Stats
+]
+.right-column[
+##Tabular Summarizing Univariate Date
+```
+              Group 1             Group 2
+            74 79 77 81         65 77 78 74
+            68 79 81 76         76 73 71 71
+            81 80 80 78         86 81 76 89
+            88 83 79 91         79 78 77 76
+            79 75 74 73         72 76 75 79    
+```
+
+## Statistics of Location and Central Tendency
+
+-  Mean
+
+   -  each value in the data is an "\\(x_i\\)" (\\(i\\) is a **subscript**)
+
+   -  Group 1: \\(x_1 = 74, x_2 = 79, ..., x_20 = 73\\)
+
+   -  The sum: \\(x_1 + x_2 + x_3 + ... + x_20\\)
+
+   -  The mean: \\(\frac{1}{20} (x_1 + x_2 + x_3 + ... + x_20)\\)
+
+   -  Or using summation notation: \\(\frac{1}{20} \sum_{i = 1}^{20} x_i\\)
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Purpose
+### Simple Graphs
+### Freq Tables
+### Histograms
+### Center Stats
+]
+.right-column[
+##Tabular Summarizing Univariate Date
+```
+              Group 1             Group 2
+            74 79 77 81         65 77 78 74
+            68 79 81 76         76 73 71 71
+            81 80 80 78         86 81 76 89
+            88 83 79 91         79 78 77 76
+            79 75 74 73         72 76 75 79    
+```
+
+## Statistics of Location and Central Tendency
+
+-  Mean: \\( \frac{1}{n} \sum_{i=1}^{n} x_i \\)
+
+-  Median
+
+-  Mode
+
+-  Quantiles (min, Q1, Q2, Q3, max) 
+]
+---
+.left-column[
+## Univar. Summary
+### Simple Graphs
+### Freq Tables
+### Histograms
+### Center Stats
+### Spread Stats
+]
+.right-column[
+##Tabular Summarizing Univariate Date
+```
+              Group 1             Group 2
+            74 79 77 81         65 77 78 74
+            68 79 81 76         76 73 71 71
+            81 80 80 78         86 81 76 89
+            88 83 79 91         79 78 77 76
+            79 75 74 73         72 76 75 79    
+```
+
+## Measures of Variablity (or "Spread")
+
+-  Range
+
+-  Interquartile Range (IQR)
+
+]
 ---
 
 
