@@ -43,7 +43,7 @@ The page will be updated frequently (though I will make a more clear announcemen
 
 **Yong's Office Hours**
 
--  TBD
+-  Wednesday 2:00 - 3:00 pm, Sweeney Hall 3123
 
 **Syllabus**
 
