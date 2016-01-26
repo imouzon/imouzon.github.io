@@ -12,7 +12,6 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
       <meta name="keywords" content="statistics,engineering,stat105,iastate"/>
       <meta name="description" content="Lecture 5: Graphs, etc."/>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
    </head>
    <body>
    <textarea id="source">
@@ -25,116 +24,18 @@ class: center, middle, inverse
 ## Chapter 3: Elementary Descriptive Statistics
 .footnote[Course page: [imouzon.github.io/stat105](https://imouzon.github.io/stat105)]
 ---
-# Recap
-## Designing an Experiment
----
-layout:false
-.left-column[
-## Recap
-### Designs
-]
-.right-column[
-
-# The Drill Bit Example
-So last lecture we worked on an example (workers, drills, bits and sheets)
-
-**Lots of Creative Approaches**
-
--  Most of you recognized that mechanic was a great choice for blocking
-
--  Many of you recognized that the sheet was a great choice for blocking
-
--  Both are good choices, but we can also but if we use both we wind up with a problem of balance: we have  \\(3 \times 3 = 9\\) blocks and 15 bits from each brand.
-
--  This isn't really an issue. We just randomly determine which 6 blocks would get 2 bits of each brand.
-]
----
-layout:false
-.left-column[
-## Recap
-### Designs
-]
-.right-column[
-
-# The Drill Bit Example
-We could also give each mechanic a sheet and treat the mechanic/sheet pairs like single blocks.
-
--  The issue here is that we would be that making between block comparisons would be more difficult.
-
--  But if we aren't interested making those comparisons, we're OK - it's just that the blocks are *more variable*.
-
-**Mechanic/Sheet Pair = 1 Block**
-1. Randomly assign each mechanic to a sheet
-2. Randomly assign 5 of each brand bits to each mechanic/sheet pair
-3. For each mechanic/sheet pair, randomly assign the bits to each drill press (i.e., for hole 1, use bit 3 from brand 2, for hole 2 use bit 1 from brand 3, ...)
-
-]
----
-layout:false
-.left-column[
-## Recap
-### Designs
-### Examples
-]
-.right-column[
-
-# The Drill Bit Example
-
-- You thought of some interesting spins on your approaches that got more out of each bit
-
-**What you wrote about "blinding"**
-
->  For our experiment we chose to give each mechanic five of each brand of bit for a total of 15 bits per each. The mechanics would be unaware of which sample they were given or even that they were different bit types.
-
-**What you wrote about repeated measures**
-
->  When they drill holes they will drill 500, 1500, 2000, times each with one of their 5 bits before checking wear. The reason to drill different numbers of holes with the bits is that some bits may wear quickly at first and then stabilize, or wear very little before falling off, etc. 
-
-]
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
-# Chapter 3
-## Elementary Descriptive Statistics
----
-# Section 3.1
-## Elementary Graphical and Tabular Treatment
-## of 
-## Quantitative Data
----
-layout:false
-.left-column[
-## Univar. Summary
-### Simple Graphs
-]
-.right-column[
-## Summarizing Univariate Date
-```
-              Group 1             Group 2
-            74 79 77 81         65 77 78 74
-            68 79 81 76         76 73 71 71
-            81 80 80 78         86 81 76 89
-            88 83 79 91         79 78 77 76
-            79 75 74 73         72 76 75 79    
-```
-
-**Simple Graphical Summaries (Done On Overhead)**
-
-- Dot Diagrams 
-
-- Stem and Leaf Diagrams (bin width)
-]
+# Continuing
 ---
 layout:false
 .left-column[
 ## Univar. Summary
 ### Simple Graphs
 ### Freq Tables
+### Histograms
+### Location Stats
 ]
 .right-column[
-##Summarizing Univariate Date
+##Tabular Summarizing Univariate Date
 ```
               Group 1             Group 2
             74 79 77 81         65 77 78 74
@@ -144,17 +45,21 @@ layout:false
             79 75 74 73         72 76 75 79    
 ```
 
-## Frequency Tables
+**Notation**: since we have many observations, we oftern choose to identify them using subscripts
+so that, for instance, \(x_1\) is the first observation from Group 1 and \(y_5\) is the fifth observation 
+from Group 2.
 
-- Class
+## Statistics of Location and Central Tendency
 
-- Tally
+Thinking about the center as an equal division of the total
 
-- Frequency
+-  Group 1: \\(x\_1 = 74, x\_2 = 79, ..., x\_{20} = 73\\)
 
-- Relative Frequency
+-  The sum: \\(x\_1 + x\_2 + x\_3 + ... + x\_{20} = 1576\\)
 
-- Cumulative Relative Frequency
+-  divides : \\(\frac{1}{20}(x\_1 + x\_2 + x\_3 + ... + x\_{20}) = \frac{1576}{20} = 78.8\\)
+
+-  Or using summation notation: \\(\frac{1}{20} \sum_{i = 1}^{20} x_i\\)
 ]
 ---
 layout:false
@@ -163,31 +68,7 @@ layout:false
 ### Simple Graphs
 ### Freq Tables
 ### Histograms
-]
-.right-column[
-## Summarizing Univariate Date
-```
-              Group 1             Group 2
-            74 79 77 81         65 77 78 74
-            68 79 81 76         76 73 71 71
-            81 80 80 78         86 81 76 89
-            88 83 79 91         79 78 77 76
-            79 75 74 73         72 76 75 79    
-```
-
-** Histograms **
-1.  Use equal class intervals 
-2.  Use uniform scales on both axes
-3.  Show the entire vertical axis
-]
----
-layout:false
-.left-column[
-## Univar. Summary
-### Simple Graphs
-### Freq Tables
-### Histograms
-### Center Stats
+### Location Stats
 ]
 .right-column[
 ##Tabular Summarizing Univariate Date
@@ -202,17 +83,15 @@ layout:false
 
 ## Statistics of Location and Central Tendency
 
--  Mean
+Think of center as a weighted sum, where each value gets the same weight and the weights add up to 1.
 
-   -  each value in the data is an "\\(x_i\\)" (\\(i\\) is a **subscript**)
+-  Weighted values: \\(\frac{1}{20} x\_1 = 3.2, \frac{1}{20} x\_2 = 3.95, ..., \frac{1}{20} x\_{20} = 3.65\\)
 
-   -  Group 1: \\(x_1 = 74, x_2 = 79, ..., x_20 = 73\\)
+-  Weighted sum: \\(\frac{1}{20} x\_1 + \frac{1}{20} x\_2 + ... + \frac{1}{20} x\_{20} = 3.2 + 3.95 + ... + 3.65 = 78.8\\)
 
-   -  The sum: \\(x_1 + x_2 + x_3 + ... + x_20\\)
+-  Using summation notation: \\(\sum_{i = 1}^{20} \frac{1}{20} x_i\\) 
 
-   -  The mean: \\(\frac{1}{20} (x_1 + x_2 + x_3 + ... + x_20)\\)
-
-   -  Or using summation notation: \\(\frac{1}{20} \sum_{i = 1}^{20} x_i\\)
+-  Both of the last two ways of thinking about center give the same result, the **mean**.
 ]
 ---
 layout:false
@@ -221,10 +100,18 @@ layout:false
 ### Simple Graphs
 ### Freq Tables
 ### Histograms
-### Center Stats
+### Location Stats
 ]
 .right-column[
-##Tabular Summarizing Univariate Date
+## Summarizing Data Numerically: Centrality
+
+Motivated by asking what is *normal/common/expected* for this data
+
+**Mean**: A "fair" center value - `\( \frac{1}{n} \sum_{i=1}^{n} x_i \)`
+
+**Mode**: The most commonly occurring value in set
+
+**Median**: The value dividing the set in half (the middle of the values).
 ```
               Group 1             Group 2
             74 79 77 81         65 77 78 74
@@ -234,15 +121,103 @@ layout:false
             79 75 74 73         72 76 75 79    
 ```
 
-## Statistics of Location and Central Tendency
+For group 1, the mean is 78.8, the median is 79, and the mode is 79.
 
--  Mean: \\( \frac{1}{n} \sum_{i=1}^{n} x_i \\)
+For group 2, the mean is 76.45, the median is 76, and the mode is 76.
 
--  Median
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Simple Graphs
+### Freq Tables
+### Histograms
+### Location Stats
+### Quantiles 
+]
+.right-column[
+## Summarizing Data Numerically: Quantiles
 
--  Mode
+Two useful pieces of notation:
 
--  Quantiles (min, Q1, Q2, Q3, max) 
+**floor**: `\(\lfloor x \rfloor \)` is the largest integer smaller than or equal to `\( x \)`
+
+**ceiling**: `\(\lceil x \rceil \)` is the smallest integer larger than or equal to `\( x \)`
+
+
+**Examples**
+
+-  `\(\lfloor 55.2 \rfloor  = \)`
+
+-  `\(\lceil 55.2 \rceil  = \)`
+
+-  `\(\lfloor 19 \rfloor  = \)`
+
+-  `\(\lceil 19 \rceil  = \)`
+
+-  `\(\lceil -3.2 \rceil = \)`
+
+-  `\(\lceil -3.2 \rceil = \)`
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Simple Graphs
+### Freq Tables
+### Histograms
+### Location Stats
+### Quantiles 
+]
+.right-column[
+## Summarizing Data Numerically: Quantiles
+
+Two useful pieces of notation:
+
+**floor**: `\(\lfloor x \rfloor \)` is the largest integer smaller than or equal to `\( x \)`
+
+**ceiling**: `\(\lceil x \rceil \)` is the smallest integer larger than or equal to `\( x \)`
+
+
+**Examples**
+
+-  `\(\lfloor 55.2 \rfloor  = 55\)`
+
+-  `\(\lceil 55.2 \rceil  = 56\)`
+
+-  `\(\lfloor 19 \rfloor  = 19\)`
+
+-  `\(\lceil 19 \rceil  = 19\)`
+
+-  `\(\lceil -3.2 \rceil = -3\)`
+
+-  `\(\lceil -3.2 \rceil = -3\)`
+]
+---
+layout:false
+.left-column[
+## Univar. Summary
+### Simple Graphs
+### Freq Tables
+### Histograms
+### Location Stats
+### Quantiles 
+]
+.right-column[
+## Summarizing Data Numerically: Quantiles
+
+For a data set consisting of `\(n\)` values that when ordered are `\(x_1 \le x_2 \le \ldots \le x_n\)` and `\( 0 \le p \le 1\)`.
+
+Let \\(i = \lfloor n \cdot p + 0.5 \rfloor\\).
+
+We define the **quantile** `\(Q(p)\)` as:
+
+`\[
+   Q(p) = x_i  + \left( n \cdot p + 0.5 - i \right) \left( x_{i+1} - x_i \right) 
+\]`
+
+(note: this is the definition used in the book - it's just written using *floor* and *ceiling* instead of in words)
 ]
 ---
 .left-column[
@@ -250,26 +225,59 @@ layout:false
 ### Simple Graphs
 ### Freq Tables
 ### Histograms
-### Center Stats
-### Spread Stats
+### Location Stats
+### Quantiles 
 ]
 .right-column[
-##Tabular Summarizing Univariate Date
-```
-              Group 1             Group 2
-            74 79 77 81         65 77 78 74
-            68 79 81 76         76 73 71 71
-            81 80 80 78         86 81 76 89
-            88 83 79 91         79 78 77 76
-            79 75 74 73         72 76 75 79    
-```
+## Summarizing Data Numerically: Quantiles
 
-## Measures of Variablity (or "Spread")
+**Example**
+Using the quantile function , find the .25, .50, .75, .92, and .17 quantiles using:
+<center>
+58, 76, 66, 61, 50, 77, 67, 64, 41, 61
+</center>
 
--  Range
+**Solution**
 
--  Interquartile Range (IQR)
+First notice that `\(n = 10\)`. It is possible helpful to set up the following table:
 
+|          |    |    |    |    |    |    |    |    |    |    |
+|----------|----|----|----|----|----|----|----|----|----|----|
+| data     | 41 | 50 | 58 | 61 | 61 | 64 | 66 | 67 | 76 | 77 |
+| `\(i\)`  | 1  |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 |
+| `\(\frac{i - .5}{n}\)`  | 0.05  |  0.15 |  0.25 |  0.35 |  0.45 |  0.55 |  0.65 |  0.75 |  0.85 | 0.95 |
+
+Finding `\(Q(.25)\)`:
+
+-  `\( n p + .5 = 10 \cdot .25 + .5 = 3 \)`. 
+
+-  since `\(\lfloor 3 \rfloor = 3 \)` then `\(Q(.25) = x_3 = 58 \)`
+]
+---
+layout:false
+.left-column[
+## Recap
+### Location
+### Spread
+]
+.right-column[
+## Summarizing Data Numerically
+
+Motivated by asking what kind of *variability is seen in the data* or *how spread out* the data is.
+
+**Range**: The difference between the highest and lowest values (Range = max - min)
+
+**IQR**: The Interquartile Range, how spread out is the middle 50% (IQR =  Q3 - Q1)
+
+**Variance/Standard Deviation**: Uses squared distance from the mean.
+
+|                 | &nbsp;&nbsp;&nbsp;   | Variance                                                      | &nbsp;&nbsp;&nbsp;   | Standard Deviation                                                  |
+|:----------------|----------------------|---------------------------------------------------------------|----------------------|---------------------------------------------------------------------|
+| &nbsp           |                      |                                                               |                      |                                                                     |
+| **Population**  |                      | `\(\sigma^2 =  \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2 \)` |                      | `\(\sigma = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2} \)`   |
+| &nbsp           |                      |                                                               |                      |                                                                     |
+| &nbsp           |                      |                                                               |                      |                                                                     |
+| **Sample**      |                      | `\( s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2 \)`    |                      | `\(s =  \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2} \)`     |
 ]
 ---
 .left-column[
@@ -338,21 +346,39 @@ and
 
 
 
+</textarea>
+<!-- load remark -->
+<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
 
-      </textarea>
-      <script>
-         var slideshow = remark.create();
-      </script>
-      <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
-      <script type="text/javascript">
-         var hljs = remark.highlighter.engine;
-      </script>
-      <script src="./remark.language.js" type="text/javascript"></script>
-      <script type="text/javascript">
-         var slideshow = remark.create({
-            highlightStyle: 'monokai',
-            highlightLanguage: 'remark'
-         }) ;
-      </script>
-   </body>
-</html>
+<!-- load mathjax -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
+
+<!-- Initialize (has to go in <script> tag **without** SRC attribute) -->
+<script type="text/javascript">
+   // Create slideshow
+   var slideshow = remark.create({
+      // This BREAKS MathJax: 
+      // highlightLanguage: 'Python'
+
+      // You have to tag every code block with python, like so:
+      //
+      // ```python
+      // def add(a, b):
+      //     return a + b
+      // ```
+   });
+
+   // Setup MathJax
+   MathJax.Hub.Config({
+      tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+   });
+   MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+         return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+   });
+
+   MathJax.Hub.Configured();
+</script>
