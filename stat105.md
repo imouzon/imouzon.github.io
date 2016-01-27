@@ -67,6 +67,8 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 -  [Lecture 5: 01-26](./lectures/lecture5/lecture5.html) (Continuing Ch.3)
 
+-  [Lecture 6: 01-28](./lectures/lecture6/lecture6.html) (Continuing Ch.3)
+
 ### Homework Assignments
 
 -  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Friday January 22 at 5:00, covers sections 1.1 and 1.2)

@@ -8,7 +8,7 @@
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
       </style>
 
-      <title>STAT 105: Lecture 6</title>
+      <title>STAT 105: Lecture 7</title>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
       <meta name="keywords" content="statistics,engineering,stat105,iastate"/>
       <meta name="description" content="Lecture 7: Graphs, etc."/>
@@ -25,7 +25,7 @@
    knitrSetup(flavor = "html", fig.folder = "www/lecture7", cache.folder = "www/lecture7")
 
    if(FALSE) 
-      rmd2html("lecture7.Rmd")
+      usefulR::rmd2html("lecture7.Rmd")
 
    mode_values <- function(x){
       tbl <- table(x)
