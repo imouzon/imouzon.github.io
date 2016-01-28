@@ -73,6 +73,8 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 -  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Friday January 22 at 5:00, covers sections 1.1 and 1.2)
 
+   -  [Solutions](./hw/hw1/stat105_hw1_soln.pdf)
+
 -  [Homework 2](./hw/hw2/stat105_hw2.pdf) (Due Friday January 29 at 5:00, covers chapter 2)
 
 ### Tools

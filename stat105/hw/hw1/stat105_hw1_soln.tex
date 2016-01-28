@@ -1,3 +1,13 @@
+% For LaTeX-Box: root = stat105_hw1.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_hw1.tex
+%  Purpose:
+%
+%  Creation Date: 14-01-2016
+%  Last Modified: Thu Jan 28 12:03:34 2016
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[11pt]{article}
 \usepackage{graphicx, fancyhdr}
 \usepackage{amsmath, amsfonts}
@@ -15,10 +25,10 @@
 \newcommand{\een}{\end{enumerate}}
 
 
-\lhead{STAT 105, Section B} 
+\lhead{STAT 105, Section A} 
 \chead{Homework Assignment 1} 
-\rhead{Due Thursday, September 3} 
-\lfoot{Fall 2015} 
+\rhead{Due Friday, January 22 at 5:00 pm} 
+\lfoot{Spring 2016} 
 \cfoot{\thepage} 
 \rfoot{} 
 \renewcommand{\headrulewidth}{0.4pt} 
@@ -65,39 +75,6 @@ fully in the given context.
    In both cases, testing several dowels gives us a chance to determine what the true value is by account for the existence of errors.
 }
 
-\item \textbf{Chapter 2, Section 2, Exercise 1 (page 37)}
-
-\ans{Following the process described in Lecture 3:
-
-   \begin{itemize}
-      \item  $ N = 38$,
-      \item  $ n = 5$,
-      \item  $ m = 2$,
-   \end{itemize}
-
-   The instructions tell us to repeat the selection process where the previous process ended. 
-   The first two rows of table B.1 are: 
-
-   \texttt{    97842 69095 25982 03484 25173 05982 14624 31653 17170 92785} 
-
-   \texttt{    53047 13486 69712 33567 82313 87631 03197 02438 12374 40329}
-
-   Since $m = 2$ we can rewrite this as the two digit values we will be looking at:
-
-   \texttt{    97 84 26 90 95 25 98 20 34 84 25 17 30 59 82 14 62 43 16 53 17 17 09 27 85 } 
-
-   \texttt{    53 04 71 34 86 69 71 23 35 67 82 31 38 76 31 03 19 70 24 38 12 37 44 03 29 }
-
-   Working left to right, keeping new entries that are between 1 and 36 gives us the following samples:
-
-   \begin{itemize}
-      \item Sample 1:  26, 25, 20, 34, 25
-      \item Sample 2:  17, 30, 14, 16, 09
-      \item Sample 2:  27, 04, 34, 23, 35
-      \item Sample 2:  31, 38, 31, 03, 19
-   \end{itemize}
-
-}
 
 \item \textbf{Lurking variables.}
 
@@ -107,22 +84,34 @@ fully in the given context.
    After collecting my data, I will discover that every time the percent of people using umbrellas rose the percent of people using windshield wipers also rose. 
    The reason for this is not that people using umbrellas cause people to use windshield wipers.
    Instead both umbrella use and windshield wiper use are responses to a third variable, specifically whether or not it is raining.
-   If I had made note of that during the process, I might have noticed that.
-   In statistics we call variables that are unobserved but potentially the true causative factor \textbf{lurking variables} - they variables are not directly seen in the data set, but their influence is.
+   The danger in a scenario like this is that by just recording the percentage of people using umbrellas and the percentage of people using windshield wipers, I may falsely determine that one causes the other.
+   In statistics we call variables that are unobserved but potentially the true causative factor \textbf{lurking variables} - variables that are not directly seen in the data set, but whose influence is.
 
-   Consider the following cases where two variables are related and suggest a possible lurking variable in each case that might explain why the relationship is not a cause and effect.
+   Consider the following cases where two variables are gathered and a pattern in the data is noticed.
+   A cause and effect relationship is suggested between the two variables.
+   Suggest a possible lurking variable in each case that might explain why the cause and effect relationship suggested could be wrong.
 
-   \textbf{note}: this question is fairly open ended - as long as you attempt to explain how the lurking variable you suggest could be driving both of the other variables you will get full credit. For example, in the umbrella/windshield wiper example, an satisfactory response would be ``The presence of rain may be a lurking variable. When it rains, people use umbrellas to stay dry and windshield wipers in order to drive safely. When it is not raining, neither umbrellas or windshield wipers are needed."
+   \textbf{note}: this question is fairly open ended - as long as you attempt to explain how the lurking variable you suggest could be driving both of the other variables you will get full credit. For example, in the umbrella/windshield wiper example, a satisfactory response would be ``The presence of rain may be a lurking variable. When it rains, people use umbrellas to stay dry and windshield wipers in order to drive safely. When it is not raining, neither umbrellas or windshield wipers are needed. Because of this, both percentages would be higher when it is raining and lower when it is not raining."
 
    \ben
-   \item People are more likely to get sick during the winter. They are less likely to get sick during the summer. \\
-   \ans{ During the winter, people also tend to spend more time inside. Perhaps it is the \textbf{amount of time spent inside}, in closer contact with other people who may be sick which causes the change in the number of people falling ill.}
+   \item 
+   Researchers collecting data on outdoor temperature and the number of cases of common illnesses notice that when the temperature is lower more people get sick and when the temperature is higher fewer people get sick.
+   They suggest that cold temperatures are causing these illnesses.
 
-   \item People are more likely to pass away after retiring from work than they are if they are not planning to retire any time soon. \\
-   \ans{People who retire are also generally older. If a person has no plans to retire any time soon, they may be earlier in their career. So, perhaps \textbf{age} is a potential lurking variable.}
+   \ans{During the winter, people also tend to spend more time inside. Perhaps it is the \textbf{amount of time spent inside}, in closer contact with other people and their germs which may actually be driving up the number of people falling ill.}
+
+   \item 
+   Researchers collecting data on work history notice that people are more likely to pass away in the five years after retirement than they are to pass away during any five year window of their careers.
+   The conclude that retirement causes the person to pass away.
+   \ans{People who retire are also generally older. If a person has no plans to retire any time soon, they may be earlier in their career. Perhaps \textbf{the individual's age} is a lurking variable.}
  
-   \item When lots of swimsuits are being sold, the number of shark attacks is higher. When few people are buying swimsuits, the number of shark attacks is lower. \\
-   \ans{In this case the a potential lurking variable is the \textbf{the number of people swimming in the ocean} or perhaps, the season. In the summer people not only get themselves new swimsuits but they also get in the ocean with sharks in those swimsuits.}
+   \item 
+   Over five years, the Coast Guard gathered monthly data for the number of swimsuit sales and the number of shark attacks. 
+   They noticed that when the number of swimsuits sold in a month was higher, the number of shark attacks in that month was also higher.
+   They concluded that swimsuit sales were causing shark attacks.
+   \ans{In this case the a potential lurking variable is the \textbf{the number of people swimming in the ocean} or perhaps, the season. 
+   In the summer people not only buy swimsuits but they also get in the ocean with sharks while wearing those swimsuits.}
+
    \een
 
 
@@ -179,8 +168,9 @@ the response.}
 What type of variable is this?
 \ans{This is a lurking variable as it could affect the response (attendance). }
  
-\item How does game attendance relate to the day of the week 
-(regarding weekday games vs.\ weekend games)?
+\item 
+Rewrite the data table, adding a new column ``School Night" (using the values ``no" if the game is on a Friday or Saturday, and ``yes" if the game is on any other day).
+How does Attendance relate to School Night?
 \ans{Attendance is noticeably higher for weekend games, during which
 the weather is also warmer. It may be that games have higher attendance
 when they are played on the weekend or when the weather is warmer.
@@ -206,9 +196,9 @@ for a study on the durability of these washers under
 stretching.  To make sure that the washers 
 are fit to be used in the real world, George must test 
 the washers.  Holding heat constant, 
-George subjects each washer to one of various degrees of 
-stretching.  The washers are assigned to the different stretching
-groups randomly. After each test, George classifies 
+George subjects each washer to one of various methods of 
+stretching.  The washers are randomly assigned to be stretched under one of five different forces (low, medium-low, medium, medium-high, and high).
+After each test, George classifies 
 a washer as either defective or non-defective. 
  
 \ben 
@@ -222,18 +212,17 @@ units to treatment groups.}
 variables are a type of supervised variables.}
  
 \item What type of variable is the amount of stretching? 
-\ans{The amount of stretching is the factor under study
-(the variable George wants to see if it affects the response), 
-thus it is an experimental variable (which is a type of supervised variable).}
+\ans{
+   The amount of stretching is one of the responses we record. In this case, it is a numeric variable.
+}
  
-\item What type of data is recorded,  quantitative or qualitative? 
-\ans{Qualitative data is recorded as the possible results (defective or non-defective)
+\item What type of variable is response to the stretching method?
+\ans{By this I had in mind whether the the washer was rendered useless or not. In that case, it is qualitative data as the possible results (defective or non-defective)
 are categories, not numbers.}
  
 \item
 The 100 selected washers constitutes the sample. What is the population? 
-\ans{The population is all the rubber washers produced by George's company,
-specifically all washers produces by this assembly line during these two weeks.
+\ans{The population is all the rubber washers produced by George's company on the assembly line during the two weeks.
 The company doesn't really care how these specific 100 washers perform--%
 they want to learn about how their washers perform in general to stretching.} 
 
@@ -242,11 +231,12 @@ increases with the amount of stretching.
 Can George conclude that the amount of stretching 
 causes a change in the defect rate of the washers?
 Why or why not?
-\ans{George can make a causation statement here.
+\ans{This problem kind of broke - here I meant the amount of force applied during stretching increased the defect rate of the washers.
+   George can make a causation statement here.
 As long as he ensures that the extraneous variables are properly
 handled, either through controlling or adequate randomization of the units
 and testing order, then he has a high degree of confidence that
-stretching of the washers does affect the defect rate.}
+increasing the force does affect the defect rate.}
 
 %Remember, though, that there always exists the chance that the sample
 %was not properly representative of the population, and perhaps 
@@ -353,31 +343,6 @@ stretching of the washers does affect the defect rate.}
 %What is the population?
 %
 %\een
-
-\item \textbf{Measurement characteristics.}
-
-Students Jack and Jill each use the same ruler to measure
-the thicknesses of various books 
-book to the nearest millimeter.  All books have the same thickness of 3.6 cm,
-a fact that is unknown to them.
-After doing the measurement five times, 
-the following data are recorded: 
-\begin{tabbing}
-\qquad \=Jack: \ \ \= 3.5 cm, 3.7 cm, 4.0 cm, 3.3 cm, 3.5 cm \\
- \> Jill:\> 3.9 cm, 3.8 cm, 4.0 cm, 3.9 cm, 3.8 cm 
-\end{tabbing}
- 
-\ben
-\item Who has more accurate data? 
-\ans{Jack's data is more accurate as it is 
-on average close to the true value of 3.6 cm.}
- 
-\item Who has more precise data? 
-\ans{Jill's data is more precise as her measurement-to-measurement
-variation is the smallest. But her observations are on average not close
-to the true thickness of the books (i.e., they have bias), 
-so her observations are not as accurate
-as Jack's measurements.}
 
 \een
 
