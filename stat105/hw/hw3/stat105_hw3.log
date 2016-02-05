@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  10 SEP 2015 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  4 FEB 2016 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/user/git/imouzon.github.io/stat105/hw/stat105_hw3.tex
-(/Users/user/git/imouzon.github.io/stat105/hw/stat105_hw3.tex
+**stat105_hw3.tex
+(./stat105_hw3.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 21 languages loaded.
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/article.cls
@@ -55,39 +55,20 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
-
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 137.
-)
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip43
-\fb@frw=\dimen105
-\fb@frh=\dimen106
-\FrameRule=\dimen107
-\FrameSep=\dimen108
-)
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/alltt.sty
-Package: alltt 1997/06/16 v2.0g defines alltt environment
-)
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip44
-\f@ncyO@elh=\skip45
-\f@ncyO@erh=\skip46
-\f@ncyO@olh=\skip47
-\f@ncyO@orh=\skip48
-\f@ncyO@elf=\skip49
-\f@ncyO@erf=\skip50
-\f@ncyO@olf=\skip51
-\f@ncyO@orf=\skip52
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
 )
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip53
+\@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -96,11 +77,11 @@ Package: amstext 2000/06/29 v2.01
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
-\ex@=\dimen109
+\ex@=\dimen105
 ))
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen110
+\pmbraise@=\dimen106
 )
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -117,7 +98,7 @@ LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen111
+\big@size=\dimen107
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count93
@@ -130,15 +111,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \column@=\count98
 \maxfields@=\count99
 \andhelp@=\toks17
-\eqnshift@=\dimen112
-\alignsep@=\dimen113
-\tagshift@=\dimen114
-\tagwidth@=\dimen115
-\totwidth@=\dimen116
-\lineht@=\dimen117
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
 \@envbody=\toks18
-\multlinegap=\skip54
-\multlinetaggap=\skip55
+\multlinegap=\skip53
+\multlinetaggap=\skip54
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -149,6 +130,14 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 137.
 )
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -208,7 +197,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen118
+\@linkdim=\dimen114
 \Hy@linkcounter=\count100
 \Hy@pagecounter=\count101
 
@@ -234,10 +223,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen119
+\XeTeXLinkMargin=\dimen115
 \Fld@menulength=\count104
-\Field@Width=\dimen120
-\Fld@charsize=\dimen121
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -264,42 +253,41 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip56
-) (/usr/local/texlive/2014basic/texmf-dist/tex/latex/upquote/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
-tim
+\Hy@SectionHShift=\skip55
+) (/usr/local/texlive/2014basic/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks20
 )
-(./stat105_hw3.aux)
+No file stat105_hw3.aux.
 \openout1 = `stat105_hw3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 (/usr/local/texlive/2014basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
-\scratchdimen=\dimen122
+\scratchdimen=\dimen118
 \scratchbox=\box28
 \nofMPsegments=\count111
 \nofMParguments=\count112
-\everyMPshowfont=\toks20
+\everyMPshowfont=\toks21
 \MPscratchCnt=\count113
-\MPscratchDim=\dimen123
+\MPscratchDim=\dimen119
 \MPnumerator=\count114
 \makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks21
+\everyMPtoPDFconversion=\toks22
 ) (/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -315,7 +303,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 80.
+Package hyperref Info: Link coloring OFF on input line 32.
  (/usr/local/texlive/2014basic/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -325,23 +313,33 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 80.
-LaTeX Info: Redefining \pageref on input line 80.
-LaTeX Info: Redefining \nameref on input line 80.
- (./stat105_hw3.out) (./stat105_hw3.out)
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 \@outlinefile=\write3
 \openout3 = `stat105_hw3.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 97.
+ <scatter.png, id=4, 311.2428pt x 233.1912pt>
+File: scatter.png Graphic file (type png)
+ <use scatter.png>
+Package pdftex.def Info: scatter.png used on input line 47.
+(pdftex.def)             Requested size: 155.62102pt x 116.5953pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 97.
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+LaTeX Warning: Reference `est' on page 1 undefined on input line 87.
+
+
+LaTeX Warning: Reference `extrap' on page 1 undefined on input line 95.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -350,79 +348,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
+ <./scatter.png>]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: 2. on input line 101.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+ (./stat105_hw3.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 
- []
 
-Package color Info: Redefining color shadecolor on input line 171.
-<figure/unnamed-chunk-2-1.pdf, id=30, 578.16pt x 216.81pt>
-File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+Package rerunfilecheck Warning: File `stat105_hw3.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-<use figure/unnamed-chunk-2-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-2-1.pdf used on input line 172.
-(pdftex.def)             Requested size: 442.37993pt x 165.89218pt.
-Package color Info: Redefining color shadecolor on input line 178.
+Package rerunfilecheck Info: Checksums for `stat105_hw3.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
-<figure/unnamed-chunk-3-1.pdf, id=31, 578.16pt x 216.81pt>
-File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+LaTeX Warning: There were undefined references.
 
-<use figure/unnamed-chunk-3-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-3-1.pdf used on input line 179.
-(pdftex.def)             Requested size: 442.37993pt x 165.89218pt.
- [3 <./figure/unnamed-chunk-2-1.pdf> <./figure/unnamed-chunk-3-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 219.
 
-<figure/unnamed-chunk-5-1.pdf, id=47, 722.7pt x 361.35pt>
-File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-<use figure/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-5-1.pdf used on input line 220.
-(pdftex.def)             Requested size: 418.2899pt x 209.14755pt.
-Package color Info: Redefining color shadecolor on input line 227.
-
-<figure/unnamed-chunk-6-1.pdf, id=48, 722.7pt x 361.35pt>
-File: figure/unnamed-chunk-6-1.pdf Graphic file (type pdf)
-
-<use figure/unnamed-chunk-6-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-6-1.pdf used on input line 228.
-(pdftex.def)             Requested size: 418.2899pt x 209.14755pt.
- [4 <./figure/unnamed-chunk-5-1.pdf>]
-[5 <./figure/unnamed-chunk-6-1.pdf>]
-Overfull \hbox (12.65387pt too wide) in paragraph at lines 246--247
-[]\OT1/cmr/m/n/10.95 Download: []http://www.stat.iastate.edu/resources-2/softwa
-re-sasjmpr/statistical-software-jmp/[] 
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 254.
-
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 254.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
- [6
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
-
-(./stat105_hw3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
-Package rerunfilecheck Info: File `stat105_hw3.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
- 6040 strings out of 494522
- 88531 string characters out of 6167205
- 178499 words of memory out of 5000000
- 9201 multiletter control sequences out of 15000+600000
+ 5920 strings out of 494522
+ 86310 string characters out of 6167205
+ 172486 words of memory out of 5000000
+ 9111 multiletter control sequences out of 15000+600000
  9110 words of font info for 35 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 29i,11n,43p,543b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,11n,43p,434b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mex10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/
@@ -433,10 +394,10 @@ sfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public
 ic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on stat105_hw3.pdf (6 pages, 133366 bytes).
+Output written on stat105_hw3.pdf (2 pages, 114037 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 26 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
