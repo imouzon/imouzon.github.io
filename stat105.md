@@ -73,6 +73,8 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 -  [Lecture 8: 02-04](./lectures/lecture8/lecture8.html) (Continuing Ch. 4, Using JMP)
 
+-  [Lecture 9: 02-09](./lectures/lecture9/lecture9.html) (Continuing Ch. 4)
+
 ### Homework Assignments
 
 -  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Friday January 22 at 5:00, covers sections 1.1 and 1.2)
