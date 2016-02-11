@@ -93,9 +93,9 @@ for each pair \\((x_i, y_i)\\).
 
 **ROPe**: **R**esiduals = **O**bserved - **P**redicted (using symbol \\(e_i\\))
 
--  If \\(e\_i > 0\\) then \\(\hat{y}\_i > y\_i\\) meaning the observed is smaller than the predicted - we are "overpredicting"
+-  If \\(e\_i > 0\\) then \\(y_i - \hat{y}\_i > 0\\) and \\(y\_i > \hat{y}\_i\\) meaning the observed is larger than the predicted - we are "underpredicting"
 
--  If \\(e\_i < 0\\) then the observed is larger than the predicted - we are "underpredicting" 
+-  If \\(e\_i < 0\\) then \\(y_i - \hat{y}\_i < 0\\) and \\(y\_i < \hat{y}\_i\\) meaning the observed is smaller than the predicted - we are "overpredicting"
 
 Obviously, we would like our residuals to be small compared to the size of response values.
 
