@@ -54,9 +54,9 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 ### Practice Exams
 
--  [Exam I, Fall 2015](./exams/exam1/stat105_F15_exam1_formB_print.pdf)
-   -  [note sheet](./exams/exam1/stat105_note_sheet_exam1.pdf)
-   -  [solutions](./exams/exam1/stat105_F15_exam1B_soln.pdf)
+-  [Exam I, Fall 2015](./practice_exams/stat105_F15_exam1_formB_print.pdf)
+   -  [note sheet](./practice_exams/stat105_note_sheet_exam1.pdf)
+   -  [solutions](./practice_exams/stat105_F15_exam1B_soln.pdf)
 
 ### Lecture Notes
 
@@ -91,6 +91,8 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 -  [Homework 3](./hw/hw3/stat105_hw3.pdf) (Due Thursday February 11 at 9:30 (the start of class))
    -  [tools.jmp](./hw/hw3/tools.jmp)
+
+-  [Homework 4](./hw/hw4/stat105_hw4.pdf) (Due Thursday February 25 at 9:30 (the start of class))
 
 ### Tools
 
