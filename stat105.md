@@ -52,6 +52,12 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 ## Course Materials
 
+### Practice Exams
+
+-  [Exam I, Fall 2015](./exams/exam1/stat105_F15_exam1_formB_print.pdf)
+   -  [note sheet](./exams/exam1/stat105_note_sheet_exam1.pdf)
+   -  [solutions](./exams/exam1/stat105_F15_exam1B_soln.pdf)
+
 ### Lecture Notes
 
 -  [Lecture 1: 01-12](./lectures/lecture1/lecture1.html) (Introduction, covers sections 1.1 and 1.2)
