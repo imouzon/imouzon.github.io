@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  30 SEP 2015 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  16 FEB 2016 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -790,133 +790,265 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [1
 
 {/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
-
- []
-
-
-Underfull \vbox (badness 6825) detected at line 147
+Underfull \vbox (badness 4686) detected at line 155
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+[2] [3] [4]
+
+Package xcolor Warning: Incompatible color definition on input line 324.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--217
-
- []
-
-[3] [4] [5]
-
-Package xcolor Warning: Incompatible color definition on input line 329.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 397.
+Package xcolor Warning: Incompatible color definition on input line 376.
 
-<figure/unnamed-chunk-8-1.pdf, id=37, 578.16pt x 289.08pt>
-File: figure/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-7-1.pdf, id=34, 578.16pt x 289.08pt>
+File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-8-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-8-1.pdf used on input line 398.
+<use figure/unnamed-chunk-7-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-7-1.pdf used on input line 377.
 (pdftex.def)             Requested size: 344.69412pt x 172.34657pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 437.
+Package xcolor Warning: Incompatible color definition on input line 419.
 
-<figure/unnamed-chunk-10-1.pdf, id=38, 578.16pt x 578.16pt>
-File: figure/unnamed-chunk-10-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-9-1.pdf, id=35, 361.35pt x 361.35pt>
+File: figure/unnamed-chunk-9-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-10-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-10-1.pdf used on input line 438.
-(pdftex.def)             Requested size: 344.69412pt x 344.69318pt.
+<use figure/unnamed-chunk-9-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-9-1.pdf used on input line 420.
+(pdftex.def)             Requested size: 215.43301pt x 215.43323pt.
 
-Underfull \vbox (badness 10000) detected at line 445
+Underfull \vbox (badness 10000) detected at line 427
  []
 
-[7 <./figure/unnamed-chunk-8-1.pdf>] [8 <./figure/unnamed-chunk-10-1.pdf>]
+[6 <./figure/unnamed-chunk-7-1.pdf>] [7 <./figure/unnamed-chunk-9-1.pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 466.
+Package xcolor Warning: Incompatible color definition on input line 455.
 
-<figure/unnamed-chunk-12-1.pdf, id=56, 361.35pt x 361.35pt>
-File: figure/unnamed-chunk-12-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-11-1.pdf, id=55, 361.35pt x 361.35pt>
+File: figure/unnamed-chunk-11-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-12-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-12-1.pdf used on input line 467.
+<use figure/unnamed-chunk-11-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-11-1.pdf used on input line 456.
 (pdftex.def)             Requested size: 225.98859pt x 225.98656pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
-
- []
-
-[9 <./figure/unnamed-chunk-12-1.pdf>] [10]
-<FitModel.jpg, id=69, 1276.77pt x 1023.825pt>
-File: FitModel.jpg Graphic file (type jpg)
- <use FitModel.jpg>
-Package pdftex.def Info: FitModel.jpg used on input line 570.
-(pdftex.def)             Requested size: 255.34947pt x 204.76137pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--576
+ [8 <./figure/unnamed-chunk-11-1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 482--483
 
  []
 
-[11 <./FitModel.jpg>]
-This exam contains 6 questions with 18 parts, 13 subparts, and 0 subsubparts.
-This exam has a total of 92 points.
+[9]
+! Argument of \align* has an extra }.
+<inserted text> 
+                \par 
+l.561 ...ound(sum(actual)/50,2))^2),2)) * ( 40 ))}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+ y - \hat {y} &= 40 - 58.8772\\ &= \Sexpr 40 - (round(sum(failure_tim\ETC.
+! Paragraph ended before \align* was complete.
+<to be read again> 
+                   \par 
+l.561 ...ound(sum(actual)/50,2))^2),2)) * ( 40 ))}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.561 ...ound(sum(actual)/50,2))^2),2)) * ( 40 ))}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.561 ...ound(sum(actual)/50,2))^2),2)) * ( 40 ))}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.561 ...ound(sum(actual)/50,2))^2),2)) * ( 40 ))}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \@@par 
+l.561 ...ound(sum(actual)/50,2))^2),2)) * ( 40 ))}
+                                                  
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.561 ...ound(sum(actual)/50,2))^2),2)) * ( 40 ))}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.561 ...ound(sum(actual)/50,2))^2),2)) * ( 40 ))}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced \cr.
+\math@cr@@@ ->\cr 
+                  
+l.562         \end{align*}
+                          
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \noalign.
+\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
+                                                  {\vskip #1\relax }
+l.562         \end{align*}
+                          
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+\black@ #1->\noalign 
+                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
+l.562         \end{align*}
+                          
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Extra }, or forgotten \endgroup.
+\endalign ->\math@cr \black@ \totwidth@ \egroup 
+                                                \ifingather@ \restorealignst...
+l.562         \end{align*}
+                          
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.562         \end{align*}
+                          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.562         \end{align*}
+                          
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+<FitDK.png, id=68, 1061.9675pt x 694.595pt>
+File: FitDK.png Graphic file (type png)
+ <use FitDK.png>
+Package pdftex.def Info: FitDK.png used on input line 569.
+(pdftex.def)             Requested size: 212.38974pt x 138.91653pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
+
+ []
+
+[10 <./FitDK.png>] [11]
+This exam contains 6 questions with 18 parts, 15 subparts, and 0 subsubparts.
+This exam has a total of 94 points.
 This exam has a total of 0 bonus points.
+
+Class exam Warning: Point totals have changed. Rerun to get point totals right.
+
+
 (./stat105_F15_exam1B_soln.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 22329 strings out of 494522
- 557884 string characters out of 6167205
- 738679 words of memory out of 5000000
- 25204 multiletter control sequences out of 15000+600000
- 5491 words of font info for 21 fonts, out of 8000000 for 9000
+ 22327 strings out of 494522
+ 557828 string characters out of 6167205
+ 733679 words of memory out of 5000000
+ 25202 multiletter control sequences out of 15000+600000
+ 5837 words of font info for 22 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  55i,13n,77p,957b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
@@ -928,11 +1060,12 @@ msfonts/cm/cmmi7.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on stat105_F15_exam1B_soln.pdf (12 pages, 422057 bytes).
+pe1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014basic/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on stat105_F15_exam1B_soln.pdf (12 pages, 221073 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
