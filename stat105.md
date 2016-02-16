@@ -81,6 +81,10 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 -  [Lecture 9: 02-09](./lectures/lecture9/lecture9.html) (Continuing Ch. 4)
 
+-  Lecture 10: 02-11 (Finishing Ch. 4.1, notes written on overhead, JMP demonstration)
+
+-  Lecture 11: 02-16 (Chapter 4.2, multiple explanatory variables)
+
 ### Homework Assignments
 
 -  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Friday January 22 at 5:00, covers sections 1.1 and 1.2)
