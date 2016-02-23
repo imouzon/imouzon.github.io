@@ -2,11 +2,11 @@
 layout: coursepage
 permalink: /stat105/
 title: >
-   Welcome to STAT 105
-   https://imouzon.github.io/stat105/
+Welcome to STAT 105
+https://imouzon.github.io/stat105/
 tags: [teaching]
 image:
-  feature: course_cover_image_S16.jpg
+feature: course_cover_image_S16.jpg
 share: true
 ---
 
@@ -54,10 +54,10 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 ### Practice Exams
 
--  [Exam I, Fall 2015](./practice_exams/stat105_F15_exam1_formB_print.pdf)
+   -  [Exam I, Fall 2015](./practice_exams/stat105_F15_exam1_formB_print.pdf)
    -  [note sheet](./practice_exams/stat105_note_sheet_exam1.pdf)
    -  [solutions](./practice_exams/stat105_F15_exam1B_soln.pdf)
-   -  [solutions for alternate exam](./practice_exams/stat105_F15_exam1A_soln.pdf)
+-  [solutions for alternate exam](./practice_exams/stat105_F15_exam1A_soln.pdf)
 
 ### Lecture Notes
 
@@ -86,19 +86,22 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 -  Lecture 11: 02-16 (Finishing 4.2, beginning 4.3)
 
+-  [Lecture 12: 02-23](./lectures/lecture12/lecture12.html) (Continuing Ch. 4)
+
 ### Homework Assignments
 
 -  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Friday January 22 at 5:00, covers sections 1.1 and 1.2)
 
-   -  [Solutions](./hw/hw1/stat105_hw1_soln.pdf)
+-  [Solutions](./hw/hw1/stat105_hw1_soln.pdf)
 
 -  [Homework 2](./hw/hw2/stat105_hw2.pdf) (Due Friday January 29 at 5:00, covers chapter 2)
 
--  [Homework 3](./hw/hw3/stat105_hw3.pdf) (Due Thursday February 11 at 9:30 (the start of class))
-   -  [tools.jmp](./hw/hw3/tools.jmp)
+   -  [Homework 3](./hw/hw3/stat105_hw3.pdf) (Due Thursday February 11 at 9:30 (the start of class))
+-  [tools.jmp](./hw/hw3/tools.jmp)
 
 -  [Homework 4](./hw/hw4/stat105_hw4.pdf) (Due Thursday February 25 at 9:30 (the start of class))
 
 ### Tools
 
-Interactive tools and helpful links will be posted here.
+   Interactive tools and helpful links will be posted here.
+
