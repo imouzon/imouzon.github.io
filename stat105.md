@@ -101,6 +101,8 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 -  [Homework 4](./hw/hw4/stat105_hw4.pdf) (Due Thursday February 25 at 9:30 (the start of class))
 
+-  [Homework 5](./hw/hw5/stat105_hw5.pdf) (Due Thursday March 10 at 9:30 (the start of class))
+
 ### Tools
 
    Interactive tools and helpful links will be posted here.
