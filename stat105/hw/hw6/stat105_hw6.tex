@@ -4,7 +4,7 @@
 %  Purpose:
 %
 %  Creation Date: 03-09-2015
-%  Last Modified: Thu Oct 15 11:23:21 2015
+%  Last Modified: Wed Mar 23 01:03:07 2016
 %  Created By:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -25,10 +25,10 @@
 \newcommand{\een}{\end{enumerate}}
 
 
-\lhead{STAT 105, Section B} 
+\lhead{STAT 105, Section A} 
 \chead{Homework Assignment 6} 
-\rhead{Due Thursday, October 22} 
-\lfoot{Fall 2015} 
+\rhead{Due Tuesday, March 29} 
+\lfoot{Spring 2016} 
 \cfoot{\thepage} 
 \rfoot{} 
 \renewcommand{\headrulewidth}{0.4pt} 
@@ -49,51 +49,11 @@ Show \textbf{all} of your work on this assignment and answer each question fully
 
 \ben
 
+\item \textbf{Chapter 5, Section 1, Exercise 6 (page 244)}
 
-\item \textbf{Chapter 5, Section 1, Exercise 1 (page 243)}
+\item \textbf{Chapter 5, Section 1, Exercise 8 (page 244)}
 
-\item \textbf{Chapter 5, Section 1, Exercise 2 (page 243)}
-
-\item \textbf{Chapter 5, Section 1, Exercise 5 (page 244)}
-
-\item 
-   Suppose that you have two fair six-sided die (meaning each side has the same chance of facing up), one red and one blue, and suppose that each roll of the pair is independent.
-   Define $X$ to be the sum of the number of dots facing up on a single roll of the pair of die, and define $T$ to be the first roll of the pair of die where the sum of the dots facing up is 7.
-   \begin{enumerate}
-      \item Complete the following table for the random variable $X$:
-         \begin{table}[h]
-            \centering
-            \begin{tabular}{c|c}
-               $x$ & $f(x)$ \\ \hline
-               1 & \\
-               2 & \\
-               3 & \\
-               4 & \\
-               5 & \\
-               6 & \\
-               7 & \\
-               8 & \\
-               9 & \\
-               10 & \\
-               11 & \\
-               12 & \\
-               13 & \\ \hline
-            \end{tabular}
-         \end{table}
-
-      \item If I roll the pair of die 4 times, how many times should I expect the sum of the dots facing up on the two die to be 7? What is the probability that I roll a 7 on three of those 
-
-      \item If I roll the pair of die 6 times, what is the probability that the sum of the dots facing up on the two die will be a 7 on three of those rolls?
-
-      \item Find $P(T \le 5)$.
-
-      \item Find $P(T \ge 2)$.
-
-      \item How many times should I expect to roll the die before I see my first roll of 7.
-
-   \end{enumerate}
-   
-\newpage
+\item \textbf{Chapter 5, Section 2, Exercise 1 (page 263, parts (a), (b), (c), and (e) only)}
 
 \item Consider a continuously distributed random variable, $W$, with a probability density function given by
    $$
@@ -119,5 +79,18 @@ Show \textbf{all} of your work on this assignment and answer each question fully
       
    \end{enumerate}
 
+
+ \item (\textit{This problem is worth 5 bonus points})
+    We know that the probability density function of what is known as a normal random variable with $\mathbb{E}(X) = \mu$ and variance $\sigma^2$ can be written as
+    $$
+    f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{1}{2 \sigma^2 } (x - \mu)^2}, -\infty < x < \infty
+    $$
+    and we also know that, as with any random variable, the integral from $-\infty$ to $\infty$ of the function $f(x)$ above must be 1:
+    $$
+    \int_{-\infty}^{\infty} f(x) dx  = \int_{-\infty}^{\infty} \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{1}{2 \sigma^2 } (x - \mu)^2} dx  = 1
+    $$
+    for any value we are given for $\mu$ or $\sigma^2$.
+
+    Using the last fact, to find the value of $ \int_{-\infty}^{\infty} e^{3x -x^2} dx $
 \een
 \end{document}
