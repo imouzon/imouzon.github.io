@@ -57,7 +57,9 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
    -  [Exam I, Fall 2015](./practice_exams/stat105_F15_exam1_formB_print.pdf)
    -  [note sheet](./practice_exams/stat105_note_sheet_exam1.pdf)
    -  [solutions](./practice_exams/stat105_F15_exam1B_soln.pdf)
--  [solutions for alternate exam](./practice_exams/stat105_F15_exam1A_soln.pdf)
+   -  [solutions for alternate exam](./practice_exams/stat105_F15_exam1A_soln.pdf)
+
+   -  [Exam II, Fall 2015](./practice_exams/exam2A/stat105_F15_exam2A.pdf)
 
 ### Lecture Notes
 
