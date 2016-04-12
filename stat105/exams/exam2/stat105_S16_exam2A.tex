@@ -1,0 +1,339 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Thu Mar 31 02:47:19 2016
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[addpoints]{examsetup}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 105}{STAT 105, Section #1}}
+\newcommand{\sectionNumber}{A}
+\newcommand{\examDate}{March 31, 2016}
+\newcommand{\semester}{SPRING 2016}
+\newcommand{\examNumber}{II}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+%-- : R code (Code in Document)
+
+
+
+\examCoverPage
+
+\begin{questions}
+
+\question
+
+An engineer for City Bikes, a rent-and-return bike company, is working on decreasing the time it takes to bring a bicycle to a complete halt.
+The company is interested in fitting bikes with brake that is has consistently short brake times. 
+Bike mechanisms are durable and rarely wear out, but the rubber brake pads often do and may be replaced locally (i.e., the type of brake pad used is out of the company's control, but the brand of brake mechanism is within their control).
+His goal is to recommend a brake mechanism that has low stopping times regardless of the brake pads used.
+He is looking at three different brands of brake mechanism and three common types of rubber brake pads and has decided to use a factorial study to determine which brake mechanism is best.
+The engineer assigns the brake mechanism brand to Factor A and the rubber pads to Factor B. 
+Stopping speeds for each combination of brake mechanism and brake pads were tested four times under similar condtions.
+
+The results are recorded below.
+
+%-- : R code (Code in Document)
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrr}
+   & \multicolumn{3}{c}{Brake Pads} \\
+\cline{2-4}
+Brand & Type 1 & Type 2 & Type 3\\ \hline \hline
+Brand 1 & 8.73 & 8.47 & 9.75 \\
+        & 9.16 & 5.72 & 10.93 \\
+        & 9.54 & 7.36 & 11.56 \\
+        & 8.02 & 5.72 & 12 \\
+Brand 2 & 5.36 & 4.53 & 15.01 \\
+        & 5.39 & 4.29 & 16.04 \\
+        & 5.16 & 4.01 & 14.74 \\
+        & 5.26 & 5.85 & 16.24 \\
+Brand 3 & 9.2 & 7.52 & 9.15 \\
+        & 8.55 & 6.74 & 10.97 \\
+        & 8.14 & 6.59 & 10.19 \\
+        & 7.49 & 5.22 & 11.98 \\
+\hline
+\end{tabular}
+\end{table}
+
+The following summaries may help in this problem:
+
+%-- : R code (Code in Document)
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrrr}
+ & \multicolumn{3}{c}{Brake Pad} \\
+\cline{2-4}
+Brand   & Type 1                     & Type 2                      & Type 3                       &  \\
+\cline{1-4} \cline{1-4}
+Brand 1 &                                & $\bar{y}_{12} = 6.82$    & $\bar{y}_{13} = 11.06$   &                                \\
+Brand 2 & $\bar{y}_{21} = 5.29$   &                                 & $\bar{y}_{23} = 15.51$   & $\bar{y}_{2 \cdot} = 8.49$ \\
+Brand 3 & $\bar{y}_{31} = 8.35$   & $\bar{y}_{32} = 6.52$    & $\bar{y}_{33} = 10.57$   & $\bar{y}_{3 \cdot} = 8.48$ \\
+\cline{1-4} 
+        & $\bar{y}_{\cdot 1} = 7.5$ &                                 & $\bar{y}_{\cdot 3} = 12.38$   & $\bar{y}_{\cdot \cdot} = 8.63$ \\
+\end{tabular}
+\end{table}
+
+\begin{parts}
+
+   \part[2] Report the value of $\bar{y}_{1 \cdot}$
+   \vspace{2cm}
+
+   \part[2] Report the value of $\bar{y}_{\cdot 2}$
+   \vspace{2cm}
+
+   \newpage
+
+   \part[3] Find the fitted main effect of braking using each brand, $a_1$, $a_2$, and $a_3$, that you would get from factorial model that ignores interactions.
+   \vspace{3cm}
+
+   \part[3] Ignoring possible interactions, give the estimated values $\hat{y}_{22}$ and $\hat{y}_{23}$.
+   \vspace{3cm}
+
+   \part[2] How do the estimated values computed above compare to the average for the same combinations seen in the data? 
+            Does it appear that ignoring interactions was a good choice?
+   \vspace{2cm}
+
+   \part[5] Using the template below, create a profile plot for this data:
+
+%-- : R plot (results in document)
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=.7\linewidth]{figure/unnamed-chunk-4-1} 
+
+}
+
+\end{knitrout}
+
+   \part[2] Using the plot does it appear that there is an interaction between brake mechanism and rubber type? 
+   If you had to recommend a brake mechanism and had to consider low stopping times and consistency across brake pads which would you suggest?
+   \vspace{2cm}
+\end{parts}
+
+\newpage
+
+\question
+
+Two brands (A and B) of electrical circuit boards are being used by a company. 
+The circuits each have five connectors which can either be defective or non-defective (meaning that each circuit board could have 0, 1, 2, 3, 4, or 5 nondefective connectors).
+The company knows that the brand matters when it comes to the rate with which the connectors are defective.
+Unfortunately, all the circuit boards have been placed in the same container and there is no clear way to tell them apart.
+
+We do know the following though:
+
+$$P(\text{``There are }k\text{ defective connectors on the board"} | \text{``The board is brand A"}) = \frac{5!}{(5-k)! k!} \left(\frac{1}{4}\right)^k \left(\frac{3}{4}\right)^{5 - k} $$  
+
+$$P(\text{``There are }k\text{ defective connectors on the board"} | \text{``The board is brand B"}) = \frac{5!}{(5-k)! k!} \left(\frac{3}{4}\right)^k \left(\frac{1}{4}\right)^{5 - k} $$  
+
+Suppose that we also know that there were 300 boards of brand A and 200 boards of brand B.
+
+In this problem, $f(x,w) = P(X = x, Y = y)$ defines the joint probability function.
+\begin{parts}
+   \part[2] Find the probability that a randomly chosen board is from brand A.
+   \vspace{2cm}
+   \part[2] Find the probability that a randomly chosen board has no defective connectors \textit{given} that it is from brand A.
+   \vspace{2cm}
+   \part[2] Find the probability that a randomly chosen board is from brand A and has 0 defective connectors.
+   \vspace{2cm}
+   \part[2] Find the probability that a randomly chosen board is from brand B and has 0 defective connectors.
+   \vspace{2cm}
+   \part[2] Find the probability that a randomly chosen board has 0 defective connectors.
+   \vspace{2cm}
+   \part[2] Find the probability that a randomly chosen board is from brand A \textit{given} that it has 0 defective connectors.
+   \vspace{4cm}
+   \part[2] Find the probability that a randomly chosen board is from brand B \textit{given} that it has 2 defective connectors.
+   \vspace{4cm}
+\end{parts}
+
+\question 
+
+\begin{parts}
+
+\part[2] 
+Let $X$ be a binomial random variable with $n = 6$ and $p = 0.4$.  Find $P(X = 3)$
+   \vspace{2cm}
+
+\part[2] 
+Find $E(X)$
+
+   \vspace{2cm}
+\part[2] Find $Var(X)$
+\end{parts}
+
+\question 
+\begin{parts}
+   \vspace{2cm}
+\part[2] Let $Y$ be a binomial random variable with $n = 20$ and $E(Y) = .1$. Find the value of $p$ for this distribution.
+
+   \vspace{2cm}
+\part[2] Let $W$ be a poisson distribution with $P(W = 0) = .2$. Find $\lambda$ for this distribution.
+   \vspace{2cm}
+
+\end{parts}
+
+\question[4] Suppose that $U \sim poisson(\lambda_1)$ and $V \sim poisson(\lambda_2)$. If $P(U = 1) = P(V = 1)$ does that mean that $\lambda_1 = \lambda_2$? Justify your answer using any relevant equations (hint: though not required, it may help you to plot the probability equation different values of $\lambda$).
+\newpage
+
+\question 
+
+After winning an enormous sum on a (rigged) casino dice game Danny Ocean moves on to another game.
+He has rigged one of the casino's slot machines so that it will land on ``triple cherries" (in which case he wins \$50,000) with probability 0.2 and ``Triple 7s" (in which case he will win  \$2,000,000) with probability 0.05.
+Considering either of these outcomes to be a ``win" he defines the following random variables in order to do some probability calculations on the back of a cocktail napkin:
+
+\begin{itemize}
+   \item $W$: whether he wins or loses a given attempt. If he wins a given attempt then $W = 1$ and if he loses $W = 0$.
+   \item $K$: the amount of he wins on a given attempt in dollars (it could be 0, 50,000 or 200,000)
+   \item $T$: the number of times he has to play before he gets ``Triple 7s" for the first time.
+\end{itemize}
+
+He plans to stop playing as soon as he gets ``Triple 7s" (because if he got it twice it would draw serious suspicion).
+
+\begin{parts}
+
+   \part[2] Provide the probability function for $W$.
+   \vspace{2cm} 
+
+   \part[2] Find the expected value of $W$.
+   \vspace{2cm} 
+
+   \part[2] Find the variance of $W$.
+   \vspace{2cm} 
+
+   \part[2] Find $\mathbb{E}(K)$. 
+   \vspace{2cm}
+
+   \part[2] Find $\mathbb{E}(T)$. 
+   \vspace{2cm}
+
+   \part[2] What is the probability that Danny will get ``Triple 7s" for the first time on his 2nd attempt?
+   \vspace{3cm}
+
+   \part[4] What is the probability that it will take more than 3 games for Danny to win for the first time?
+   \vspace{3cm}
+
+   \part[4] Danny gets the ``Triple 7s" jackpot, but decides to play three more games - what is the probability that he wins at least one of them?
+
+   \vspace{4cm}
+
+\end{parts}
+
+\newpage
+
+\question 
+
+Suppose that $X$ is a continuous random variable with probability density function (pdf):
+$$
+f(x) = 
+\begin{cases}
+    0.5 + c x^2 &  -2  < x < 2 \\
+   0 & \text{otherwise}
+\end{cases}
+$$
+where $c$ is a constant (not necessarily positive).
+
+\begin{parts}
+
+\part[2] What is the value of $c$ if $f(x)$ is a valid probability density function?
+
+     \vspace{2cm}
+
+
+\part[5] Sketch the probability density function using the grid below (including the points $(-2, f(2))$ and $(2, f(2))$).
+
+%-- : R plot (results in document)
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=.6\linewidth]{figure/unnamed-chunk-5-1} 
+
+}
+
+
+
+\end{knitrout}
+
+\part[4] What is the cumulative density function, $F(x)$?
+
+     \vspace{3cm}
+
+\part[2] What is the probability that $X$ takes a value greater than 1?
+
+     \vspace{2cm}
+
+\part[2] What is the probability that $X$ takes a value between 0 and 1?
+
+     \vspace{2cm}
+
+
+\end{parts}
+
+\end{questions}
+
+\end{document}
