@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  22 OCT 2015 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  13 APR 2016 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -224,15 +224,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 61.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -244,30 +252,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 (./stat105_hw7.aux) ) 
 Here is how much of TeX's memory you used:
- 2332 strings out of 494522
- 31809 string characters out of 6167205
- 92420 words of memory out of 5000000
- 5565 multiletter control sequences out of 15000+600000
+ 2349 strings out of 494522
+ 32124 string characters out of 6167205
+ 90418 words of memory out of 5000000
+ 5579 multiletter control sequences out of 15000+600000
  8942 words of font info for 34 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,11n,43p,253b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,43p,253b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014basic/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014basic/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014basic/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014basic/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014basic/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014basic
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014ba
-sic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/20
-14basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on stat105_hw7.pdf (1 page, 112995 bytes).
+ublic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014basic/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on stat105_hw7.pdf (1 page, 58824 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 28 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

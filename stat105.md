@@ -110,7 +110,9 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 -  [Homework 6](./hw/hw6/stat105_hw6.pdf) (Due Tuesday March 29 at 9:30 (the start of class))
 
--  [Exam Recovery](./hw/exam_recovery/exam_recovery.pdf) (Due Tuesday April 12 at 9:30 (the start of class))
+-  [Exam Recovery](./hw/exam_recovery/exam_recovery.pdf) (Due Tuesday April 19 at 9:30 (the start of class))
+
+-  [Homework 7](./hw/hw7/stat105_hw7.pdf) (Due Tuesday April 19 at 9:30 (the start of class))
 
 ### Tools
 
