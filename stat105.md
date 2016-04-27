@@ -114,6 +114,8 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 -  [Homework 7](./hw/hw7/stat105_hw7.pdf) (Due Tuesday April 19 at 9:30 (the start of class))
 
+-  [Homework 8 (Bonus Homework)](./hw/hw8/stat105_hw8.pdf) (Due Tuesday May 3rd at 9:45 (before the final)
+
 ### Tools
 
    Interactive tools and helpful links will be posted here.
