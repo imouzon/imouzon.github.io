@@ -62,6 +62,7 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
    -  [Final Exam, Fall 2015](./practice_exams/stat105_F15_exam3.pdf)
    -  [Note Sheet](./practice_exams/final_note_sheet.pdf)
+   -  [Solutions](./practice_exams/final_soln.pdf)
 
 
 ### Lecture Notes
