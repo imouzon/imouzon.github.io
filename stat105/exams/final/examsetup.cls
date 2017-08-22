@@ -27,7 +27,7 @@
       \vspace{.5cm} 
 
       \begin{itemize}
-         \item  The exam is scheduled for 120 minutes, from 7:30 to 9:30 AM. At 9:30 AM the exam will end.\\
+         \item  The exam is scheduled for 120 minutes, from 9:45 to 11:45 AM. At 11:45 AM the exam will end.\\
          \item  A forumula sheet is attached to the end of the exam. Feel free to tear it off.\\
          \item  You may use a calculator during this exam.\\
          \item  Answer the questions in the space provided. If you run out of room, continue on the back of the page or on scratch paper. \\
