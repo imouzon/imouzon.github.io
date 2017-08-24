@@ -2,8 +2,8 @@
 layout: coursepage
 permalink: /stat430/
 title: |
-   Welcome to STAT 105 
-   https://imouzon.github.io/stat105/
+   Welcome to STAT 430
+   https://imouzon.github.io/stat430/
 tags: [teaching]
 image:
    feature: course_cover_image.jpg
