@@ -1,0 +1,425 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Thu Oct  8 01:33:16 2015
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[addpoints]{examsetup}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 105}{STAT 105, Section #1}}
+\newcommand{\sectionNumber}{B}
+\newcommand{\examDate}{October 1, 2015}
+\newcommand{\semester}{FALL 2015}
+\newcommand{\examNumber}{I}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include=FALSE>>=
+   library(ggplot2)
+   theme_set(theme_bw())
+@
+
+
+\examCoverPage
+
+\begin{questions}
+
+\question
+
+%-- question1: R code (Code in Document)
+<<question1, echo=FALSE, cache=FALSE, include = TRUE>>=
+   set.seed(1999)
+
+   #precision vs accuracy
+   true_mean <- 10.4
+   precise_tool <- round(rnorm(5,10.4-3,.05), 1)
+   accurate_tool <- round(rnorm(5,10.4,2), 1)
+@
+
+Two simple tools are used to measure the speed of an object (in meters per second). 
+By design and after careful callibration, the true speed of the object is \textit{known} to be \Sexpr{true_mean} km/s.
+The measurements of the two tools are below: 
+
+\begin{itemize}
+
+   \item Measurements from Tool 1: $ \Sexpr{paste(accurate_tool,collapse=", ")} $ \\
+
+   \item Measurements from Tool 2: $ \Sexpr{paste(precise_tool,collapse=", ")} $ \\
+
+\end{itemize}
+
+
+\begin{parts}
+   \part[2] Which tool is better described as accurate?
+
+   \vspace{1cm}
+
+   \part[2] Which tool is better described as precise?
+
+   \vspace{1cm}
+
+\end{parts}
+
+\vspace{1cm}
+
+\question 
+%-- functionsAndDatasets: R code (Code in Document)
+<<functionsAndDatasets, echo=FALSE, cache=FALSE, include = TRUE>>=
+   summary_sample <- sample(17:30,5)
+@
+A sample of size 6 was drawn from a population and the resulting observations are reported below. 
+$$
+   \Sexpr{paste(summary_sample,collapse=", ")}
+$$
+Using these observed values, report the following:
+
+\vspace{1cm}
+
+\begin{parts}
+
+   \part[2] the mean  
+   \vspace{2cm}
+
+   \part[2] the variance 
+   \vspace{2cm}
+
+   \part[2] the standard deviation 
+   \vspace{2cm}
+
+   \part[2] the value of $Q(.25)$
+   \vspace{2cm}
+
+\end{parts}
+
+\newpage
+
+\question
+Since it is reasonably quick and cost effecient, the complex paints used to line roads, like many liquids, are routinely shipped by train in tanker cars.
+However, once the cars arrive at their destination, they often sit for long periods of time before being released to the client - in the case of paint, this waiting time can cause the different components to separate into layers and the paint must be "remixed" before it can be used.
+A certain city receives shipments of these paints where they are held at the shipping station for a day before being released.
+A civil engineer working for the city plans to test the effectiveness of 5 methods of remixing the paint.
+However, there is a small issue: since the tanks themselves are coming from different destinations and through different routes, it is suspected that remixing effectiveness will vary from tank to tank.
+
+Four tanks of paint are currently being shipped. The engineer devises the following plan:
+
+\begin{itemize}
+   \item The content of each tank will be divided into 10 parts.
+   \item Each part will be randomly assigned an ID from 1 - 10.
+   \item Method 1 will be applied to ID 1 and 2, Method 2 will be applied to ID 3 and 4, Method 3 will be applied to ID 5 and 6, Method 4 will be applied to ID 7 and 8, Method 5 will be applied to ID 9 and 10.
+\end{itemize}
+
+The city plans to use the method that most effectively separates the paint in the future.
+
+
+\begin{parts}
+   \part[2] Is this an experiment or an observational study? Explain.
+
+  \vspace{2cm}
+
+   \part Identify the following (if there was not one, simply put "not used").
+
+  \vspace{1cm}
+
+   \begin{subparts}
+      \subpart[2] Response variable(s):
+
+      \vspace{2cm}
+
+      \subpart[2] Experimental variable(s):
+
+      \vspace{2cm}
+
+      \subpart[2] Blocking variable(s):
+
+      \vspace{2cm}
+
+   \end{subparts}
+
+   \part[2] Was replication used in this experiment? If so, where was it applied? If not, how could we have applied it?
+
+  \vspace{2cm}
+
+\end{parts}
+
+\pagebreak
+
+\question
+
+New Orleans recently made training and use of body cameras mandatory for police officers.
+In an \textbf{attempt to determine the effectiveness of the change in policy at reducing the number of accusations of police brutality}, 
+a journalist gathered the a week's worth of arrest reports both two months before the policy went into effect and two months after the policy went into effect. 
+For each arrest report, she made note of
+whether or not the officer was using a body camera,
+the time of day (measured in hours so that 1:30 pm is 13.5),
+the difficulty reported in the arrest ("suspect resisted with violence", "suspect resisted without violence", or "suspect did not resist"),
+and
+whether or not the suspect made an accusation of brutality after the arrest.
+
+\begin{parts}
+   \part[2] Is this an experiment or an observational study?
+
+   \vspace{2cm}
+
+   \part[2] Identify the response variable(s).
+
+   \vspace{2cm}
+
+   \part For each of the following variables, 
+
+      \begin{itemize}
+
+         \item Identify whether it is qualitative or quantitative variable, and 
+
+         \item If it is qualitative, what are the possible values it can take? If it is quantitative, is it continuous or discrete?
+
+      \end{itemize}
+
+   \begin{subparts}
+
+      \subpart whether or not the office was using a body camera,
+
+      \vspace{2cm}
+
+      \subpart the time of day
+
+      \vspace{2cm}
+
+      \subpart The amount of resistance to arrest
+
+      \vspace{2cm}
+
+      \subpart whether or not the suspect made an accusation of brutality after the arrest
+
+      \vspace{2cm}
+
+   \end{subparts}
+
+\end{parts}
+\pagebreak
+
+\question 
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include=TRUE>>=
+   Qfun <- function(x,p = NULL){
+      x <- x[order(x)]
+
+      n <- length(x)
+
+      qs <- ((1:n) - .5)/n
+
+      if(is.null(p)) return(qs)
+
+      i <- floor(n*p + .5)
+
+      Qp <- x[i] + (n*p + 0.5 - i)*(x[i+1] - x[i])
+
+      return(Qp)
+   }
+
+   IQRange <- function(x) Qfun(x,.75) - Qfun(x,.25)
+
+   samp <- rnorm(30,5,.3)
+
+   samp[29:30] = max(Qfun(samp,.75) + 1.5*IQRange(samp),samp[28]) + runif(2)
+
+   samp[1:3] = 1:3*(Qfun(samp,.21) - 1.5*IQRange(samp))/3
+
+   samp <- samp[order(samp)]
+
+   samp <- round(samp,1)
+   
+@
+
+A certain make of load bearing beam used in construction of large buildings is certified to withstand pressures of 2.5 tonnes per square inch.
+30 beams were tested and the pressures at which they failed are collected in the table below.
+
+%-- : R code (Code in Document)
+<<cache=FALSE, echo = FALSE, comment = NA, include = TRUE>>=
+
+   stem(samp,scale=1)
+
+   Qfun(samp,.25) - 1.5*IQRange(samp)
+   Qfun(samp,.75) + 1.5*IQRange(samp)
+
+@
+
+Note that \verb!0 | 9! represents 0.9. In this case, the first quartile is $Q(.25) = \Sexpr{Qfun(samp,.25)}$, 
+the median is \Sexpr{Qfun(samp,.5)}, and the third quartile is $Q(.75) = \Sexpr{Qfun(samp,.75)}$.
+
+\begin{parts}
+  \part[10] Complete the following frequency table: \\
+
+  \begin{table}[h!]
+     \centering
+     \begin{tabular}{|l|p{3cm}|p{3cm}|p{4cm}|}
+        \hline
+                             & \textbf{Frequency} & \textbf{Relative} & \textbf{Cumulative}  \\
+        \textbf{Value Range} &                    & \textbf{Frequency} & \textbf{Relative Frequency} \\\hline \hline
+                    &  &  &  \\
+      0.00 - 2.00   &  &  &  \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      2.01 - 4.00   &  &  &  \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      4.01 - 6.00   &  &  &  \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      6.01 - 8.00   &  &  &  \\
+                    &  &  &  \\ \hline
+     \end{tabular}
+  \end{table}
+
+  \part[10] Using the axes below, create a box plot to summarize the data. Carefully label the axes.
+
+%-- : R plot (results in document)
+<<fig.width=10, fig.height=3, out.width='.9\\linewidth', echo=FALSE>>=
+   qplot(1,c(0,samp,8),geom="blank",ylab="Pressure at Failure",xlab="") + theme(axis.ticks.y=element_blank(),axis.text.y=element_blank()) + coord_flip()
+@
+
+\newpage 
+
+  \part[4] Are there any unusually low or high observations? If so, what pressures caused those beams to fail?
+
+  \vspace{3cm}
+
+  \part[10] The company also measured the heat at which the beams begin to deform (in 10,000 degrees Celsius). The values are collected below:
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = TRUE>>=
+   heat <- round(5000*rchisq(6,70),-3)/10000
+   p <- round((1:6 - .5)/6,2)
+   Qps <- round(qnorm(p),2)
+@
+
+\begin{center}
+   \Sexpr{paste0(heat, collapse = ", ")}
+\end{center}
+
+Create a theoretical Q-Q plot using the following quantiles from the normal distribution as the theoretical quantiles. 
+What does this graph tell us about the temperature at which the beams deform?
+
+\begin{table}[h!]
+   \centering
+   \begin{tabular}{ccccccc}
+             & 1 & 2 & 3 & 4 & 5 & 6  \\ \hline
+      $p$    & \Sexpr{p[1]} & \Sexpr{p[2]} & \Sexpr{p[3]} & \Sexpr{p[4]} & \Sexpr{p[5]} & \Sexpr{p[6]} \\
+      $Q(p)$ & \Sexpr{Qps[1]} & \Sexpr{Qps[2]} & \Sexpr{Qps[3]} & \Sexpr{Qps[4]} & \Sexpr{Qps[5]} & \Sexpr{Qps[6]} \\
+   \end{tabular}
+\end{table}
+
+%-- : R plot (results in document)
+<<fig.width=10, fig.height=10, out.width='.8\\linewidth', echo=FALSE>>=
+   qplot(Qps, heat, xlab = "Normal Quantiles", ylab = "Temperature to Deformation",geom="blank")
+@
+
+\end{parts}
+\pagebreak
+
+\question
+
+Professional engineers often encounter issues relating to \textit{human resources} as they advance in their careers
+(building a better team of employees is after all not too different than improving any other system, at least on paper).
+However, many of the "laws" governing human behavior are very different than the strict laws of physics.
+For instance, a phenomenon known as the Dunning-Kruger effect states that for a given skill incompetent people will
+\begin{itemize}
+   \item fail to recognize their own lack of skill
+   \item fail to recognize genuine skill in others
+   \item fail to recognize the extremity of their inadequacy
+   \item recognize and acknowledge their own lack of skill, after they are exposed to training for that skill
+\end{itemize}
+
+A group of 50 job applicants are asked to estimate their skill in technical writing. 
+They are told they will be taking a test with a mean score of 50 and asked to guess what their score will be.
+Then they are given the test and get an actual score. 
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = TRUE>>=
+   options(scipen=999)
+
+   #ability <- runif(50,0,10) - 6
+
+   #predicted <- sapply(1:50, function(i) rnorm(1,ability[i]^2,1)) + 50
+
+   #actual <- sapply(1:50, function(i) rnorm(1,(ability[i]-min(ability))^2,1)) + 10
+
+   #thug = data.frame(actual = actual, predicted = predicted)
+   #write.csv(thug,file="DK.csv",row.names=FALSE)
+
+   d <- read.csv("DK.csv")
+   actual <- round(d$actual,2)
+   predicted <- round(d$predicted,2)
+@
+
+The results are depicted below (using the actual score on the x-axis):
+\begin{center}
+<<fig.width=5, fig.height=5, out.width='.5\\linewidth', echo=FALSE>>=
+   qplot(actual,predicted,xlim = c(0,100),ylim=c(0,100),xlab="Person's Actual Score on Test","Person's Guess of What They Would Score") + coord_fixed()
+@
+\end{center}
+
+Here are some summaries of the data (again using the actual score as the x-value and the person's evaluation of their score as the y-value):
+
+$$
+   \sum_{i=1}^{50} x_i = \Sexpr{round(sum(actual))} \hspace{3cm} \sum_{i=1}^{50} x_i^2 = \Sexpr{round(sum(actual^2))} \\
+$$
+
+$$
+   \sum_{i=1}^{50} y_i = \Sexpr{round(sum(predicted))} \hspace{3cm} \sum_{i=1}^{50} y_i^2 = \Sexpr{round(sum(predicted^2))} \\
+$$
+
+$$
+   \sum_{i=1}^{50} x_i y_i = \Sexpr{round(sum(predicted*actual))}
+$$
+
+%-- : R code (Code in Document)
+<<echo=FALSE, cache=FALSE, include = TRUE>>=
+   lm(predicted ~ actual)
+@
+
+
+\begin{parts}
+   \part Using the summaries above, fit a linear relationship between \textbf{the actual score} (x) and \textbf{the guessed score} (y). 
+   \begin{subparts}
+      \subpart[5] Write the equation of the fitted linear relationship. 
+      \vspace{2cm}
+      \subpart[5] Find and interpret the value of $R^2$ for the fitted linear relationship.
+      \vspace{2cm}
+      \subpart[5] Using the fitted line, what do we suppose a person will guess their score will be if they actually scored a \Sexpr{actual[30]}.
+      \vspace{2cm}
+      \subpart[2] A person who scored a \Sexpr{actual[30]} on the test predicted that they would score \Sexpr{predicted[30]}. What is the residual for this person using the linear relationship?
+      \vspace{2cm}
+   \end{subparts}
+
+   \newpage 
+
+   \part The JMP output below comes from fitting a quadratic model using the actual score ("\verb!actual_score!") and the square of the actual score (\verb!actual_score^2!).
+
+   \centerline{\includegraphics[scale=.2]{FitDK}}
+
+   \begin{subparts}
+      \subpart[5] Write the equation of the fitted quadratic relationship.
+      \vspace{2cm}
+      \subpart[5] Find and interpret the value of $R^2$ for the fitted quadratic relationship.
+      \vspace{2cm}
+      \subpart[5] Using the fitted quadratic relationship, what do we suppose a person will guess their score will be if they actually scored a \Sexpr{actual[10]}.
+      \vspace{2cm}
+      \subpart[2] A person who scored a \Sexpr{actual[10]} on the test predicted that they would score \Sexpr{predicted[10]}. What is the residual for this person using the quadratic relationship?
+      \vspace{2cm}
+   \end{subparts}
+\end{parts}
+
+\end{questions}
+
+\end{document}

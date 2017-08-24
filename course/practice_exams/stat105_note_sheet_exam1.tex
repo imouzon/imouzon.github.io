@@ -1,0 +1,187 @@
+\documentclass[10pt,landscape]{article}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[landscape]{geometry}
+\usepackage{hyperref}
+
+% To make this come out properly in landscape mode, do one of the following
+% 1.
+%  pdflatex latexsheet.tex
+%
+% 2.
+%  latex latexsheet.tex
+%  dvips -P pdf  -t landscape latexsheet.dvi
+%  ps2pdf latexsheet.ps
+
+
+% If you're reading this, be prepared for confusion.  Making this was
+% a learning experience for me, and it shows.  Much of the placement
+% was hacked in; if you make it better, let me know...
+
+
+% 2008-04
+% Changed page margin code to use the geometry package. Also added code for
+% conditional page margins, depending on paper size. Thanks to Uwe Ziegenhagen
+% for the suggestions.
+
+% 2006-08
+% Made changes based on suggestions from Gene Cooperman. <gene at ccs.neu.edu>
+
+
+% To Do:
+% \listoffigures \listoftables
+% \setcounter{secnumdepth}{0}
+
+
+% This sets page margins to .5 inch if using letter paper, and to 1cm
+% if using A4 paper. (This probably isn't strictly necessary.)
+% If using another size paper, use default 1cm margins.
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+	{ \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+	{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+	}
+
+% Turn off header and footer
+\pagestyle{empty}
+ 
+
+% Redefine section commands to use less space
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%x
+                                {\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1explus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\small\bfseries}}
+\makeatother
+
+% Define BibTeX command
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% Don't print section numbers
+\setcounter{secnumdepth}{0}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+
+% -----------------------------------------------------------------------
+
+\begin{document}
+
+\raggedright
+\footnotesize
+\begin{multicols}{2}
+
+
+% multicol parameters
+% These lengths are set only within the two main columns
+%\setlength{\columnseprule}{0.25pt}
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{2pt}
+
+\begin{center}
+   \Large{\textbf{STAT 105 Exam I}} \\
+   \Large{\textbf{Reference Sheet}} \\
+\end{center}
+
+\section{Numeric Summaries}
+\begin{tabular}{@{}ll@{}}
+        & \\
+mean    & $\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i$ \\
+        & \\
+population variance  & $\sigma^2 = \frac{1}{n}\sum_{i=1}^n \left(x_i - \bar{x} \right)^2$ \\
+        & \\
+population standard deviation  & $\sigma = \sqrt{\frac{1}{n}\sum_{i=1}^n \left(x_i - \bar{x} \right)^2}$ \\
+        & \\
+sample variance  & $s^2 = \frac{1}{n-1}\sum_{i=1}^n \left(x_i - \bar{x} \right)^2$ \\
+        & \\
+sample standard deviation  & $s = \sqrt{\frac{1}{n-1}\sum_{i=1}^n \left(x_i - \bar{x} \right)^2}$ \\
+        & \\
+\end{tabular}
+
+\vspace{.2cm}
+
+
+\section{Linear Relationships}
+\begin{tabular}{@{}ll@{}}
+        & \\
+Form & $y \approx \beta_0 + \beta_1 x$ \\
+        & \\
+Fitted linear relationship & $\hat{y} = b_0 + b_1 x$ \\
+        & \\
+Least squares estimates & $b_1 = \frac{\sum_{i = 1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2}$ \\
+        & \\
+                        & $b_1 = \frac{ \sum_{i = 1}^n x_i y_i - n \bar{x} \bar{y} }{ \sum_{i = 1}^n x_i^2 - n \bar{x}^2 } $ \\
+        & \\
+                        & $b_0 = \bar{y} - b_1 \bar{x}$ \\
+        & \\
+Residuals & $e_i = y_i - \hat{y}_i $ \\
+        & \\
+sample correlation coeffecient & $r = \frac{\sum_{i=1}^n \left(x_i - \bar{x} \right)\left(y_i - \bar{y}\right)}{\sqrt{\sum_{i=1}^n \left( x_i - \bar{x} \right)^2 \sum_{i=1}^n \left(x_i - \bar{x} \right)^2}}$ \\
+        & \\
+                               & $r = \frac{\sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}}{\sqrt{\left(\sum_{i=1}^n x_i^2 - n \bar{x}^2\right)\left(\sum_{i=1}^n y_i^2 - n\bar{y}^2\right)}}$ \\
+        & \\
+coeffecient of determination & $R^2 = (r)^2$ \\
+        & \\
+                             & $\frac{\sum_{i=1}^n \left(y_i - \bar{y} \right)^2 - \sum_{i=1}^n \left(y_i - \hat{y}_i\right)^2}{\sum_{i=1}^n \left(y_i - \bar{y}\right)^2}$ \\
+        & \\
+\end{tabular}
+
+\vspace{.2cm}
+
+\section{Multivariate Relationships}
+\begin{tabular}{@{}ll@{}}
+        & \\
+Form & $y \approx \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_k x_k $ \\
+        & \\
+Fitted relationship  & $\hat{y} \approx b_0 + b_1 x_1 + b_2 x_2 + \ldots + b_k x_k $ \\
+        & \\
+Residuals & $e_i = y_i - \hat{y}_i $ \\
+        & \\
+Sums of Squares & $\text{SSTO} = \sum_{i = 1}^n \left(y_i - \bar{y}\right)^2$ \\
+        & \\
+                & $\text{SSE} = \sum_{i = 1}^n \left(y_i - \hat{y}_i\right)^2$ \\
+        & \\
+                & $\text{SSR} = SSTO - SSE = \sum_{i = 1}^n \left(\hat{y}_i - \bar{y}\right)^2$ \\
+        & \\
+coeffecient of determination & $R^2 = \frac{ \sum_{i = 1}^n \left(y_i - \bar{y}\right)^2 - \sum_{i = 1}^n \left(y_i - \hat{y}_i\right)^2 }{ \sum_{i = 1}^n \left(y_i - \bar{y}\right)^2 }$ \\
+        & \\
+                             & $R^2 = \frac{ \text{SSTO} - \text{SSE} }{\text{SSTO}}$ \\
+        & \\
+                             & $R^2 = \frac{ \text{SSR} }{\text{SSTO}}$ \\
+        & \\
+                             & $\frac{\sum_{i=1}^n \left(y_i - \bar{y} \right)^2 - \sum_{i=1}^n \left(y_i - \hat{y}_i\right)^2}{\sum_{i=1}^n \left(y_i - \bar{y}\right)^2}$ \\
+        & \\
+\end{tabular}
+
+\vspace{.2cm}
+
+
+\section{Functions}
+
+\textbf{Quantile Function $Q(p)$}
+For a dataset consisting of $n$ values that are ordered so that $x_1 \le x_2 \le \ldots \le x_n$ and value $p$ where $0 \le p \le 1$, let $i = \lfloor n \cdot p + 0.5 \rfloor$. 
+Then the quantile function at $p$ is:
+
+\[
+Q(p) = x_i + (n \cdot p + 0.5 - i)(x_{i+1} - x_i)
+\]
+
+
+
+\end{multicols}
+\end{document}

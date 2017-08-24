@@ -1,0 +1,72 @@
+% For LaTeX-Box: root = stat105_hw2.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_hw2.tex
+%  Purpose:
+%
+%  Creation Date: 03-09-2015
+%  Last Modified: Wed Apr 13 11:06:08 2016
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\setlength{\topmargin}{-.5 in} 
+\setlength{\textheight}{9 in}
+\setlength{\textwidth}{6.5 in} 
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{0 in} 
+\setlength{\parindent}{0 in}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+
+
+\lhead{STAT 105, Section A} 
+\chead{Homework Assignment 7} 
+\rhead{Due Tuesday, April 19} 
+\lfoot{Spring 2016} 
+\cfoot{\thepage} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+\newcommand{\ans}[1]{{\color{blue} \textbf{Answer: } #1}}
+\renewcommand{\ans}[1]{}
+
+\def\Exp#1#2{\ensuremath{#1\times 10^{#2}}}
+\def\Case#1#2#3#4{\left\{ \begin{tabular}{cc} #1 & #2 \phantom
+{\Big|} \\ #3 & #4 \phantom{\Big|} \end{tabular} \right.}
+
+\begin{document}
+\pagestyle{fancy} 
+
+Show \textbf{all} of your work on this assignment and answer each question fully in the given context. \\
+
+\emph{Please} staple your assignment! \\
+
+\ben
+
+
+\item \textbf{Chapter 5, Section 4, Exercise 2 (page 300)}
+
+\item \textbf{Chapter 5, Section 4, Exercise 3 (page 300)}
+
+   Note: the table at the bottom left of page 300 has a typo: going down the $y$ column the values given are "1, 2, 3, 3" when they should be "1, 2, 3, 4."
+
+   Hint: Understanding the process of testing for the toxic specimen is key.
+   \begin{itemize}
+      \item If there is NOT a contaminated speciman (the $X = 0$ case), then we will not find it on any test (cause it's not there).
+      \item If there is a contaminated specimen (the $X = 1$ case):
+         \begin{itemize}
+         \item we may find it on the first test, the second test, the third test, or the fourth test.
+         \item since there is no way to know which specimen is toxic, we can only randomly select them until we find the toxic one.
+         \end{itemize}
+   \end{itemize}
+
+\item \textbf{Chapter 5 Exercise 35 (page 330)}
+
+\een
+\end{document}

@@ -1,0 +1,379 @@
+% For LaTeX-Box: root = final_note_sheet.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: final_note_sheet.tex
+%  Purpose:
+%
+%  Creation Date: 15-12-2015
+%  Last Modified: Tue May  3 14:44:13 2016
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,landscape]{article}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[landscape]{geometry}
+\usepackage{hyperref}
+
+% To make this come out properly in landscape mode, do one of the following
+% 1.
+%  pdflatex latexsheet.tex
+%
+% 2.
+%  latex latexsheet.tex
+%  dvips -P pdf  -t landscape latexsheet.dvi
+%  ps2pdf latexsheet.ps
+
+
+% If you're reading this, be prepared for confusion.  Making this was
+% a learning experience for me, and it shows.  Much of the placement
+% was hacked in; if you make it better, let me know...
+
+
+% 2008-04
+% Changed page margin code to use the geometry package. Also added code for
+% conditional page margins, depending on paper size. Thanks to Uwe Ziegenhagen
+% for the suggestions.
+
+% 2006-08
+% Made changes based on suggestions from Gene Cooperman. <gene at ccs.neu.edu>
+
+
+% To Do:
+% \listoffigures \listoftables
+% \setcounter{secnumdepth}{0}
+
+
+% This sets page margins to .5 inch if using letter paper, and to 1cm
+% if using A4 paper. (This probably isn't strictly necessary.)
+% If using another size paper, use default 1cm margins.
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+	{ \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+	{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1.5cm} }
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1.5cm} }
+	}
+
+% Turn off header and footer
+\pagestyle{empty}
+ 
+
+% Redefine section commands to use less space
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%x
+                                {\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1explus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\small\bfseries}}
+\makeatother
+
+% Define BibTeX command
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% Don't print section numbers
+\setcounter{secnumdepth}{0}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+
+% -----------------------------------------------------------------------
+
+\begin{document}
+
+\raggedright
+\footnotesize
+\begin{multicols}{2}
+
+
+% multicol parameters
+% These lengths are set only within the two main columns
+%\setlength{\columnseprule}{0.25pt}
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{2pt}
+
+\begin{center}
+   \Large{\textbf{STAT 105 Exam I}} \\
+   \Large{\textbf{Reference Sheet}} \\
+\end{center}
+
+\subsection{Numeric Summaries}
+\begin{tabular}{@{}ll@{}}
+        & \\
+mean    & $\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i$ \\
+        & \\
+population variance  & $\sigma^2 = \frac{1}{n}\sum_{i=1}^n \left(x_i - \bar{x} \right)^2$ \\
+        & \\
+population standard deviation  & $\sigma = \sqrt{\frac{1}{n}\sum_{i=1}^n \left(x_i - \bar{x} \right)^2}$ \\
+        & \\
+sample variance  & $s^2 = \frac{1}{n-1}\sum_{i=1}^n \left(x_i - \bar{x} \right)^2$ \\
+        & \\
+sample standard deviation  & $s = \sqrt{\frac{1}{n-1}\sum_{i=1}^n \left(x_i - \bar{x} \right)^2}$ \\
+        & \\
+\end{tabular}
+
+\textbf{Quantile Function $Q(p)$}
+For a dataset consisting of $n$ values that are ordered so that $x_1 \le x_2 \le \ldots \le x_n$ and value $p$ where $0 \le p \le 1$, let $i = \lfloor n \cdot p + 0.5 \rfloor$. 
+Then the quantile function at $p$ is:
+
+\[
+Q(p) = x_i + (n \cdot p + 0.5 - i)(x_{i+1} - x_i)
+\]
+
+\vspace{.2cm}
+
+\subsection{Linear Relationships}
+\begin{tabular}{@{}ll@{}}
+        & \\
+Form & $y \approx \beta_0 + \beta_1 x$ \\
+        & \\
+Fitted linear relationship & $\hat{y} = b_0 + b_1 x$ \\
+        & \\
+Least squares estimates & $b_1 = \frac{\sum_{i = 1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2}$ \\
+        & \\
+                        & $b_1 = \frac{ \sum_{i = 1}^n x_i y_i - n \bar{x} \bar{y} }{ \sum_{i = 1}^n x_i^2 - n \bar{x}^2 } $ \\
+        & \\
+                        & $b_0 = \bar{y} - b_1 \bar{x}$ \\
+        & \\
+Residuals & $e_i = y_i - \hat{y}_i $ \\
+        & \\
+sample correlation coeffecient & $r = \frac{\sum_{i=1}^n \left(x_i - \bar{x} \right)\left(y_i - \bar{y}\right)}{\sqrt{\sum_{i=1}^n \left( x_i - \bar{x} \right)^2 \sum_{i=1}^n \left(x_i - \bar{x} \right)^2}}$ \\
+        & \\
+                               & $r = \frac{\sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}}{\sqrt{\left(\sum_{i=1}^n x_i^2 - n \bar{x}^2\right)\left(\sum_{i=1}^n y_i^2 - n\bar{y}^2\right)}}$ \\
+        & \\
+coeffecient of determination & $R^2 = (r)^2$ \\
+        & \\
+                             & $\frac{\sum_{i=1}^n \left(y_i - \bar{y} \right)^2 - \sum_{i=1}^n \left(y_i - \hat{y}_i\right)^2}{\sum_{i=1}^n \left(y_i - \bar{y}\right)^2}$ \\
+        & \\
+\end{tabular}
+
+\vspace{.1cm}
+
+\subsection{Factorial Analysis (Two Factors)}
+
+Assuming 
+
+\begin{itemize}
+   \item Factor A with levels $1, 2, ..., I$, 
+   \item Factor B with levels $1, 2, ..., J$, 
+   \item $n$ is the total number of observations,
+   \item $n_{ij}$ is the total number of observations with Factor A at level $i$ and Factor B at level $j$, 
+   \item $n_{i \cdot }$ is the total number of observations with Factor A at level $i$,
+   \item $n_{\cdot j}$ is the total number of observations with Factor B at level $j$.
+   \item $y_{ijk}$ is the $k$th observation where Factor A is at level $i$ and Factor B is at level $j$.
+\end{itemize}
+
+\begin{tabular}{@{}ll@{}}
+        & \\
+   $y_{\cdot \cdot} = \sum_{i = 1}^I \sum_{j = 1}^J \sum_{k=1}^K y_{ijk} $ & $\bar{y}_{\cdot \cdot} = \frac{1}{n}\sum_{i = 1}^I \sum_{j = 1}^J \sum_{k=1}^K y_{ijk} $ \\
+        & \\
+   $\bar{y}_{i \cdot} = \frac{1}{n_{i\cdot}} \sum_{j = 1}^J \sum_{k=1}^K y_{ijk} $ & $\bar{y}_{\cdot j} = \frac{1}{n_{\cdot j}} \sum_{i = 1}^I \sum_{k=1}^K y_{ijk} $ \\
+        & \\
+   Main effect of Factor A at level $i$ & $a_i = \bar{y}_{i \cdot} - \bar{y}_{\cdot \cdot}$ \\
+        & \\
+   Main effect of Factor B at level $j$ & $b_j = \bar{y}_{\cdot j} - \bar{y}_{\cdot \cdot}$ \\
+        & \\
+   Fitted Value & $\hat{y}_{ij} = a_i + b_j + \bar{y}_{\cdot \cdot}$
+        & \\
+\end{tabular}
+
+% \section{Factorial Analysis (Two Factors)}
+% 
+% \begin{itemize}
+%    \item Factor A with levels $1, 2, ..., I$, 
+%    \item Factor B with levels $1, 2, ..., J$, 
+%    \item Factor C with levels $1, 2, ..., K$, 
+%    \item $n$ is the total number of observations,
+%    \item $n_{ijk}$ is the total number of observations with Factor A at level $i$ and Factor B at level $j$, 
+%    \item $n_{ij\cdot}$ is the total number of observations with Factor A at level $i$ and Factor B at level $j$, 
+%    \item $n_{i\cdot k}$ is the total number of observations with Factor A at level $i$ and Factor C at level $k$, 
+%    \item $n_{\cdot jk}$ is the total number of observations with Factor B at level $j$ and Factor C at level $k$, 
+%    \item $n_{i \cdot \cdot}$ is the total number of observations with Factor A at level $i$,
+%    \item $n_{\cdot j \cdot}$ is the total number of observations with Factor B at level $j$,
+%    \item $n_{\cdot \cdot k}$ is the total number of observations with Factor C at level $k$,
+%    \item $y_{ijkl}$ is the $l$th observation where Factor A is at level $i$, Factor B is at level $j$, and Factor C is at level $k$.
+% \end{itemize}
+% 
+% \begin{tabular}{@{}ll@{}}
+%         & \\
+%    $y_{\cdot \cdot \cdot} = \sum_{i = 1}^I \sum_{j = 1}^J \sum_{k=1}^K \sum_{l=1}^L y_{ijkl} $ & $\bar{y}_{\cdot \cdot \cdot} = \frac{1}{n} y_{\cdot \cdot \cdot} $ \\
+%         & \\
+%    $\bar{y}_{i j \cdot} = \frac{1}{n_{ij\cdot}} \sum_{k = 1}^K \sum_{l=1}^L y_{ijkl} $ & $\bar{y}_{i \cdot k} = \frac{1}{n_{i \cdot k}} \sum_{j = 1}^J \sum_{k=1}^K y_{ijk} $ \\
+%         & \\
+%    $\bar{y}_{\cdot j k} = \frac{1}{n_{\cdot jk}} \sum_{i = 1}^I \sum_{l=1}^L y_{ijkl} $ & $\bar{y}_{i \cdot \cdot} = \frac{1}{n_{i \cdot \cdot}} \sum_{j = 1}^J \sum_{k=1}^K y_{ijk} $ \\
+%         & \\
+%    Main effect of Factor A at level $i$ & $a_i = \bar{y}_{i \cdot} - \bar{y}_{\cdot \cdot}$ \\
+%         & \\
+%    Main effect of Factor B at level $j$ & $b_j = \bar{y}_{\cdot j} - \bar{y}_{\cdot \cdot}$ \\
+%         & \\
+%    Fitted Value & $\hat{y}_{ij} = a_i + b_j + \bar{y}_{\cdot \cdot}$
+%         & \\
+% \end{tabular}
+
+\subsection{Discrete Random Variables}
+
+\begin{tabular}{@{}ll@{}}
+        & \\
+   Probability function &  $P[X = x] = f_X(x)$ \\
+        & \\
+   Cumulative probability function &  $P[X \le x] = F_X(x)$ \\
+        & \\
+   Expected Value & $\mu = E(X) = \sum_{x} x f_X(x)$ \\
+        & \\
+   Variance & $\sigma^2 = Var(X) = \sum_{x} (x - \mu)^2 f_X(x)$ \\
+        & \\
+   Standard Deviation & $\sigma = \sqrt{Var(X)}$ \\
+        & \\
+\end{tabular}
+
+\subsubsection{Joint Distributions and Related Distributions}
+
+\begin{tabular}{@{}ll@{}}
+        & \\
+   Joint Probability Function & $P[X = x, Y = y] = f(x,y)$ \\
+        & \\
+   Marginal Probability Function & $P[X = x] = f_{X}(x) = \sum_{\text{all }y} f(x,y)$ \\
+                                 & $P[Y = y] = f_{Y}(y) = \sum_{\text{all }x} f(x,y)$ \\
+        & \\
+   Conditional Probability Function & $P[X = x | Y = y] = \frac{f(x,y)}{f_{Y}(y)}$ \\
+                                    & $P[Y = y | X = x] = \frac{f(x,y)}{f_{X}(x)}$ \\
+        & \\
+\end{tabular}
+
+\subsubsection{Geometric Random Variables}
+
+$X$ is the trial count upon which the first successful outcome is observed performing independent trials with probability of success $p$.
+
+\begin{tabular}{@{}ll@{}}
+        & \\
+   Possible Values & $x = 1, 2, 3, \ldots$ \\
+        & \\
+   Probability function &  $P[X = x] = f_X(x) = p (1-p)^{x-1}$ \\
+        & \\
+   Expected Value & $\mu = E(X) = \frac{1}{p} $ \\
+        & \\
+   Variance & $\sigma^2 = Var(X) = \frac{1 - p}{p^2}$ \\
+        & \\
+\end{tabular}
+
+\vspace{.2cm}
+
+\subsubsection{Binomial Random Variables}
+
+$X$ is the number of successful outcomes observed in $n$ independent trials with probability of success $p$.
+
+\begin{tabular}{@{}ll@{}}
+        & \\
+   Possible Values & $x = 0, 1, 2, \ldots, n$ \\
+        & \\
+   Probability function &  $P[X = x] = f_X(x) = \frac{n!}{(n-x)!x!} p^x (1-p)^{n-x}$ \\
+        & \\
+   Expected Value & $\mu = E(X) = n p $ \\
+        & \\
+   Variance & $\sigma^2 = Var(X) = n p (1-p)$ \\
+        & \\
+\end{tabular}
+
+\vspace{.2cm}
+
+\subsection{Continuous Random Variables}
+
+\begin{tabular}{@{}ll@{}}
+        & \\
+   Probability density function &  $P[a \le X \le b] = \int_a^b f_X(x) dx$ \\
+        & \\
+   Cumulative probability function &  $P[X \le x] = F_X(x) = \int_{-\infty}^x f_X(t)dt$ \\
+        & \\
+   Expected Value & $\mu = E(X) = \int_{-\infty}^{\infty} x f_X(x) dx$ \\
+        & \\
+   Variance & $\sigma^2 = Var(X) = \int_{-\infty}^{\infty} (x - \mu)^2 f_X(x) dx$ \\
+        & \\
+   Standard Deviation & $\sigma = \sqrt{Var(X)}$ \\
+        & \\
+\end{tabular}
+
+
+\vspace{.2cm}
+
+\subsubsection{Normal Random Variables}
+
+Let $X$ be a normal random variable with mean $\mu$ and variance $\sigma^2$.
+
+\begin{tabular}{@{}ll@{}}
+        & \\
+   Probability density function &  $f_X(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right)^2}$ \\
+        & \\
+   Expected Value & $E(X) = \mu $ \\
+        & \\
+   Variance & $Var(X) = \sigma^2$ \\
+        & \\
+\end{tabular}
+
+\vspace{.2cm}
+
+\subsubsection{Standard Normal Random Variables ($Z$)}
+
+A normal random variable with mean $0$ and variance $\sigma^2$.
+
+If $X$ is normal($\mu$,$\sigma^2$) then $P[a \le X \le b] = P\left[\frac{a - \mu}{\sigma} \le Z \le \frac{b - \mu}{\sigma} \right]$
+
+\begin{tabular}{@{}ll@{}}
+        & \\
+   Probability density function &  $f_X(x) = \frac{1}{\sqrt{2 \pi}} e^{-\frac{1}{2} x^2}$ \\
+        & \\
+\end{tabular}
+
+\subsubsection{Functions of random variables}
+For $X_1, X_2, \ldots, X_n$ independent random variables and $a_0, a_1, a_2, \ldots, a_n$ constants if $W = a_0 + a_1 X_1 + \ldots + a_n X_n$:
+\begin{itemize}
+\item $E(W) = a_0 + a_1 E(X_1) + a_2 E(X_2) + \ldots + a_n E(X_n)$ \\
+\item $Var(W) = a_1^2 Var(X_1) + a_2^2 Var(X_2) + \ldots + a_n^2 Var(X_n)$ \\
+\end{itemize}
+
+\vspace{.2cm}
+
+\subsection{Confidence Intervals and Hypothesis Tests}
+\subsubsection{Confidence Intervals $n \ge 25$}
+\begin{tabular}{@{}ll@{}}
+        & \\
+   $(1 - \alpha) \cdot 100$\% Confidence interval for population mean &  $\bar{x} \pm z_{1 - \alpha/2} \sqrt{\frac{\sigma^2}{n}}$ \\
+        & \\
+   $(1 - \alpha) \cdot 100$\% Confidence lower bound &  $\bar{x} - z_{1 - \alpha} \sqrt{\frac{\sigma^2}{n}}$ \\
+        & \\
+   $(1 - \alpha) \cdot 100$\% Confidence upper bound &  $\bar{x} + z_{1 - \alpha} \sqrt{\frac{\sigma^2}{n}}$ \\
+        & \\
+\end{tabular}
+
+\subsubsection{Confidence Intervals $n < 25$}
+\begin{tabular}{@{}ll@{}}
+        & \\
+   $(1 - \alpha) \cdot 100$\% Confidence interval for population mean &  $\bar{x} \pm t_{1 - \alpha/2, n-1} \sqrt{\frac{\sigma^2}{n}}$ \\
+        & \\
+   $(1 - \alpha) \cdot 100$\% Confidence lower bound &  $\bar{x} - t_{1 - \alpha, n-1} \sqrt{\frac{\sigma^2}{n}}$ \\
+        & \\
+   $(1 - \alpha) \cdot 100$\% Confidence upper bound &  $\bar{x} + t_{1 - \alpha, n-1} \sqrt{\frac{\sigma^2}{n}}$ \\
+        & \\
+\end{tabular}
+
+\subsubsection{Test statistics in hypothesis tests for population mean}
+\begin{tabular}{@{}ll@{}}
+        & \\
+        $n \ge 25$ & $\frac{\bar{x} - \mu}{\sqrt{\sigma^2/n}} ~ N(0, 1)$ \\
+        & \\
+        $n < 25$ & $\frac{\bar{x} - \mu}{\sqrt{\sigma^2/n}} ~ t$ with $\nu = n-1$ degrees of freedom \\
+        & \\
+\end{tabular}
+
+\end{multicols}
+\end{document}

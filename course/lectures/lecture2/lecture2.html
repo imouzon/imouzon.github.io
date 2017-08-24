@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href ="www/css/stat105.css" type="text/css" rel = "stylesheet">
+      <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      </style>
+
+      <title>STAT 105: Lecture 2</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="keywords" content="statistics,engineering,stat105,iastate"/>
+      <meta name="description" content="Lecture 2: Statistics and Engineering"/>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+   </head>
+   <body>
+   <textarea id="source">
+
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+# STAT 105: Lecture 2
+## Why Engineers Study Statistics
+### Chapter 1: Introduction, Continued
+### Chapter 2: Data Collection
+.footnote[Course page: [imouzon.github.io/stat105](https://imouzon.github.io/stat105)]
+---
+# Section 1.2
+## Basic Terminology, Continued
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+## Types of Data Structures
+
+The most basic way to think about data is to imagine how the the raw observations could be organized once collected.
+
+Collected data can be referred to as a **data set**. 
+If the data set is simple enough, we can store it in a **data table** or **flat file**.
+Traditional data tables store values relating to a single observation/unit/individual as a row of the table.
+Each column in the table represents a value for some observed characterstic observed.
+
+**Example**: Failure time of lightbulbs
+
+A single brand and model of lightbulb is being examined for average failure time.
+Five bulbs were run until they burned out and their lifetime was recorded in hours.
+The first bult lasted 521.4 hours, the second bulb lasted 501.2 hours, 
+the third bulb lasted 541.8 hours,
+the fourth bulb lasted 498.1 hours,
+and the fifth bulb lasted 528.2 hours.
+]
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+## Types of Data Structures
+
+**Example**: Failure time of lightbulbs, continued
+
+Assembling the results in a data table could look like this:
+
+```text
+Bulb Number       Failure Time (hours)
+1                 521.4
+2                 501.2
+3                 541.8
+4                 498.1
+5                 528.2
+```
+
+Each bulb tested gets its own row - which row is attached to which bulb is identified by the first column.
+The only feature being observed is failure time - so only one column of observations are recorded for each bulb.
+
+Notice: 
+
+-  Failure Time is a **quantitative continuous** variable. 
+-  This is a **univariate data set**.
+
+]
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+## Types of Data Structures
+
+**Example**: Type of bill, date of payment, and payment amount for Mediacom
+
+```text
+Customer      Type      Date          Amount
+John Doe      Internet  01-05-2015    110.00
+John Doe      Phone     01-15-2015     10.00
+John Doe      Internet  02-05-2015    110.00
+John Doe      Phone     02-15-2015     10.00
+John Doe      Internet  03-05-2015    110.00
+John Doe      Phone     03-15-2015     10.00
+...           ...       ...           ...
+John Doe      Internet  01-05-2016    110.00
+John Doe      Phone     01-15-2016     10.00
+Jane Doe      Internet  04-12-2015     90.00
+Jane Doe      Internet  05-12-2015     90.00
+...           ...       ...           ...
+Jane Doe      Internet  01-12-2016     90.00
+```
+
+Notice: 
+
+-  Type of bill is is a **Qualitative** variable.
+-  Amount paid is **quantitative discrete**.
+-  Date is ...
+]
+
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+## Types of Data Structures
+
+The complexity of our data we gather changes based on our objective.  Consider the following scenarios:
+
+**Scenario 1: Simple Data Structure**
+
+We have designed a less expensive method for cleaning the byproduct of our production process. What constitutes clean is determined by law.
+
+-  Our data will consist of a simply measure of cleanliness after treatment with the new method.
+
+**Scenario 2: Complex Data Structure**
+
+Synthesis of a certain chemical can be done in a number of ways. We are considering two sets of substrates, three environments where production can occur, and three chemists to perform the synthesis. Our goal is to get the purest end product.
+
+-  We must gather data on substrate, environment, the chemist's identity, and the resulting purity.
+]
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+## Factorial Studies
+
+>  **Factorial Studies** involve scenarios in which several process variables are indentified as being of interest and data are collected under different settings of these process variables.
+
+>  We call the process variables **factors** and the possible settings for a process variable its **levels**
+
+>  **Complete Factorial Studies** are factorial studies where data is collected from each possible combination of the levels of the factors.
+
+>  **Partial Factorial Studies** are factorial studies where data is collected from some (but not all) possible combinations of the levels of the factors.
+
+]
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+
+<center>
+   <h2> Factorial Studies Example </h2>
+   <img src="www/figs/two_chemists_trim.jpg" alt="dmc logo" height="125"> 
+</center>
+
+>  A pair of chemists, Walter and Jessie, are attempting to synthesize a chemical and consider purity to be the most important quality in the product. There are three environments available to them (Winnebago/Basement/Lab) and two precursors (pseudoephedrine/methylamine). They are both willing to take the role of "lead cook" and will try all their options in order to get the best results.
+
+-  What parts of the synthesis are being treated as variables?
+
+-  What are the possible values for each of these variables?
+
+-  How many ways can the variables be combined?
+]
+
+???
+
+lead cook - Walter, Jessie
+environment - winnebago, basement, lab
+precursor - pseudo, methylamine
+
+2 x 3 x 2 = 12
+
+WRITE OUT THE LEVELS AFTER SOME TIME FOR THEM TO WRITE THEM OUT
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+
+<center>
+   <h2> Factorial Studies Example, cont </h2>
+   <img src="www/figs/being_chemists_trim.jpg" alt="dmc logo" height="125"> 
+</center>
+
+Here are all the possible combinations of the factors:
+
+$$
+\scriptsize{
+(\text{# of Cooks}) \cdot  
+(\text{# of Environments}) \cdot  
+(\text{# of Precursors}) = 2 \cdot 3 \cdot 2  
+= 12}
+$$
+
+```text
+         cook     environment    precursor
+         walter   winnebago      psuedoephedrine
+         walter   winnebago      methylamine
+         walter   basement       psuedoephedrine
+         walter   basement       methylamine
+         walter   lab            psuedoephedrine
+         walter   lab            methylamine
+         jessie   winnebago      psuedoephedrine
+         jessie   winnebago      methylamine
+         jessie   basement       psuedoephedrine
+         jessie   basement       methylamine
+         jessie   lab            psuedoephedrine
+         jessie   lab            methylamine
+```
+]
+
+???
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+
+<center>
+   <h2> Factorial Studies Example, cont </h2>
+   <img src="www/figs/new_chemists_trim.jpg" alt="dmc logo" height="125"> 
+</center>
+
+After testing each scenario, Walter and Jessie decide that the best combination to use is Walt as cook in the lab with methylamine.
+However, a new "chemist" Victor has joined the group and is going to try to be the cook and "follow the recipe" in the lab.
+Jessie also tries a new environment, South America, where only methylamine is available.
+
+-  If we consider the all the past combinations to be part of this new study, how many combinations of factor levels are now possible?
+
+-  Victor never works in the Winnebago, the basement, or South America. Walter never works in South America. What kind of study is this?
+]
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+### Types of Studies
+### Types of Data
+### Ex: Machine Parts
+### Uni/Multi/Repeat
+### Structures
+]
+.right-column[
+
+<center>
+   <h2> Factorial Studies Example, cont </h2>
+   <img src="www/figs/still_chemists_trim.jpg" alt="dmc logo" height="125"> 
+</center>
+
+```
+     cook     env         precursor
+1.   walt     winne       pseudo
+2.   walt     winne       methylamine
+3.   walt     basement    pseudo
+4.   walt     basement    methylamine
+5.   walt     lab         pseudo
+6.   walt     lab         methylamine
+7.   jessie   winne       pseudo
+8.   jessie   winne       methylamine
+9.   jessie   basement    pseudo
+10.  jessie   basement    methylamine
+11.  jessie   lab         pseudo
+12.  jessie   lab         methylamine
+13.  jessie   so. am.     methylamine
+14.  victor   lab         methylamine
+```
+]
+
+???
+
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+# Section 1.3
+## Measurement: It's Importance and Difficulty
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+## Measure
+### Key Words
+]
+.right-column[
+
+## If You Can't Measure, You Can't Do Statistics
+### Or Engineering For That Matter
+
+-  **Validity**: faithfully representing the aspect of interest
+-  **Precision**: the amount of variation in repeated measures
+-  **Accuracy**: aka "unbiasedness"; how close a measurement is to the true value "on average"
+
+We **calibrate** to improve accuracy
+]
+
+???
+
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+# Section 1.4
+## Mathematical Models
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+## Measure
+## Math Models
+]
+.right-column[
+
+## Mathematical Models and Data Analysis
+
+>  **Mathematical Model**: A description of a physical system using mathematical concepts and language.
+
+Identifying mathematical relationships between parts of a system allows us to describe complexity in simple terms.  
+
+**Example**: Height of an Object in Projectile Motion
+
+We can describe the relationship between height of a projectile \\(y\\) and time \\(t\\) as
+\\[
+y  = h_0 + v_h \cdot t - \frac{1}{2} g t^2, \text{ } t \ge 0,
+\\]
+where 
+- \\(h_0\\) is the initial height,
+- \\(v_h\\) is the initial vertical velocity,
+and
+- \\(g\\) is the (constant) acceleration due to gravity
+]
+
+???
+
+---
+layout:false
+.left-column[
+## What and Why
+## Terms
+## Measure
+## Math Models
+]
+.right-column[
+
+**Example**: Height of an Object in Projectile Motion, cont.
+
+\\[
+y  = h_0 + v_h \cdot t - \frac{1}{2} g t^2, \text{   } t \ge 0,
+\\]
+
+However, this is not what we see in real life for a variety of reasons. This model assumes
+
+1. \\(g\\) is constant as the ball falls, while \\(g\\) is actually a function of distance between the objects which changes,
+
+2. \\(g\\) is a known, while the actual acceleration due to gravity is it is actually estimated and approximated,
+
+3. Gravity is the only force acting on the object, ignoring drag force, electrical attractions, etc.
+
+4. There are no other changes in the system (for instance, changes in air pressure)
+
+We can fix these by writing a better relationship *or* we can accept that some things won't be known and use a **stochastic model** - a mathematical model that specifically allows for variation (or "randomness").
+Understanding how these **stochastic models** work is a major focus of this course.
+]
+
+
+
+
+
+
+
+
+
+
+
+</textarea>
+<!-- load remark -->
+<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
+
+<!-- load mathjax -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
+
+<!-- Initialize (has to go in <script> tag **without** SRC attribute) -->
+<script type="text/javascript">
+   // Create slideshow
+   var slideshow = remark.create({
+      // This BREAKS MathJax: 
+      // highlightLanguage: 'Python'
+
+      // You have to tag every code block with python, like so:
+      //
+      // ```python
+      // def add(a, b):
+      //     return a + b
+      // ```
+   });
+
+   // Setup MathJax
+   MathJax.Hub.Config({
+      tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+   });
+   MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+         return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+   });
+   MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+         return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+   });
+
+   MathJax.Hub.Configured();
+</script>

@@ -1,0 +1,96 @@
+% For LaTeX-Box: root = stat105_hw2.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_hw2.tex
+%  Purpose:
+%
+%  Creation Date: 03-09-2015
+%  Last Modified: Wed Mar 23 01:03:07 2016
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\setlength{\topmargin}{-.5 in} 
+\setlength{\textheight}{9 in}
+\setlength{\textwidth}{6.5 in} 
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{0 in} 
+\setlength{\parindent}{0 in}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+
+
+\lhead{STAT 105, Section A} 
+\chead{Homework Assignment 6} 
+\rhead{Due Tuesday, March 29} 
+\lfoot{Spring 2016} 
+\cfoot{\thepage} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+\newcommand{\ans}[1]{{\color{blue} \textbf{Answer: } #1}}
+\renewcommand{\ans}[1]{}
+
+\def\Exp#1#2{\ensuremath{#1\times 10^{#2}}}
+\def\Case#1#2#3#4{\left\{ \begin{tabular}{cc} #1 & #2 \phantom
+{\Big|} \\ #3 & #4 \phantom{\Big|} \end{tabular} \right.}
+
+\begin{document}
+\pagestyle{fancy} 
+
+Show \textbf{all} of your work on this assignment and answer each question fully in the given context. \\
+
+\emph{Please} staple your assignment! \\
+
+\ben
+
+\item \textbf{Chapter 5, Section 1, Exercise 6 (page 244)}
+
+\item \textbf{Chapter 5, Section 1, Exercise 8 (page 244)}
+
+\item \textbf{Chapter 5, Section 2, Exercise 1 (page 263, parts (a), (b), (c), and (e) only)}
+
+\item Consider a continuously distributed random variable, $W$, with a probability density function given by
+   $$
+   f(w) = \begin{cases}
+      \frac{1}{5(1 - e^{-2})} e^{-w/5} & 0 \le w \le 10 \\
+
+      0 & \text{otherwise}
+   \end{cases}
+   $$
+   \begin{enumerate}
+
+      \item Graph the probability density function (carefully labeling important features).
+
+      \item Show that the function $f(w)$ is a valid probability density function (i.e., show that (i) $f(w)$ is non-negative and (ii) $\int_{-\infty}^{\infty} f(w) dw = 1$).
+         
+      \item Find $P(W \le 2)$
+         
+      \item Find $P(2 \le W \le 5)$
+
+      \item Find $P(5 \le W \le 10)$
+
+      \item Find $P(2 \le W \le 10)$
+      
+   \end{enumerate}
+
+
+ \item (\textit{This problem is worth 5 bonus points})
+    We know that the probability density function of what is known as a normal random variable with $\mathbb{E}(X) = \mu$ and variance $\sigma^2$ can be written as
+    $$
+    f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{1}{2 \sigma^2 } (x - \mu)^2}, -\infty < x < \infty
+    $$
+    and we also know that, as with any random variable, the integral from $-\infty$ to $\infty$ of the function $f(x)$ above must be 1:
+    $$
+    \int_{-\infty}^{\infty} f(x) dx  = \int_{-\infty}^{\infty} \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{1}{2 \sigma^2 } (x - \mu)^2} dx  = 1
+    $$
+    for any value we are given for $\mu$ or $\sigma^2$.
+
+    Using the last fact, to find the value of $ \int_{-\infty}^{\infty} e^{3x -x^2} dx $
+\een
+\end{document}

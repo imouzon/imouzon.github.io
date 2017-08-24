@@ -1,0 +1,607 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Tue Feb 16 17:08:18 2016
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{examsetup}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+\usepackage{amsmath}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 105}{STAT 105, Section #1}}
+\newcommand{\sectionNumber}{B}
+\newcommand{\examDate}{October 1, 2015}
+\newcommand{\semester}{FALL 2015}
+\newcommand{\examNumber}{I}
+
+\printanswers
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+%-- : R code (Code in Document)
+
+
+
+\examCoverPage
+
+\begin{questions}
+\question
+
+%-- question1: R code (Code in Document)
+
+
+Two simple tools are used to measure the speed of an object (in meters per second). 
+By design and after careful callibration, the true speed of the object is \textit{known} to be 10.4 km/s.
+The measurements of the two tools are below: 
+
+\begin{itemize}
+
+   \item Measurements from Tool 1: $ 11.4, 9.3, 8, 8.1, 12.7 $ \\
+
+   \item Measurements from Tool 2: $ 7.4, 7.4, 7.5, 7.5, 7.4 $ \\
+
+\end{itemize}
+
+
+\begin{parts}
+   \part[2] Which tool is better described as accurate?
+
+   \vspace{1cm}
+
+   \part[2] Which tool is better described as precise?
+
+   \vspace{1cm}
+
+\end{parts}
+
+\vspace{1cm}
+
+\question 
+
+%-- : R code (Code in Document)
+
+
+A sample of size 5 was drawn from a population and the resulting observations are reported below. 
+\begin{center}
+23, 27, 25, 19, 18
+\end{center}
+Using these observed values, report the following:
+\vspace{1cm}
+
+\begin{parts}
+
+   \part[2] the mean  
+   \begin{solution}
+      \begin{align*}
+      \bar{x} = \frac{1}{n} \sum_{i=1}^n x_i &= \frac{1}{5} (x_1 + x_2 + x_3 + x_4 + x_5)  \\
+                                             &= \frac{1}{5} (23 + 27 + 25 + 19 + 18) \\
+                                             &= \frac{1}{5} (112) \\
+                                             &= 22.4 
+      \end{align*}
+   \end{solution}
+
+   \part[2] the variance 
+   \begin{solution}
+      Since this is a sample, we must $s^2$:\\
+
+      \begin{align*}
+         s^2 &= \frac{1}{n-1} \sum_{i = 1}^{n} (x_i - \bar{x})^2 \\
+             &= \frac{1}{5-1} \sum_{i = 1}^{5} (x_i - \bar{x})^2 \\
+             &= \frac{1}{4} \left( (x_1 - \bar{x})^2+ (x_2 - \bar{x})^2 + (x_3 - \bar{x})^2 + (x_4 - \bar{x})^2 + (x_5 - \bar{x})^2 \right) \\
+             &= \frac{1}{4} \left( (23 - 22.4)^2+ (27 - 22.4)^2 + (25 - 22.4)^2 + (19 - 22.4)^2 + (18 - 22.4)^2 \right) \\
+             &= \frac{1}{4} \left( (0.6)^2 + (4.6)^2 + (2.6)^2 + (\ensuremath{-3.4})^2 + (\ensuremath{-4.4})^2 \right) \\
+             &= \frac{1}{4} \left( 0.36 + 21.16 + 6.76 + 11.56 + 19.36 \right) \\
+             &= \frac{1}{4} \left( 59.2 \right) \\
+             &= 14.8 \\
+      \end{align*}
+
+   \end{solution}
+
+   \part[2] the standard deviation 
+   \begin{solution}
+      We must use the sample standard deviation, $s$:\\
+
+      \begin{align*}
+         s &= \sqrt{s^2} = \sqrt{14.8} = 3.8470768 \\
+      \end{align*}
+
+   \end{solution}
+
+   \part[2] the value of $Q(.25)$
+
+%-- : R code (Code in Document)
+
+   
+   \begin{solution} 
+      We will need to use the quantile function.\\
+
+      In this case, $i = \lfloor n p + 0.5 \rfloor = \lfloor 5 \cdot 0.25 + 0.5 \rfloor = \lfloor 1.75 \rfloor = 1$.
+      Since $i \ne n p + 0.5$, we must use the second form of the function:
+
+      \begin{align*}
+         Q(.25) &= x_i + (n p - i + 0.5) \cdot (x_{i+1} - x_i) \\
+                &= x_{1} + (5 \cdot .25 - 1 + 0.5) \cdot (x_{2} - x_{1}) \\
+                &= 23 + (0.75) \cdot (27 - 23) \\
+                &= 23 + (0.75) \cdot (4) \\
+                &= 23 + 3 \\
+                &= 26 \\
+      \end{align*} 
+      
+   \end{solution}
+
+\end{parts}
+
+\question
+\newpage
+
+Since it is reasonably quick and cost effecient, the complex paints used to line roads, like many liquids, are routinely shipped by train in tanker cars.
+However, once the cars arrive at their destination, they often sit for long periods of time before being released to the client - in the case of paint, this waiting time can cause the different components to separate into layers and the paint must be "remixed" before it can be used.
+A certain city receives shipments of these paints where they are held at the shipping station for a day before being released.
+A civil engineer working for the city plans to test the effectiveness of 5 methods of remixing the paint.
+However, there is a small issue: since the tanks themselves are coming from different destinations and through different routes, it is suspected that remixing effectiveness will vary from tank to tank.
+
+Four tanks of paint are currently being shipped. The engineer devises the following plan:
+
+\begin{itemize}
+   \item The content of each tank will be divided into 10 parts.
+   \item Each part will be randomly assigned an ID from 1 - 10.
+   \item Method 1 will be applied to ID 1 and 2, Method 2 will be applied to ID 3 and 4, Method 3 will be applied to ID 5 and 6, Method 4 will be applied to ID 7 and 8, Method 5 will be applied to ID 9 and 10.
+\end{itemize}
+
+The city plans to use the method that most effectively separates the paint in the future.
+
+
+\begin{parts}
+   \part[2] Is this an experiment or an observational study? Explain.
+   \begin{solution}
+      This is an experiment. The methods are being applied by the engineer and which method is used is decided by the engineer. 
+   \end{solution}
+
+   \part Identify the following (if there was not one, simply put "not used").
+
+  \vspace{1cm}
+
+   \begin{subparts}
+      \subpart[2] Response variable(s):
+      \begin{solution}
+         The effectiveness of the remixing (the way this is measured is not specified).
+      \end{solution}
+
+      \subpart[2] Experimental variable(s):
+      \begin{solution}
+         The method used.
+      \end{solution}
+
+
+      \subpart[2] Blocking variable(s):
+      \begin{solution}
+         The tank the sample is drawn from is a blocking variable. The blocking variable can take one of four possible values, \textit{Tank 1}, \textit{Tank 2}, \textit{Tank 3}, or \textit{Tank 4}.
+      \end{solution}
+
+   \end{subparts}
+
+   \part[2] Was replication used in this experiment? If so, where was it applied? If not, how could we have applied it?
+   \begin{solution}
+      Replication is the process repeating the experiment under identical circumstances.
+      In this case, the method and the block create the circumstances from which the effectiveness of mixing is measured.
+      We use all five methods twice in each block - so there is repetition.
+   \end{solution}
+
+\end{parts}
+
+\pagebreak
+
+\question
+
+New Orleans recently made training and use of body cameras mandatory for police officers.
+In an \textbf{attempt to determine the effectiveness of the change in policy at reducing the number of accusations of police brutality}, 
+a journalist gathered the a week's worth of arrest reports both two months before the policy went into effect and two months after the policy went into effect. 
+For each arrest report, she made note of
+whether or not the officer was using a body camera,
+the time of day (measured in hours so that 1:30 pm is 13.5),
+the difficulty reported in the arrest ("suspect resisted with violence", "suspect resisted without violence", or "suspect did not resist"),
+and whether or not the suspect made an accusation of brutality after the arrest.
+
+\begin{parts}
+   \part[2] Is this an experiment or an observational study?
+   \begin{solution}
+      This is an observational study. The journalist is just observing the arrest reports.
+   \end{solution}
+
+   \part[2] Identify the response variable(s).
+   \begin{solution}
+      \textit{This question is invalid and should not have been included. It is inappropriate to consider any variable in an observational study to be a response - having a response implies there is something causing the response, which observational studies can not determine. This is terminology we only use in the case of experiments. }
+   \end{solution}
+   
+   \part For each of the following variables, 
+
+      \begin{itemize}
+
+         \item Identify whether it is qualitative or quantitative variable, and 
+
+         \item If it is qualitative, what are the possible values it can take? If it is quantitative, is it continuous or discrete?
+
+      \end{itemize}
+
+   \begin{subparts}
+
+      \subpart whether or not the office was using a body camera,
+      \begin{solution}
+         qualitative - "The officer is using a body camera" or "the officer is not using a body camera"
+      \end{solution}
+
+      \subpart the time of day
+      \begin{solution}
+         quantitative - continuous
+      \end{solution}
+
+      \subpart The amount of resistance to arrest
+      \begin{solution}
+         qualitative - "suspect resisted", "suspect resisted with violence", "suspect did not resist"
+      \end{solution}
+
+      \vspace{2cm}
+
+      \subpart whether or not the suspect made an accusation of brutality after the arrest
+      \begin{solution}
+         qualitative - "the suspect did make an accusation of brutality" and "the suspect did not make an accusation of police brutality"
+      \end{solution}
+
+      \vspace{2cm}
+
+   \end{subparts}
+
+\end{parts}
+\pagebreak
+
+\question 
+
+%-- : R code (Code in Document)
+
+
+A certain make of load bearing beam used in construction of large buildings is certified to withstand pressures of 2.5 tonnes per square inch.
+30 beams were tested and the pressures at which they failed are collected in the table below.
+
+%-- : R code (Code in Document)
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{verbatim}
+
+  The decimal point is at the |
+
+  1 | 4
+  2 | 9
+  3 | 
+  4 | 368899999
+  5 | 00001111222333444
+  6 | 45
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+Note that \verb!0 | 9! represents 0.9. In this case, the first quartile is $Q(.25) = 4.9$, the median is 5.05, and the IQR is 0.4.
+
+%-- : R code (Code in Document)
+
+
+\begin{parts}
+  \part[10] Complete the following frequency table: \\
+
+  \begin{table}[h!]
+     \centering
+     \begin{tabular}{|l|p{3cm}|p{3cm}|p{4cm}|}
+        \hline
+                             & \textbf{Frequency} & \textbf{Relative} & \textbf{Cumulative}  \\
+        \textbf{Value Range} &                    & \textbf{Frequency} & \textbf{Relative Frequency} \\\hline \hline
+                    &  &  &  \\
+      0.00 - 2.00   &  1 & 0.03 & 0.03 \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      2.01 - 4.00   &  1 & 0.03 & 0.06 \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      4.01 - 6.00   &  26 & 0.87 & 0.93 \\
+                    &  &  &  \\ \hline
+                    &  &  &  \\
+      6.01 - 8.00   &  2 & 0.07 & 1 \\
+                    &  &  &  \\ \hline
+     \end{tabular}
+  \end{table}
+
+  \pagebreak
+
+  \part[10] Create a box plot to summarize the data. Carefully label the axes.
+
+  \begin{solution}
+     The boxplot is below: \\
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.8\linewidth]{figure/unnamed-chunk-7-1} 
+
+\end{knitrout}
+Please note: the values on the y-axis are meaningless
+  \end{solution}
+
+
+  \part[4] Are there any unusually low or high observations? If so, what pressures caused those beams to fail?
+  \begin{solution}
+     Yes, there are three unusually low observations as indicated by the box plot. They failed at 1.4, 2.9, and 4.3 tonnes per square inch. 
+     There are also two unusually high observations as indicated by the box plot. 
+     They failed at 6.4 and 6.5 tonnes per square inch. 
+  \end{solution}
+
+
+  \part[10] The company also measured the heat at which the beams begin to deform (in 10,000 degrees Celsius). The values are collected below:
+
+%-- : R code (Code in Document)
+
+
+\begin{center}
+   28.7, 31.5, 49.4, 44.6, 40.4, 35.1
+\end{center}
+
+Create a theoretical Q-Q plot using the following quantiles from the normal distribution as the theoretical quantiles. Carefully label your axes.
+What does this graph tell us about the upload speeds?
+
+\begin{table}[h!]
+   \centering
+   \begin{tabular}{ccccccccc}
+             & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
+      $p$    & 1/12 & 3/12 & 5/12 & 7/12 & 9/12 & 11/12 \\
+      $Q(p)$ & \ensuremath{-1.38} & \ensuremath{-0.67} & \ensuremath{-0.21} & 0.21 & 0.67 & 1.38 \\ \hline
+   \end{tabular}
+\end{table}
+
+%-- : R plot (results in document)
+\begin{solution}
+   We get the QQ-plot by plotting the ordered values of our sample against the ordered quantiles from the normal distribution (as given above): \\
+
+\begin{centering}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.5\linewidth]{figure/unnamed-chunk-9-1} 
+
+\end{knitrout}
+\end{centering}
+
+The points do seem to somewhat linear - an argument could be made that because of this the upload speed is normally distributed.
+
+\end{solution}
+
+\end{parts}
+\pagebreak
+
+\question
+
+Professional engineers often encounter issues relating to \textit{human resources} as they advance in their careers
+(building a better team of employees is after all not too different than improving any other system, at least on paper).
+However, many of the "laws" governing human behavior are very different than the strict laws of physics.
+For instance, a phenomenon known as the Dunning-Kruger effect states that for a given skill incompetent people will
+\begin{itemize}
+   \item fail to recognize their own lack of skill
+   \item fail to recognize genuine skill in others
+   \item fail to recognize the extremity of their inadequacy
+   \item recognize and acknowledge their own lack of skill, after they are exposed to training for that skill
+\end{itemize}
+
+A group of 50 job applicants are asked to estimate their skill in technical writing. 
+They are told they will be taking a test with a mean score of 50 and asked to guess what their score will be.
+Then they are given the test and get an actual score. 
+
+%-- : R code (Code in Document)
+
+
+The results are depicted below (using the actual score on the x-axis):
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=.5\linewidth]{figure/unnamed-chunk-11-1} 
+
+\end{knitrout}
+\end{center}
+
+
+Here are some summaries of the data (again using the actual score as the x-value and the person's evaluation of their score as the y-value):
+
+$$
+\sum_{i=1}^{50} x_i = 1922 \hspace{3cm} \sum_{i=1}^{50} x_i^2 = 110662 \\
+$$
+
+$$
+\sum_{i=1}^{50} y_i = 2954 \hspace{3cm} \sum_{i=1}^{50} y_i^2 = 179606 \\
+$$
+
+$$
+\sum_{i=1}^{50} x_i y_i = 
+108896
+$$
+
+\begin{parts}
+   \part Using the summaries above, fit a linear relationship between \textbf{the actual score} (x) and \textbf{the guessed score} (y). 
+   \begin{subparts}
+      \subpart[5] Write the equation of the fitted linear relationship. 
+      \begin{solution}
+         We need to get the estimates of $b_0$ and $b_1$ to write the equation of the fitted line: \\
+
+         \begin{align*}
+            b_1 &= \frac{\sum_{i=1}^{50} x_i y_i - 50 \bar{x} \bar{y}}{\sum_{i=1}^{50} x_i^2 - 50 \bar{x}^2} \\
+                &=  \frac{ 108896 - 50 \left(\frac{1922}{50}\right) \left(\frac{2954}{50}\right) }{ 110662- 50 \left(\frac{1922}{50}\right)^2 } \\
+                &=  \frac{ 108896 - 50 (38.45) (59.09) }{ 110662- 50 (38.45)^2 } \\
+                &=  \frac{ 108896 - 113600.525 }{ 110662- 73920.125 } \\
+             &= \frac{ \ensuremath{-4704.525} }{ 36741.875 } \\
+             &= \ensuremath{-0.13} \\
+         \end{align*}
+         and thus 
+         \begin{align*}
+            b_0 &= \bar{y} - b_1 \bar{x} \\
+                &= \left(\frac{2954}{50}\right) - (\ensuremath{-0.13} ) \left(\frac{1922}{50}\right) \\
+                &= \left(59.08\right) - (\ensuremath{-0.13} ) \left(38.44\right) \\
+                &= 64.0772 \\
+         \end{align*}
+         So the equation of the fitted line is:
+
+         $$
+         \hat{y} = 64.0772 - 0.13 x 
+         $$
+
+      \end{solution} 
+      \subpart[5] Find and interpret the value of $R^2$ for the fitted linear relationship.
+      \begin{solution}
+         Since this is a linear model, we can first find the correlation coeffecient and then find the value of $R^2$:
+         \begin{align*}
+         r 
+         &= 
+         \frac{
+            \sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}
+         }{
+            \sqrt{\left(\sum_{i=1}^n x_i^2 - \bar{x}^2 \right) \left(y_i - n \bar{y}^2 \right)}
+         }\\
+         &= 
+         \frac{
+            108896 - 50 (38.45)(59.09)
+         }{
+            \sqrt{\left(110662 - (50)( 38.45)^2 \right)
+            \left(179606 - (50)( 59.09)^2 \right)}
+         }\\
+         &= 
+         \frac{
+            \ensuremath{-4704.525}
+         }{
+            \sqrt{\left(36746.5 \right)
+            \left(5044.5 \right)}
+         }\\
+         &= 
+         \frac{
+            \ensuremath{-4704.525}
+         }{
+            13614.9814267
+         }
+         \\
+         &= \ensuremath{-0.35}
+         \end{align*}
+
+         So $R^2 = 
+          (\ensuremath{-0.35})^2
+            = 
+          0.1225
+     $ 
+     meaning that 12.25\% of the variability in predicted score can be explained by the linear relationship of predicted score with actual score.
+      \end{solution}
+
+      \subpart[5] Using the fitted line, what do we suppose a person will guess their score will be if they actually scored a 40.
+      \begin{solution}
+        \begin{align*}
+         \hat{y} &= 64.0772 - 0.13 ( 40 )\\
+                 &= 58.8772\\
+        \end{align*} 
+      \end{solution}
+      \subpart[2] A person who scored a 40 on the test predicted that they would score 49.56. What is the residual for this person using the linear relationship?
+      \begin{solution}
+        \begin{align*}
+         y - \hat{y}
+         &= 40 - 58.8772\\
+         &= \Sexpr40 - (round(sum(failure_time))/50 - round((round(sum(failure_time*actual)) - 50*round(sum(actual)/50,2)*round(sum(failure_time)/50,2))/ (round(sum(actual^2)) - 50*(round(sum(actual)/50,2))^2),2) * round(sum(actual))/50 - abs(round((round(sum(failure_time*actual)) - 50*round(sum(actual)/50,2)*round(sum(failure_time)/50,2))/ (round(sum(actual^2)) - 50*(round(sum(actual)/50,2))^2),2)) * ( 40 ))}
+        \end{align*} 
+      \end{solution}
+      \vspace{2cm}
+   \end{subparts}
+
+   \part The JMP output below comes from fitting a quadratic model using $x$ and $x^2$. 
+
+   \centerline{\includegraphics[scale=.2]{FitDK}}
+
+   \begin{subparts}
+      \subpart[5] Write the equation of the fitted quadratic relationship. 
+      \begin{solution}
+         From the JMP output: \\
+
+         $$\hat{y} = 82.63 - 1.25 x + 0.011 x^2$$
+      \end{solution} 
+      \subpart[5] Find and interpret the value of $R^2$ for the fitted quadratic relationship.
+      \begin{solution}
+         $$
+         R^2 = \frac{\text{SSTO} - \text{SSE}}{\text{SSTO}} = \frac{5044.2038 - 1311.073}{5044.2038} = 0.7992429
+         $$
+         Using the quadratic relationship, approximately 79.92\% of the variability in predicted score can be explained by the quadratic relationship with actual score.
+      \end{solution}
+      \subpart[5] Using the fitted quadratic relationship, what do we suppose a person will guess their score will be if they actually scored a 98.7392171.
+      \begin{solution}
+         \begin{align*}
+         \hat{y} &= 82.63 - 1.25 x + 0.011 x^2 \\
+                 &= 82.63 - 1.25 (98.74) + 0.011 (98.74)^2 \\
+                 &= 66.4504636 \\
+         \end{align*}
+      \end{solution}
+      \subpart[2] A person who scored a 98.74 on the test predicted that they would score 63.55. What is the residual for this person using the quadratic relationship?
+      \begin{solution}
+         \begin{align*}
+            y - \hat{y}  &= 63.55 - 66.4504636 \\
+                         &= \ensuremath{-2.9004636} \\
+         \end{align*}
+      \end{solution}
+      \vspace{2cm}
+      \vspace{2cm}
+   \end{subparts}
+\end{parts}
+
+\end{questions}
+
+\end{document}
