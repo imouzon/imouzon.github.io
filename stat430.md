@@ -10,7 +10,8 @@ image:
 share: true
 ---
 
-# STAT 430: Empirical Methods for the Computer Sciences
+# STAT 430
+## Empirical Methods for the Computer Sciences
 
 # Fall 2017
 
