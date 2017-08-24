@@ -2,7 +2,7 @@
 layout: page
 permalink: /about/
 title: About Me
-tags: [Ian, Mykal, ISU, Data Mining, Machine Learning]
+tags: [Ian, ISU, Data Mining, Machine Learning]
 image:
   feature: IMG_0467.JPG
   credit: Ian Mouzon
@@ -11,9 +11,7 @@ share: true
 ---
 
 My name is Ian Mouzon. I am a graduate student studying statistics at Iowa State University. 
-I am interested in many facets of statistics, 
-but I am happiest when I can work with complex and preferably large data sets which allow 
-me to think of unique ways to build models. This is my CV: 
+I am interested in many facets of statistics, but I am happiest when I can work with complex and preferably large data sets which allow me to think of unique ways to build models. This is my CV: 
 
 <object data="../mouzon_cv-2015.pdf" type="application/pdf" width="100%" height="100%">
 
@@ -24,5 +22,3 @@ me to think of unique ways to build models. This is my CV:
   1st place in 2014) and enjoy the skills the constraints of competition 
   helps to develop.
 * Film: I love classic and independent films, which may be a byproduct of how I grew up.
-  At the moment, I look forward to films by [Joe Swanberg](http://en.wikipedia.org/wiki/Drinking_Buddies), [Ti West](https://twitter.com/Ti_West), and [Whit Stillman](http://www.firstthings.com/article/2010/12/whit-stillman-is-running-late).
-  I also love a good [popcorn](http://vimeo.com/105540136) [movie](http://www.youtube.com/watch?v=MVt32qoyhi0)
