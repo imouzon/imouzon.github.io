@@ -21,14 +21,14 @@ layout: false
    A _set_ is finite or infinite collection of objects in which order has no significance and multiplicity is also generally ignored.
 
    We generally use capital letters, in bold face when typed, for sets such as 
-   `\(
+   \\(
    \mathbf{A}, \mathbf{B}, \mathbf{A\_1}, \mathbf{A\_2}, \ldots, \mathbf{A\_n}
-   \)`
+   \\)
    and so on.
    When a set is defined explicitly, we will generally use the following notation
-   `\[
+   \\[
    \mathbf{A} = \\{a\_1, a\_2, \ldots, a\_n\\}
-   \]`
+   \\]
    \\[
    \mathbf{B} = \\{b\_1, b\_2, \ldots \\}
    \\]
