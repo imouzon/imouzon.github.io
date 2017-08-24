@@ -5,7 +5,7 @@ class: center, middle, inverse
 # STAT 430: Lecture 2
 ## Probability and Sets
 ### Introduction (Continued)
-.footnote[Course page: [imouzon.github.io/stat420](https://imouzon.github.io/stat430)]
+.footnote[Course page: [imouzon.github.io/stat430](https://imouzon.github.io/stat430)]
 ---
 # A Little Background
 ## A Quick Review of Sets, Functions, and Chaos
