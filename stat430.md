@@ -53,7 +53,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_S17.
 
 ### Lecture Notes
 
--  [Lecture 1: 01-12](./lectures/lecture1/lecture1.html) ([pdf]()) (Introduction, covers sections 1.1 and 1.2)
+-  [Lecture 1: 08-22](./lec/lec1/index.html) ([pdf]()) (Introduction, covers sections 1.1 and 1.2)
 
 ### Homework Assignments
 
