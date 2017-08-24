@@ -21,9 +21,9 @@ layout: false
    A _set_ is finite or infinite collection of objects in which order has no significance and multiplicity is also generally ignored.
 
    We generally use capital letters, in bold face when typed, for sets such as 
-   \\(
+   \(
    \mathbf{A}, \mathbf{B}, \mathbf{A\_1}, \mathbf{A\_2}, \ldots, \mathbf{A\_n}
-   \\) 
+   \) 
    and so on.
    When a set is defined explicitly, we will generally use the following notation
    \\[
@@ -38,9 +38,9 @@ layout: false
    \\]
    The objects collected in the set are referred to as _elements_ of the set.
    We can indicate an object is an element of set by writing
-   \\(
+   \(
    a \in \mathbf{A}
-   \\)
+   \)
 ]
 ---
 layout: false
@@ -53,18 +53,18 @@ layout: false
 ## Special Sets
 Certain sets are dealt with so regularly that they have their own standard representations.
 
--  \\(\mathbf{S}\\) is the *universe*, the set containing all the elements being considered in a situation
--  \\(\emptyset\\) is the *empty set* or the set containing no elements.
--  the real numbers: \\(\mathbb{R} = (-\infty, \infty)\\)
--  the integers: \\(\mathbb{Z} = \\{\ldots, -2, -1, 0, 1, 2, \ldots\\}\\)
--  the positive real numbers: \\(\\mathbb{R^{+}} = (0, \infty)\\)
--  the positive real numbers include 0: \\(\\mathbb{R^{+}\_0} = [0, \infty)\\) <!----]-->
+-  \(\mathbf{S}\) is the *universe*, the set containing all the elements being considered in a situation
+-  \(\emptyset\) is the *empty set* or the set containing no elements.
+-  the real numbers: \(\mathbb{R} = (-\infty, \infty)\)
+-  the integers: \(\mathbb{Z} = \\{\ldots, -2, -1, 0, 1, 2, \ldots\\}\)
+-  the positive real numbers: \(\\mathbb{R^{+}} = (0, \infty)\)
+-  the positive real numbers include 0: \(\\mathbb{R^{+}\_0} = [0, \infty)\) <!----]-->
 
 ## Special Circumstances
 Because the concept of sets has such wide application, many fields have special notation that identifies a specific set as having special properties or roles:
 
--  \\(\mathcal{F}\\) is used in measure theory to denote the set of "measureably sets"
--  \\(\mathcal{B}\_r(\mathbf{p})\\) is used in topology as the ball of radius \\(r\\) centered at \\(\mathbf{p}\\).
+-  \(\mathcal{F}\) is used in measure theory to denote the set of "measureably sets"
+-  \(\mathcal{B}\_r(\mathbf{p})\) is used in topology as the ball of radius \(r\) centered at \(\mathbf{p}\).
 
 ]
 ---
@@ -82,16 +82,16 @@ layout: false
 
 _Motivation: I want to say "everything that is not in the set"_
 
-The **compliment** of a set \\(\mathbf{A}\\) is a set containing all the elements that are not elements of \\(\mathbf{A}\\).
+The **compliment** of a set \(\mathbf{A}\) is a set containing all the elements that are not elements of \(\mathbf{A}\).
 \\[
 \mathbf{A}^c = \\{x : x \notin \mathbf{A}\\}
 \\]
 
 _examples_: 
 
-If \\(\mathbf{S} = \\{a, b, c, d, e\\}\\) and \\(\mathbf{A} = \\{a, b, c\\}\\) then \\(\mathbf{A}^c = \\{d, e\\}\\)
+If \(\mathbf{S} = \\{a, b, c, d, e\\}\) and \(\mathbf{A} = \\{a, b, c\\}\) then \(\mathbf{A}^c = \\{d, e\\}\)
 
-_note_: \\(\mathbf{S}^c = \emptyset\\)
+_note_: \(\mathbf{S}^c = \emptyset\)
 ]
 ---
 layout: false
@@ -108,23 +108,23 @@ layout: false
 
 Motivation: I want to say how many elements are in a set
 
-The cardinality of a set \\(\mathbf{A}\\), notated \\(|\mathbf{A}|\\) is the number of elements in the setIf \\(\mathbf{A}\\) and \\(\mathbf{B}\\) are any two sets then \\(\mathbf{A} \cap \mathbf{B}\\) is the union.
+The cardinality of a set \(\mathbf{A}\), notated \(|\mathbf{A}|\) is the number of elements in the setIf \(\mathbf{A}\) and \(\mathbf{B}\) are any two sets then \(\mathbf{A} \cap \mathbf{B}\) is the union.
 
 _examples_: 
 
-If \\(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\\) and \\(\mathbf{B} = \\{b, c\\}\\) then 
+If \(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\) and \(\mathbf{B} = \\{b, c\\}\) then 
 
-\\(|\mathbf{A}| = 6\\), 
+\(|\mathbf{A}| = 6\), 
 
-\\(|\mathbf{B}| = 2\\), 
+\(|\mathbf{B}| = 2\), 
 
 and 
 
-\\(|\mathbf{A}| - |\mathbf{B}| = 4\\)
+\(|\mathbf{A}| - |\mathbf{B}| = 4\)
 
 _note_: 
 
-\\(|\mathbb{Z}|\\) and \\(|\mathbb{R}|\\) are both infinitely large
+\(|\mathbb{Z}|\) and \(|\mathbb{R}|\) are both infinitely large
 
 ]
 ---
@@ -142,7 +142,7 @@ layout: false
 
 Motivation: I want to say that everything in one set is in another set
 
-A set \\(\mathbf{A\_1}\\) is a **subset** of a set \\(\mathbf{A\_0}\\) if every element in \\(\mathbf{A}\_1\\) is also in a \\(\mathbf{A}\_0\\)
+A set \(\mathbf{A\_1}\) is a **subset** of a set \(\mathbf{A\_0}\) if every element in \(\mathbf{A}\_1\) is also in a \(\mathbf{A}\_0\)
 In this case we would write:
 \\[
 \mathbf{A}\_1 \subset \mathbf{A}\_0
@@ -150,13 +150,13 @@ In this case we would write:
 
 _example_: 
 
-Let \\(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\\) and let \\(\mathbf{B} = \\{x \in \mathbb{R}: x \ge 1\\}\\).
+Let \(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\) and let \(\mathbf{B} = \\{x \in \mathbb{R}: x \ge 1\\}\).
 
-Then \\(\mathbf{A} \subset \mathbf{B}\\) since each value in \\(\mathbf{A}\\) is greater than or equal to 1.
+Then \(\mathbf{A} \subset \mathbf{B}\) since each value in \(\mathbf{A}\) is greater than or equal to 1.
 
 _example_: 
 
-Let \\(\mathbf{A}\_k = [-k,k]\\) for any \\(k \in \mathbb{Z}^+\\). Then 
+Let \(\mathbf{A}\_k = [-k,k]\) for any \(k \in \mathbb{Z}^+\). Then 
 \\[
 \mathbf{A}\_1 \subset
 \mathbf{A}\_2 \subset
@@ -178,7 +178,7 @@ layout: false
 
 _Motivation: I want to say "everything that is in either of two sets"_
 
-The union of a two sets \\(\mathbf{A}\\) and \\(\mathbf{B}\\) is the set consisting of all elements that can be found in either set.
+The union of a two sets \(\mathbf{A}\) and \(\mathbf{B}\) is the set consisting of all elements that can be found in either set.
 \\[
 \mathbf{A}\cup\mathbf{B} = \\{x : x \in A \text{ or } x \in B\\}
 \\]
@@ -186,14 +186,14 @@ The union of a two sets \\(\mathbf{A}\\) and \\(\mathbf{B}\\) is the set consist
 
 _Motivation: I want to say "everything that is in both sets**_
 
-The **intersection** of two sets \\(\mathbf{A}\\) and \\(\mathbf{B}\\) is the set consisting of any element that is in both \\(\mathbf{A}\\) and \\(\mathbf{B}\\).
+The **intersection** of two sets \(\mathbf{A}\) and \(\mathbf{B}\) is the set consisting of any element that is in both \(\mathbf{A}\) and \(\mathbf{B}\).
 
-is a set then we can write **the compliment of \\(\mathbf{A}\\)** as \\(\mathbf{A}^c\\) (or less commonly \\(\bar{\mathbf{A}}\\)).
+is a set then we can write **the compliment of \(\mathbf{A}\)** as \(\mathbf{A}^c\) (or less commonly \(\bar{\mathbf{A}}\)).
 
-If \\(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\\) and \\(\mathbf{B} = \\{b, c\\}\\) then 
+If \(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\) and \(\mathbf{B} = \\{b, c\\}\) then 
 
-\\(\mathbf{A}\cup\mathbf{B} = \\{1, 2, 3, 4, 5, 6, b, c\\}\\) and
-\\(\mathbf{A}\cap\mathbf{B} = \emptyset\\)
+\(\mathbf{A}\cup\mathbf{B} = \\{1, 2, 3, 4, 5, 6, b, c\\}\) and
+\(\mathbf{A}\cap\mathbf{B} = \emptyset\)
 
 ]
 ---
@@ -211,9 +211,9 @@ layout: false
 _Motivation: I want to say "there are no elements that are in both sets"_
 
 When we refer to sets
-\\(\mathbf{A}\\)
+\(\mathbf{A}\)
 and
-\\(\mathbf{B}\\)
+\(\mathbf{B}\)
 as **mutually exclusive** or **disjoint** what we mean is that the intersection of the sets is empty.
 That is
 \\[
@@ -225,9 +225,9 @@ That is
 _Motivation: I want to say "every element is in the union of two sets"_
 
 When we refer to sets
-\\(\mathbf{A}\\)
+\(\mathbf{A}\)
 and
-\\(\mathbf{B}\\)
+\(\mathbf{B}\)
 as **exhaustive** what we mean is that the union of the sets is the universe.
 That is
 \\[
@@ -279,15 +279,15 @@ layout: false
 ]
 .right-column[
 ## Terminology and Notation for Functions
-A function \\(f: \mathbf{A} \rightarrow \mathbf{B}\\) is a relation that uniquely associates elements of one set with elements of another set.
-More formally, a function from \\(\mathbf{A}\\) to \\(\mathbf{B}\\) is an object \\(f\\) such that every 
-\\(a \in \mathbf{A}\\) is uniquely associated with an object 
-\\(b \in \mathbf{B}\\).
+A function \(f: \mathbf{A} \rightarrow \mathbf{B}\) is a relation that uniquely associates elements of one set with elements of another set.
+More formally, a function from \(\mathbf{A}\) to \(\mathbf{B}\) is an object \(f\) such that every 
+\(a \in \mathbf{A}\) is uniquely associated with an object 
+\(b \in \mathbf{B}\).
 
-The set \\(\mathbf{A}\\) is referred to as the _domain_ of the function \\(f\\) 
+The set \(\mathbf{A}\) is referred to as the _domain_ of the function \(f\) 
 and the set 
-\\(\\{b \in \mathbf{B} : f(a) = b \text{ for some } a \in A\\}\\) is referred to as the _range_ of the function.
-Domains and ranges are not usually specified and are usually implied by either the context ("\\(f(x)\\) is a continuous function") 
+\(\\{b \in \mathbf{B} : f(a) = b \text{ for some } a \in A\\}\) is referred to as the _range_ of the function.
+Domains and ranges are not usually specified and are usually implied by either the context ("\(f(x)\) is a continuous function") 
 but it is helpful to be think of this definition for abstract cases.
 
 Note: neither the domain nor the range of a function need to be "one dimensional" - for example the function
@@ -317,13 +317,13 @@ layout: false
    \\[F = m \cdot a\\] 
    is a deterministic relationship. It is often userful to describe these relationships using functional notation, i.e.,
    \\[F(m,a) = m \cdot a\\] 
-   In this case we are saying that we know all the values on one side (say, \\(m = 2\\) kg and \\(a = 5 m/s^2\\)) then we know the force (10 N).
+   In this case we are saying that we know all the values on one side (say, \(m = 2\) kg and \(a = 5 m/s^2\)) then we know the force (10 N).
 ]
 ---
 layout: false
 .left-column[
   ## Determinism
-  ### Finding \\(g\\)
+  ### Finding \(g\)
   ]
 .right-column[
    <center>
@@ -348,17 +348,17 @@ layout: false
 
    **Results**:
 
-   -  \\(h(t) = h(0) - g \cdot t^2 \\) 
+   -  \(h(t) = h(0) - g \cdot t^2 \) 
    
    or 
-   -  \\(g = \frac{1.80 \text{ m}}{t^2}\\)
+   -  \(g = \frac{1.80 \text{ m}}{t^2}\)
    
 ]
 ---
 layout: false
 .left-column[
   ## Determinism
-  ### Finding \\(g\\)
+  ### Finding \(g\)
   ### Issues
   ]
 .right-column[
@@ -393,7 +393,7 @@ layout: false
 layout: false
 .left-column[
   ## Determinism
-  ### Finding \\(g\\)
+  ### Finding \(g\)
   ### Issues
   ### Control Issues
   ]
@@ -412,7 +412,7 @@ layout: false
 
    **My hunch**: 
    
-   The relationship between distance, travel time, and acceleration is pretty simple - if we are accurate to 10 decimal places, we should be pretty accurate for \\(g\\) as well.
+   The relationship between distance, travel time, and acceleration is pretty simple - if we are accurate to 10 decimal places, we should be pretty accurate for \(g\) as well.
 
 
    But what if the relationship is even a little more complicated?
@@ -422,7 +422,7 @@ layout: false
 layout: false
 .left-column[
   ## Determinism
-  ### Finding \\(g\\)
+  ### Finding \(g\)
   ### Issues
   ### Control Issues
   ## Chaos
@@ -511,7 +511,7 @@ layout: false
 
 ## Probability
 
--  A function whose domain is the events and whose range is \\([0,1]\\)
+-  A function whose domain is the events and whose range is \([0,1]\)
 
 _example:_ flipping coins, tossing die
 
