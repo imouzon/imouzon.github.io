@@ -3,7 +3,7 @@ layout: true
 class: center, middle, inverse
 ---
 # STAT 430: Lecture 2
-## Why Computer Scientists Study Statistics
+## Probability and Sets
 ### Introduction (Continued)
 .footnote[Course page: [imouzon.github.io/stat420](https://imouzon.github.io/stat430)]
 ---
@@ -12,21 +12,38 @@ class: center, middle, inverse
 ---
 layout: false
 .left-column[
-  ## The Probabilistic Framework
-  ### Random Experiments
-  ### Sample Spaces
-  ### Events
-  ### Probability
+  ## Quick Recap
+  ### Sets
+  ### Functions
+  ### The Probabilistic Framework
 ]
 .right-column[
 
-## Sample Spaces
+## Sets
 
--  A sample space is a set of all possible outcomes
+-  How to describe various sets with mathematical notation
 
--  Sample spaces can range greatly in complexity
+-  How to think through questions involving set equality
 
--  Sample spaces can be **finite**, **countably infinite**, or **uncountably infinite**
+## Functions
+
+-  Mappings connecting elements of a defined set to the elements of a second set
+]
+---
+layout: false
+.left-column[
+  ## Quick Recap
+  ### Sets
+  ### Functions
+  ### The Probabilistic Framework
+]
+.right-column[
+
+## The Probabilistic Framework 
+
+-  A random experiment in which the outcome is not known prior to observation
+
+-  A Sample Space containing all possible outcomes of the experiment
 
 ## Events
 
