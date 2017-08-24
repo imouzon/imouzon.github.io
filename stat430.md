@@ -26,7 +26,9 @@ share: true
 **Ian's Office Hours**
 
 -  Tuesday 9:30 - 10:30 am, Snedecor 3220
+-  Tuesday 3:30 - 4:30 pm, Snedecor 3220
 -  Thursday 9:30 - 10:30 am, Snedecor 3220
+-  Thursday 3:30 - 4:30 pm, Snedecor 3220
 
 *None of these work? E-mail me (imouzon@iastate.edu) and we can find a time that works for both of our schedules.*
 
