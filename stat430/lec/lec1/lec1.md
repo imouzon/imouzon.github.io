@@ -14,7 +14,7 @@ layout: false
 .left-column[
   ## Sets
   ### Terms and Notation
-  ]
+]
 .right-column[
    ## Terminology and Notation for Sets
 
@@ -426,7 +426,7 @@ layout: false
   ### Issues
   ### Control Issues
   ## Chaos
-  ]
+]
 .right-column[
    <center>
       <h2>
