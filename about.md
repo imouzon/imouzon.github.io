@@ -6,7 +6,7 @@ tags: [Ian, ISU, Data Mining, Machine Learning]
 image:
   feature: IMG_0467.JPG
   credit: Ian Mouzon
-  creditlink: http://www.imouzon.github.io
+  creditlink: https://www.imouzon.github.io
 share: true
 ---
 
