@@ -10,48 +10,46 @@ image:
 share: true
 ---
 
-# STAT 105: Introduction to Statistical Engineering 
+# STAT 430: Empirical Methods for the Computer Sciences
 
-# Spring 2016, Section A
+# Fall 2017
 
 ## Course Information
 
 **Basic Information**
 
--  Meeting Time: Tuesday/Thursday 9:30 - 10:50 AM
--  Meeting Location: MoleBio 1414
+-  Meeting Time: Tuesday/Thursday 2:10 - 3:30 PM
+-  Meeting Location: Lagomarcino Hall W0272
 -  Instructor: Ian Mouzon
--  Course Assistant: Yong Mei
+-  Course Assistant: Haijuan Zhang
 
 **Ian's Office Hours**
 
--  Tuesday 11:00 - 12:30 am, Snedecor 3220
--  Wednesday 9:00 - 10:00 am, Snedecor 3220
--  Thursday 11:00 - 12:30 am, Snedecor 3220
+-  Tuesday 9:30 - 10:30 am, Snedecor 3220
+-  Thursday 9:30 - 10:30 am, Snedecor 3220
 
 *None of these work? E-mail me (imouzon@iastate.edu) and we can find a time that works for both of our schedules.*
 
-**Yong's Office Hours**
+**Haijuan's Office Hours**
 
--  Wednesday 2:00 - 3:00 pm, Sweeney Hall 3123
+-  _TBD_
 
 **Syllabus**
 
-You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf).
-
+You can view or download the syllabus at this [link](./doc/syllabus_stat430_S17.pdf).
 
 ## Course Materials
 
 ### Practice Exams
 
    <!-- TO DO -->
-   **Exam I** (Tentatively schedules for ...) 
+   **Exam I** (Tentatively schedules for September 26th in class) 
 
    <!-- TO DO -->
-   **Exam II** (Tentatively schedules for ...) 
+   **Exam II** (Tentatively schedules for November 6th in class) 
 
    <!-- TO DO -->
-   **Final Exam** (Schedule for ...)
+   **Final Exam**: Friday, December 15th 9:45-11:45 AM
 
 ### Lecture Notes
 
@@ -59,9 +57,11 @@ You can view or download the syllabus at this [link](./syllabus_stat105_S16.pdf)
 
 ### Homework Assignments
 
--  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Friday January 22 at 5:00, covers sections 1.1 and 1.2)
+-  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Thursday, August 31st on blackboard by 5:00)
 
 ### Tools
 
 <!-- TO DO: instructions for downloading R -->
    Interactive tools and helpful links will be posted here.
+
+## Programming 
