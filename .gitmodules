@@ -1,0 +1,3 @@
+[submodule "stat430"]
+	path = stat430
+	url = git@github.com:imouzon/stat430.git
