@@ -36,7 +36,7 @@ share: true
 
 **Syllabus**
 
-You can view or download the syllabus at this [link](./doc/syllabus_stat430_S17.pdf).
+You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.pdf).
 
 ## Course Materials
 
