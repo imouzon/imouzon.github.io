@@ -57,7 +57,8 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 ### Lecture Notes
 
 -  [Lecture 1: 08-22](./lec/lec1/index.html) ([pdf]())
--  [Lecture 2: 08-24](./lec/lec1/index.html) ([pdf]())
+-  [Lecture 2: 08-24](./lec/lec2/index.html) ([pdf]())
+   -  Andrey Kolmogorov [(born in **19**03)](https://en.wikipedia.org/wiki/Probability_axioms) who was largely responsible for axiomatic 
 
 ### Homework Assignments
 
