@@ -64,7 +64,7 @@ Certain sets are dealt with so regularly that they have their own standard repre
 Because the concept of sets has such wide application, many fields have special notation that identifies a specific set as having special properties or roles:
 
 -  \\(\mathcal{F}\\) is used in measure theory to denote the set of "measureably sets"
--  \\(\mathcal{B}\_r(\mathbf{p})\\) is used in topology as the ball of radius \\(r\\) centered at \\(\mathbf{p}\\).
+-  \\(\mathcal{B}_r(\mathbf{p})\\) is used in topology as the ball of radius \\(r\\) centered at \\(\mathbf{p}\\).
 
 ]
 ---
