@@ -63,7 +63,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 
 ### Homework Assignments
 
--  [Homework 1]() (Will be assigned Tuesday, August 29th and due Tuesday, September 5th on blackboard by 5:00)
+-  Homework 1 will be assigned Tuesday, August 29th and due Tuesday, September 5th on blackboard by 5:00)
 
 ### Tools
 
@@ -71,3 +71,12 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
    Interactive tools and helpful links will be posted here.
 
 ## Programming 
+
+### R
+There are many ways to install and run R. Here are a few:
+
+CRAN: The Comprehensive R Archive Network
+-  CRAN and R are 
+-  CRAN hosts the current version of R for download: [https://cran.r-project.org/](https://cran.r-project.org/) and most students will find this the simplest way to download and begin using R
+-  
+-  RStudio is a popular GUI tool for R. It is the "bells and whistles" 
