@@ -83,13 +83,14 @@ layout: false
 _Motivation: I want to say "everything that is not in the set"_
 
 The **compliment** of a set \\(\mathbf{A}\\) is a set containing all the elements that are not elements of \\(\mathbf{A}\\).
+
 \\[
 \mathbf{A}^c = \\{x : x \notin \mathbf{A}\\}
 \\]
 
 _examples_: 
 
-If \\(\mathbf{S} = \\{a, b, c, d, e\\}\\) and \\(\mathbf{A} = \\{a, b, c\\}\) then \\(\mathbf{A}^c = \\{d, e\\}\)
+If \\(\mathbf{S} = \\{a, b, c, d, e\\}\\) and \\(\mathbf{A} = \\{a, b, c\\}\\) then \\(\mathbf{A}^c = \\{d, e\\}\\)
 
 _note_: \\(\mathbf{S}^c = \emptyset\\)
 ]
@@ -108,11 +109,11 @@ layout: false
 
 Motivation: I want to say how many elements are in a set
 
-The cardinality of a set \\(\mathbf{A}\\), notated \\(|\mathbf{A}|\) is the number of elements in the setIf \\(\mathbf{A}\) and \\(\mathbf{B}\) are any two sets then \\(\mathbf{A} \cap \mathbf{B}\) is the union.
+The cardinality of a set \\(\mathbf{A}\\), notated \\(|\mathbf{A}|\\) is the number of elements in the setIf \\(\mathbf{A}\\) and \\(\mathbf{B}\\) are any two sets then \\(\mathbf{A} \cap \mathbf{B}\\) is the union.
 
 _examples_: 
 
-If \\(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\\) and \\(\mathbf{B} = \\{b, c\\}\) then 
+If \\(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\\) and \\(\mathbf{B} = \\{b, c\\}\\) then 
 
 \\(|\mathbf{A}| = 6\\), 
 
@@ -124,7 +125,7 @@ and
 
 _note_: 
 
-\\(|\mathbb{Z}|\\) and \\(|\mathbb{R}|\) are both infinitely large
+\\(|\mathbb{Z}|\\) and \\(|\mathbb{R}|\\) are both infinitely large
 
 ]
 ---
@@ -142,7 +143,7 @@ layout: false
 
 Motivation: I want to say that everything in one set is in another set
 
-A set \\(\mathbf{A\_1}\\) is a **subset** of a set \\(\mathbf{A\_0}\) if every element in \\(\mathbf{A}\_1\) is also in a \\(\mathbf{A}\_0\)
+A set \\(\mathbf{A\_1}\\) is a **subset** of a set \\(\mathbf{A\_0}\\) if every element in \\(\mathbf{A}\_1\\) is also in a \\(\mathbf{A}\_0\\)
 In this case we would write:
 \\[
 \mathbf{A}\_1 \subset \mathbf{A}\_0
@@ -150,13 +151,13 @@ In this case we would write:
 
 _example_: 
 
-Let \\(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\\) and let \\(\mathbf{B} = \\{x \in \mathbb{R}: x \ge 1\\}\).
+Let \\(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\\) and let \\(\mathbf{B} = \\{x \in \mathbb{R}: x \ge 1\\}\\).
 
-Then \\(\mathbf{A} \subset \mathbf{B}\\) since each value in \\(\mathbf{A}\) is greater than or equal to 1.
+Then \\(\mathbf{A} \subset \mathbf{B}\\) since each value in \\(\mathbf{A}\\) is greater than or equal to 1.
 
 _example_: 
 
-Let \\(\mathbf{A}\_k = [-k,k]\\) for any \\(k \in \mathbb{Z}^+\). Then 
+Let \\(\mathbf{A}\_k = [-k,k]\\) for any \\(k \in \mathbb{Z}^+\\). Then 
 \\[
 \mathbf{A}\_1 \subset
 \mathbf{A}\_2 \subset
@@ -178,7 +179,7 @@ layout: false
 
 _Motivation: I want to say "everything that is in either of two sets"_
 
-The union of a two sets \\(\mathbf{A}\\) and \\(\mathbf{B}\) is the set consisting of all elements that can be found in either set.
+The union of a two sets \\(\mathbf{A}\\) and \\(\mathbf{B}\\) is the set consisting of all elements that can be found in either set.
 \\[
 \mathbf{A}\cup\mathbf{B} = \\{x : x \in A \text{ or } x \in B\\}
 \\]
@@ -186,11 +187,11 @@ The union of a two sets \\(\mathbf{A}\\) and \\(\mathbf{B}\) is the set consisti
 
 _Motivation: I want to say "everything that is in both sets**_
 
-The **intersection** of two sets \\(\mathbf{A}\\) and \\(\mathbf{B}\) is the set consisting of any element that is in both \\(\mathbf{A}\) and \\(\mathbf{B}\).
+The **intersection** of two sets \\(\mathbf{A}\\) and \\(\mathbf{B}\\) is the set consisting of any element that is in both \\(\mathbf{A}\\) and \\(\mathbf{B}\\).
 
-is a set then we can write **the compliment of \\(\mathbf{A}\\)** as \\(\mathbf{A}^c\) (or less commonly \\(\bar{\mathbf{A}}\)).
+is a set then we can write **the compliment of \\(\mathbf{A}\\)** as \\(\mathbf{A}^c\\) (or less commonly \\(\bar{\mathbf{A}}\\)).
 
-If \\(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\\) and \\(\mathbf{B} = \\{b, c\\}\) then 
+If \\(\mathbf{A} = \\{1, 2, 3, 4, 5, 6\\}\\) and \\(\mathbf{B} = \\{b, c\\}\\) then 
 
 \\(\mathbf{A}\cup\mathbf{B} = \\{1, 2, 3, 4, 5, 6, b, c\\}\\) and
 \\(\mathbf{A}\cap\mathbf{B} = \emptyset\\)
@@ -280,11 +281,11 @@ layout: false
 .right-column[
 ## Terminology and Notation for Functions
 A function \\(f: \mathbf{A} \rightarrow \mathbf{B}\\) is a relation that uniquely associates elements of one set with elements of another set.
-More formally, a function from \\(\mathbf{A}\\) to \\(\mathbf{B}\) is an object \\(f\) such that every 
+More formally, a function from \\(\mathbf{A}\\) to \\(\mathbf{B}\\) is an object \\(f\\) such that every 
 \\(a \in \mathbf{A}\\) is uniquely associated with an object 
 \\(b \in \mathbf{B}\\).
 
-The set \\(\mathbf{A}\\) is referred to as the _domain_ of the function \\(f\) 
+The set \\(\mathbf{A}\\) is referred to as the _domain_ of the function \\(f\\) 
 and the set 
 \\(\\{b \in \mathbf{B} : f(a) = b \text{ for some } a \in A\\}\\) is referred to as the _range_ of the function.
 Domains and ranges are not usually specified and are usually implied by either the context ("\\(f(x)\\) is a continuous function") 
@@ -317,7 +318,7 @@ layout: false
    \\[F = m \cdot a\\] 
    is a deterministic relationship. It is often userful to describe these relationships using functional notation, i.e.,
    \\[F(m,a) = m \cdot a\\] 
-   In this case we are saying that we know all the values on one side (say, \\(m = 2\\) kg and \\(a = 5 m/s^2\)) then we know the force (10 N).
+   In this case we are saying that we know all the values on one side (say, \\(m = 2\\) kg and \\(a = 5 m/s^2\\)) then we know the force (10 N).
 ]
 ---
 layout: false
