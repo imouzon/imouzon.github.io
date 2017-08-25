@@ -41,6 +41,7 @@ share: true
 
 You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.pdf).
 
+
 ## Course Materials
 
 ### Practice Exams
@@ -62,7 +63,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 
 ### Homework Assignments
 
--  [Homework 1](./hw/hw1/stat105_hw1.pdf) (Due Thursday, August 31st on blackboard by 5:00)
+-  [Homework 1]() (Will be assigned Tuesday, August 29th and due Tuesday, September 5th on blackboard by 5:00)
 
 ### Tools
 
