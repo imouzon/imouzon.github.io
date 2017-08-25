@@ -16,31 +16,31 @@ layout: false
   ### Terms and Notation
 ]
 .right-column[
-   ## Terminology and Notation for Sets
+## Terminology and Notation for Sets
 
-   A _set_ is finite or infinite collection of objects in which order has no significance and multiplicity is also generally ignored.
+A _set_ is finite or infinite collection of objects in which order has no significance and multiplicity is also generally ignored.
 
-   We generally use capital letters, in bold face when typed, for sets such as 
-   \\(
-   \mathbf{A}, \mathbf{B}, \mathbf{A\_1}, \mathbf{A\_2}, \ldots, \mathbf{A\_n}
-   \\) 
-   and so on.
-   When a set is defined explicitly, we will generally use the following notation
-   \\[
-   \mathbf{A} = \\{a\_1, a\_2, \ldots, a\_n\\}
-   \\]
-   \\[
-   \mathbf{B} = \\{b\_1, b\_2, \ldots \\}
-   \\]
-   Or describe a rule that all elements of the set must fit
-   \\[
-   \mathbf{A} = \\{x > 0 : x\mod 3 = 5\\}
-   \\]
-   The objects collected in the set are referred to as _elements_ of the set.
-   We can indicate an object is an element of set by writing
-   \\(
-   a \in \mathbf{A}
-   \\)
+We generally use capital letters, in bold face when typed, for sets such as 
+\\[
+\mathbf{A}, \mathbf{B}, \mathbf{A\_1}, \mathbf{A\_2}, \ldots, \mathbf{A\_n}
+\\] 
+and so on.
+When a set is defined explicitly, we will generally use the following notation
+\\[
+\mathbf{A} = \\{a\_1, a\_2, \ldots, a\_n\\}
+\\]
+\\[
+\mathbf{B} = \\{b\_1, b\_2, \ldots \\}
+\\]
+Or describe a rule that all elements of the set must fit
+\\[
+\mathbf{A} = \\{x > 0 : x\mod 3 = 5\\}
+\\]
+The objects collected in the set are referred to as _elements_ of the set.
+We can indicate an object is an element of set by writing
+\\(
+a \in \mathbf{A}
+\\)
 ]
 ---
 layout: false
@@ -57,8 +57,8 @@ Certain sets are dealt with so regularly that they have their own standard repre
 -  \\(\emptyset\\) is the *empty set* or the set containing no elements.
 -  the real numbers: \\(\mathbb{R} = (-\infty, \infty)\\)
 -  the integers: \\(\mathbb{Z} = \\{\ldots, -2, -1, 0, 1, 2, \ldots\\}\\)
--  the positive real numbers: \\(\\mathbb{R^{+}} = (0, \infty)\\)
--  the positive real numbers include 0: \\(\\mathbb{R^{+}\_0} = [0, \infty)\\) <!----]-->
+-  the positive real numbers: \\(\mathbb{R^{+}} = (0, \infty)\\)
+-  the positive real numbers include 0: \\(\mathbb{R^{+}\_0} = [0, \infty)\\) <!----]-->
 
 ## Special Circumstances
 Because the concept of sets has such wide application, many fields have special notation that identifies a specific set as having special properties or roles:
