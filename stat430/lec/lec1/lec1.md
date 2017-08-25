@@ -64,7 +64,7 @@ Certain sets are dealt with so regularly that they have their own standard repre
 Because the concept of sets has such wide application, many fields have special notation that identifies a specific set as having special properties or roles:
 
 -  \\(\mathcal{F}\\) is used in measure theory to denote the set of "measureably sets"
--  \\(\mathcal{B}\_r(\mathbf{p})\\) is used in topology as the ball of radius \\(r\) centered at \\(\mathbf{p}\).
+-  \\(\mathcal{B}\_r(\mathbf{p})\\) is used in topology as the ball of radius \\(r\\) centered at \\(\mathbf{p}\\).
 
 ]
 ---
@@ -82,7 +82,7 @@ layout: false
 
 _Motivation: I want to say "everything that is not in the set"_
 
-The **compliment** of a set \\(\mathbf{A}\\) is a set containing all the elements that are not elements of \\(\mathbf{A}\).
+The **compliment** of a set \\(\mathbf{A}\\) is a set containing all the elements that are not elements of \\(\mathbf{A}\\).
 \\[
 \mathbf{A}^c = \\{x : x \notin \mathbf{A}\\}
 \\]
