@@ -78,7 +78,7 @@ layout: false
 .right-column[
 ## Set Operations
 
-**Complimention**
+**Complimentation**
 
 _Motivation: I want to say "everything that is not in the set"_
 
