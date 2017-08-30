@@ -63,7 +63,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 
 ### Homework Assignments
 
--  Homework 1 will be assigned Tuesday, August 29th and due Tuesday, September 5th on blackboard by 5:00)
+-  [Homework 1](./hw/hw1/stat430-hw1.pdf) (due Tuesday, September 5th on blackboard by 5:00)
 
 ### Tools
 

@@ -1,0 +1,104 @@
+% For LaTeX-Box: root = stat430_hw1.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat430_hw1.tex
+%  Purpose:
+%
+%  Creation Date: 14-01-2016
+%  Last Modified: Tue Aug 29 20:20:42 2017
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\setlength{\topmargin}{-.5 in} 
+\setlength{\textheight}{9 in}
+\setlength{\textwidth}{6.5 in} 
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{0 in} 
+\setlength{\parindent}{0 in}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+
+
+\lhead{STAT 430}
+\chead{Homework 1} 
+\rhead{Due September 4th at 5:00 pm} 
+\lfoot{Fall 2017} 
+\cfoot{\thepage} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+\newcommand{\ans}[1]{{\color{blue} \textbf{Answer: } #1 (5 pts.)}}
+\renewcommand{\ans}[1]{}
+
+\def\Exp#1#2{\ensuremath{#1\times 10^{#2}}}
+\def\Case#1#2#3#4{\left\{ \begin{tabular}{cc} #1 & #2 \phantom
+{\Big|} \\ #3 & #4 \phantom{\Big|} \end{tabular} \right.}
+
+\begin{document}
+\pagestyle{fancy} 
+
+Show \textbf{all} of your work on this assignment and answer each question fully in the given context.
+
+\ben
+
+\item \textbf{Sets}
+
+One common operation involving sets that we briefly mentioned in class is the Cartesian product ("$\times$"), which, for anthat for any two sets $A$ and $B$, is defined by:
+\[
+A \times B = \{(a,b) : a \in A, b \in B\}
+\]
+Also consider a new definition: set difference ("$-$") which for any two sets $A$ and $B$ we will define as:
+\[
+A - B = \{a \in A : a \notin B\}
+\]
+Using this definition, as well as the other operations discussed in class, prove or disprove the following:
+\ben
+\item $A - B = A \cap B^c$
+\item $(A - B) \cup (A - B^c) = A$
+\item If $A \times B = B \times A$ then $A = B$
+\item $A \times (B \cap C) = (A \times B) \cap (A \times C)$
+\een
+
+\item Show that for any sample space $\Omega$ and any subset $A$ of $\Omega$ the set
+\[
+   \mathcal{F} = \left\{\emptyset, A, A^c, \Omega\right\}
+\]
+follows the three properties needed to define a probability on $\mathcal{F}$ - that is that (1) the empty set is in $\mathcal{F}$, (2) for any set in $\mathcal{F}$, the compliment is also in $\mathcal{F}$, and that (3) a countable union of sets from $\mathcal{F}$ is still a set in $\mathcal{F}$
+
+\item \textbf{Functions}
+
+Define the function $F: \{[a,b]: a, b \in \mathbb{R}, 0 \le a \le b\} \rightarrow \mathbb{R}$ as
+\[
+   F([a,b]) = \int_{a}^b 3 e^{-3x} dx
+\]
+\ben
+\item Show that $F$ is bounded (i.e., there are two values in the range that will contain any value of the function).
+\item Show that if $A, B$ are two intervals in the domain for which $A \subset B$ then $F(A) \le F(B)$.
+\item Show that for any interval $A = [a,b]$ in the domain, 
+   \[
+   F([a,b]) = 1 - F([0,a]) - \lim_{n \rightarrow \infty} F[b,n]
+   \]
+\een
+
+\item \textbf{Measurements}
+
+Consider the Snow Volume Measurement Tool discussed in class - we know before hand that it can measure volumes over any rectangular area of any field imaginable.
+\ben
+\item What is the smallest measurement that this tool could return? (for instance, suppose you try to measure the volume of snow over a rectangular field in a park near your home today - what would the tool report?)
+
+Imagine a rectangular field with width 10 meters and length 10 meters in which the snow is uniformly 1 meter deep - meaning the snow is spread out equally over every point in the field
+
+\item If you measure the entire field, what is the total volume of snow?
+\item Suppose that I went around the field and chose 10 points and removed all the snow over the over those points. Can this field still be measured with the tool you have? Why or why not? (provide a clear mathematical argument for your conclusion)
+\item Now suppose that I went around the field and chose $n$ points and removed all the snow over the over those points. Can this field still be measured with the tool you have? Why or why not? (provide a clear mathematical argument for your conclusion)
+
+\een
+
+\een
+\end{document}
