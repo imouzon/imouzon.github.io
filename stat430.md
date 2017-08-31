@@ -60,6 +60,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 -  [Lecture 2: 08-24](./lec/lec2/index.html)
    -  Andrey Kolmogorov [(born in **19**03)](https://en.wikipedia.org/wiki/Probability_axioms) who was largely responsible for the mathematical foundations of modern probability
 -  [Lecture 3: 08-29](./lec/lec3/index.html)
+-  Lecture 4: 08-31 (Will cover the remainder of material for Lecture 3; additional material using overhead)
 
 ### Homework Assignments
 
@@ -73,10 +74,8 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 ## Programming 
 
 ### R
-There are many ways to install and run R. Here are a few:
-
 CRAN: The Comprehensive R Archive Network
--  CRAN and R are 
+-  CRAN and R are almost synonymous: they manage most of the package distribution
 -  CRAN hosts the current version of R for download: [https://cran.r-project.org/](https://cran.r-project.org/) and most students will find this the simplest way to download and begin using R
--  
 -  RStudio is a popular GUI tool for R. It is the "bells and whistles" 
+-  R has good package support on both Emacs (which I know nothing about) and Vim (which I love and would be more than happy to talk to you about). I imagine that it also has Sublime stuff.
