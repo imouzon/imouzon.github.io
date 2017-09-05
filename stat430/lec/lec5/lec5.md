@@ -75,7 +75,7 @@ The number of ways of selecting $k$ objects from a group of $n$ objects where th
 \\]
 ### Permutations
 
-The number of ways of selecting $k$ objects from a group of $n$ objects where the order of selection _does not_ matter is the **combination of $n$ choose $k$** and can be written as:
+The number of ways of selecting $k$ objects from a group of $n$ objects where the order of selection *does not* matter is the **combination of $n$ choose $k$** and can be written as:
 \\[
 \_n C_k = \dfrac{n!}{(n-k)! \cdot k!}
 \\]
