@@ -61,6 +61,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
    -  Andrey Kolmogorov [(born in **19**03)](https://en.wikipedia.org/wiki/Probability_axioms) who was largely responsible for the mathematical foundations of modern probability
 -  [Lecture 3: 08-29](./lec/lec3/index.html) (with [notes](./lec/lec3/sta430_lecture3.pdf))
 -  Lecture 4: 08-31 (Will cover the remainder of material for Lecture 3; additional material using overhead)
+-  [Lecture 5: 09-05](.lec/lec4/)
 
 ### Homework Assignments
 
