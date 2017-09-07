@@ -63,7 +63,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 -  Lecture 4: 08-31 (Will cover the remainder of material for Lecture 3; additional material using overhead)
 -  [Lecture 5: 09-05](./lec/lec5/index.html)
 -  [Lecture 6: 09-07](./lec/lec6/index.html) [(with notes)](./lec/lec6/lec6-notes.pdf)
-   -  _(Correction to last step of example)_
+   -  [_(Correction to last step of example)_](.lec/lec6/lec6-notes-correction.pdf)
 
 
 ### Homework Assignments
