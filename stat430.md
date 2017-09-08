@@ -35,7 +35,8 @@ share: true
 
 **Haijuan's Office Hours**
 
--  _TBD_
+- Tuesday 11:00 am - 12:00 pm
+- Friday 3:00 - 4:00 pm
 
 **Syllabus**
 
