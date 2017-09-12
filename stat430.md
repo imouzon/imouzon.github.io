@@ -35,8 +35,8 @@ share: true
 
 **Haijuan's Office Hours**
 
-- Tuesday 11:00 am - 12:00 pm
-- Friday 3:00 - 4:00 pm
+- Tuesday 11:00 am - 12:00 pm, Snedecor 2219
+- Friday 3:00 - 4:00 pm, Snedecor 2219
 
 **Syllabus**
 
