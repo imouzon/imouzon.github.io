@@ -1,0 +1,189 @@
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+# STAT 430: Lecture 7
+# Discrete Random Variables
+## Chapter 2
+.footnote[Course page: [imouzon.github.io/stat430](https://imouzon.github.io/stat430)]
+---
+## What is a "Random" Variable?
+---
+layout:false
+.left-column[
+## Random Variables
+### Meaning
+]
+.right-column[
+### Random Variables
+So we've got this idea that we can define a probability on the outcomes of an experiment. For instance, if we toss a coin three times we can define the sample space as:
+\\[
+\Omega = \\{HHH, HHT, HTH, THH, HTT, THT, TTH, TTT\\}
+\\]
+and (assuming the coin is fair) we can assign a probability of $1/8$ to each outcome.
+
+Then we can talk about things like $P(\\{\text{"first flip is H"}\\})$
+
+But what if the scenario is not so simple? What if we are dealing with a situation where all the probabilities are not the same? Or if there are an infinite number of outcomes?
+
+Many common real world scenarios can lead to such problems.
+]
+---
+layout:false
+.left-column[
+## Random Variables
+### Meaning
+]
+.right-column[
+### Random Variables, cont.
+Essentially a random variable is a _function_ that takes elements of the sample space to the set of real numbers. Defining a function like this does two things for us
+1. It moves elements $\omega$ from a sample space $\Omega$ that may be strange or hard to describe to the set of real numbers, which we have many tools to work with
+2. Commonly occuring types of random variables can be explored more fully apart from the details of the scenario (coin flips, dice rolls, etc. can all be handled as a common type of random variable).
+
+_Illustration_
+]
+---
+layout:false
+.left-column[
+## Random Variables
+### Meaning
+]
+.right-column[
+### Random Variables, cont.
+Notice that if we can talk about $A \subset \Omega$ then we can also talk about $\\{\omega \in \Omega: X(\omega) = x\\}$.
+
+_Illustration_
+]
+---
+layout:false
+.left-column[
+## Random Variables
+### Meaning
+### Types
+]
+.right-column[
+### Random Variables, cont.
+
+There are two main types of random variables: **Discrete** and **Continous**
+
+**Discrete Random Variable**
+A function whose domain is the sample space and whose range is a countable subset of $\mathbb{R}$
+
+**Continous Random Variable**
+A function whose domain is the sample space and whose range is a non-countable subset of $\mathbb{R}$
+
+Discrete random variables are based on **counting** measurements, continuous random variables are based on a distance measurement.
+]
+---
+layout:false
+.left-column[
+## Random Variables
+### Meaning
+### Types
+### Density/Mass Functions
+]
+.right-column[
+### Density and Mass Functions
+
+Since we are dealing with real numbers when we deal with random variables, we can talk about their probabilities in terms of functions:
+]
+---
+layout:false
+.left-column[
+## Random Variables
+### Meaning
+### Types
+### Density/Mass Functions
+### Cumulative Functions
+]
+.right-column[
+### Cumulative Probability Functions
+A way of adding up all the probabilities up to a certain value of $x$.
+]
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+# Discrete Random Variables
+## The Common Types
+---
+layout:false
+.left-column[
+## Discrete Random Variables
+### Bernoulli
+]
+.right-column[
+### Bernoulli Experiments
+
+Motivation: "I have an experiment that can be thought of as having two outcomes"
+
+In a Bernoulli Experiment, we have the following:
+
+-  A single outcome of interest ("success" and "failure")
+-  A probability associated with success, $p$
+
+Examples:
+
+-  I flip a coin and hope I get a heads
+-  I draw a card from a deck and hope I get an Ace
+-  I run a marathon and hope to beat my previous record
+]
+---
+layout:false
+.left-column[
+## Discrete Random Variables
+### Bernoulli
+]
+.right-column[
+### Bernoulli Random Variables
+
+If we have a Bernoulli experiment, then we can define a **Bernoulli Random Variable** by writing:
+
+Let $A$ be an event composed of outcomes $\omega$ of the sample space $\Omega$ with $P(A) = p$. Then a random variable defined as
+\\[
+X(\omega) = 
+\begin{cases}
+1 & \omega \in A \\\\
+0 & \omega \notin A
+\end{cases}
+\\]
+is a **Bernoulli Random Variable**. In this case, we would refer to $A$ as the set of all "successful" outcomes. Further, $P(X = 1) = p$ and we can call the probability of success $p$
+]
+---
+layout:false
+.left-column[
+## Discrete Random Variables
+### Bernoulli
+]
+.right-column[
+Example: Rolling dice
+
+Scenario: we are rolling a fair six-sided die. 
+
+-  Our goal is to roll higher than 3 but lower than 6.
+
+-  Our goal is to roll a pair of dice and get a double
+]
+---
+layout:false
+.left-column[
+## Discrete Random Variables
+### Bernoulli
+### Binomial
+]
+.right-column[
+Suppose that we don't just ahve a single Bernoulli expirement, but instead have a sequence of $k$ _independent_ Bernoulli experiments and are interested in the _total_ number of successful outcomes.
+
+**Example**
+We roll a fair six-sided die 5 times and record a success if we observer a 6.
+
+-  What is the sample space for $\Omega$?
+
+-  If we define $X$ as a sequence of Bernoulli random variables, what is the "sample space" for $X$?
+
+-  If we define $Y$ as the total number of successful outcomes, what is the sample space for $Y$?
+
+-  How can we write the probability function for $Y$?
+
+]
