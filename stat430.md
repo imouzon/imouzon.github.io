@@ -76,6 +76,8 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 
 -  [Homework 2](./hw/hw2/stat430-hw2.pdf) (due Tuesday, September 12th on blackboard by 5:00) ([solutions](./hw/hw2/hw2-solutions.pdf))
 
+-  [Homework 3](./hw/hw3/stat430-hw3.pdf) (due Tuesday, September 26th on blackboard by 5:00)
+
 ### Tools
 
 <!-- TO DO: instructions for downloading R -->
