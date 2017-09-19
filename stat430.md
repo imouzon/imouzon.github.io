@@ -67,6 +67,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
    -  [_(Correction to last step of example)_](.lec/lec6/lec6-notes-correction.pdf)
 -  [Lecture 7: 09-12](./lec/lec7/index.html) [(with notes)](./lec/lec7/lec7-notes.pdf)
 -  [Lecture 8: 09-14](./lec/lec8/index.html)
+-  [Lecture 9: 09-19](./lec/lec9/index.html)
 
 
 ### Homework Assignments
