@@ -26,9 +26,8 @@ share: true
 
 **Ian's Office Hours**
 
--  Tuesday 9:30 - 10:30 am, Snedecor 3220
+-  Tuesday 9:30 - 11:30 am, Snedecor 3220
 -  Tuesday 3:30 - 4:30 pm, Snedecor 3220
--  Thursday 9:30 - 10:30 am, Snedecor 3220
 -  Thursday 3:30 - 4:30 pm, Snedecor 3220
 
 *None of these work? E-mail me (imouzon@iastate.edu) and we can find a time that works for both of our schedules.*
@@ -68,7 +67,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 -  [Lecture 7: 09-12](./lec/lec7/index.html) [(with notes)](./lec/lec7/lec7-notes.pdf)
 -  [Lecture 8: 09-14](./lec/lec8/index.html) [(with notes)](./lec/lec8/lec8-notes.pdf)
 -  [Lecture 9: 09-19](./lec/lec9/index.html) [(with notes)](./lec/lec9/lec9-notes.pdf)
--  [Lecture 9: 09-19](./lec/lec10/index.html)
+-  [Lecture 10: 09-21](./lec/lec10/index.html)
 
 
 ### Homework Assignments
