@@ -2,7 +2,7 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
-# STAT 430: Lecture 9
+# STAT 430: Lecture 10 
 # Continuous Random Variables
 ## And Their Properties
 .footnote[Course page: [imouzon.github.io/stat430](https://imouzon.github.io/stat430)]
