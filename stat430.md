@@ -46,10 +46,10 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 ### Practice Exams
 
    <!-- TO DO -->
-   **Exam I** (Tentatively schedules for September 26th in class) 
+   **Exam I** (October 3rd) [Practice exam](./pex/exam1/stat430-F17-pexam1.pdf)
 
    <!-- TO DO -->
-   **Exam II** (Tentatively schedules for November 6th in class) 
+   **Exam II** (Tentatively schedules for November 6th)
 
    <!-- TO DO -->
    **Final Exam**: Friday, December 15th 9:45-11:45 AM

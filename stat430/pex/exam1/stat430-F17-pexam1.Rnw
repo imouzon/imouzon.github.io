@@ -1,0 +1,118 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Mon Oct  2 13:16:47 2017
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[addpoints]{examsetup}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 105}{STAT 105, Section #1}}
+\newcommand{\sectionNumber}{B}
+\newcommand{\examDate}{November 5, 2015}
+\newcommand{\semester}{FALL 2015}
+\newcommand{\examNumber}{II}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\examCoverPage
+
+\begin{questions}
+
+For the following question, assume that $S$ is the universe, and $A$, $B$, and $C$ are subsets of $S$.
+
+\question[7] 
+
+\textbf{Sets Proof} 
+Prove that 
+\[
+   A \cap B \subseteq A \subset A \cup B
+\]
+
+\question[5]
+Show that if $A \not\subseteq B$ and $B \not\subseteq C$ then $A \notsubset C$.
+   \vspace{5cm}
+
+\question[5]
+   Show that $(A \cap B^{c}) \cup (B \cap C^{c}) = A \cap C^{c}$
+   \vspace{5cm}
+
+
+%-- : R code (Code in Document)
+\question
+Consider the following scenario: Suppose that a fair coin is tossed. If the toss results in \"Heads\" facing up, then a fair 6-sided die is rolled. If the toss results in a \"Tails\" facing up, a fair 4-sided die is rolled.
+
+\begin{parts}
+\part[2]
+Write the sample space of possible outcomes for this experiment, using \"H\" and \"T\" to denote heads and tails and integers to denote the roll of the die.
+
+\part
+Determine the following probabilities:
+
+  \begin{subparts}
+      \subpart[2] Find $P\left(\text{"the coin toss results in heads"}\right)$.
+      \vspace{2cm}
+      \subpart[2] Find $P\left(\text{"an even number is rolled"}\right)$.
+      \vspace{2cm}
+      \subpart[2] Find $P\left(\text{"an even number is rolled"|"the roll was less than 3"}\right)$.
+      \vspace{2cm}
+      \subpart[2] Find $P\left(\text{"The coin toss resulted in heads" | "the die roll was less than 3"}\right)$
+      \vspace{2cm}
+  \end{subparts}
+
+\end{parts}
+
+\newpage
+
+\question 
+
+Suppose that $X$ is a continuous random variable with cumulative density function (cdf).
+$$
+F(x) = 
+\begin{cases}
+   0 & x < 0 \\
+   1 - e^{-3x} & x \ge 0
+\end{cases}
+$$
+
+We refer to such a random variable as an exponential random variable.
+
+\begin{parts}
+\part What is the probability that $X$ takes a value greater than 3?
+
+     \vspace{2cm}
+
+
+\part What is the probability that $X$ takes a value between 1 and 3?
+
+     \vspace{2cm}
+
+
+\part Derive the probability density function, $f(x)$. 
+
+     \vspace{2cm}
+
+
+\part Find the value $f(0)$ and $f(1)$.
+
+     \vspace{2cm}
+
+
+\part Sketch the probability density function using the grid below (including the points $(0, f(0))$ and $(1, f(1))$.
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

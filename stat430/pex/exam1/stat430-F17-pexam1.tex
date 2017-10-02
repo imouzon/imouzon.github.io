@@ -1,0 +1,131 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Mon Oct  2 13:58:12 2017
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[addpoints]{examsetup}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 430}{STAT 430}}
+\newcommand{\sectionNumber}{}
+\newcommand{\examDate}{October 3, 2017}
+\newcommand{\semester}{FALL 2017}
+\newcommand{\examNumber}{I}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\examCoverPage
+
+\begin{questions}
+
+
+\question \textbf{Sets Proof} \\ For the following question, assume that $S$ is the universe, and $A$, $B$, and $C$ are subsets of $S$.
+
+   \begin{parts}
+      \part[4] Prove or disprove that $ A \cap B \subseteq A \subset A \cup B $
+      \vspace{5cm}
+      \part[4] Prove or disprove that if $A \not\subseteq B$ and $B \not\subseteq C$ then $A \notsubset C$.
+      \vspace{5cm}
+      \part[4] Prove or disprove that $(A \cap B^{c}) \cup (B \cap C^{c}) = A \cap C^{c}$
+      \vspace{5cm}
+   \end{parts}
+
+\newpage
+
+\question[8]
+   Suppose that we can call a collection of sets, $\mathcal{F}$ a "sigma algebra" if 
+   \begin{enumerate}
+      \item $\emptyset \in \mathcal{F}$
+      \item if $A \in \mathcal{F}$ then $A^{C} \in \mathcal{F}$
+      \item if $A_1, A_2, \cdots \in \mathcal{F}$ then $A_1 \cup A_2 \cup \ldots \in \mathcal{F}$.
+   \end{enumerate}
+   Suppose that $A \cap B = \emptyset$. Write the smallest possible sigma-algebra containing $A$ and $B$.
+
+\newpage
+%-- : R code (Code in Document)
+\question
+Consider the following scenario: Suppose that a fair coin is tossed. If the toss results in "Heads" facing up, then a fair 6-sided die is rolled. If the toss results in a "Tails" facing up, a fair 4-sided die is rolled.
+
+\begin{parts}
+\part[2] Write the sample space of possible outcomes for this experiment, using "H\" and "T\" to denote heads and tails and integers to denote the roll of the die.
+\vspace{5cm}
+\part
+Determine the following probabilities:
+\vspace{1cm}
+  \begin{subparts}
+      \subpart[2] Find $P\left(\text{"the coin toss results in heads"}\right)$.
+      \vspace{2cm}
+      \subpart[2] Find $P\left(\text{"an even number is rolled"}\right)$.
+      \vspace{2cm}
+      \subpart[2] Find $P\left(\text{"an even number is rolled"|"the roll was less than 3"}\right)$.
+      \vspace{2cm}
+      \subpart[2] Find $P\left(\text{"The coin toss resulted in heads" | "the die roll was less than 3"}\right)$
+      \vspace{2cm}
+  \end{subparts}
+
+\end{parts}
+
+\newpage
+
+\question
+
+   \begin{parts}
+      \part[4] Suppose $X \sim \text{Binom}(4,.2)$. Find $P(X = 3)$.
+      \vspace{4cm}
+      \part[4] Suppose $Y \sim \text{Geometric}(.9)$. Find $P(Y \ge 10)$.
+      \vspace{4cm}
+      \part[4] Suppose $M \sim \text{Geometric}(.2)$. Find $P(M \ge 3|M \le 5)$.
+      \vspace{4cm}
+      \part[4] Using what you know about probability mass functions, evaluate the sum \[ \sum_{k=0}^{\infty} \left(\frac{2}{3}\right)^k \]
+      \vspace{4cm}
+      \part[4] Suppose that $T$ is an exponential random variable with density function $f(t) = 1.2 e^{-1.2 t}$ with $ t \ge 0$. Sketch the cumulative distribution for $T$. Use it to illustrate the probability of $T$ being less than 4.
+      \vspace{4cm}
+      \part[4] Suppose that $T$ is an exponential as in the previous part. If we know that $T$ is greater than $5$, what is the probability that $T$ is less than 10?
+      \vspace{4cm}
+      \part[4] Suppose $R \sim \text{Beta}(3,4)$. Find $P(R \ge .5 | R \ge .2)$.
+      \vspace{4cm}
+      \part[4] Using what you know about probability density functions, evaluate the integral \[ \int_{-\infty}^{\infty} e^{-2 x^2} dx \]
+      \vspace{4cm}
+   \end{parts}
+
+\newpage
+\question 
+
+Suppose that $X$ is a continuous random variable with probability density function (pdf):
+$$
+f(x) = 
+\begin{cases}
+   3 e^{-6x} & x < 0 \\
+   3 e^{-6x} & x \ge 0
+\end{cases}
+$$
+
+We refer to such a random variable as a mirrored exponential random variable.
+
+\begin{parts}
+   \part Provide a sketch of the probability density function, $f(x)$.
+   \vspace{4cm}
+   \part Show that $f(x)$ is a valid pdf.
+   \vspace{2cm}
+   \part What is the probability that $X$ takes a value greater than 3?
+   \vspace{2cm}
+   \part What is the probability that $X$ takes a value between -3 and 3?
+   \vspace{2cm}
+   \part Derive the cumulative density function, $F(x)$ (consider writing it as a piecewise function).
+\end{parts}
+
+\end{questions}
+
+\end{document}
