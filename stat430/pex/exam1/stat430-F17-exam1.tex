@@ -1,0 +1,160 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Tue Oct  3 13:34:37 2017
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[addpoints]{examsetup}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 430}{STAT 430}}
+\newcommand{\sectionNumber}{}
+\newcommand{\examDate}{October 3, 2017}
+\newcommand{\semester}{FALL 2017}
+\newcommand{\examNumber}{I}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\examCoverPage
+
+\begin{questions}
+
+
+\question \textbf{Sets Proof} \\ For the following question, assume that $S$ is the universe, and $A$, $B$, and $C$ are subsets of $S$.
+
+   \begin{parts}
+      \part[4] The power set of a set $S$, $\mathcal{P}(S)$ is the set of all subsets of $S$. If $|S| = 3$, what is $|\mathcal{P}(S)|$?  If $|S| = k$, what is $|\mathcal{P}(S)|$? (a rigorous argument is not required).
+      \vspace{5cm}
+      \part[4] Prove or disprove that $A \cap (B \cup C)^{C} = (A \cap B^C) \cup (A \cap C^C)$
+      \vspace{5cm}
+      \part[4] Let $A \times B = \{(a, b) : a \in A, b \in B\}$. Show that if $B \subseteq C$ then $A \times B \subseteq A \times C$.
+      \vspace{5cm}
+   \end{parts}
+
+\newpage
+
+\question
+   Suppose that we can call a collection of sets, $\mathcal{F}$ a "sigma-algebra" of a set $\Omega$ if all of the following hold:
+   \begin{enumerate}
+      \item $\emptyset \in \mathcal{F}$
+      \item if $A \in \mathcal{F}$ then $A^{C} \in \mathcal{F}$
+      \item if $A_1, A_2, \cdots \in \mathcal{F}$ then $A_1 \cup A_2 \cup \ldots \in \mathcal{F}$.
+   \end{enumerate}
+   A set $\Omega$ can have many sigma algebras. 
+   
+   Suppose that we know $\mathcal{F}_A$ and $\mathcal{F}_B$ are both sigma-algebras of the set $\Omega$. 
+   \begin{parts}
+      \part[5] Prove that $ \mathcal{F}_A \cap \mathcal{F}_B$ is also a sigma-algebra of $\Omega$.
+      \vspace{5cm}
+      \part[5] Prove that $ \mathcal{F}_A \cup \mathcal{F}_B$ is \textbf{not} a sigma-algebra of $\Omega$.
+      \vspace{5cm}
+   \end{parts}
+
+\newpage
+%-- : R code (Code in Document)
+\question
+Consider the following scenario: I have a bag with 9 tiles in it, 5 of which are labelled "A" and the rest of which are labelled "B". I also have two urns, "Urn A" and "Urn B" - Urn A has 10 balls, 3 of which are blue and 7 of which are red. Urn B has three balls, two of which are blue and one of which is red. 
+I randomly draw a tile from the bag - if the tile is labelled "A" I will draw a ball from Urn A and show it to you. If the tile is labelled "B" I draw a tile from Urn B and show it to you. I do not show you the tile.
+
+\begin{parts}
+\part[2] Write the sample space of possible outcomes for this experiment, using "A\" and "B\" to denote heads and tails and the "blue" or "red" to denote the color of the ball drawn. 
+\vspace{5cm}
+\part
+Determine the following probabilities:
+\vspace{1cm}
+  \begin{subparts}
+      \subpart[4] Find $P\left(\text{"a tile labelled A is drawn"}\right)$.
+      \vspace{2cm}
+      \subpart[4] Find $P\left(\text{"a tile labelled A is drawn and a blue ball is drawn"}\right)$.
+      \vspace{2cm}
+      \subpart[4] Find $P\left(\text{"a red ball is drawn given that I have drawn a tile labelled B"}\right)$.
+      \vspace{2cm}
+      \subpart[4] Find $P\left(\text{"I have drawn a tile labelled A given that I have shown you a red ball."}\right)$.
+      \vspace{2cm}
+  \end{subparts}
+
+\end{parts}
+
+\newpage
+
+\question
+
+   \begin{parts}
+      \part[4] Suppose $X \sim \text{NegBin}(2,.4)$. Find $P(X = 5)$.
+      \vspace{4cm}
+      \part[4] Suppose $Y \sim \text{Geometric}(.7)$. Find $P(Y \ge 3)$.
+      \vspace{4cm}
+      \part[4] Suppose $M \sim \text{Poisson}(4.2)$. Find $P(M \le 2 | M \le 5)$.
+      \vspace{4cm}
+      \part[4] Using what you know about probability mass functions, evaluate the sum $$ \sum_{k=2}^{\infty} \left[\left(\frac{1}{2}\right)^k \left(\frac{1}{k!}\right)\right] $$
+      \vspace{4cm}
+      \part[4] Suppose that $T$ is a uniform random variable with density function $f(t) = 1/5$ with $ -2 \le t \ge 3$. Sketch the cumulative distribution for $T$. Use it to illustrate the probability of $T$ being less than 1.
+      \vspace{4cm}
+      \part[4] Suppose that $T$ is a uniform as in the previous part. If we know that $2 \cdot T$ is less than $0$, what is the probability that $2 \cdot T$ is less than -1?
+      \vspace{4cm}
+      \part[4] Suppose $W$ follows a gamma distribution with $\lambda = 1$ and $\alpha = 3$. Find $P(W \le .5 | W \ge .2)$.
+      \vspace{4cm}
+      \part[4] Using what you know about probability density functions, evaluate the integral $$ \int_{0}^{\infty} x^{5} e^{-0.2x} dx $$
+      \vspace{4cm}
+   \end{parts}
+
+\newpage
+\question 
+
+Suppose that $X$ is a continuous random variable with probability density function (pdf):
+$$
+f(x) = \begin{cases}
+   6 x^2 (1+x) & -1 \le x \le 0 \\
+   6 x^2 (1-x) & 0 \le x \le 1 \\
+   0           & \text{otherwise}
+\end{cases}
+$$
+which may also be written as
+$$
+   f(x) = 6 x^2 (1 - |x|), \text{    } -1 \le x \le 1
+$$
+
+\begin{parts}
+   \part[4] Is this a "mirrored" distribution (i.e., is $f(x) = f(-x)$)?
+   \vspace{5cm}
+   \part[4] Show that this is a valid probability function (you may assume that this function is continuous).
+   \vspace{5cm}
+   \part[4] Derive the cumulative density function, $F(x)$ (it may be helpful to use a piecewise function).
+   \vspace{5cm}
+   \newpage
+   \part[4] Provide a sketch of the cumulative density function, $F(x)$.
+   \vspace{5cm}
+   \part[4] What is the probability that $X$ takes a value greater than 0.5?
+   \vspace{5cm}
+   \part[4] What is the probability that $X$ takes a value between -0.5 and 0.5?
+\end{parts}
+
+\newpage
+
+\question[10] \textbf{Extra Credit}
+
+Solve the following integral using what you know about the normal probability distribution:
+$$
+\int_{-\infty}^{\infty} e^{-3 x^2 + 2x} dx
+$$
+
+\end{questions}
+
+\newpage
+\textbf{Scratch Paper}
+\newpage
+\textbf{Scratch Paper}
+\newpage
+\textbf{Scratch Paper}
+\end{document}

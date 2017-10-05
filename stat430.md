@@ -73,6 +73,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 **End of Exam 1 Material**
 
 -  [Lecture 12: 09-28](./lec/lec12/index.html)
+-  [Lecture 13: 09-28](./lec/lec13/index.html)
 
 ### Homework Assignments
 
