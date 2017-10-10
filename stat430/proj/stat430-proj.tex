@@ -1,0 +1,77 @@
+% For LaTeX-Box: root = stat430-hw3.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat430-hw3.tex
+%  Purpose:
+%
+%  Creation Date: 19-09-2017
+%  Last Modified: Tue Sep 19 16:03:46 2017
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{hyperref}
+\usepackage{color}
+
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\setlength{\topmargin}{-.5 in} 
+\setlength{\textheight}{9 in}
+\setlength{\textwidth}{6.5 in} 
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{0 in} 
+\setlength{\parindent}{0 in}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+
+
+\lhead{STAT 430}
+\chead{Project} 
+\rhead{Due December 15th at 5:00 pm} 
+\lfoot{Fall 2017} 
+\cfoot{\thepage} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+
+\def\Exp#1#2{\ensuremath{#1\times 10^{#2}}}
+\def\Case#1#2#3#4{\left\{ \begin{tabular}{cc} #1 & #2 \phantom
+{\Big|} \\ #3 & #4 \phantom{\Big|} \end{tabular} \right.}
+
+\begin{document}
+\pagestyle{fancy} 
+
+Choose one of the following projects. 
+
+\section{Develop}
+
+I think that one of the reasons R is becoming a popular programming language outside of the statistical sciences is because of the extensive work being done to develop and distribute packages. 
+While many of these packages provide statistical tools (for instance, the package `rnn` \href{https://cran.r-project.org/web/packages/rnn/rnn.pdf}{(link)} allows users to fit Recurrent Neural Networks)
+some of the most useful ones have more general applications. 
+For instance the package \verb!knitr! \href{https://github.com/yihui/knitr/tree/master/R}{link} facilitates document generation through R, allowing a person to generate not only the text of the document, but the statistical, mathematical, and computational work that goes along with it.
+Shiny \href{https://shiny.rstudio.com/}{(link)} provides this for webpages, allowing you to create interactive tools that can be deployed on the web.
+The package `magrittr` provides a wonderfully useful tool (the pipe \verb!%>%!) that allows you to chain functions together in a way that makes code more transparent and natural.
+
+\textbf{Details} You may (and I would encourage this) work in groups for this project but you need to work in an environment that allows me to track what your progress is and how people are contributing - that means GitHub. If you want the work to be private I can provide you with a private repo to work from. Your results should include a link to the package, a sufficient amount of documentation, and an approximately two page write-up detailing why you think the package will be helpful.
+
+\section{Document}
+
+A classic literature report. Read a paper, summarize the important methods, use what you've learned to do something new - an application to a new problem, an alteration to the method, a simulation to illustrate its strengths and weaknesses, etc.
+Possible topics that might be interesting to you (and me): Block Bootstraps, Deep Learning, The Kernel Trick and other topics associated with Support Vector Machines, recent developments in Machine Learning, Kernel Smoothing, Relevance Vector Machines.
+Your selected paper would need approval before Thanksgiving break. I am more than happy to discuss the paper with you or help you find one.
+\textbf{Details} Not a group project. Your results should include a clear and concise write up outlining the paper and providing your analysis (approximately 5-10)
+
+\section{Data Analysis}
+
+Kaggle \href{https://www.kaggle.com}{(link)} hosts competitions in which you and a team can compete with people around the world to build the best predictive model for real-world data. 
+They also allow instructors to set up competitions among their students.
+I have gotten a lot of fun out of competitions like these and have a competition in mind.
+If you would like to participate, organize a team and let me know which competitions you are interested in. If enough people are interested in this option, we can make the competition in-class.
+
+\textbf{Details} 
+Teams should be around 3-4 members. You will have the opportunity to submit results as the competition procedes. 
+You and your teammates should organize using something that can document your contributions (i.e., GitHub/Dropbox).
+Teams should submit a 5 page document explaining their approach to the problem.
+
+\end{document}

@@ -43,6 +43,10 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 
 ## Course Materials
 
+### Project Descriptions
+
+[Project Description](./proj/stat-430proj.pdf)
+
 ### Practice Exams
 
    <!-- TO DO -->
