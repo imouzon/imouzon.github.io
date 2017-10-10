@@ -45,7 +45,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 
 ### Project Descriptions
 
-[Project Description](./proj/stat-430proj.pdf)
+[Project Description](./proj/stat430-proj.pdf)
 
 ### Practice Exams
 
