@@ -43,7 +43,6 @@ This homework consists of two parts: the first part will be problems from the bo
 
 \begin{enumerate}
 
-
 \item Problem 1
 
 \item Problem 7
@@ -84,7 +83,7 @@ Notice that the main file is a "fixed-width" file. This means that the data in t
 
 %-- read_brfss_data: R code (Code in Document)
 <<read_brfss_data, echo=TRUE, cache=FALSE, eval=FALSE>>=  
-source("http://imouzon.github.io/stat430/hw4/read_brfss.R")
+source("https://imouzon.github.io/stat430/hw/hw4/read_brfss.R")
 read_brfss("<path_to_your_brfss_data>")
 @
 

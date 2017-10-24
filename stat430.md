@@ -97,7 +97,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 ## Programming 
 
 ### R
-CRAN: The Comprehensive R Archive Network
+CRAN: The Comprehensive R Archivf Network
 -  CRAN and R are almost synonymous: they manage most of the package distribution
 -  CRAN hosts the current version of R for download: [https://cran.r-project.org/](https://cran.r-project.org/) and most students will find this the simplest way to download and begin using R
 -  RStudio is a popular GUI tool for R. It is the "bells and whistles" 
