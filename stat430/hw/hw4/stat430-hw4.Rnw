@@ -79,13 +79,18 @@ and the code book which explains the variable names, which can be viewed here:
 
 \url{https://www.cdc.gov/brfss/annual_data/2016/pdf/codebook16_llcp.pdf}
 
-Notice that the main file is a "fixed-width" file. This means that the data in the file is meant to be read by knowing which column each field begins and ends on. I have written a simple R function that will do this for you. This is provided in the code book but I have written a function that can read the data in for you. Notice that the dataset is very large - you may want to consider working with only part of it initially (so that each operation you try cuts down on some time).
+The data is in a \"fixed-width\" file and is meant to be read by knowing which column each field begins and ends on. I have written a simple R function that will do this for you. You can read the data in by running:
 
 %-- read_brfss_data: R code (Code in Document)
 <<read_brfss_data, echo=TRUE, cache=FALSE, eval=FALSE>>=  
+# load the function to read the brfss data from the course page
 source("https://imouzon.github.io/stat430/hw/hw4/read_brfss.R")
+
+# read the file into R (changing the part in <> to your own path)
 read_brfss("<path_to_your_brfss_data>")
 @
+
+Also notice that the dataset is very large - you may want to consider working with only part of it initially (so that each operation you try cuts down on some time).
 
 \end{enumerate}
 \end{document}
