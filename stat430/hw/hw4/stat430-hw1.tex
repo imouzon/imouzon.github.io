@@ -1,0 +1,89 @@
+% For LaTeX-Box: root = stat430_hw4.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat430_hw4.tex
+%  Purpose:
+%
+%  Creation Date: 14-01-2016
+%  Last Modified: Tue Aug 29 20:20:42 2017
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\setlength{\topmargin}{-.5 in} 
+\setlength{\textheight}{9 in}
+\setlength{\textwidth}{6.5 in} 
+\setlength{\evensidemargin}{0 in}
+\setlength{\oddsidemargin}{0 in} 
+\setlength{\parindent}{0 in}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+
+
+\lhead{STAT 430}
+\chead{Homework 4} 
+\rhead{Due October 31st at 5:00 pm} 
+\lfoot{Fall 2017} 
+\cfoot{\thepage} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt} 
+\renewcommand{\ans}[1]{}
+
+\def\Exp#1#2{\ensuremath{#1\times 10^{#2}}}
+\def\Case#1#2#3#4{\left\{ \begin{tabular}{cc} #1 & #2 \phantom
+{\Big|} \\ #3 & #4 \phantom{\Big|} \end{tabular} \right.}
+
+\begin{document}
+\pagestyle{fancy} 
+
+Show \textbf{all} of your work on this assignment and answer each question fully in the given context.
+
+\textbf{Part A: Problems from the text}
+
+\ben Problems from Rice Section 3.8
+
+\item Problem 1
+
+\item Problem 7
+
+\item Problem 8
+
+\item Problem 11
+
+\item Problem 57
+
+\item Problem 58
+
+\een
+
+\textbf{Part B: Exploratory Analysis of the Behavioral Risk Factor Surveillance System}
+
+
+\ben The Behavioral Risk Factor Surveillance System (BRFSS) is a, according to the Centers for Disease Control and Prevention,
+
+\begin{quote}
+The Behavioral Risk Factor Surveillance System (BRFSS) is the nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. Established in 1984 with 15 states, BRFSS now collects data in all 50 states as well as the District of Columbia and three U.S. territories. BRFSS completes more than 400,000 adult interviews each year, making it the largest continuously conducted health survey system in the world.
+\end{quote}
+
+The results and related documentation of the 2016 survey are public and can be found here:
+
+https://www.cdc.gov/brfss/annual_data/annual_2016.html
+
+Of particular interest to you will be the dataset we are analyzing, which can be directly downloaded as a zip here:
+
+https://www.cdc.gov/brfss/annual_data/2016/files/LLCP2016ASC.zip
+
+and the code book which explains the variable names, which can be viewed here:
+
+https://www.cdc.gov/brfss/annual_data/2016/pdf/codebook16_llcp.pdf
+
+Your task is to perform this analysis using In this part, I am going to ask you to perform an exploratory analysis in R of the 
+
+\een
+\end{document}
