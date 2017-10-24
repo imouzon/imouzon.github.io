@@ -78,7 +78,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
 -  [Lecture 14: 10-10](./lec/lec14/index.html)
 -  [Lecture 15: 10-15](./lec/lec15/index.html)
 
--  [Lecture 17: 10-24](./lec/lec15/index.html)
+-  [Lecture 17: 10-24](./lec/lec17/index.html)
 ### Homework Assignments
 
 -  [Homework 1](./hw/hw1/stat430-hw1.pdf) (due Tuesday, September 5th on blackboard by 5:00) ([solutions](./hw/hw1/hw1-soln.pdf))

@@ -50,10 +50,10 @@ Suppose that $X$ and $Y$ are two random variables with joint distribution given 
 
 If we can invert both $U$ and $V$ to get $X = h\_1(u, v)$ and $Y = h\_2(u, v)$ and we can get the Jacobian:
 \\[
-J(x,y) = \begin{matrix}
+J(x,y) = \begin{bmatrix}
 \frac{ \partial u}{ \partial x} & \frac{ \partial v}{ \partial x} \\
 \frac{ \partial u}{ \partial y} & \frac{ \partial v}{ \partial y} \\
-\end{matrix}
+\end{bmatrix}
 \\]
 and the determinate of the Jacobian is not always 0 then
 \\[
