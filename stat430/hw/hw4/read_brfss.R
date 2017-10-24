@@ -9,7 +9,7 @@ read_brfss <- function(path_to_brfss_file){
    path_to_brfss_fwf_layout = "http://imouzon.github.io/stat430/hw/hw4/brfss_column_layout.tsv"
 
    fwf_layout <- read.delim(
-      path_to_brfss_column_layout,
+      path_to_brfss_fwf_layout,
       stringsAsFactors = FALSE
    )
 
