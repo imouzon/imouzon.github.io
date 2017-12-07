@@ -17,10 +17,8 @@ share: true
 
 ## Course Information
 
-# EXAM 2: DUE SATURDAY NOV 18
-**Exam II** (October 3rd) [pdf](./pex/exam2/stat430_F17_exam2.pdf)
-
-Gibbs sampler example [in R](./gibbs_sampler.R)
+# FINALl EXAM:  DUE FRIDAY DECEMBER 15
+**Final Exam** (December 15) [pdf](./pex/exam3/stat430_F17_exam2.pdf)
 
 **Basic Information**
 
