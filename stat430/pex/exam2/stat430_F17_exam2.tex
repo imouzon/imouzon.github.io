@@ -1,0 +1,161 @@
+% For LaTeX-Box: root = stat105_F15_exam1B.tex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  File Name: stat105_F15_exam1B.tex
+%  Purpose:
+%
+%  Creation Date: 24-09-2015
+%  Last Modified: Mon Oct  2 13:57:00 2017
+%  Created By:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[addpoints]{examsetup}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\usepackage{etoolbox}
+\usepackage{tikz,pgfplots}
+\usepackage{graphicx, fancyhdr}
+\usepackage{amsmath, amsfonts}
+\usepackage{color}
+
+%\input{stat105_exam1_info.tex}
+\newcommand{\course}[1]{\ifstrempty{#1}{STAT 430}{STAT 430}}
+\newcommand{\sectionNumber}{B}
+\newcommand{\examDate}{November 7, 2015}
+\newcommand{\semester}{FALL 2017}
+\newcommand{\examNumber}{II}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+%-- : R code (Code in Document)
+
+
+
+\examCoverPage
+
+\begin{questions}
+
+\question[5] 
+Suppose that $U$ is a uniform random variable on the interval $[0,1]$. Also suppose that $F$ is any invertable cumulative density function. Find the cdf of $X = F^{-1}(U)$.
+
+\question[5] 
+Let $X$ be any random variable with mean $\mu$ and variance $\sigma^2$. What is the mean and variance of the random variable $Z = \frac{X - \mu}{\sigma}$?
+
+\question[5] 
+For any random variables $X$ and $Y$ show that $Var(X - Y) = Var(X) + Var(Y) - 2 Cov(X, Y)$.
+
+\question[5] 
+For any random variables $X$ and $Y$, find that $Var(X \cdot Y)$ in terms of $E(X), E(Y), Var(X), Var(Y)$, and $Cov(X,Y)$.
+
+\question
+Suppose that $X_1, X_2, ..., X_n$ are independent random variables with the same expected value $\mu$ and the same variance $\sigma^2$.
+\begin{parts}
+   \part[5] What is the expected value and variance of $\bar{X} = \frac{1}{n} (X_1 + X_2 + ... + X_n$)?
+   \part[5] What is the expected value and variance of $T = X_1 + 2 X_2 + ... + n X_n$?
+\end{parts}
+
+\question
+Let $X_1$ and $X_2$ are independent, identically distributed random variables with the same probability density function
+\[
+   f_{X}(x) = \dfrac{\lambda^{\alpha}}{\Gamma(\alpha)} x^{\alpha - 1} e^{-\lambda x}
+\]
+(i.e., $X_1$ and $X_2$ are gamma random variables).
+\begin{parts}
+   \part[5] Find the probability density function for $Y_1 = 1/X_1$ (be sure to include the range).
+   \part[5] Find the probability density function for $Y_2 = X_1 + X_2$ (be sure to include the range).
+   \part[5] What is the expected value of $Z = Y_1 \cdot Y_2$?
+\end{parts}
+
+\question
+\textbf{Stick Breaking} 
+Consider the following scenario: I hold a wooden stick of length $L$ in my left hand and randomly select a point at which to break the stick. I name the portion still in my left hand Stick A and place it on a table. I then pick up what was left of the stick and, holding it in my left hand, break it again by selecting another point at random. I name the piece in my left hand Stick B and place it on the table with Stick A.
+
+\begin{parts}
+   \part[5] What is the probability that Stick A is longer than Stick B?
+   \part[5] What is the probability that Stick B is longer than the length of the stick left over?
+   \part[5] What is the probability that the sum of lengths of Stick A and Stick B is less than $\frac{1}{2} L$?
+   \part[5] Which length has the highest variance? The length of Stick A or the length of Stick B?
+\end{parts}
+
+\question
+Let $X$ be a $N(\mu, \sigma^2)$. 
+\begin{parts}
+   \part[5] Derive the moment generating function for $X$.
+   \part[5] Using the moment generating function for $X$, find the moment generating function for $Y = X - \mu$.
+   \part[5] Show that $E(Y^k) = E\left((X - \mu)^k\right)$ is 0 if $k$ is odd.
+   \part[5] Find an expression for $E(Y^k) = E\left((X - \mu)^k\right)$ if $k$ is even in terms of $\sigam, \mu$, and $k$.
+\end{parts}
+
+\pagebreak
+\question[30] \textbf{Gibbs Sampling}
+One of the sampling techniques commonly used in Bayesian Analysis is the Gibbs sampler. Essentially, the gibbs sampler is a method of generating multiple observations $x_1, x_2, \ldots, x_n$ from random variables $X_1, X_2, \ldots, X_n$ with joint distribution $f(x_1, x_2, \ldots, x_n)$. The alogorithm works like this:
+
+\begin{itemize}
+   \item[1.] With the $i$th observation $x_1, x_2, \ldots, x_n$, generate the $i+1$th observation $x_1^{*}, x_2^{*}, \ldots, x_n^{*}$ as follows:
+   \begin{itemize}
+      \item[i.] Generate $x_1^{*}$ from the conditional distribution $f(x | X_2 = x_2, X_3 = x_3, \ldots, X_n = x_n)$
+      \item[ii.] Generate $x_2^{*}$ from the conditional distribution $f(x | X_1 = x_1^{*}, X_3 = x_3, \ldots, X_n = x_n)$
+      \item[iii.] Generate $x_3^{*}$ from the conditional distribution $f(x | X_1 = x_1^{*}, X_2 = x_2^{*}, \ldots, X_n = x_n)$
+      \item[] \ldots
+      \item[n.] Generate $x_n^{*}$ from the conditional distribution $f(x | X_1 = x_1^{*}, X_2 = x_2^{*}, \ldots, X_{n-1} = x_n^{*})$
+   \end{itemize}
+\end{itemize}
+In this way, each iteration generates values $x_1, \ldots, x_n$ following the joint distribution of $X_1, \ldots, X_n$. As an added bonus, if we look only at the values generated for $x_1$, the values will follow the marginal for $X$.
+
+Suppose that $\theta \sim Beta(3,1)$, $X|\theta, Y=y \sim \text{binom}(y, \theta)$, and $Y|\theta \sim \text{binom}(10, \theta)$. 
+
+Write a function in R that generates samples from the joint distribution of $X, Y$ and $\theta$ using a Gibbs Sampling algorithm. Use it to get 10,000 samples distribution after letting the sampler run 10,000 times to avoid any problems from your initial starting point.
+Submit your function, your initial starting value, plots of the 10,000 values for each of the variables. Provide summary statistics including the mean and variance of your samples.
+
+   
+\end{questions}
+
+\end{document}

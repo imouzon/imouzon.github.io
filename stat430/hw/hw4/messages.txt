@@ -1,0 +1,256 @@
+
+
+"read_brfss.R" 
+"read_brfss.R" 31L, 770C written
+"read_brfss.R" 31L, 770C written
+
+"messages.txt" 
+"messages.txt" 0L, 0C
+
+
+
+
+"brfss_column_layout.tsv" 
+"brfss_column_layout.tsv" 274L, 4044C
+
+
+-- VISUAL LINE --
+6 fewer lines
+6 fewer lines-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 22L, 653C written
+"read_brfss.R" 22L, 653C written
+
+"read_brfss.R" 
+"read_brfss.R" 22L, 653C written
+"read_brfss.R" 22L, 653C written
+
+"read_brfss.R" 
+"read_brfss.R" 22L, 653C written
+"read_brfss.R" 22L, 653C written
+
+"read_brfss.R" 
+"read_brfss.R" 22L, 653C written
+"read_brfss.R" 22L, 653C written
+
+-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 24L, 667C written
+"read_brfss.R" 24L, 667C written
+
+"LLCP2016-small.asc" 
+"LLCP2016-small.asc" 11L, 22363C
+
+
+"~/Desktop/LLCP2016.asc" 
+"~/Desktop/LLCP2016.asc" [dos] 486303L, 989140302C-- INSERT --
+-- INSERT --
+-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 25L, 702C written
+"read_brfss.R" 25L, 702C written-- INSERT --
+-- VISUAL LINE --
+4 lines >ed 1 time
+
+ClientServer not running.
+ClientServer not running.
+1 change; before #15  1 seconds ago
+
+Updating nvimcom... OK!
+No matching autocommands
+
+
+
+As far as I know, R is already running. If it is not running, did you quit it from within vim (command \rq)?
+
+"R_doc" [New File]
+
+340 fewer lines
+-- VISUAL --
+-- INSERT --
+-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 24L, 733C written
+"read_brfss.R" 24L, 733C written-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 25L, 747C written
+"read_brfss.R" 25L, 747C written-- INSERT --
+-- VISUAL LINE --
+5 lines >ed 1 time-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 26L, 763C written
+"read_brfss.R" 26L, 763C written-- INSERT --
+-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 28L, 794C written
+"read_brfss.R" 28L, 794C written-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 36L, 876C written
+"read_brfss.R" 36L, 876C written
+
+"read_brfss.R" 
+"read_brfss.R" 36L, 876C written
+"read_brfss.R" 36L, 876C written-- INSERT --
+-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 38L, 882C written
+"read_brfss.R" 38L, 882C written-- INSERT ---- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 38L, 883C written
+"read_brfss.R" 38L, 883C written-- INSERT ---- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 40L, 921C written
+"read_brfss.R" 40L, 921C written-- INSERT ---- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 42L, 935C written
+"read_brfss.R" 42L, 935C written
+
+"read_brfss.R" 
+"read_brfss.R" 42L, 935C written
+"read_brfss.R" 42L, 935C written-- VISUAL LINE --
+
+
+
+
+-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 44L, 951C written
+"read_brfss.R" 44L, 951C written
+
+"read_brfss.R" 
+"read_brfss.R" 44L, 951C written
+"read_brfss.R" 44L, 951C written-- VISUAL LINE ---- VISUAL LINE --
+4 fewer lines
+4 fewer lines
+4 more lines
+4 more lines-- VISUAL LINE --
+4 lines <ed 1 time-- INSERT --
+-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 931C written
+"read_brfss.R" 45L, 931C written
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 931C written
+"read_brfss.R" 45L, 931C written
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 931C written
+"read_brfss.R" 45L, 931C written
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 931C written
+"read_brfss.R" 45L, 931C written-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 922C written
+"read_brfss.R" 45L, 922C written
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 922C written
+"read_brfss.R" 45L, 922C written
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 922C written
+"read_brfss.R" 45L, 922C written
+
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 922C written
+"read_brfss.R" 45L, 922C written-- INSERT ---- INSERT ---- INSERT --
+-- INSERT --
+-- INSERT --
+
+
+"read_brfss.R" 
+"read_brfss.R" 48L, 992C written
+"read_brfss.R" 48L, 992C written-- INSERT --
+
+
+
+
+
+"read_brfss.R" 
+"read_brfss.R" 46L, 975C written
+"read_brfss.R" 46L, 975C written
+
+"read_brfss.R" 
+"read_brfss.R" 46L, 975C written
+"read_brfss.R" 46L, 975C written
+
+
+
+
+
+"read_brfss.R" 
+"read_brfss.R" 46L, 975C written
+"read_brfss.R" 46L, 975C written
+
+"read_brfss.R" 
+"read_brfss.R" 46L, 975C written
+"read_brfss.R" 46L, 975C written
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 908C written
+"read_brfss.R" 45L, 908C written
+
+"read_brfss.R" 
+"read_brfss.R" 45L, 908C written
+"read_brfss.R" 45L, 908C written
+
+"read_brfss_by_state.R" [New File]
+Error detected while processing BufNewFile Auto commands for "*.r":
+E20: Mark not set-- VISUAL LINE --
+39 lines yanked
+39 more lines
+39 more lines
+
+"read_brfss_by_state.R" 
+"read_brfss_by_state.R" [New] 46L, 918C written
+"read_brfss_by_state.R" [New] 46L, 918C written
+
+"read_brfss_by_state.R" 
+"read_brfss_by_state.R" 45L, 917C written
+"read_brfss_by_state.R" 45L, 917C written
+
+"read_brfss_by_state.R" 
+"read_brfss_by_state.R" 43L, 915C written
+"read_brfss_by_state.R" 43L, 915C written
+
+"read_brfss_by_state.R" 
+"read_brfss_by_state.R" 43L, 915C written
+"read_brfss_by_state.R" 43L, 915C written
+
+"read_brfss_by_state.R" 
+"read_brfss_by_state.R" 43L, 915C written
+"read_brfss_by_state.R" 43L, 915C written
+
