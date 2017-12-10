@@ -18,7 +18,10 @@ share: true
 ## Course Information
 
 # FINALl EXAM:  DUE FRIDAY DECEMBER 15
-**Final Exam** (December 15) [pdf](./pex/exam3/stat430_F17_exam2.pdf)
+**Final Exam** (December 15) [pdf](./pex/exam3/stat430_F17_exam3.pdf)
+- Edits to problem 5 on December 9 at 10:30 pm
+- Edits to problem 6 on December 9 at 10:30 pm
+
 
 **Basic Information**
 
