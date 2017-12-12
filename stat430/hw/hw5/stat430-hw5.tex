@@ -83,6 +83,8 @@
 \begin{document}
 \pagestyle{fancy} 
 
+This document was edited on December 12 at 12:06
+
 This is an optional assignment. The credit will be awarded in one of two ways:
 \begin{itemize}
    \item \textbf{Homework Replacement} Of the four homeworks assigned this semester, the lowest is already being dropped. This assignment will replace the next lowest but only if it improves your grade. Essentially, this would mean you had five homeworks and get to drop two.
@@ -91,7 +93,6 @@ This is an optional assignment. The credit will be awarded in one of two ways:
 There is no need to choose which option you prefer - I will assign the credit based on which method improves your grade the most. However, I will not be assigning partial credit on this assignment. Each problem will marked either correct or incorrect.
 
 Show \textbf{all} of your work on this assignment and answer each question fully in the given context. 
-
 
 A Bayesian model starts a lot like the statistical models we have discussed in class up to this point. As in the case of a statistical model, we treat the observable results as random variables whose distributions may depend on values that are known to us (which we call covariates) as well as parameters which are unknown to us. Assuming that we have these distributions have the capacity to reasonably describe the actual real-world mechanisms producing the results that we will observe, then our interest mainly lies in estimating the values of the unknown parameters. So for instance, a linear model with additive errors could be written as:
 \begin{quote}
@@ -117,7 +118,7 @@ With $i = 1, 2, \ldots, n$ observed values $y_i$ based on known covariates $x_i$
 \]
 and prior distributions
 \[
-   \beta_0 | \sigma^2 \sim N(0, 
+   \beta_0 | \sigma^2 \sim N(0, \sigma^2)
 \]
 \[
    \beta_1 | \sigma^2 \sim N(0, \sigma^2)
@@ -147,7 +148,7 @@ Consider the first model above (the non-Bayesian one) with responses $y_1, y_2, 
       \[
          \hat{\sigma}^2 = \frac{1}{n} \sum_{i=1}^n \left(y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i \right)^2
       \]
-   \item[d.)] In \verb!R! build a function that will simulate a sample that follows where the linear model where $\beta_0 = 200$ and $\beta_1 = -120$ and $\sigam^2 = 10$ for $x_i = 0, 1, 2, ..., 100$. Use this function to generate a single sample. Report the value of $\bar{y}$, $\bar{x}$ and the maximum likelihood estimators of the parameters $\beta_0$, $\beta_1$ and $\sigma^2$.
+   \item[d.)] In \verb!R! build a function that will simulate a sample that follows where the linear model where $\beta_0 = 200$ and $\beta_1 = -120$ and $\sigma^2 = 10$ for $x_i = 0, 1, 2, ..., 100$. Use this function to generate a single sample. Report the value of $\bar{y}$, $\bar{x}$ and the maximum likelihood estimators of the parameters $\beta_0$, $\beta_1$ and $\sigma^2$.
    \item[e.)] In part d.), you generated a single sample from a linear model and estimated the MLEs of each paramter. Now generate 10,000 such samples and calculate the MLEs for the paramters from each of the samples. Plot a histogram of the samples.
    \item[f.)] In part e.), you generated 10,000 simulated samples and caluclated 10,000 values for each MLE estimator. What is the mean of the MLE you generated from the samples? What two values capture the middle 95\% of the sampled values?
 \end{itemize}
@@ -167,7 +168,7 @@ Consider the second model (the Bayesian one) with responses $y_1, y_2, \ldots, y
       and 
       $\phi = \frac{\sum_{i=1}^n x_i}{\sqrt{n}{\sum_{i=1}^n x_i^2}}$
 
-   \item[d.)] In \verb!R! build a function that will simulate a sample that follows where the linear model where $\beta_0 = 200$ and $\beta_1 = -120$ and $\sigam^2 = 10$ for $x_i = 0, 1, 2, ..., 100$.  With this sample, generate a 1,000 values from the posterior distribution for $\beta_0$, $\beta_1$, and $\sigma^2$. Find the average of the samples for each of these posterior samples.
+   \item[d.)] In \verb!R! build a function that will simulate a sample that follows where the linear model where $\beta_0 = 200$ and $\beta_1 = -120$ and $\sigma^2 = 10$ for $x_i = 0, 1, 2, ..., 100$.  With this sample, generate a 1,000 values from the posterior distribution for $\beta_0$, $\beta_1$, and $\sigma^2$. Find the average of the samples for each of these posterior samples.
    \item[e.)] Repeat part d.) 1000 times to generate 1000 averages from the posterior. How do these samples compare to the samples of the maximum likelohood estimates from Part I.
 \end{itemize}
 
