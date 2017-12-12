@@ -97,7 +97,7 @@ You can view or download the syllabus at this [link](./doc/syllabus_stat430_F17.
    -  [read_brfss.R](./hw/hw4/read_brfss.R)
    -  You could also read individual sates by using this function: [read_brfss_by_state.R](./hw/hw4/read_brfss_by_state.R). For instance, to read states `01` and `09`, you would source this function and run `read_brfss_by_state(<path to file>, states_to_read=c("01", "09"))`
 
--  [Homework 5](./hw/hw5/stat430-hw5.pdf) (due Saturday, December 16th on blackboard by 5:00)
+-  [Homework 5 (edited Tuesday, December 12 at 12:00)](./hw/hw5/stat430-hw5.pdf) (due Saturday, December 16th on blackboard by 5:00)
 
 ### Tools
 

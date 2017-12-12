@@ -33,6 +33,8 @@
 \begin{document}
 \pagestyle{fancy} 
 
+This document was edited on December 12 at 12:00
+
 This is an optional assignment. The credit will be awarded in one of two ways:
 \begin{itemize}
    \item \textbf{Homework Replacement} Of the four homeworks assigned this semester, the lowest is already being dropped. This assignment will replace the next lowest but only if it improves your grade. Essentially, this would mean you had five homeworks and get to drop two.
@@ -41,7 +43,6 @@ This is an optional assignment. The credit will be awarded in one of two ways:
 There is no need to choose which option you prefer - I will assign the credit based on which method improves your grade the most. However, I will not be assigning partial credit on this assignment. Each problem will marked either correct or incorrect.
 
 Show \textbf{all} of your work on this assignment and answer each question fully in the given context. 
-
 
 A Bayesian model starts a lot like the statistical models we have discussed in class up to this point. As in the case of a statistical model, we treat the observable results as random variables whose distributions may depend on values that are known to us (which we call covariates) as well as parameters which are unknown to us. Assuming that we have these distributions have the capacity to reasonably describe the actual real-world mechanisms producing the results that we will observe, then our interest mainly lies in estimating the values of the unknown parameters. So for instance, a linear model with additive errors could be written as:
 \begin{quote}
@@ -67,7 +68,7 @@ With $i = 1, 2, \ldots, n$ observed values $y_i$ based on known covariates $x_i$
 \]
 and prior distributions
 \[
-   \beta_0 | \sigma^2 \sim N(0, 
+   \beta_0 | \sigma^2 \sim N(0, \sigma^2)
 \]
 \[
    \beta_1 | \sigma^2 \sim N(0, \sigma^2)
