@@ -11,7 +11,7 @@ url:              https://imouzon.github.io/
 owner:
   name:           Ian Mouzon
   avatar:         avatar.jpg
-  bio:            "I am a PhD student studying statistics at Iowa State. I am interested in time-series, machine learning, and myself."
+  bio:            "I am a PhD student studying statistics at Iowa State. I am interested in time-series, text analysis, and machine learning."
   email:          imouzon@iastate.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        imouzon
@@ -19,12 +19,12 @@ owner:
   github:         imouzon 
   stackexchange:  
   linkedin:       imouzon
-  instagram:      imouzon
+  instagram:
   flickr:         
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +imouzon
+  google_plus:
 
 # Background image to be tiled on all pages
 background: 
